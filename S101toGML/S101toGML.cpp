@@ -36,6 +36,10 @@ int main()
         else
         {
             // TODO: code your application's behavior here.
+
+            // source file : S-101 ENC (.000)
+            // destination file : GML path (.gml)
+
             libS101::S101 a;
             a.Test();
         }

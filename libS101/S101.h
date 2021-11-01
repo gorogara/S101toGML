@@ -2,16 +2,20 @@
 
 #include "libS101.h"
 
+#include <string>
 #include <vector>
 
 namespace libS101
 {
 
+	// aka GISLibrary::S101Cell
 	class LIBS101_API S101
 	{
 	public:
 		S101() {}
 		virtual ~S101() {}
+
+		bool Open(std::wstring path) { return true; }
 
 	public:
 		/*
