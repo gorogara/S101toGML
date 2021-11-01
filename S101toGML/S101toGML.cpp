@@ -7,6 +7,8 @@
 
 #include "../libS101/S101.h"
 
+#include <iostream>
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -24,6 +26,7 @@ int main()
 
     HMODULE hModule = ::GetModuleHandle(nullptr);
 
+
     if (hModule != nullptr)
     {
         // initialize MFC and print and error on failure
@@ -40,8 +43,15 @@ int main()
             // source file : S-101 ENC (.000)
             // destination file : GML path (.gml)
 
+            string path = "";
+
+            std::cout << "경로를 입력하세요 : ";
+            cin >> path;
+
+
             libS101::S101 a;
-            a.Test();
+           // a.Open();
+            //a.Test();
         }
     }
     else
