@@ -39,9 +39,7 @@ int main()
 
             // source file : S-101 ENC (.000)
             // destination file : GML path (.gml)
-
-            libS101::S101 a;
-            a.Test();
+            libS101::Convert(L"../SampleData/101US004NC55M.000", L"../Output/101US004NC55M.gml");
         }
     }
     else
