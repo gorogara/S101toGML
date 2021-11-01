@@ -151,20 +151,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Enum_S100_FileType.h" />
+    <ClInclude Include="Field.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="F_DSID.h" />
+    <ClInclude Include="F_DSSI.h" />
+    <ClInclude Include="F_MRID.h" />
+    <ClInclude Include="Layer.h" />
     <ClInclude Include="libS101.h" />
+    <ClInclude Include="Namespace_GISLibrary.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Record.h" />
+    <ClInclude Include="RecordName.h" />
+    <ClInclude Include="R_DSCRS.h" />
+    <ClInclude Include="R_DSGIR.h" />
+    <ClInclude Include="R_FeatureRecord.h" />
+    <ClInclude Include="R_InformationRecord.h" />
+    <ClInclude Include="R_MultiPointRecord.h" />
+    <ClInclude Include="R_PointRecord.h" />
+    <ClInclude Include="R_SurfaceRecord.h" />
+    <ClInclude Include="R_VectorRecord.h" />
+    <ClInclude Include="S100SpatialObject.h" />
+    <ClInclude Include="S100_Members.h" />
     <ClInclude Include="S101.h" />
+    <ClInclude Include="SpatialObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="F_DSID.cpp" />
+    <ClCompile Include="F_DSSI.cpp" />
+    <ClCompile Include="F_MRID.cpp" />
+    <ClCompile Include="Layer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Record.cpp" />
+    <ClCompile Include="RecordName.cpp" />
+    <ClCompile Include="R_DSCRS.cpp" />
+    <ClCompile Include="R_DSGIR.cpp" />
+    <ClCompile Include="R_FeatureRecord.cpp" />
+    <ClCompile Include="R_InformationRecord.cpp" />
+    <ClCompile Include="R_MultiPointRecord.cpp" />
+    <ClCompile Include="R_PointRecord.cpp" />
+    <ClCompile Include="R_SurfaceRecord.cpp" />
+    <ClCompile Include="R_VectorRecord.cpp" />
+    <ClCompile Include="S100SpatialObject.cpp" />
+    <ClCompile Include="S100_Members.cpp" />
     <ClCompile Include="S101.cpp" />
+    <ClCompile Include="SpatialObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

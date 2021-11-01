@@ -126,7 +126,7 @@ BOOL R_DSGIR::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 
 		if (*(buf++) != 0x1E)
 		{
-			KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode,KRS_MSG_PROCESS::DataSet);
+			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode,KRS_MSG_PROCESS::DataSet);
 		}
 	}
 	return true;
