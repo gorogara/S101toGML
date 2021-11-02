@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "S100SpatialObject.h"
 //#include "PCOutputSchemaManager.h"
-#include "S100Layer.h"
+//#include "S100Layer.h"
 
 S100SpatialObject::S100SpatialObject()
 {
@@ -56,7 +56,7 @@ S100::S100_DataProduct S100SpatialObject::GetS100Product()
 //	return pcManager;
 //}
 
-S100Layer* S100SpatialObject::GetS100Layer() 
-{
-	return (S100Layer*)m_pLayer;
-}
+//S100Layer* S100SpatialObject::GetS100Layer() 
+//{
+//	return (S100Layer*)m_pLayer;
+//}

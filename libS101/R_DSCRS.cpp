@@ -7,6 +7,7 @@
 #include "F_PROJ.h"
 #include "F_GDAT.h"
 #include "DRReaderWriter.h"
+#include "DRDirectory.h"
 #include "DRDirectoryInfoWriter.h"
 
 R_DSCRS::R_DSCRS()

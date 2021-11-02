@@ -1,6 +1,7 @@
 #pragma once
 #include "DRDirectoryInfo.h"
 #include "NonPrintableCharacter.h"
+#include "DRReader.h"
 
 #undef _WINDOWS_
 #include <afxext.h>

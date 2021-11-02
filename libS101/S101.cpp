@@ -10,8 +10,7 @@
 #include "R_FeatureRecord.h"
 #include "R_PointRecord.h"
 
-
-
+#include "DRDirectory.h"
 #include "DRDirectoryInfo.h"
 
 #undef _WINDOWS_

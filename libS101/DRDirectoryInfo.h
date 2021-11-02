@@ -2,10 +2,11 @@
 
 //#define TAG_LENGTH 4
 #include "DRReader.h"
-#include "DRDirectory.h"
+
 #include <iostream>
 #include <fstream>
 
+struct DRDirectory;
 class DRDirectoryInfo
 {
 public:

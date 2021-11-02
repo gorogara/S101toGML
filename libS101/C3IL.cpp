@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "C3IL.h"
 
 int C3IL::GetSize()

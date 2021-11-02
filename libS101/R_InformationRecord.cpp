@@ -3,6 +3,7 @@
 #include "DRDirectoryInfo.h"
 #include "F_INAS.h"
 #include "ATTR.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

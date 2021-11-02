@@ -4,6 +4,7 @@
 #include "F_C2IT.h"
 #include "F_C3IT.h"
 #include "F_INAS.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

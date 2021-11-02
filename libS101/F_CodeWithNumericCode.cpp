@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "F_CodeWithNumericCode.h"
 #include "CodeWithNumericCode.h"
 #include "ISO8211Fuc.h"

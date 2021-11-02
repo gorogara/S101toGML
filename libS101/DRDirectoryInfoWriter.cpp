@@ -3,6 +3,7 @@
 #include "DRDirectoryInfoWriter.h"
 #include "DRDirectoryWriter.h"
 
+
 #undef _WINDOWS_
 #include <afxext.h>
 DRDirectoryInfoWriter::DRDirectoryInfoWriter(void) 

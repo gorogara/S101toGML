@@ -2,6 +2,7 @@
 #include "Field.h"
 #include "RecordName.h"
 
+#include <list>
 // Feature Association field
 struct FASC;
 class F_FASC : Field

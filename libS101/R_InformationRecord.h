@@ -9,7 +9,6 @@ class F_ATTR;
 class F_INAS;
 class ATTR;
 class DRDirectoryInfo;
-
 // Information Record
 class R_InformationRecord : Record
 {

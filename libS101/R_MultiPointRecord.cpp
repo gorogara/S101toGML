@@ -7,6 +7,7 @@
 #include "F_INAS.h"
 #include "IC2D.h"
 #include "C3IL.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

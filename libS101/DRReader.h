@@ -8,8 +8,6 @@
 #include <iostream>
 #include <fstream>
 
-//
-
 class DRReader
 {
 public:

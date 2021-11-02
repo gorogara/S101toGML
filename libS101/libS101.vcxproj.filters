@@ -177,9 +177,6 @@
     <ClInclude Include="S100CatalogFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DDR.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="R_CurveRecord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -226,6 +223,33 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="F_SEGH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IC2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C3IL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_INAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CodeWithNumericCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_VDAT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_FASC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FASC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CRSH.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -377,9 +401,6 @@
     <ClCompile Include="S100CatalogFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DDR.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="R_CurveRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -426,6 +447,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="F_SEGH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IC2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C3IL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_INAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CodeWithNumericCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_VDAT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FASC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FASC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CRSH.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

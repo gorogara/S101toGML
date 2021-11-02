@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "R_SurfaceRecord.h"
 #include "DRDirectoryInfo.h"
+#include "DRDirectory.h"
 #include "F_INAS.h"
 #include "F_RIAS.h"
 #include "RIAS.h"

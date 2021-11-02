@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "DRDirectoryInfo.h"
 #include "ISO8211Fuc.h"
+#include "DRDirectory.h"
 
 DRDirectoryInfo::DRDirectoryInfo()
 {

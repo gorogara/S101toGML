@@ -2,6 +2,7 @@
 #include "R_DSGIR.h"
 #include "F_ATTR.h"
 #include "CodeWithNumericCode.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

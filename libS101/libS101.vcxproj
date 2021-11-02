@@ -154,16 +154,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ATTR.h" />
+    <ClInclude Include="C3IL.h" />
     <ClInclude Include="CodeWithNumericCode.h" />
     <ClInclude Include="CSAX.h" />
     <ClInclude Include="CUCO.h" />
-    <ClInclude Include="DDR.h" />
     <ClInclude Include="DRDirectory.h" />
     <ClInclude Include="DRDirectoryInfo.h" />
     <ClInclude Include="DRDirectoryInfoWriter.h" />
     <ClInclude Include="DRDirectoryWriter.h" />
+    <ClInclude Include="DRReader.h" />
     <ClInclude Include="DRReaderWriter.h" />
     <ClInclude Include="Enum_S100_FileType.h" />
+    <ClInclude Include="FASC.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="F_ATTR.h" />
@@ -174,15 +176,19 @@
     <ClInclude Include="F_CCID.h" />
     <ClInclude Include="F_CCOC.h" />
     <ClInclude Include="F_COCC.h" />
+    <ClInclude Include="F_CodeWithNumericCode.h" />
     <ClInclude Include="F_CRID.h" />
+    <ClInclude Include="F_CRSH.h" />
     <ClInclude Include="F_CSAX.h" />
     <ClInclude Include="F_CSID.h" />
     <ClInclude Include="F_CUCO.h" />
     <ClInclude Include="F_DSID.h" />
     <ClInclude Include="F_DSSI.h" />
+    <ClInclude Include="F_FASC.h" />
     <ClInclude Include="F_FOID.h" />
     <ClInclude Include="F_FRID.h" />
     <ClInclude Include="F_GDAT.h" />
+    <ClInclude Include="F_INAS.h" />
     <ClInclude Include="F_IRID.h" />
     <ClInclude Include="F_MASK.h" />
     <ClInclude Include="F_MRID.h" />
@@ -194,6 +200,8 @@
     <ClInclude Include="F_SEGH.h" />
     <ClInclude Include="F_SPAS.h" />
     <ClInclude Include="F_SRID.h" />
+    <ClInclude Include="F_VDAT.h" />
+    <ClInclude Include="IC2D.h" />
     <ClInclude Include="ISO8211Fuc.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="libS101.h" />
@@ -227,15 +235,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ATTR.cpp" />
+    <ClCompile Include="C3IL.cpp" />
     <ClCompile Include="CodeWithNumericCode.cpp" />
     <ClCompile Include="CSAX.cpp" />
     <ClCompile Include="CUCO.cpp" />
-    <ClCompile Include="DDR.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DRDirectoryInfo.cpp" />
     <ClCompile Include="DRDirectoryInfoWriter.cpp" />
     <ClCompile Include="DRDirectoryWriter.cpp" />
+    <ClCompile Include="DRReader.cpp" />
     <ClCompile Include="DRReaderWriter.cpp" />
+    <ClCompile Include="FASC.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="F_ATTR.cpp" />
     <ClCompile Include="F_C2IL.cpp" />
@@ -245,15 +255,19 @@
     <ClCompile Include="F_CCID.cpp" />
     <ClCompile Include="F_CCOC.cpp" />
     <ClCompile Include="F_COCC.cpp" />
+    <ClCompile Include="F_CodeWithNumericCode.cpp" />
     <ClCompile Include="F_CRID.cpp" />
+    <ClCompile Include="F_CRSH.cpp" />
     <ClCompile Include="F_CSAX.cpp" />
     <ClCompile Include="F_CSID.cpp" />
     <ClCompile Include="F_CUCO.cpp" />
     <ClCompile Include="F_DSID.cpp" />
     <ClCompile Include="F_DSSI.cpp" />
+    <ClCompile Include="F_FASC.cpp" />
     <ClCompile Include="F_FOID.cpp" />
     <ClCompile Include="F_FRID.cpp" />
     <ClCompile Include="F_GDAT.cpp" />
+    <ClCompile Include="F_INAS.cpp" />
     <ClCompile Include="F_IRID.cpp" />
     <ClCompile Include="F_MASK.cpp" />
     <ClCompile Include="F_MRID.cpp" />
@@ -265,6 +279,8 @@
     <ClCompile Include="F_SEGH.cpp" />
     <ClCompile Include="F_SPAS.cpp" />
     <ClCompile Include="F_SRID.cpp" />
+    <ClCompile Include="F_VDAT.cpp" />
+    <ClCompile Include="IC2D.cpp" />
     <ClCompile Include="ISO8211Fuc.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="MASK.cpp" />

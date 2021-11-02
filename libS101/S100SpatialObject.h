@@ -6,7 +6,7 @@
 //#include "..\\GeoMetryLibrary\\MBR.h"
 
 class PCOutputSchemaManager;
-class S100Layer;
+//class S100Layer;
 
 class S100SpatialObject : public SpatialObject
 {
@@ -25,5 +25,5 @@ public:
 	//MBR GetMBR();
 	/*void SetPCOutputManager(PCOutputSchemaManager* value);
 	PCOutputSchemaManager* GetPCOutputManager();*/
-	S100Layer* GetS100Layer();
+	//S100Layer* GetS100Layer();
 };

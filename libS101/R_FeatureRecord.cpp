@@ -10,6 +10,7 @@
 #include "FASC.h"
 #include "MASK.h"
 #include "SPAS.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

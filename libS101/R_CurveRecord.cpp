@@ -9,6 +9,7 @@
 #include "F_INAS.h"
 #include "IC2D.h"
 #include "PTAS.h"
+#include "DRDirectory.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 
