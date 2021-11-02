@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "R_MultiPointRecord.h"
 #include "DRDirectoryInfo.h"
 #include "F_C2IL.h"
@@ -10,7 +10,7 @@
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 
-#include"..\\DLL_MessageProcess\\DLL_MessageProcess.h"
+//#include"..\\DLL_MessageProcess\\DLL_MessageProcess.h"
 
 R_MultiPointRecord::R_MultiPointRecord(void)
 {
@@ -87,7 +87,7 @@ BOOL R_MultiPointRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 		
 		if (*(buf++) != 0x1E)
 		{
-			KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
+			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
 		}
 	}
 	return TRUE;

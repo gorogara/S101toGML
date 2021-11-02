@@ -87,6 +87,147 @@
     <ClInclude Include="R_DSCRS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DRDirectoryInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRDirectoryInfoWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRDirectoryWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_GDAT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRDirectory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NonPrintableCharacter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ISO8211Fuc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_ATTR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeWithNumericCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRReaderWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CSID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_SPAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATTR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_MASK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MASK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_RIAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RIAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_SRID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_PRID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CSAX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_PROJ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_IRID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSAX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_FOID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_FRID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrientedCurveRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectName.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="S100Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="S100CatalogFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DDR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="R_CurveRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="R_CompositeRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CCID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CCOC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CUCO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_C2IT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_C3IT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUCO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CRID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_C2IL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_COCC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_C3IL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_PTAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PTAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_SECC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F_SEGH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -150,6 +291,141 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="R_DSCRS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_GDAT.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRDirectoryInfoWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRDirectoryInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRDirectoryWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ISO8211Fuc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_ATTR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeWithNumericCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRReaderWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CSID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_SPAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATTR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_MASK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MASK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_RIAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RIAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_SRID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_PRID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CSAX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_PROJ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_IRID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSAX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FOID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FRID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrientedCurveRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectName.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="S100Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="S100CatalogFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DDR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R_CurveRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R_CompositeRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CCID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CCOC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CUCO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_C2IT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_C3IT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CUCO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CRID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_C2IL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_COCC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_C3IL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_PTAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PTAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_SECC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_SEGH.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

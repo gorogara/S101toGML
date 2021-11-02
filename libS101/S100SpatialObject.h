@@ -16,14 +16,14 @@ public:
 
 public:
 	S100::S100_DataProduct S100Product = S100::S100_DataProduct::S_100;
-	PCOutputSchemaManager* pcManager = nullptr;
+	//PCOutputSchemaManager* pcManager = nullptr;
 
 public:
 	void SetS100Product(S100::S100_DataProduct value);
 	S100::S100_DataProduct GetS100Product();
 	//void SetMBR(MBR& value);
 	//MBR GetMBR();
-	void SetPCOutputManager(PCOutputSchemaManager* value);
-	PCOutputSchemaManager* GetPCOutputManager();
+	/*void SetPCOutputManager(PCOutputSchemaManager* value);
+	PCOutputSchemaManager* GetPCOutputManager();*/
 	S100Layer* GetS100Layer();
 };

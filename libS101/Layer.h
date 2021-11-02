@@ -1,9 +1,10 @@
 #pragma once
-
 #include "Namespace_GISLibrary.h"
 #include "Enum_S100_FileType.h"
 
-#include "..\\GeoMetryLibrary\\MBR.h"
+#undef _WINDOWS_
+#include <afxext.h>
+//#include "..\\GeoMetryLibrary\\MBR.h"
 
 class SpatialObject;
 class Scaler;
@@ -50,9 +51,9 @@ public:
 	CString GetLayerPath();
 	CString GetLayerType();
 
-	void SetMBR(MBR& value);
-	MBR GetMBR();
-	MBR* GetMBRPointer();
+	//void SetMBR(MBR& value);
+	//MBR GetMBR();
+	//MBR* GetMBRPointer();
 	void SetSpatialObject(SpatialObject* value);
 	SpatialObject* GetSpatialObject();
 	bool IsS100Layer();

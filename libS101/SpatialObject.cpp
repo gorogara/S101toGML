@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "SpatialObject.h"
 
 SpatialObject::SpatialObject(void)
@@ -9,12 +9,12 @@ SpatialObject::~SpatialObject(void)
 {
 }
 
-bool SpatialObject::Open(std::wstring _filepath)
+bool SpatialObject::Open(CString _filepath)
 {
 	return true;
 }
 
-void SpatialObject::Save(std::wstring filename, std::wstring extend)
+void SpatialObject::Save(CString filename, CString extend)
 {
 	
 }
@@ -29,7 +29,7 @@ Layer* SpatialObject::GetLayer()
 	return m_pLayer;
 }
 
-void SpatialObject::SetFilePath(std::wstring& value)
+void SpatialObject::SetFilePath(CString& value)
 {
 	m_FilePath = value;
 	int index= value.ReverseFind('\\');
@@ -39,19 +39,19 @@ void SpatialObject::SetFilePath(std::wstring& value)
 	SetFileName(name);
 }
 
-std::wstring SpatialObject::GetFilePath()
+CString SpatialObject::GetFilePath()
 {
 	return m_FilePath;
 	
 }
 
-void SpatialObject::SetFileName(std::wstring& value)
+void SpatialObject::SetFileName(CString& value)
 {
 	m_FileName = value;
 }
 
 
-std::wstring SpatialObject::GetFileName()
+CString SpatialObject::GetFileName()
 {
 	return m_FileName;
 }

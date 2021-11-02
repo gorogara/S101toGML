@@ -3,6 +3,8 @@
 #include "Record.h"
 #include "F_CSID.h"
 
+#include<list>
+
 class F_CRSH;
 class F_CSAX;
 class F_PROJ;

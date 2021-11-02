@@ -6,7 +6,7 @@
 #include "OrientedCurveRecord.h"
 
 #include <map>
-
+#include <list>
 class S101Cell;
 class SGeometry;
 class SENC_Template;
@@ -68,8 +68,8 @@ public:
 public:
 	BOOL ReadRecord(DRDirectoryInfo *dir, BYTE*& buf);
 	BOOL Save(CFile *file);
-	void Draw(CDC *pDC, Scaler *scaler, double offset = 0);
-	void Draw(HDC &hDC, Scaler *scaler, double offset = 0);
+	//void Draw(CDC *pDC, Scaler *scaler, double offset = 0);
+	//void Draw(HDC &hDC, Scaler *scaler, double offset = 0);
 	
 	/*
 	* Drawing Instruction Type
@@ -78,11 +78,11 @@ public:
 	* 3 : Surface Instruction
 	* 4 : Text Instruction
 	*/
-	void Draw(HDC &hDC, Scaler *scaler, int type, int priority, double offset = 0);
+	//void Draw(HDC &hDC, Scaler *scaler, int type, int priority, double offset = 0);
 	void CreateCS(S101Cell *cell, CString csName, bool bSENC);
-	MBR GetMBR();
+	//MBR GetMBR();
 	int GetRCID();
-	void GetXYPointOfTheVisiblePoints(double &x, double &y);
+	//void GetXYPointOfTheVisiblePoints(double &x, double &y);
 	int GetAttributeIndex(ATTR* value);
 	int GetAssociationCount();
 	int GetFeatureAssociationCount();

@@ -1,4 +1,6 @@
 #pragma once
+#undef _WINDOWS_
+#include <afxext.h>
 
 class Field
 {

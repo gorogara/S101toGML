@@ -1,7 +1,7 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "RecordName.h"
 
-
+#include <string>
 RecordName::RecordName(void)
 {
 }

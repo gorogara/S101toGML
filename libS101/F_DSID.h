@@ -1,11 +1,11 @@
 #pragma once
-
 #include "Field.h"
 #include "RecordName.h"
 
-
 #include <vector>
 
+#undef _WINDOWS_
+#include <afxext.h>
 // Dataset Identification Field
 
 class F_DSID : Field
@@ -27,10 +27,10 @@ public:
 	CString m_dslg; //datasetLanguage(고정값 있음) //EN
 	CString m_dsab; //datasetAbstract
 	CString m_dsed; //dataset Edition
-	std::vector<int> m_dstc;
+	CArray<int> m_dstc;
 
 public:
 	void ReadField(BYTE *&buf);
-	bool Save(CFile *file);
+	BOOL Save(CFile *file);
 	int GetFieldLength();
 };

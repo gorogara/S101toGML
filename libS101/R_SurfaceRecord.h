@@ -3,6 +3,9 @@
 #include "R_VectorRecord.h"
 #include "F_SRID.h"
 
+#undef _WINDOWS_
+#include <afxext.h>
+#include <list>
 class F_INAS;
 class F_RIAS;
 

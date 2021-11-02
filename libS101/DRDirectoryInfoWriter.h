@@ -2,7 +2,8 @@
 #include "DRDirectoryInfo.h"
 #include "NonPrintableCharacter.h"
 
-
+#undef _WINDOWS_
+#include <afxext.h>
 class DRDirectoryInfoWriter : public DRDirectoryInfo
 {
 public:

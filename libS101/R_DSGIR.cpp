@@ -1,11 +1,13 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "R_DSGIR.h"
 #include "F_ATTR.h"
 #include "CodeWithNumericCode.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 
-#include "..\\DLL_MessageProcess\\DLL_MessageProcess.h"
+#undef _WINDOWS_
+#include <afxext.h>
+//#include "..\\DLL_MessageProcess\\DLL_MessageProcess.h"
 
 R_DSGIR::R_DSGIR()
 {
@@ -133,7 +135,7 @@ BOOL R_DSGIR::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 }
 
 
-BOOL R_DSGIR::Save(CFile *file)
+bool R_DSGIR::Save(CFile *file)
 {
 	DRReaderWriter dr;
 	DRDirectoryInfoWriter dirInfo;

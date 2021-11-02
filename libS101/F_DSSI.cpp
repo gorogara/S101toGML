@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "F_DSSI.h"
 #include "ISO8211Fuc.h"
 #include "NonPrintableCharacter.h"
@@ -44,7 +44,7 @@ void F_DSSI::ReadField(BYTE *&buf)
 	m_nofr = buf2uint(buf, 4);
 }
 
-bool F_DSSI::Save(CFile *file)
+BOOL F_DSSI::Save(CFile *file)
 {
 	
 	file->Write(&m_dcox, 8);

@@ -3,7 +3,7 @@
 #include "libS101.h"
 #include "R_DSGIR.h"
 #include "R_DSCRS.h"
-
+#include "DDR"
 #include "S100SpatialObject.h"
 
 #include <string>
@@ -28,10 +28,10 @@ namespace libS101
 		S101() {}
 		virtual ~S101() {}
 
-		bool Open(std::wstring path);
+		bool Open(CString _filepath);
 
 	public:
-		
+		DDR m_S101DDR;
 		// Dataset General Information Record 
 		R_DSGIR m_dsgir;
 
@@ -67,6 +67,7 @@ namespace libS101
 		bool MakeLineData(R_FeatureRecord* fe);
 		bool MakeAreaData(R_FeatureRecord* fe);
 		bool Check();
+		BOOL ReadDDR(BYTE*& buf);
 
 		int GetMetaCount_InformationRecord();
 		int GetMetaCount_PointRecord();

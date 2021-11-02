@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "R_PointRecord.h"
 #include "DRDirectoryInfo.h"
 #include "F_C2IT.h"

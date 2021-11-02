@@ -50,7 +50,7 @@ int main()
 
 
             libS101::S101 a;
-           // a.Open();
+            a.Open();
             //a.Test();
         }
     }

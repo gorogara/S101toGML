@@ -28,16 +28,16 @@ public:
 	F_CodeWithNumericCode *m_arcs = nullptr;
 
 public:
-	bool ReadRecord(DRDirectoryInfo *dir, BYTE*& buf);
+	BOOL ReadRecord(DRDirectoryInfo *dir, BYTE*& buf);
 	bool Save(CFile *file);
 
 	// 뉴메릭 코드로 코드를 가져오는 함수
-	std::wstring GetFeatureCode(int numericCode);
-	std::wstring GetInformationCode(int numericCode);
-	std::wstring GetAttributeCode(int numericCode);
-	std::wstring GetInformationAssociationCode(int numericCode);
-	std::wstring GetFeatureAssociationCode(int numericCode);
-	std::wstring GetAssociationRoleCode(int numericCode);
+	CString GetFeatureCode(int numericCode);
+	CString GetInformationCode(int numericCode);
+	CString GetAttributeCode(int numericCode);
+	CString GetInformationAssociationCode(int numericCode);
+	CString GetFeatureAssociationCode(int numericCode);
+	CString GetAssociationRoleCode(int numericCode);
 
 	//void Update(R_DSGIR* record);
 };

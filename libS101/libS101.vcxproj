@@ -120,10 +120,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;LIBS101_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;LIBS101_EXPORTS;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);WIN32;_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,10 +138,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;LIBS101_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;LIBS101_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);WIN32;_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -151,18 +153,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ATTR.h" />
+    <ClInclude Include="CodeWithNumericCode.h" />
+    <ClInclude Include="CSAX.h" />
+    <ClInclude Include="CUCO.h" />
+    <ClInclude Include="DDR.h" />
+    <ClInclude Include="DRDirectory.h" />
+    <ClInclude Include="DRDirectoryInfo.h" />
+    <ClInclude Include="DRDirectoryInfoWriter.h" />
+    <ClInclude Include="DRDirectoryWriter.h" />
+    <ClInclude Include="DRReaderWriter.h" />
     <ClInclude Include="Enum_S100_FileType.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="F_ATTR.h" />
+    <ClInclude Include="F_C2IL.h" />
+    <ClInclude Include="F_C2IT.h" />
+    <ClInclude Include="F_C3IL.h" />
+    <ClInclude Include="F_C3IT.h" />
+    <ClInclude Include="F_CCID.h" />
+    <ClInclude Include="F_CCOC.h" />
+    <ClInclude Include="F_COCC.h" />
+    <ClInclude Include="F_CRID.h" />
+    <ClInclude Include="F_CSAX.h" />
+    <ClInclude Include="F_CSID.h" />
+    <ClInclude Include="F_CUCO.h" />
     <ClInclude Include="F_DSID.h" />
     <ClInclude Include="F_DSSI.h" />
+    <ClInclude Include="F_FOID.h" />
+    <ClInclude Include="F_FRID.h" />
+    <ClInclude Include="F_GDAT.h" />
+    <ClInclude Include="F_IRID.h" />
+    <ClInclude Include="F_MASK.h" />
     <ClInclude Include="F_MRID.h" />
+    <ClInclude Include="F_PRID.h" />
+    <ClInclude Include="F_PROJ.h" />
+    <ClInclude Include="F_PTAS.h" />
+    <ClInclude Include="F_RIAS.h" />
+    <ClInclude Include="F_SECC.h" />
+    <ClInclude Include="F_SEGH.h" />
+    <ClInclude Include="F_SPAS.h" />
+    <ClInclude Include="F_SRID.h" />
+    <ClInclude Include="ISO8211Fuc.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="libS101.h" />
+    <ClInclude Include="MASK.h" />
     <ClInclude Include="Namespace_GISLibrary.h" />
+    <ClInclude Include="NonPrintableCharacter.h" />
+    <ClInclude Include="ObjectName.h" />
+    <ClInclude Include="OrientedCurveRecord.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PTAS.h" />
     <ClInclude Include="Record.h" />
     <ClInclude Include="RecordName.h" />
+    <ClInclude Include="RIAS.h" />
+    <ClInclude Include="R_CompositeRecord.h" />
+    <ClInclude Include="R_CurveRecord.h" />
     <ClInclude Include="R_DSCRS.h" />
     <ClInclude Include="R_DSGIR.h" />
     <ClInclude Include="R_FeatureRecord.h" />
@@ -171,26 +217,71 @@
     <ClInclude Include="R_PointRecord.h" />
     <ClInclude Include="R_SurfaceRecord.h" />
     <ClInclude Include="R_VectorRecord.h" />
+    <ClInclude Include="S100CatalogFile.h" />
     <ClInclude Include="S100SpatialObject.h" />
+    <ClInclude Include="S100Utilities.h" />
     <ClInclude Include="S100_Members.h" />
     <ClInclude Include="S101.h" />
+    <ClInclude Include="SPAS.h" />
     <ClInclude Include="SpatialObject.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ATTR.cpp" />
+    <ClCompile Include="CodeWithNumericCode.cpp" />
+    <ClCompile Include="CSAX.cpp" />
+    <ClCompile Include="CUCO.cpp" />
+    <ClCompile Include="DDR.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="DRDirectoryInfo.cpp" />
+    <ClCompile Include="DRDirectoryInfoWriter.cpp" />
+    <ClCompile Include="DRDirectoryWriter.cpp" />
+    <ClCompile Include="DRReaderWriter.cpp" />
     <ClCompile Include="Field.cpp" />
+    <ClCompile Include="F_ATTR.cpp" />
+    <ClCompile Include="F_C2IL.cpp" />
+    <ClCompile Include="F_C2IT.cpp" />
+    <ClCompile Include="F_C3IL.cpp" />
+    <ClCompile Include="F_C3IT.cpp" />
+    <ClCompile Include="F_CCID.cpp" />
+    <ClCompile Include="F_CCOC.cpp" />
+    <ClCompile Include="F_COCC.cpp" />
+    <ClCompile Include="F_CRID.cpp" />
+    <ClCompile Include="F_CSAX.cpp" />
+    <ClCompile Include="F_CSID.cpp" />
+    <ClCompile Include="F_CUCO.cpp" />
     <ClCompile Include="F_DSID.cpp" />
     <ClCompile Include="F_DSSI.cpp" />
+    <ClCompile Include="F_FOID.cpp" />
+    <ClCompile Include="F_FRID.cpp" />
+    <ClCompile Include="F_GDAT.cpp" />
+    <ClCompile Include="F_IRID.cpp" />
+    <ClCompile Include="F_MASK.cpp" />
     <ClCompile Include="F_MRID.cpp" />
+    <ClCompile Include="F_PRID.cpp" />
+    <ClCompile Include="F_PROJ.cpp" />
+    <ClCompile Include="F_PTAS.cpp" />
+    <ClCompile Include="F_RIAS.cpp" />
+    <ClCompile Include="F_SECC.cpp" />
+    <ClCompile Include="F_SEGH.cpp" />
+    <ClCompile Include="F_SPAS.cpp" />
+    <ClCompile Include="F_SRID.cpp" />
+    <ClCompile Include="ISO8211Fuc.cpp" />
     <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="MASK.cpp" />
+    <ClCompile Include="ObjectName.cpp" />
+    <ClCompile Include="OrientedCurveRecord.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PTAS.cpp" />
     <ClCompile Include="Record.cpp" />
     <ClCompile Include="RecordName.cpp" />
+    <ClCompile Include="RIAS.cpp" />
+    <ClCompile Include="R_CompositeRecord.cpp" />
+    <ClCompile Include="R_CurveRecord.cpp" />
     <ClCompile Include="R_DSCRS.cpp" />
     <ClCompile Include="R_DSGIR.cpp" />
     <ClCompile Include="R_FeatureRecord.cpp" />
@@ -199,9 +290,12 @@
     <ClCompile Include="R_PointRecord.cpp" />
     <ClCompile Include="R_SurfaceRecord.cpp" />
     <ClCompile Include="R_VectorRecord.cpp" />
+    <ClCompile Include="S100CatalogFile.cpp" />
     <ClCompile Include="S100SpatialObject.cpp" />
+    <ClCompile Include="S100Utilities.cpp" />
     <ClCompile Include="S100_Members.cpp" />
     <ClCompile Include="S101.cpp" />
+    <ClCompile Include="SPAS.cpp" />
     <ClCompile Include="SpatialObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

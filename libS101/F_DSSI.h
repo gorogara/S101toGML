@@ -1,6 +1,9 @@
 #pragma once
+
 #include "Field.h"
 
+#undef _WINDOWS_
+#include <afxext.h>
 class F_DSSI : Field
 {
 public:
@@ -24,6 +27,6 @@ public:
 
 public:
 	void ReadField(BYTE *&buf);
-	bool Save(CFile *file);
+	BOOL Save(CFile *file);
 	int GetFieldLength();
 };

@@ -1,7 +1,10 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "F_MRID.h"
 #include "ISO8211Fuc.h"
 #include "NonPrintableCharacter.h"
+
+#undef _WINDOWS_
+#include <afxext.h>
 
 F_MRID::F_MRID(void)
 {
@@ -22,7 +25,7 @@ void F_MRID::ReadField(BYTE *&buf)
 	m_rver = buf2uint(buf, 2);
 	m_ruin = *(buf++);
 }
-bool F_MRID::Save(CFile *file)
+BOOL F_MRID::Save(CFile *file)
 {
 	file->Write(&m_name.RCNM, 1);
 	file->Write(&m_name.RCID, 4);

@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "R_InformationRecord.h"
 #include "DRDirectoryInfo.h"
 #include "F_INAS.h"
@@ -28,7 +28,7 @@ R_InformationRecord::~R_InformationRecord(void)
 	m_attr.clear();
 }
 
-bool R_InformationRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
+BOOL R_InformationRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 {
 	USES_CONVERSION;
 	int i = 0, j = 0, cnt;
@@ -84,7 +84,7 @@ bool R_InformationRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 	return TRUE;
 }
 
-bool R_InformationRecord::Save(CFile *file)
+BOOL R_InformationRecord::Save(CFile *file)
 {
 	DRReaderWriter dr;
 	DRDirectoryInfoWriter dirInfo;

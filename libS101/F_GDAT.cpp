@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "F_GDAT.h"
 #include "ISO8211Fuc.h"
 #include "NonPrintableCharacter.h"

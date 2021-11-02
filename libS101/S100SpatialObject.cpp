@@ -1,6 +1,6 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "S100SpatialObject.h"
-#include "PCOutputSchemaManager.h"
+//#include "PCOutputSchemaManager.h"
 #include "S100Layer.h"
 
 S100SpatialObject::S100SpatialObject()
@@ -45,16 +45,16 @@ S100::S100_DataProduct S100SpatialObject::GetS100Product()
 //}
 
 
-void S100SpatialObject::SetPCOutputManager(PCOutputSchemaManager* value)
-{
-	pcManager = value;
-}
-
-
-PCOutputSchemaManager* S100SpatialObject::GetPCOutputManager()
-{
-	return pcManager;
-}
+//void S100SpatialObject::SetPCOutputManager(PCOutputSchemaManager* value)
+//{
+//	pcManager = value;
+//}
+//
+//
+//PCOutputSchemaManager* S100SpatialObject::GetPCOutputManager()
+//{
+//	return pcManager;
+//}
 
 S100Layer* S100SpatialObject::GetS100Layer() 
 {

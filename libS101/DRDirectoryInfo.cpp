@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "DRDirectoryInfo.h"
 #include "ISO8211Fuc.h"
 
