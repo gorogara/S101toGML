@@ -9,6 +9,7 @@
 
 #include <iostream>
 
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -43,15 +44,18 @@ int main()
             // source file : S-101 ENC (.000)
             // destination file : GML path (.gml)
 
-            string path = "";
+            //string path = "";
 
-            std::cout << "경로를 입력하세요 : ";
-            cin >> path;
+            //std::cout << "경로를 입력하세요 : ";
+            //cin >> path;
 
 
             libS101::S101 a;
-            //a.Open();
+           // a.Test();
+            a.Open(_T("101KR005X01SW.000"));
             //a.Test();
+
+            std::cout << "완료했습니다 ";
         }
     }
     else

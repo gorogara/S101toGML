@@ -1,6 +1,7 @@
 #pragma once
 #include "Field.h"
 #include "RecordName.h"
+
 class F_FRID : Field
 {
 public:

@@ -6,6 +6,8 @@
 
 #undef _WINDOWS_
 #include <afxext.h>
+
+
 // Dataset Identification Field
 
 class F_DSID : Field

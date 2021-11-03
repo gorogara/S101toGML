@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+//#include "pch.h"
 #include "Enum_S100_FileType.h"
 #include "Namespace_GISLibrary.h"
 

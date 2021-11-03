@@ -1,5 +1,6 @@
 #pragma once
 #include "Field.h"
+
 class F_GDAT :
 	public Field
 {

@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "R_CurveRecord.h"
-#include "DRDirectoryInfo.h"
 #include "F_PTAS.h"
 #include "F_SEGH.h"
 #include "F_SECC.h"
@@ -10,6 +9,7 @@
 #include "IC2D.h"
 #include "PTAS.h"
 #include "DRDirectory.h"
+#include "DRDirectoryInfo.h"
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 

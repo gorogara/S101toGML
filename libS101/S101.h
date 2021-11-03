@@ -29,6 +29,7 @@ namespace libS101
 		virtual ~S101() {}
 
 		bool Open(CString _filepath);
+		//bool Open(std::string _filepath);
 
 	public:
 		//DDR m_S101DDR;
@@ -61,28 +62,28 @@ namespace libS101
 		void InsertSurfaceRecord(__int64 key, R_SurfaceRecord* record);
 		void InsertFeatureRecord(__int64 key, R_FeatureRecord* record);
 
-		bool MakeFullSpatialData();
-		bool MakePointData(R_FeatureRecord* fe);
+		//bool MakeFullSpatialData();
+		/*bool MakePointData(R_FeatureRecord* fe);
 		bool MakeSoundingData(R_FeatureRecord* fe);
 		bool MakeLineData(R_FeatureRecord* fe);
 		bool MakeAreaData(R_FeatureRecord* fe);
-		bool Check();
-		BOOL ReadDDR(BYTE*& buf);
+		bool Check();*/
+		//BOOL ReadDDR(BYTE*& buf);
 
-		int GetMetaCount_InformationRecord();
-		int GetMetaCount_PointRecord();
-		int GetMetaCount_MultiPointRecord();
-		int GetMetaCount_CurveRecord();
-		int GetMetaCount_CompositeCurveRecord();
-		int GetMetaCount_SurfaceRecord();
-		int GetMetaCount_FeatureTypeRecord();
+		//int GetMetaCount_InformationRecord();
+		//int GetMetaCount_PointRecord();
+		//int GetMetaCount_MultiPointRecord();
+		//int GetMetaCount_CurveRecord();
+		//int GetMetaCount_CompositeCurveRecord();
+		//int GetMetaCount_SurfaceRecord();
+		//int GetMetaCount_FeatureTypeRecord();
 
-		int GetCount_InformationRecord();
-		int GetCount_PointRecord();
-		int GetCount_MultiPointRecord();
-		int GetCount_CurveRecord();
-		int GetCount_CompositeCurveRecord();
-		int GetCount_SurfaceRecord();
-		int GetCount_FeatureTypeRecord();
+		//int GetCount_InformationRecord();
+		//int GetCount_PointRecord();
+		//int GetCount_MultiPointRecord();
+		//int GetCount_CurveRecord();
+		//int GetCount_CompositeCurveRecord();
+		//int GetCount_SurfaceRecord();
+		//int GetCount_FeatureTypeRecord();
 	};
 }

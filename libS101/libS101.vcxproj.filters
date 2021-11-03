@@ -254,9 +254,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -316,9 +313,6 @@
     </ClCompile>
     <ClCompile Include="R_DSCRS.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F_GDAT.cpp">
-      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="DRDirectoryInfoWriter.cpp">
       <Filter>Source Files</Filter>
@@ -474,6 +468,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="F_CRSH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_GDAT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

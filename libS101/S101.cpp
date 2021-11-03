@@ -1,7 +1,5 @@
 #include "pch.h"
-
 #include "S101.h"
-
 #include "R_CompositeRecord.h"
 #include "R_SurfaceRecord.h"
 #include "R_InformationRecord.h"
@@ -9,12 +7,13 @@
 #include "R_CurveRecord.h"
 #include "R_FeatureRecord.h"
 #include "R_PointRecord.h"
-
 #include "DRDirectory.h"
 #include "DRDirectoryInfo.h"
 
 #undef _WINDOWS_
 #include <afxext.h>
+
+
 #include <fstream>
 #include <iostream>
 
@@ -28,7 +27,18 @@ namespace libS101
 
 	#pragma warning(disable:4018)
 	bool S101::Open(CString _filepath) // Dataset 시작, .000 파일읽음
+	//bool S101::Open(std::string path) // Dataset 시작, .000 파일읽음
 	{
+		char path[128];
+		if (GetCurrentDirectoryA(128, path) > 0) 
+		{
+
+			_filepath = path + _T("//File//") +_filepath;
+			int i = 0;
+		}
+		
+
+		//CString _filePath = CA2CT(path.c_str());
 		SetFilePath(_filepath);
 
 		//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"DataSET start", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
@@ -60,7 +70,7 @@ namespace libS101
 
 			file.Close();
 
-			ReadDDR(pBuf);
+			//ReadDDR(pBuf);
 
 			DRDirectoryInfo drDir;
 
@@ -160,10 +170,10 @@ namespace libS101
 
 			delete[] sBuf;
 
-			MakeFullSpatialData();
+			//MakeFullSpatialData();
 
 			//CalcMBR();
-			Check();
+			//Check();
 
 			return true;
 		}
@@ -627,7 +637,7 @@ namespace libS101
 	//	return TRUE;
 	//}
 
-	bool S101::Check()
+	/*bool S101::Check()
 	{
 		if (GetCount_InformationRecord() != GetMetaCount_InformationRecord())
 		{
@@ -672,7 +682,7 @@ namespace libS101
 		}
 
 		return true;
-	}
+	}*/
 	//BOOL S101::ReadDDR(BYTE*& buf)
 	//{
 	//	int size = atoi(buf, 5);
@@ -685,61 +695,61 @@ namespace libS101
 	//	return TRUE;
 	//}
 
-	int S101::GetCount_InformationRecord()
-	{
-		return (int)vecInformation.size();
-	}
-	int S101::GetCount_PointRecord()
-	{
-		return (int)vecPoint.size();
-	}
-	int S101::GetCount_MultiPointRecord()
-	{
-		return (int)vecMultiPoint.size();
-	}
-	int S101::GetCount_CurveRecord()
-	{
-		return (int)vecCurve.size();
-	}
-	int S101::GetCount_CompositeCurveRecord()
-	{
-		return (int)vecComposite.size();
-	}
-	int S101::GetCount_SurfaceRecord()
-	{
-		return (int)vecSurface.size();
-	}
-	int S101::GetCount_FeatureTypeRecord()
-	{
-		return (int)vecFeature.size();
-	}
+	//int S101::GetCount_InformationRecord()
+	//{
+	//	return (int)vecInformation.size();
+	//}
+	//int S101::GetCount_PointRecord()
+	//{
+	//	return (int)vecPoint.size();
+	//}
+	//int S101::GetCount_MultiPointRecord()
+	//{
+	//	return (int)vecMultiPoint.size();
+	//}
+	//int S101::GetCount_CurveRecord()
+	//{
+	//	return (int)vecCurve.size();
+	//}
+	//int S101::GetCount_CompositeCurveRecord()
+	//{
+	//	return (int)vecComposite.size();
+	//}
+	//int S101::GetCount_SurfaceRecord()
+	//{
+	//	return (int)vecSurface.size();
+	//}
+	//int S101::GetCount_FeatureTypeRecord()
+	//{
+	//	return (int)vecFeature.size();
+	//}
 
-	int S101::GetMetaCount_InformationRecord()
-	{
-		return m_dsgir.m_dssi.m_noir;
-	}
-	int S101::GetMetaCount_PointRecord()
-	{
-		return m_dsgir.m_dssi.m_nopn;
-	}
-	int S101::GetMetaCount_MultiPointRecord()
-	{
-		return m_dsgir.m_dssi.m_nomn;
-	}
-	int S101::GetMetaCount_CurveRecord()
-	{
-		return m_dsgir.m_dssi.m_nocn;
-	}
-	int S101::GetMetaCount_CompositeCurveRecord()
-	{
-		return m_dsgir.m_dssi.m_noxn;
-	}
-	int S101::GetMetaCount_SurfaceRecord()
-	{
-		return m_dsgir.m_dssi.m_nosn;
-	}
-	int S101::GetMetaCount_FeatureTypeRecord()
-	{
-		return m_dsgir.m_dssi.m_nofr;
-	}
+	//int S101::GetMetaCount_InformationRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_noir;
+	//}
+	//int S101::GetMetaCount_PointRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_nopn;
+	//}
+	//int S101::GetMetaCount_MultiPointRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_nomn;
+	//}
+	//int S101::GetMetaCount_CurveRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_nocn;
+	//}
+	//int S101::GetMetaCount_CompositeCurveRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_noxn;
+	//}
+	//int S101::GetMetaCount_SurfaceRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_nosn;
+	//}
+	//int S101::GetMetaCount_FeatureTypeRecord()
+	//{
+	//	return m_dsgir.m_dssi.m_nofr;
+	//}
 }

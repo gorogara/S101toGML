@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "ObjectName.h"
 
-
 ObjectName::ObjectName(void)
 {
 	m_agen = 0;

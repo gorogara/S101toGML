@@ -1,7 +1,6 @@
 #pragma once
 
 class DRDirectoryInfo;
-
 class Record
 {
 public:

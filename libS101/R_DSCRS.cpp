@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "R_DSCRS.h"
-#include "DRDirectoryInfo.h"
 #include "F_VDAT.h"
 #include "F_CRSH.h"
 #include "F_CSAX.h"
 #include "F_PROJ.h"
 #include "F_GDAT.h"
 #include "DRReaderWriter.h"
+#include "DRDirectoryInfo.h"
 #include "DRDirectory.h"
 #include "DRDirectoryInfoWriter.h"
 

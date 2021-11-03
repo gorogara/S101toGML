@@ -1,4 +1,5 @@
 #pragma once
+
 #include "DRDirectoryInfo.h"
 #include "NonPrintableCharacter.h"
 #include "DRReader.h"
