@@ -52,7 +52,19 @@ int main()
 
             libS101::S101 a;
            // a.Test();
-            a.Open(_T("101KR005X01SW.000"));
+
+            CString filepath;
+            char path[128];
+          
+            if (GetCurrentDirectoryA(128, path) > 0)
+            {
+                
+                //int i = 0;
+                filepath.Format(_T("%S\\File\\101KR005X01SW.000"),path);
+            }
+
+
+            a.Open(filepath);
             //a.Test();
 
             std::cout << "완료했습니다 ";

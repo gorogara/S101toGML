@@ -3,8 +3,8 @@
 #include "libS101.h"
 #include "R_DSGIR.h"
 #include "R_DSCRS.h"
-//#include "DDR"
 #include "S100SpatialObject.h"
+#include "DDR.h"
 
 #include <string>
 #include <vector>
@@ -18,9 +18,11 @@ class R_CompositeRecord;
 class R_SurfaceRecord;
 class R_FeatureRecord;
 
+
+
+
 namespace libS101
 {
-	
 	// aka GISLibrary::S101Cell
 	class LIBS101_API S101 : public S100SpatialObject
 	{
@@ -32,7 +34,7 @@ namespace libS101
 		//bool Open(std::string _filepath);
 
 	public:
-		//DDR m_S101DDR;
+		DDR m_S101DDR;
 		// Dataset General Information Record 
 		R_DSGIR m_dsgir;
 
@@ -62,6 +64,7 @@ namespace libS101
 		void InsertSurfaceRecord(__int64 key, R_SurfaceRecord* record);
 		void InsertFeatureRecord(__int64 key, R_FeatureRecord* record);
 
+		BOOL ReadDDR(BYTE*& buf);
 		//bool MakeFullSpatialData();
 		/*bool MakePointData(R_FeatureRecord* fe);
 		bool MakeSoundingData(R_FeatureRecord* fe);

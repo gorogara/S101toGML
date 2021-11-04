@@ -9,6 +9,7 @@
 #include "R_PointRecord.h"
 #include "DRDirectory.h"
 #include "DRDirectoryInfo.h"
+#include "ISO8211Fuc.h"
 
 #undef _WINDOWS_
 #include <afxext.h>
@@ -29,13 +30,6 @@ namespace libS101
 	bool S101::Open(CString _filepath) // Dataset 시작, .000 파일읽음
 	//bool S101::Open(std::string path) // Dataset 시작, .000 파일읽음
 	{
-		char path[128];
-		if (GetCurrentDirectoryA(128, path) > 0) 
-		{
-
-			_filepath = path + _T("//File//") +_filepath;
-			int i = 0;
-		}
 		
 
 		//CString _filePath = CA2CT(path.c_str());
@@ -70,7 +64,7 @@ namespace libS101
 
 			file.Close();
 
-			//ReadDDR(pBuf);
+			ReadDDR(pBuf);
 
 			DRDirectoryInfo drDir;
 
@@ -683,17 +677,19 @@ namespace libS101
 
 		return true;
 	}*/
-	//BOOL S101::ReadDDR(BYTE*& buf)
-	//{
-	//	int size = atoi(buf, 5);
-	//	buf -= 5;
 
-	//	m_S101DDR.SetBytes(size, buf);
+	BOOL S101::ReadDDR(BYTE*& buf)
+	{
+		int size = atoi(buf, 5);
+		buf -= 5;
 
-	//	buf += m_S101DDR.GetSize();
+		m_S101DDR.SetBytes(size, buf);
 
-	//	return TRUE;
-	//}
+		buf += m_S101DDR.GetSize();
+
+		return TRUE;
+	}
+
 
 	//int S101::GetCount_InformationRecord()
 	//{

@@ -46,7 +46,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>false</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -54,7 +54,7 @@
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>false</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -162,6 +162,7 @@
     <ClInclude Include="CodeWithNumericCode.h" />
     <ClInclude Include="CSAX.h" />
     <ClInclude Include="CUCO.h" />
+    <ClInclude Include="DDR.h" />
     <ClInclude Include="DRDirectory.h" />
     <ClInclude Include="DRDirectoryInfo.h" />
     <ClInclude Include="DRDirectoryInfoWriter.h" />
@@ -243,6 +244,7 @@
     <ClCompile Include="CodeWithNumericCode.cpp" />
     <ClCompile Include="CSAX.cpp" />
     <ClCompile Include="CUCO.cpp" />
+    <ClCompile Include="DDR.cpp" />
     <ClCompile Include="DRDirectoryInfo.cpp" />
     <ClCompile Include="DRDirectoryInfoWriter.cpp" />
     <ClCompile Include="DRDirectoryWriter.cpp" />
