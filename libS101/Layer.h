@@ -1,6 +1,7 @@
 #pragma once
 #include "Namespace_GISLibrary.h"
 #include "Enum_S100_FileType.h"
+#include "MBR.h"
 
 #undef _WINDOWS_
 #include <afxext.h>
@@ -23,7 +24,7 @@ public:
 	//정보 레이어를 그릴지 안 그릴지 결정합니다.
 	//bool		InfoOn;
 	// 영역정보
-	//MBR			  m_mbr;
+	MBR			  m_mbr;
 	SpatialObject *m_spatialObject = nullptr;
 
 	int scaleMinimum = 0;
@@ -51,8 +52,8 @@ public:
 	CString GetLayerPath();
 	CString GetLayerType();
 
-	//void SetMBR(MBR& value);
-	//MBR GetMBR();
+	void SetMBR(MBR& value);
+	MBR GetMBR();
 	//MBR* GetMBRPointer();
 	void SetSpatialObject(SpatialObject* value);
 	SpatialObject* GetSpatialObject();

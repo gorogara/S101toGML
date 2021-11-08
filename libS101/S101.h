@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 
+#include "..\\extlibs\\pugixml\\include\\pugixml.hpp"
 
 class R_InformationRecord;
 class R_PointRecord;
@@ -19,7 +20,11 @@ class R_SurfaceRecord;
 class R_FeatureRecord;
 
 
-
+class SPoint;
+class SCurve;
+class SSurface;
+class SMultiPoint;
+class SCompositeCurve;
 
 namespace libS101
 {
@@ -31,6 +36,8 @@ namespace libS101
 		virtual ~S101() {}
 
 		bool Open(CString _filepath);
+		void Save(CString _filepath, CString extend);
+
 		//bool Open(std::string _filepath);
 
 	public:
@@ -56,6 +63,7 @@ namespace libS101
 	public:
 
 		void Test();
+		
 		void InsertInformationRecord(__int64 key, R_InformationRecord* record);
 		void InsertPointRecord(__int64 key, R_PointRecord* record);
 		void InsertMultiPointRecord(__int64 key, R_MultiPointRecord* record);
@@ -65,6 +73,52 @@ namespace libS101
 		void InsertFeatureRecord(__int64 key, R_FeatureRecord* record);
 
 		BOOL ReadDDR(BYTE*& buf);
+		void SetInformationsType(pugi::xml_document* doc, pugi::xml_node parentNode, std::string productNamespace);
+		void GmlifileMakeByPugi(CString _filePath);
+		void SetFeaturesType(pugi::xml_document* document, pugi::xml_node parentNode, std::string productNamespace);
+		void SetVector(pugi::xml_node parentNode, R_FeatureRecord* fr);
+		void SetVectorPointsType(pugi::xml_node parentNode, SPoint* p);
+		void SetVectorMultiPointsType(pugi::xml_node parentNode, SMultiPoint* p);
+		void SetVectorCurvesType(pugi::xml_node parentNode, SCurve* p);
+		void SetVectorCompositeCurvesType(pugi::xml_node parentNode, SCompositeCurve* p);
+		void SetVectorSurfacesType(pugi::xml_node parentNode, SSurface* p);
+		void SetFeaturesTypeRelation_v2(pugi::xml_node rootNode);
+		void SetInformationsTypeRelation_v2(pugi::xml_node parentNode);
+		void SetAttributeType(pugi::xml_document* doc, pugi::xml_node parentNode, std::list<F_ATTR*>* f_attrList);
+	
+		std::string GetEncodingSpecificationToString();
+		CString GetEncodingSpecification();
+
+		std::string GetDatasetTitleToString();
+		CString GetDatasetTitle();
+
+		std::string GetDatasetEditionToString();
+		CString GetEncodingSpecificationEdition();
+		CString GetDatasetEdition();
+
+		CString GetDatasetReferenceDate();
+		std::string GetEncodingSpecificationEditionToString();
+
+		CString GetProductIdentifier();
+		std::string GetProductIdentifierToString();
+		std::string GetDatasetReferenceDataToString();
+
+		CString GetApplicationProfile();
+		std::string GetApplicationProfileToString();
+
+		CString GetDatasetFileIdentifier();
+		std::string GetDatasetFileIdentifierToString();
+
+		CString GetProductEdition();
+		std::string GetProductEditionToString();
+
+		CString GetDatasetLanguage();
+		std::string GetDatasetLanguageToString();
+
+		CString GetDatasetAbstract();
+		std::string GetDatasetAbstractToString();
+
+
 		//bool MakeFullSpatialData();
 		/*bool MakePointData(R_FeatureRecord* fe);
 		bool MakeSoundingData(R_FeatureRecord* fe);

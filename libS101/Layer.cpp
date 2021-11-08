@@ -319,18 +319,18 @@ CString Layer::GetLayerType()
 }
 
 
-//void Layer::SetMBR(MBR& value)
-//{
-//	m_mbr.SetMBR(value);
-//}
-//
-//
-//MBR Layer::GetMBR()
-//{
-//	return m_mbr;
-//}
-//
-//
+void Layer::SetMBR(MBR& value)
+{
+	m_mbr.SetMBR(value);
+}
+
+
+MBR Layer::GetMBR()
+{
+	return m_mbr;
+}
+
+
 //MBR* Layer::GetMBRPointer()
 //{
 //	return &m_mbr;

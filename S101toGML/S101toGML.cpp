@@ -65,7 +65,7 @@ int main()
 
 
             a.Open(filepath);
-            //a.Test();
+            a.Save();
 
             std::cout << "완료했습니다 ";
         }
