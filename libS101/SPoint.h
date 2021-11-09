@@ -1,7 +1,9 @@
 #pragma once
 
 #include "SGeometry.h"
-#include "..\\GeoMetryLibrary\\GeoPoint.h"
+#include "GeoPoint.h"
+
+//#include "..\\GeoMetryLibrary\\GeoPoint.h"
 
 class SPoint : public SGeometry
 {

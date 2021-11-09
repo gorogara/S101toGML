@@ -1,6 +1,6 @@
-#include "StdAfx.h"
+#include "pch.h"
 #include "GeoPoint.h"
-#include "Scaler.h"
+//#include "Scaler.h"
 
 GeoPoint::GeoPoint()
 {
@@ -24,12 +24,12 @@ void GeoPoint::SetPoint(double _x, double _y)
 	y = _y;
 }
 
-void GeoPoint::DrawGeometry(HDC &hDC, Scaler *scaler, double offset)
-{
-	POINT point;
-	scaler->WorldToDevice(x + offset, y, &(point.x), &(point.y));
-	Ellipse(hDC, point.x - 1, point.y - 1, point.x + 1, point.y + 1);
-}
+//void GeoPoint::DrawGeometry(HDC &hDC, Scaler *scaler, double offset)
+//{
+//	POINT point;
+//	scaler->WorldToDevice(x + offset, y, &(point.x), &(point.y));
+//	Ellipse(hDC, point.x - 1, point.y - 1, point.x + 1, point.y + 1);
+//}
 
 double GeoPoint::GetX()
 {

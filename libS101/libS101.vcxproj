@@ -163,7 +163,6 @@
   <ItemGroup>
     <ClInclude Include="ATTR.h" />
     <ClInclude Include="C3IL.h" />
-    <ClInclude Include="Catalog.h" />
     <ClInclude Include="CodeWithNumericCode.h" />
     <ClInclude Include="CSAX.h" />
     <ClInclude Include="CUCO.h" />
@@ -174,9 +173,9 @@
     <ClInclude Include="DRDirectoryWriter.h" />
     <ClInclude Include="DRReader.h" />
     <ClInclude Include="DRReaderWriter.h" />
+    <ClInclude Include="ENCCommon.h" />
     <ClInclude Include="Enum_S100_FileType.h" />
     <ClInclude Include="FASC.h" />
-    <ClInclude Include="FeatureCatalogue.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="F_ATTR.h" />
@@ -212,13 +211,13 @@
     <ClInclude Include="F_SPAS.h" />
     <ClInclude Include="F_SRID.h" />
     <ClInclude Include="F_VDAT.h" />
+    <ClInclude Include="GeoCommonFuc.h" />
+    <ClInclude Include="Geometry.h" />
     <ClInclude Include="GeoPoint.h" />
     <ClInclude Include="IC2D.h" />
     <ClInclude Include="ISO8211Fuc.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="libS101.h" />
-    <ClInclude Include="ListedValue.h" />
-    <ClInclude Include="ListedValues.h" />
     <ClInclude Include="MASK.h" />
     <ClInclude Include="MBR.h" />
     <ClInclude Include="Namespace_GISLibrary.h" />
@@ -226,7 +225,6 @@
     <ClInclude Include="ObjectName.h" />
     <ClInclude Include="OrientedCurveRecord.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="PortrayalCatalogue.h" />
     <ClInclude Include="PTAS.h" />
     <ClInclude Include="Record.h" />
     <ClInclude Include="RecordName.h" />
@@ -242,18 +240,15 @@
     <ClInclude Include="R_SurfaceRecord.h" />
     <ClInclude Include="R_VectorRecord.h" />
     <ClInclude Include="S100CatalogFile.h" />
-    <ClInclude Include="S100Layer.h" />
     <ClInclude Include="S100SpatialObject.h" />
     <ClInclude Include="S100Utilities.h" />
+    <ClInclude Include="S100_CD_AttributeValueType.h" />
     <ClInclude Include="S100_Members.h" />
     <ClInclude Include="S101.h" />
-    <ClInclude Include="Scaler.h" />
-    <ClInclude Include="SCommonFuction.h" />
     <ClInclude Include="SCompositeCurve.h" />
     <ClInclude Include="SCurve.h" />
+    <ClInclude Include="SCurveHasOrient.h" />
     <ClInclude Include="SGeometry.h" />
-    <ClInclude Include="SimpleAttribute.h" />
-    <ClInclude Include="SimpleAttributes.h" />
     <ClInclude Include="SPAS.h" />
     <ClInclude Include="SpatialObject.h" />
     <ClInclude Include="SPoint.h" />
@@ -264,7 +259,6 @@
   <ItemGroup>
     <ClCompile Include="ATTR.cpp" />
     <ClCompile Include="C3IL.cpp" />
-    <ClCompile Include="Catalog.cpp" />
     <ClCompile Include="CodeWithNumericCode.cpp" />
     <ClCompile Include="CSAX.cpp" />
     <ClCompile Include="CUCO.cpp" />
@@ -274,8 +268,8 @@
     <ClCompile Include="DRDirectoryWriter.cpp" />
     <ClCompile Include="DRReader.cpp" />
     <ClCompile Include="DRReaderWriter.cpp" />
+    <ClCompile Include="ENCCommon.cpp" />
     <ClCompile Include="FASC.cpp" />
-    <ClCompile Include="FeatureCatalogue.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="F_ATTR.cpp" />
     <ClCompile Include="F_C2IL.cpp" />
@@ -310,12 +304,12 @@
     <ClCompile Include="F_SPAS.cpp" />
     <ClCompile Include="F_SRID.cpp" />
     <ClCompile Include="F_VDAT.cpp" />
+    <ClCompile Include="GeoCommonFuc.cpp" />
+    <ClCompile Include="Geometry.cpp" />
     <ClCompile Include="GeoPoint.cpp" />
     <ClCompile Include="IC2D.cpp" />
     <ClCompile Include="ISO8211Fuc.cpp" />
     <ClCompile Include="Layer.cpp" />
-    <ClCompile Include="ListedValue.cpp" />
-    <ClCompile Include="ListedValues.cpp" />
     <ClCompile Include="MASK.cpp" />
     <ClCompile Include="MBR.cpp" />
     <ClCompile Include="ObjectName.cpp" />
@@ -326,7 +320,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="PortrayalCatalogue.cpp" />
     <ClCompile Include="PTAS.cpp" />
     <ClCompile Include="Record.cpp" />
     <ClCompile Include="RecordName.cpp" />
@@ -342,18 +335,15 @@
     <ClCompile Include="R_SurfaceRecord.cpp" />
     <ClCompile Include="R_VectorRecord.cpp" />
     <ClCompile Include="S100CatalogFile.cpp" />
-    <ClCompile Include="S100Layer.cpp" />
     <ClCompile Include="S100SpatialObject.cpp" />
     <ClCompile Include="S100Utilities.cpp" />
+    <ClCompile Include="S100_CD_AttributeValueType.cpp" />
     <ClCompile Include="S100_Members.cpp" />
     <ClCompile Include="S101.cpp" />
-    <ClCompile Include="Scaler.cpp" />
-    <ClCompile Include="SCommonFuction.cpp" />
     <ClCompile Include="SCompositeCurve.cpp" />
     <ClCompile Include="SCurve.cpp" />
+    <ClCompile Include="SCurveHasOrient.cpp" />
     <ClCompile Include="SGeometry.cpp" />
-    <ClCompile Include="SimpleAttribute.cpp" />
-    <ClCompile Include="SimpleAttributes.cpp" />
     <ClCompile Include="SPAS.cpp" />
     <ClCompile Include="SpatialObject.cpp" />
     <ClCompile Include="SPoint.cpp" />

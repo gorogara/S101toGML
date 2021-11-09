@@ -16,7 +16,7 @@ public:
 	void SetMBR();
 
 public:
-	void CreateD2Geometry(ID2D1Factory1* factory);
-	std::list<ID2D1PathGeometry*> GetD2Geometry();
-	std::list<ID2D1PathGeometry*> GetNewD2Geometry(ID2D1Factory1* factory, Scaler* scaler);
+	//void CreateD2Geometry(ID2D1Factory1* factory);
+	//std::list<ID2D1PathGeometry*> GetD2Geometry();
+	//std::list<ID2D1PathGeometry*> GetNewD2Geometry(ID2D1Factory1* factory, Scaler* scaler);
 };

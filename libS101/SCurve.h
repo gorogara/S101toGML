@@ -30,9 +30,9 @@ public:
 	double GetX(int i);
 	double GetY(int i);
 	
-public:
-	void CreateD2Geometry(ID2D1Factory1* factory);
-
-	ID2D1PathGeometry* GetD2Geometry();
-	ID2D1PathGeometry* GetNewD2Geometry(ID2D1Factory1* factory, Scaler* scaler);
+//public:
+//	void CreateD2Geometry(ID2D1Factory1* factory);
+//
+//	ID2D1PathGeometry* GetD2Geometry();
+//	ID2D1PathGeometry* GetNewD2Geometry(ID2D1Factory1* factory, Scaler* scaler);
 };

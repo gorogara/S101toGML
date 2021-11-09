@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "XML_Attribute.h"
 
 #include "..\\extlibs\\pugixml\\include\\pugixml.hpp"

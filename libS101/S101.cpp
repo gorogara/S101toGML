@@ -10,22 +10,25 @@
 #include "DRDirectory.h"
 #include "DRDirectoryInfo.h"
 #include "ISO8211Fuc.h"
-#include "S100Layer.h"
+//#include "S100Layer.h"
 #include "ATTR.h"
 #include "F_INAS.h"
 #include "F_FASC.h"
 #include "CodeWithNumericCode.h"
 #include "F_CodeWithNumericCode.h"
-#include "Catalog.h"
+//#include "Catalog.h"
 
-#include "FeatureCatalogue.h"
-#include "SimpleAttribute.h"
-#include "ListedValues.h"
-#include "ListedValue.h"
+//#include "SimpleAttribute.h"
+//#include "ListedValues.h"
+//#include "ListedValue.h"
 
+#include "SCompositeCurve.h"
 #include "SPoint.h"
 #include "SSurface.h"
 #include "SCurve.h"
+#include "S100_CD_AttributeValueType.h"
+#include "GeoCommonFuc.h"
+#include "SCurveHasOrient.h"
 
 
 #include "..\\LibMFCUtil\\LibMFCUtil.h"
@@ -96,7 +99,7 @@ namespace libS101
 		std::cout << "이거 안나오는거 아니냐" << std::endl;
 	}
 
-	#pragma warning(disable:4018)
+#pragma warning(disable:4018)
 	bool S101::Open(CString _filepath) // Dataset 시작, .000 파일읽음
 	{
 		//CString _filePath = CA2CT(path.c_str());
@@ -115,14 +118,14 @@ namespace libS101
 			BYTE* sBuf = nullptr;
 			BYTE* endOfBuf = nullptr;
 
-			
+
 			LONGLONG fileLength = file.GetLength();
 
 			pBuf = new BYTE[(unsigned int)fileLength];
 			sBuf = pBuf;
 
 			file.Read(pBuf, (unsigned)fileLength);
-			
+
 
 			m_FileType = FILE_S_100_VECTOR;
 			S100Product = S100::S100_DataProduct::S_101;
@@ -242,7 +245,7 @@ namespace libS101
 		return false;
 	}
 
-	void S101::Save(CString _filepath, CString extend) 
+	void S101::Save(CString _filepath, CString extend)
 	{
 		//GML 저장시 이곳으로 넘어오게 됩니다.
 		//objectXmlElementMap.clear();
@@ -266,223 +269,41 @@ namespace libS101
 		pugi::xml_node root;
 		std::string productNamespace; // ex) S101, S124, S201 ...
 
-		//if (gml_namespace != nullptr)
+
+		//Layer* layer = GetS100Layer();
+		//auto s100layer = (S100Layer*)layer;
+
+		//auto feature = s100layer->GetFC();
+		//std::wstring  featureType = feature->GetFeatureCatalogueName();
+
+		//if (featureType.find(L"S-101") != std::wstring::npos)
 		//{
-		//	for each (auto child in *gml_namespace)
-		//	{
-		//		std::wstring name = child.first;
-		//		std::wstring value = child.second;
-		//		if ((name.find(L"Dataset") != std::string::npos) ||
-		//			(name.find(L"DataSet") != std::string::npos))
-		//		{
-		//			std::string namestring;
-		//			namestring.assign(name.begin(), name.end());//string값으로 전환
-		//			root = doc->append_child(namestring.c_str());
-
-		//			auto wProductNamespace = name.substr(0, 4);
-		//			productNamespace = pugi::as_utf8(wProductNamespace);
-		//		}
-		//		else
-		//		{
-		//			std::string namestring;
-		//			namestring.assign(name.begin(), name.end());//string값으로 전환
-
-		//			std::string valuestring;
-		//			valuestring.assign(value.begin(), value.end());
-		//			root.append_attribute(namestring.c_str()) = valuestring.c_str();
-		//		}
-		//	}
+		//	productNamespace = "S101";
+		//	root = doc->append_child("S101:DataSet");
+		//	root.append_attribute("xmlns:S101") = "http://www.iho.int/S101/gml/1.0";
+		//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd";
+		//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
+		//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
+		//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
+		//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
+		//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
+		//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
+		//	root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
 		//}
-		//else
-		//{
-#pragma region 타입별 namespacesetting
-			Layer* layer = GetS100Layer();
-			auto s100layer = (S100Layer*)layer;
 
-			auto feature = s100layer->GetFC();
-			std::wstring  featureType = feature->GetFeatureCatalogueName();
+		productNamespace = "S101";
+		root = doc->append_child("S101:DataSet");
+		root.append_attribute("xmlns:S101") = "http://www.iho.int/S101/gml/1.0";
+		root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd";
+		root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
+		root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
+		root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
+		root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
+		//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
+		root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
+		root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
 
-			if (featureType.find(L"S-101") != std::wstring::npos)
-			{
-				productNamespace = "S101";
-				root = doc->append_child("S101:DataSet");
-				root.append_attribute("xmlns:S101") = "http://www.iho.int/S101/gml/1.0";
-				root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd";
-				root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-				root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-				root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-				root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-				//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-				root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-				root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
-			}
-			//else if (featureType.find(L"S-102") != std::wstring::npos)
-			//{
-			//	productNamespace = "S102";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S102:DataSet");
-			//	root.append_attribute("xmlns:S102") = "http://www.iho.int/S102/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-102/gml/1.0 ../../../schemas/S102/1.0/20170430/S102.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI102_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-104") != std::wstring::npos)
-			//{
-			//	productNamespace = "S104";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S104:DataSet");
-			//	root.append_attribute("xmlns:S104") = "http://www.iho.int/S104/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-104/gml/1.0 ../../../schemas/S104/1.0/20170430/S104.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI104_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-111") != std::wstring::npos)
-			//{
-			//	productNamespace = "S111";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S111:DataSet");
-			//	root.append_attribute("xmlns:S111") = "http://www.iho.int/S111/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-111/gml/1.0 ../../../schemas/S111/1.0/20170430/S111.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI111_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-122") != std::wstring::npos)
-			//{
-			//	productNamespace = "S122";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S122:DataSet");
-			//	root.append_attribute("xmlns:S122") = "http://www.iho.int/S122/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-122/gml/1.0 ../../../schemas/S122/1.0/20170430/S122.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI122_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-123") != std::wstring::npos)
-			//{
-			//	productNamespace = "S123";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S123:DataSet");
-			//	root.append_attribute("xmlns:S123") = "http://www.iho.int/S123/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-123/gml/1.0 ../../../schemas/S123/1.0/20170430/S123.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI123_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-124") != std::wstring::npos)
-			//{
-			//	productNamespace = "S124";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S124:DataSet");
-			//	root.append_attribute("xmlns:S124") = "http://www.iho.int/S124/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-124/gml/1.0 ../../../schemas/S124/1.0/20170430/S124.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI124_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-127") != std::wstring::npos)
-			//{
-			//	productNamespace = "S127";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S127:DataSet");
-			//	root.append_attribute("xmlns:S127") = "http://www.iho.int/S127/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-127/gml/1.0 ../../../schemas/S127/1.0/20170430/S127.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI127_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-129") != std::wstring::npos)
-			//{
-			//	productNamespace = "S129";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S129:DataSet");
-			//	root.append_attribute("xmlns:S129") = "http://www.iho.int/S129/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-129/gml/1.0 ../../../schemas/S129/1.0/20170430/S129.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI129_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-201") != std::wstring::npos)
-			//{
-			//	productNamespace = "S201";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S201:DataSet");
-			//	root.append_attribute("xmlns:S201") = "http://www.iho.int/S201/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-201/gml/1.0 ../../../schemas/S201/1.0/20170430/S201.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI201_TEST002_001";
-			//}
-			//else if (featureType.find(L"S-421") != std::wstring::npos)
-			//{
-			//	productNamespace = "S421";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S421:DataSet");
-			//	root.append_attribute("xmlns:S421") = "http://www.iho.int/S421/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-421/gml/1.0 ../../../schemas/S421/1.0/20170430/S421.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI421_TEST002_001";
-			//}
-			//else
-			//{
-			//	productNamespace = "S123";
-			//	//타입끼리 따로 저장할꺼임
-			//	root = doc->append_child("S123:DataSet");
-			//	root.append_attribute("xmlns:S123") = "http://www.iho.int/S123/gml/1.0";
-			//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-123/gml/1.0 ../../../schemas/S123/1.0/20170430/S123.xsd";
-			//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-			//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-			//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-			//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-			//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-			//	root.append_attribute("gml:id") = "KRNPI123_TEST002_001";
-			//}
-#pragma endregion
-		//}
+
 
 
 		auto boundedBy = root.append_child("gml:boundedBy");
@@ -602,42 +423,62 @@ namespace libS101
 
 	void S101::SetInformationsType(pugi::xml_document* doc, pugi::xml_node parentNode, std::string productNamespace)
 	{
-		__int64 key = 0;
-		R_InformationRecord* ir = NULL;
-		POSITION pos = m_infMap.GetStartPosition();
+		//__int64 key = 0;
+		//R_InformationRecord* ir = NULL;
 
-		auto s100Layer = (S100Layer*)m_pLayer;
+
+		//POSITION pos = vecInformation.GetStartPosition();
+		//POSITION pos = m_infMap.GetStartPosition();
+
+		/*auto s100Layer = (S100Layer*)m_pLayer;
 		auto catalog = s100Layer->GetFC();
 		if (nullptr == catalog)
 		{
 			return;
-		}
+		}*/
 
-		auto fc = catalog->GetFC();
-
-		if (pos != nullptr)
+		//auto fc = catalog->GetFC();
+		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
 		{
-			while (pos != nullptr)
-			{
-				m_infMap.GetNextAssoc(pos, key, ir);
-				CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
-				pugi::xml_node imember = parentNode.append_child("imember");
+			R_InformationRecord* ir = *(itor);
+			CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
+			pugi::xml_node imember = parentNode.append_child("imember");
 
-				auto featureElementName = productNamespace + ":" + LibMFCUtil::CStringToString(informationAcronym);
-				pugi::xml_node informationNode = imember.append_child(featureElementName.c_str());
+			auto featureElementName = productNamespace + ":" + LibMFCUtil::CStringToString(informationAcronym);
+			pugi::xml_node informationNode = imember.append_child(featureElementName.c_str());
 
-				std::string iid = get_information_id_string(ir->m_irid.m_name.RCID);
+			std::string iid = get_information_id_string(ir->m_irid.m_name.RCID);
 
-				informationNode.append_attribute("gml:id") = iid.c_str();
+			informationNode.append_attribute("gml:id") = iid.c_str();
 
-				objectPugiXmlElementMap.insert(std::unordered_map<std::string, pugi::xml_node*>::value_type(iid, &informationNode));
-				SetAttributeType(doc, informationNode, &ir->m_attr);
-			}
+			objectPugiXmlElementMap.insert(std::unordered_map<std::string, pugi::xml_node*>::value_type(iid, &informationNode));
+			SetAttributeType(doc, informationNode, &ir->m_attr);
 		}
-		else
-		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"map start position is null = imember is not making", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
-		}
+
+
+		//if (pos != nullptr)
+		//{
+		//	while (pos != nullptr)
+		//	{
+		//		m_infMap.GetNextAssoc(pos, key, ir);
+		//		CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
+		//		pugi::xml_node imember = parentNode.append_child("imember");
+
+		//		auto featureElementName = productNamespace + ":" + LibMFCUtil::CStringToString(informationAcronym);
+		//		pugi::xml_node informationNode = imember.append_child(featureElementName.c_str());
+
+		//		std::string iid = get_information_id_string(ir->m_irid.m_name.RCID);
+
+		//		informationNode.append_attribute("gml:id") = iid.c_str();
+
+		//		objectPugiXmlElementMap.insert(std::unordered_map<std::string, pugi::xml_node*>::value_type(iid, &informationNode));
+		//		SetAttributeType(doc, informationNode, &ir->m_attr);
+		//	}
+		//}
+		//else
+		//{
+		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"map start position is null = imember is not making", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
+		//}
 
 
 #pragma region 이전코드
@@ -722,59 +563,71 @@ namespace libS101
 
 	void S101::SetFeaturesType(pugi::xml_document* document, pugi::xml_node parentNode, std::string productNamespace)
 	{
-		_int64 key = 0;
-		R_FeatureRecord* fr = nullptr;
-		POSITION pos = m_feaMap.GetStartPosition();
+		//_int64 key = 0;
+		//R_FeatureRecord* fr = nullptr;
 
-		if (pos != nullptr)
+		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
-			while (pos != nullptr)
-			{
-				//map의 가장 첫번째 값을 가지고옵니다.
-				m_feaMap.GetNextAssoc(pos, key, fr);
+			R_FeatureRecord* fr = *(itor);
+			//map의 가장 첫번째 값을 가지고옵니다.
+		//	m_feaMap.GetNextAssoc(pos, key, fr);
 
-				//if (!fr->m_geometry) //NogeoMetry??아님미까
-				//{
-				//	continue;
-				//}
-				auto what = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc);
+			//if (!fr->m_geometry) //NogeoMetry??아님미까
+			//{
+			//	continue;
+			//}
+			auto what = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc);
 
-				pugi::xml_node member = parentNode.append_child("member");
+			pugi::xml_node member = parentNode.append_child("member");
 
-				CString featureAcronym = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc)->second->m_code;
+			CString featureAcronym = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc)->second->m_code;
 
-				auto featureElementName = productNamespace + ":" + pugi::as_utf8(std::wstring(featureAcronym));
+			auto featureElementName = productNamespace + ":" + pugi::as_utf8(std::wstring(featureAcronym));
 
-				pugi::xml_node pFeatureNode = member.append_child(featureElementName.c_str());
+			pugi::xml_node pFeatureNode = member.append_child(featureElementName.c_str());
 
-				std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
-				pFeatureNode.append_attribute("gml:id") = iid.c_str();
-				objectPugiXmlElementMap.insert({ iid, &pFeatureNode });
+			std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
+			pFeatureNode.append_attribute("gml:id") = iid.c_str();
+			objectPugiXmlElementMap.insert({ iid, &pFeatureNode });
 
-				SetAttributeType(document, pFeatureNode, &fr->m_attr);
-				SetVector(pFeatureNode, fr);
-			}
+			SetAttributeType(document, pFeatureNode, &fr->m_attr);
+			SetVector(pFeatureNode, fr);
 		}
 
-		else {}
+
+
+
+		//POSITION pos = m_feaMap.GetStartPosition();
+		//if (pos != nullptr)
+		//{
+		//	while (pos != nullptr)
+		//	{
+		//		//map의 가장 첫번째 값을 가지고옵니다.
+		//		m_feaMap.GetNextAssoc(pos, key, fr);
+		//		//if (!fr->m_geometry) //NogeoMetry??아님미까
+		//		//{
+		//		//	continue;
+		//		//}
+		//		auto what = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc);
+		//		pugi::xml_node member = parentNode.append_child("member");
+		//		CString featureAcronym = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc)->second->m_code;
+		//		auto featureElementName = productNamespace + ":" + pugi::as_utf8(std::wstring(featureAcronym));
+		//		pugi::xml_node pFeatureNode = member.append_child(featureElementName.c_str());
+		//		std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
+		//		pFeatureNode.append_attribute("gml:id") = iid.c_str();
+		//		objectPugiXmlElementMap.insert({ iid, &pFeatureNode });
+		//		SetAttributeType(document, pFeatureNode, &fr->m_attr);
+		//		SetVector(pFeatureNode, fr);
+		//	}
+		//}
+		//else {}
 	}
 
 	void S101::SetFeaturesTypeRelation_v2(pugi::xml_node rootNode)
 	{
-		_int64 key = 0;
-		R_FeatureRecord* fr = nullptr;
-		POSITION pos = m_feaMap.GetStartPosition();
-
-		while (pos != nullptr)
+		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
-			m_feaMap.GetNextAssoc(pos, key, fr);
-
-			//if (!fr->m_geometry)
-			//{
-			//	continue;
-			//}
-
-			//CString featureAcronym = GetFeatureCode(fr->GetNumericCode());
+			R_FeatureRecord* fr = *(itor);
 			std::string srcFeatureID = get_feature_id_string(fr->m_frid.m_name.RCID);
 
 			pugi::xml_node* pFeatureNode = nullptr;
@@ -872,72 +725,218 @@ namespace libS101
 					pElement->append_attribute("xlink:href") = eid.c_str();
 				}
 			}
+
 		}
+
+		//_int64 key = 0;
+		//R_FeatureRecord* fr = nullptr;
+		//POSITION pos = m_feaMap.GetStartPosition();
+		//while (pos != nullptr)
+		//{
+		//	m_feaMap.GetNextAssoc(pos, key, fr);
+		//	//if (!fr->m_geometry)
+		//	//{
+		//	//	continue;
+		//	//}
+		//	//CString featureAcronym = GetFeatureCode(fr->GetNumericCode());
+		//	std::string srcFeatureID = get_feature_id_string(fr->m_frid.m_name.RCID);
+		//	pugi::xml_node* pFeatureNode = nullptr;
+		//	auto srcFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + srcFeatureID + "']";
+		//	auto srcFeatureElement = rootNode.select_node(srcFeatureXpath.c_str());
+		//	// Source Feature를 찾은 경우
+		//	if (srcFeatureElement.node())
+		//	{
+		//		pFeatureNode = &srcFeatureElement.node();
+		//	}
+		//	// 못 찾은 경우
+		//	else
+		//	{
+		//		continue;
+		//	}
+		//	// Source Feature와 관계있는 모든 피처 연결
+		//	for (auto i = fr->m_fasc.begin(); i != fr->m_fasc.end(); i++)
+		//	{
+		//		F_FASC* f_fasc = *i;
+		//		_int64 key = ((_int64)100) << 32 | f_fasc->m_name.RCID;
+		//		std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
+		//		auto dstFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + iid + "']";
+		//		//BaekIS ( select_single_node 는 deprecated 오류가 나서 select_node 사용 )
+		//		auto dstFeatureElement = rootNode.select_node(dstFeatureXpath.c_str());
+		//		//auto itor = objectPugiXmlElementMap.find(iid);
+		//		//if (itor == objectPugiXmlElementMap.end())
+		//		//{
+		//		//	continue;
+		//		//}
+		//		// Destination Feature를 못 찾은 경우
+		//		if (dstFeatureElement.node() == nullptr)
+		//		{
+		//			continue;
+		//		}
+		//		pugi::xml_node* dstFeatureNode = &dstFeatureElement.node();
+		//		std::string dstFeatureID = "#" + iid;
+		//		//pugi::xml_attribute attr = pElement->attribute("gml:id");
+		//		//if (attr)
+		//		//{
+		//		//	eid.append(attr.value());
+		//		//}
+		//		//auto asitor = m_dsgir.m_facs->m_arr.find(f_fasc->m_nfac);
+		//		auto ritor = m_dsgir.m_arcs->m_arr.find(f_fasc->m_nfac);
+		//		auto roleName = ritor->second->m_code;
+		//		//dstFeatureNode = &pFeatureNode->append_child("S100:featureAssociation");
+		//		dstFeatureNode = &pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str());
+		//		//dstFeatureNode->append_attribute("xlink:role") = roleName;
+		//		dstFeatureNode->append_attribute("xlink:href") = dstFeatureID.c_str();
+		//		//오류 발생 가능성있음
+		//		for (auto itorParent = fr->m_inas.begin(); itorParent != fr->m_inas.end(); itorParent++)
+		//		{
+		//			F_INAS* f_inas = *itorParent;
+		//			std::string iid = get_information_id_string(f_inas->m_name.RCID);
+		//			auto itor = objectPugiXmlElementMap.find(iid);
+		//			pugi::xml_node* pElement = itor->second;
+		//			std::string eid = "#";
+		//			pugi::xml_attribute pAttrib;
+		//			pAttrib = pElement->first_attribute();
+		//			if (pAttrib == nullptr)
+		//			{
+		//				return;
+		//			}
+		//			while (pAttrib)
+		//			{
+		//				std::string attrName = pAttrib.name();
+		//				if (attrName.compare("gml:id"))
+		//				{
+		//					eid.append(pAttrib.value());
+		//					break;
+		//				}
+		//				pAttrib = pAttrib.next_attribute();
+		//			}
+		//			auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
+		//			auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_niac);
+		//			auto roleName = ritor->second->m_code;
+		//			pElement = &pFeatureNode->append_child("S100:informationAssociation");
+		//			pElement->append_attribute("xlink:role") = roleName;
+		//			pElement->append_attribute("xlink:href") = eid.c_str();
+		//		}
+		//	}
+		//}
 	}
 
 	void S101::SetInformationsTypeRelation_v2(pugi::xml_node parentNode)
 	{
-		std::unordered_map<int, pugi::xml_node*> attriNodeMap;
-
-		_int64 key;
-		R_InformationRecord* ir = nullptr;
-		POSITION pos = m_infMap.GetStartPosition();
-		if (pos != nullptr)
+		//std::unordered_map<int, pugi::xml_node*> attriNodeMap;
+		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
 		{
-			while (pos != nullptr)
+			R_InformationRecord* ir = *(itor);
+			//m_infMap.GetNextAssoc(pos, key, ir);
+
+			std::string iid;
+			auto it = objectPugiXmlElementMap.find(iid);
+			if (it == objectPugiXmlElementMap.end())
 			{
-				m_infMap.GetNextAssoc(pos, key, ir);
+				continue;
+			}
 
-				std::string iid;
+			pugi::xml_node* pInformationNode = it->second;
+
+			for (auto itorParent = ir->m_inas.begin(); itorParent != ir->m_inas.end(); itorParent++)
+			{
+				F_INAS* f_inas = *itorParent;
+
+				std::string iid = get_information_id_string(f_inas->m_name.RCID);
+
 				auto itor = objectPugiXmlElementMap.find(iid);
-				if (itor == objectPugiXmlElementMap.end())
+
+				pugi::xml_node* pElement = itor->second;
+				std::string eid = "#";
+
+				pugi::xml_attribute* pAttrib;
+				pAttrib = &pElement->first_attribute();
+
+				while (pAttrib)
 				{
-					continue;
-				}
+					std::string attrName = pAttrib->name();
 
-				pugi::xml_node* pInformationNode = itor->second;
-
-				for (auto itorParent = ir->m_inas.begin(); itorParent != ir->m_inas.end(); itorParent++)
-				{
-					F_INAS* f_inas = *itorParent;
-
-					std::string iid = get_information_id_string(f_inas->m_name.RCID);
-
-					auto itor = objectPugiXmlElementMap.find(iid);
-
-					pugi::xml_node* pElement = itor->second;
-					std::string eid = "#";
-
-					pugi::xml_attribute* pAttrib;
-					pAttrib = &pElement->first_attribute();
-
-					while (pAttrib)
+					if (attrName.compare("gml:id") == 0)
 					{
-						std::string attrName = pAttrib->name();
-
-						if (attrName.compare("gml:id") == 0)
-						{
-							eid.append(pAttrib->value());
-							break;
-						}
-
-						pAttrib = &pAttrib->next_attribute();
+						eid.append(pAttrib->value());
+						break;
 					}
 
-					auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
-					auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
-					auto roleName = ritor->second->m_code;
-
-					pElement = &pInformationNode->append_child("S100:informationAssocination");
-					pElement->append_attribute("xlink:role") = roleName;
-					pElement->append_attribute("xlink:href") = eid.c_str();
+					pAttrib = &pAttrib->next_attribute();
 				}
+
+				auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
+				auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
+				auto roleName = ritor->second->m_code;
+
+				pElement = &pInformationNode->append_child("S100:informationAssocination");
+				pElement->append_attribute("xlink:role") = roleName;
+				pElement->append_attribute("xlink:href") = eid.c_str();
 			}
 		}
-		else
-		{
-		//	KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"SetInformation map start position is null", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
-		}
+
+
+
+
+		//_int64 key;
+		//R_InformationRecord* ir = nullptr;
+		//POSITION pos = m_infMap.GetStartPosition();
+		//if (pos != nullptr)
+		//{
+		//	while (pos != nullptr)
+		//	{
+		//		m_infMap.GetNextAssoc(pos, key, ir);
+
+		//		std::string iid;
+		//		auto itor = objectPugiXmlElementMap.find(iid);
+		//		if (itor == objectPugiXmlElementMap.end())
+		//		{
+		//			continue;
+		//		}
+
+		//		pugi::xml_node* pInformationNode = itor->second;
+
+		//		for (auto itorParent = ir->m_inas.begin(); itorParent != ir->m_inas.end(); itorParent++)
+		//		{
+		//			F_INAS* f_inas = *itorParent;
+
+		//			std::string iid = get_information_id_string(f_inas->m_name.RCID);
+
+		//			auto itor = objectPugiXmlElementMap.find(iid);
+
+		//			pugi::xml_node* pElement = itor->second;
+		//			std::string eid = "#";
+
+		//			pugi::xml_attribute* pAttrib;
+		//			pAttrib = &pElement->first_attribute();
+
+		//			while (pAttrib)
+		//			{
+		//				std::string attrName = pAttrib->name();
+
+		//				if (attrName.compare("gml:id") == 0)
+		//				{
+		//					eid.append(pAttrib->value());
+		//					break;
+		//				}
+
+		//				pAttrib = &pAttrib->next_attribute();
+		//			}
+
+		//			auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
+		//			auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
+		//			auto roleName = ritor->second->m_code;
+
+		//			pElement = &pInformationNode->append_child("S100:informationAssocination");
+		//			pElement->append_attribute("xlink:role") = roleName;
+		//			pElement->append_attribute("xlink:href") = eid.c_str();
+		//		}
+		//	}
+		//}
+		//else
+		//{
+		////	KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"SetInformation map start position is null", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
+		//}
 	}
 
 	std::string S101::GetEncodingSpecificationToString()
@@ -954,14 +953,14 @@ namespace libS101
 	{
 		std::unordered_map<int, pugi::xml_node> attrXmlNodeMap;
 
-		auto s100Layer = (S100Layer*)m_pLayer;
+		/*auto s100Layer = (S100Layer*)m_pLayer;
 		auto catalog = s100Layer->GetFC();
 		if (nullptr == catalog)
 		{
 			return;
-		}
+		}*/
 
-		auto fc = catalog->GetFC();
+		//auto fc = catalog->GetFC();
 
 		for (auto itorParent = f_attrList->begin(); itorParent != f_attrList->end(); itorParent++)
 		{
@@ -980,92 +979,109 @@ namespace libS101
 					continue;
 				}
 
-				std::wstring attributeName = itor->second->m_code;
+				std::wstring attributeName = std::wstring(itor->second->m_code);
 				pugi::xml_node pElement = doc->append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
 				//pugi::xml_node pElement= .append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
 
 				attrXmlNodeMap.insert(std::unordered_map<int, pugi::xml_node>::value_type(index, pElement));
 				//attributeVector.insert(std::unordered_map<std::wstring,int>::value_type(attributeName, index)); //테스트
 
-				auto cit = fc->GetComplexAttributesPointer().GetComplexAttributePointer().find(attributeName);
-				auto sit = fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().find(attributeName);
-
-				if (cit != fc->GetComplexAttributesPointer().GetComplexAttributePointer().end()) //컴플랙스 값일경우
+				if (attr->m_paix == 0) //부모의 경우
 				{
-					if (attr->m_paix == 0) //부모의 경우
-					{
-						parentNode.append_move(pElement);
-					}
-					else //자식의 값인경우
-					{
-						auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
-						pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
-						parent.append_move(pElement);
-					}
+					parentNode.append_move(pElement);
 				}
-				else if (sit != fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().end()) //심플값일경우
+				else //자식의 값인경우
 				{
-					std::string inputText = "";
-					SimpleAttribute* sa = sit->second;
-
-					if (sa->GetValueType() == FCD::S100_CD_AttributeValueType::enumeration)  //text를 고르는 심플값일경우
-					{
-						for (auto itor = sa->GetListedValuesPointer().begin(); itor != sa->GetListedValuesPointer().end(); itor++)
-						{
-							ListedValues* lvs = &(*itor);
-							for (auto lvitor = lvs->GetListedValuePointer().begin(); lvitor != lvs->GetListedValuePointer().end(); lvitor++)
-							{
-								ListedValue* lv = &(lvitor->second);
-								int value = _wtoi(std::wstring(attr->m_atvl).c_str());
-
-								if (value == lv->GetCode().GetvalueInteger())
-								{
-									inputText = CT2CA(lv->GetLabel().c_str());
-									break;
-								}
-							}
-						}
-					}
-					else //아닌경우
-					{
-						inputText = pugi::as_utf8(attr->m_atvl);
-					}
-					if (attr->m_paix == 0) //심플 그냥 추가할경우
-					{
-						parentNode.append_move(pElement);
-						pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
-					}
-					else
-					{
-						auto itor = attrXmlNodeMap.find(attr->m_paix);
-						if (itor != attrXmlNodeMap.end())
-						{
-							pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
-							pugi::xml_node parent = itor->second;
-							auto ischild = parent.append_move(pElement);
-							if (!ischild)
-							{
-								OutputDebugString(L"자식화에 실패했습니다.");
-							}
-						}
-
-					}
+					auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
+					pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
+					parent.append_move(pElement);
 				}
-				else //심플도 컴플랙스 값도 아닐경우...???
-				{
-					if (attr->m_paix == 0)
-					{
-						parentNode.append_move(pElement);
-						pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
-					}
-					else
-					{
-						/*pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attr->m_atvl).c_str());
-						auto itor = attrXmlNodeMap.find(attr->m_paix);
-						pugi::xml_node *parent = itor->second;
-						pElement = parent->append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());*/
-					}
-				}
+
+
+
+
+				//auto cit = fc->GetComplexAttributesPointer().GetComplexAttributePointer().find(attributeName);
+				//auto sit = fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().find(attributeName);
+
+				//if (cit != fc->GetComplexAttributesPointer().GetComplexAttributePointer().end()) //컴플랙스 값일경우
+				//{
+				//	if (attr->m_paix == 0) //부모의 경우
+				//	{
+				//		parentNode.append_move(pElement);
+				//	}
+				//	else //자식의 값인경우
+				//	{
+				//		auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
+				//		pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
+				//		parent.append_move(pElement);
+				//	}
+				//}
+				//else if (sit != fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().end()) //심플값일경우
+				//{
+				//	std::string inputText = "";
+				//	SimpleAttribute* sa = sit->second;
+
+				//	//enum 타입인경우
+				//	if (sa->GetValueType() == FCD::S100_CD_AttributeValueType::enumeration)  //text를 고르는 심플값일경우
+				//	{
+				//		for (auto itor = sa->GetListedValuesPointer().begin(); itor != sa->GetListedValuesPointer().end(); itor++)
+				//		{
+				//			ListedValues* lvs = &(*itor);
+				//			for (auto lvitor = lvs->GetListedValuePointer().begin(); lvitor != lvs->GetListedValuePointer().end(); lvitor++)
+				//			{
+				//				ListedValue* lv = &(lvitor->second);
+				//				int value = _wtoi(std::wstring(attr->m_atvl).c_str());
+
+				//				if (value == lv->GetCode().GetvalueInteger())
+				//				{
+				//					inputText = CT2CA(lv->GetLabel().c_str());
+				//					break;
+				//				}
+				//			}
+				//		}
+				//	}
+				//	else //아닌경우
+				//	{
+				//		inputText = pugi::as_utf8(attr->m_atvl);
+				//	}
+
+
+				//	if (attr->m_paix == 0) //심플 그냥 추가할경우
+				//	{
+				//		parentNode.append_move(pElement);
+				//		pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
+				//	}
+				//	else
+				//	{
+				//		auto itor = attrXmlNodeMap.find(attr->m_paix);
+				//		if (itor != attrXmlNodeMap.end())
+				//		{
+				//			pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
+				//			pugi::xml_node parent = itor->second;
+				//			auto ischild = parent.append_move(pElement);
+				//			if (!ischild)
+				//			{
+				//				OutputDebugString(L"자식화에 실패했습니다.");
+				//			}
+				//		}
+
+				//	}
+				//}
+				//else //심플도 컴플랙스 값도 아닐경우...???
+				//{
+				//	if (attr->m_paix == 0)
+				//	{
+				//		parentNode.append_move(pElement);
+				//		pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
+				//	}
+				//	else
+				//	{
+				//		/*pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attr->m_atvl).c_str());
+				//		auto itor = attrXmlNodeMap.find(attr->m_paix);
+				//		pugi::xml_node *parent = itor->second;
+				//		pElement = parent->append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());*/
+				//	}
+				//}
 			}
 		}
 	}
@@ -1392,13 +1408,14 @@ namespace libS101
 		}
 	}
 
-	void  S101::InsertInformationRecord(__int64 key, R_InformationRecord* record) 
+	void  S101::InsertInformationRecord(__int64 key, R_InformationRecord* record)
 	{
 		vecInformation.push_back(record);
 	}
 
 	void  S101::InsertPointRecord(__int64 key, R_PointRecord* record)
-	{;
+	{
+		;
 		vecPoint.push_back(record);
 	}
 
@@ -1500,10 +1517,10 @@ namespace libS101
 		return m_dsgir.m_dsid.m_dsrd;
 	}
 
-	std::string S101::GetDatasetEditionToString()
-	{
-		return  pugi::as_utf8(GetDatasetEdition());
-	}
+	//std::string S101::GetDatasetEditionToString()
+	//{
+	//	return  pugi::as_utf8(GetDatasetEdition());
+	//}
 
 	CString S101::GetDatasetEdition()
 	{

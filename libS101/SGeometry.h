@@ -1,13 +1,15 @@
 #pragma once
-
-#include "..\\GeoMetryLibrary\\Geometry.h"
-
+#include "Geometry.h"
 #include <unordered_map>
+
+#undef _WINDOWS_
+#include <afxext.h>
 
 class SSurface;
 class Symbol;
 class R_FeatureRecord;
 class SENC_SymbolFill;
+//class POINT;
 
 class SGeometry : public Geometry
 {

@@ -255,37 +255,10 @@
     <ClInclude Include="DDR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="S100Layer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Catalog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PortrayalCatalogue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FeatureCatalogue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpleAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpleAttributes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ListedValue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ListedValues.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="XML_Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MBR.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SCommonFuction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SCompositeCurve.h">
@@ -303,13 +276,25 @@
     <ClInclude Include="SGeometry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeoPoint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scaler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="XML_Attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="S100_CD_AttributeValueType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoCommonFuc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SCurveHasOrient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ENCCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -536,37 +521,10 @@
     <ClCompile Include="DDR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="S100Layer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Catalog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PortrayalCatalogue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FeatureCatalogue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SimpleAttribute.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SimpleAttributes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ListedValue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ListedValues.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="XML_Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MBR.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SCommonFuction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SCompositeCurve.cpp">
@@ -584,13 +542,25 @@
     <ClCompile Include="SGeometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeoPoint.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scaler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="XML_Attribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="S100_CD_AttributeValueType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoCommonFuc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SCurveHasOrient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ENCCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
