@@ -31,7 +31,7 @@
 #include "SCurveHasOrient.h"
 
 
-#include "..\\LibMFCUtil\\LibMFCUtil.h"
+//#include "..\\LibMFCUtil\\LibMFCUtil.h"
 
 
 #undef _WINDOWS_
@@ -250,8 +250,8 @@ namespace libS101
 		//GML 저장시 이곳으로 넘어오게 됩니다.
 		//objectXmlElementMap.clear();
 
-		POSITION pos = NULL;
-		__int64 iKey;
+		//POSITION pos = NULL;
+		//__int64 iKey;
 		CString saveFileName = _filepath; //파일의 최종경로를 불러옵니다.
 
 		return GmlifileMakeByPugi(saveFileName);
@@ -269,28 +269,6 @@ namespace libS101
 		pugi::xml_node root;
 		std::string productNamespace; // ex) S101, S124, S201 ...
 
-
-		//Layer* layer = GetS100Layer();
-		//auto s100layer = (S100Layer*)layer;
-
-		//auto feature = s100layer->GetFC();
-		//std::wstring  featureType = feature->GetFeatureCatalogueName();
-
-		//if (featureType.find(L"S-101") != std::wstring::npos)
-		//{
-		//	productNamespace = "S101";
-		//	root = doc->append_child("S101:DataSet");
-		//	root.append_attribute("xmlns:S101") = "http://www.iho.int/S101/gml/1.0";
-		//	root.append_attribute("xsi:schemaLocation") = "http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd";
-		//	root.append_attribute("xmlns:xsi") = "http://www.w3.org/2001/XMLSchema-instance";
-		//	root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
-		//	root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
-		//	root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-		//	//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-		//	root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
-		//	root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
-		//}
-
 		productNamespace = "S101";
 		root = doc->append_child("S101:DataSet");
 		root.append_attribute("xmlns:S101") = "http://www.iho.int/S101/gml/1.0";
@@ -302,9 +280,6 @@ namespace libS101
 		//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
 		root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
 		root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
-
-
-
 
 		auto boundedBy = root.append_child("gml:boundedBy");
 		auto Envelope = boundedBy.append_child("gml:Envelope");
@@ -352,7 +327,7 @@ namespace libS101
 		pugi::xml_node applicationProfile = DatasetIdentificationInformation.append_child("S100:applicationProfile");
 		applicationProfile.append_child(pugi::node_pcdata).set_value(GetApplicationProfileToString().c_str());
 
-		std::string fileName(LibMFCUtil::CStringToString(GetFileName()));
+		std::string fileName(CStringToString(GetFileName()));
 		pugi::xml_node datasetFileIdentifier = DatasetIdentificationInformation.append_child("S100:datasetFileIdentifier");
 		datasetFileIdentifier.append_child(pugi::node_pcdata).set_value(GetDatasetFileIdentifierToString().c_str());
 
@@ -444,7 +419,7 @@ namespace libS101
 			CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
 			pugi::xml_node imember = parentNode.append_child("imember");
 
-			auto featureElementName = productNamespace + ":" + LibMFCUtil::CStringToString(informationAcronym);
+			auto featureElementName = productNamespace + ":" + CStringToString(informationAcronym);
 			pugi::xml_node informationNode = imember.append_child(featureElementName.c_str());
 
 			std::string iid = get_information_id_string(ir->m_irid.m_name.RCID);
@@ -625,19 +600,23 @@ namespace libS101
 
 	void S101::SetFeaturesTypeRelation_v2(pugi::xml_node rootNode)
 	{
+		pugi::xml_node* pFeatureNode = nullptr;
 		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
 			R_FeatureRecord* fr = *(itor);
 			std::string srcFeatureID = get_feature_id_string(fr->m_frid.m_name.RCID);
 
-			pugi::xml_node* pFeatureNode = nullptr;
 			auto srcFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + srcFeatureID + "']";
 			auto srcFeatureElement = rootNode.select_node(srcFeatureXpath.c_str());
+
+
+		
 
 			// Source Feature를 찾은 경우
 			if (srcFeatureElement.node())
 			{
-				pFeatureNode = &srcFeatureElement.node();
+				//pugi::xml_node* feaNode = ;
+				pFeatureNode = &(srcFeatureElement.node());
 			}
 			// 못 찾은 경우
 			else
@@ -668,7 +647,7 @@ namespace libS101
 					continue;
 				}
 
-				pugi::xml_node* dstFeatureNode = &dstFeatureElement.node();
+				pugi::xml_node* dstFeatureNode = &(dstFeatureElement.node());
 				std::string dstFeatureID = "#" + iid;
 
 				//pugi::xml_attribute attr = pElement->attribute("gml:id");
@@ -683,7 +662,7 @@ namespace libS101
 				auto roleName = ritor->second->m_code;
 
 				//dstFeatureNode = &pFeatureNode->append_child("S100:featureAssociation");
-				dstFeatureNode = &pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str());
+				dstFeatureNode = &(pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str()));
 				//dstFeatureNode->append_attribute("xlink:role") = roleName;
 				dstFeatureNode->append_attribute("xlink:href") = dstFeatureID.c_str();
 				//오류 발생 가능성있음
@@ -720,7 +699,7 @@ namespace libS101
 					auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_niac);
 					auto roleName = ritor->second->m_code;
 
-					pElement = &pFeatureNode->append_child("S100:informationAssociation");
+					pElement = &(pFeatureNode->append_child("S100:informationAssociation"));
 					pElement->append_attribute("xlink:role") = roleName;
 					pElement->append_attribute("xlink:href") = eid.c_str();
 				}
@@ -850,7 +829,7 @@ namespace libS101
 				std::string eid = "#";
 
 				pugi::xml_attribute* pAttrib;
-				pAttrib = &pElement->first_attribute();
+				pAttrib = &(pElement->first_attribute());
 
 				while (pAttrib)
 				{
@@ -862,14 +841,14 @@ namespace libS101
 						break;
 					}
 
-					pAttrib = &pAttrib->next_attribute();
+					pAttrib = &(pAttrib->next_attribute());
 				}
 
 				auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
 				auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
 				auto roleName = ritor->second->m_code;
 
-				pElement = &pInformationNode->append_child("S100:informationAssocination");
+				pElement = &(pInformationNode->append_child("S100:informationAssocination"));
 				pElement->append_attribute("xlink:role") = roleName;
 				pElement->append_attribute("xlink:href") = eid.c_str();
 			}
@@ -980,7 +959,7 @@ namespace libS101
 				}
 
 				std::wstring attributeName = std::wstring(itor->second->m_code);
-				pugi::xml_node pElement = doc->append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
+				pugi::xml_node pElement = doc->append_child(CStringToString(attributeName.c_str()).c_str());
 				//pugi::xml_node pElement= .append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
 
 				attrXmlNodeMap.insert(std::unordered_map<int, pugi::xml_node>::value_type(index, pElement));
@@ -1134,7 +1113,7 @@ namespace libS101
 		pugi::xml_node point = pointProperty.append_child("S100:Point");
 		point.append_attribute("gml:id") = poiontID++;
 		pugi::xml_node pos = point.append_child("gml:pos");
-		pos.append_child(pugi::node_pcdata).set_value(LibMFCUtil::WStringToString(coordinateString).c_str());
+		pos.append_child(pugi::node_pcdata).set_value(WStringToString(coordinateString).c_str());
 	}
 
 	void S101::SetVectorMultiPointsType(pugi::xml_node parentNode, SMultiPoint* p)
@@ -1178,7 +1157,7 @@ namespace libS101
 		pugi::xml_node pSegments = pCurve.append_child("gml:segments");
 		pugi::xml_node pLineString = pSegments.append_child("gml:LineString");
 		pugi::xml_node pPosList = pLineString.append_child("gml:posList");
-		pPosList.append_child(pugi::node_pcdata).set_value(LibMFCUtil::WStringToString(coordinateString).c_str());
+		pPosList.append_child(pugi::node_pcdata).set_value(WStringToString(coordinateString).c_str());
 	}
 
 	void S101::SetVectorCompositeCurvesType(pugi::xml_node parentNode, SCompositeCurve* p)
@@ -1283,7 +1262,7 @@ namespace libS101
 			pugi::xml_node pSegments = pCurve.append_child("gml:segments");
 			pugi::xml_node pLineString = pSegments.append_child("gml:LineString");
 			pugi::xml_node pPosList = pLineString.append_child("gml:posList");
-			pPosList.append_child(pugi::node_pcdata).set_value(LibMFCUtil::WStringToString(coordinateString).c_str());
+			pPosList.append_child(pugi::node_pcdata).set_value(WStringToString(coordinateString).c_str());
 		}
 	}
 
@@ -1395,7 +1374,7 @@ namespace libS101
 		pugi::xml_node pExterior = pPolygonPatch.append_child("gml:exterior");
 		pugi::xml_node pLinerRing = pExterior.append_child("gml:LinearRing");
 		pugi::xml_node pPosList = pLinerRing.append_child("gml:posList");
-		pPosList.append_child(pugi::node_pcdata).set_value(LibMFCUtil::WStringToString(outboundCoordinateString).c_str());
+		pPosList.append_child(pugi::node_pcdata).set_value(WStringToString(outboundCoordinateString).c_str());
 
 		for (unsigned i = 0; i < inboundCoorinateStringList.size(); i++)
 		{
@@ -1404,7 +1383,7 @@ namespace libS101
 			pugi::xml_node pIterior = pPolygonPatch.append_child("gml:interior");
 			pugi::xml_node pLinearRing = pIterior.append_child("gml:LinearRing");
 			pugi::xml_node posList = pLinearRing.append_child("gml:posList");
-			posList.append_child(pugi::node_pcdata).set_value(LibMFCUtil::WStringToString(ibc).c_str());
+			posList.append_child(pugi::node_pcdata).set_value(WStringToString(ibc).c_str());
 		}
 	}
 
@@ -1563,4 +1542,18 @@ namespace libS101
 		return pugi::as_utf8(GetDatasetAbstract());
 	}
 
+
+	std::string S101::CStringToString(CString str) 
+	{
+		CT2CA convertedString(str);
+		return std::string(convertedString);
+	}
+
+	std::string S101::WStringToString(std::wstring str)
+	{
+		std::string Value;
+		Value.assign(str.begin(), str.end());
+
+		return Value;
+	}
 }

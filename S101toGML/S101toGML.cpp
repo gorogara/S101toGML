@@ -39,33 +39,22 @@ int main()
         }
         else
         {
-            // TODO: code your application's behavior here.
-
-            // source file : S-101 ENC (.000)
-            // destination file : GML path (.gml)
-
-            //string path = "";
-
-            //std::cout << "경로를 입력하세요 : ";
-            //cin >> path;
-
 
             libS101::S101 a;
-           // a.Test();
 
             CString filepath;
+            CString savepath;
+
             char path[128];
           
             if (GetCurrentDirectoryA(128, path) > 0)
             {
-                
-                //int i = 0;
                 filepath.Format(_T("%S\\File\\101KR005X01SW.000"),path);
+                savepath.Format(_T("%S\\File\\"), path);
             }
 
-
             a.Open(filepath);
-            a.Save();
+            a.Save(savepath,_T("dfs"));
 
             std::cout << "완료했습니다 ";
         }

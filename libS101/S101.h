@@ -37,6 +37,7 @@ namespace libS101
 
 		bool Open(CString _filepath);
 		void Save(CString _filepath, CString extend);
+		//void Save(CString _filepath);
 
 		//bool Open(std::string _filepath);
 
@@ -61,9 +62,7 @@ namespace libS101
 		
 
 	public:
-
 		void Test();
-		
 		void InsertInformationRecord(__int64 key, R_InformationRecord* record);
 		void InsertPointRecord(__int64 key, R_PointRecord* record);
 		void InsertMultiPointRecord(__int64 key, R_MultiPointRecord* record);
@@ -117,5 +116,9 @@ namespace libS101
 
 		CString GetDatasetAbstract();
 		std::string GetDatasetAbstractToString();
+
+	private :
+		std::string CStringToString(CString str);
+		std::string WStringToString(std::wstring str);
 	};
 }

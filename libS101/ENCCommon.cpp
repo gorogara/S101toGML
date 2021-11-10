@@ -2,9 +2,9 @@
 #include "ENCCommon.h"
 //#include "ENCGeometry.h"
 
-#include "..\\LibMFCUtil\\LibMFCUtil.h"
-#include "..\\LibMFCUtil\\StringTokenizer.h"
-//
+//#include "..\\LibMFCUtil\\LibMFCUtil.h"
+//#include "..\\LibMFCUtil\\StringTokenizer.h"
+////
 //#include "..\\PLLibrary\\GeoObject.h" 
 //#include "..\\PLLibrary\\GeoObjectMap.h"
 
