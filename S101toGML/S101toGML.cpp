@@ -50,7 +50,7 @@ int main()
             if (GetCurrentDirectoryA(128, path) > 0)
             {
                 filepath.Format(_T("%S\\File\\101KR005X01SW.000"),path);
-                savepath.Format(_T("%S\\File\\"), path);
+                savepath.Format(_T("%S\\File\\test.gml"), path);
             }
 
             a.Open(filepath);

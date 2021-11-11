@@ -297,6 +297,9 @@
     <ClInclude Include="GeoPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeoPointZ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -561,6 +564,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeoPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoPointZ.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -10,37 +10,45 @@
 #include "DRDirectory.h"
 #include "DRDirectoryInfo.h"
 #include "ISO8211Fuc.h"
-//#include "S100Layer.h"
 #include "ATTR.h"
 #include "F_INAS.h"
 #include "F_FASC.h"
 #include "CodeWithNumericCode.h"
 #include "F_CodeWithNumericCode.h"
-//#include "Catalog.h"
-
-//#include "SimpleAttribute.h"
-//#include "ListedValues.h"
-//#include "ListedValue.h"
-
 #include "SCompositeCurve.h"
 #include "SPoint.h"
 #include "SSurface.h"
 #include "SCurve.h"
+#include "SMultiPoint.h"
 #include "S100_CD_AttributeValueType.h"
 #include "GeoCommonFuc.h"
 #include "SCurveHasOrient.h"
-
-
-//#include "..\\LibMFCUtil\\LibMFCUtil.h"
-
-
-#undef _WINDOWS_
-#include <afxext.h>
+#include "F_SPAS.h"
+#include "SPAS.h"
+#include "GeoPointZ.h"
+#include "GeoPoint.h"
+#include "RIAS.h"
+#include "F_RIAS.h"
+#include "F_CUCO.h"
+#include "CUCO.h"
+#include "F_C3IT.h"
+#include "F_C2IT.h"
+#include "F_C3IL.h"
+#include "C3IL.h"
+#include "F_C2IL.h"
+#include "PTAS.h"
+#include "F_PTAS.h"
+#include "IC2D.h"
 
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <iomanip>
+
+//#include <pugixml.hpp>
+
+#undef _WINDOWS_
+#include <afxext.h>
 
 
 namespace libS101
@@ -234,9 +242,9 @@ namespace libS101
 
 			delete[] sBuf;
 
-			//MakeFullSpatialData();
+			MakeFullSpatialData();
 
-			//CalcMBR();
+			CalcMBR();
 			//Check();
 
 			return true;
@@ -286,7 +294,7 @@ namespace libS101
 		Envelope.append_attribute("srsName") = "EPSG:4326";
 		Envelope.append_attribute("srsDimension") = "2";
 
-		auto mbr = GetMBR();
+		//auto mbr = GetMBR();
 
 		inverseProjection(mbr.xmin, mbr.ymin);
 		inverseProjection(mbr.xmax, mbr.ymax);
@@ -610,13 +618,14 @@ namespace libS101
 			auto srcFeatureElement = rootNode.select_node(srcFeatureXpath.c_str());
 
 
-		
+
 
 			// Source Feature를 찾은 경우
 			if (srcFeatureElement.node())
 			{
 				//pugi::xml_node* feaNode = ;
-				pFeatureNode = &(srcFeatureElement.node());
+				auto featureNode = srcFeatureElement.node();
+				pFeatureNode = &featureNode;
 			}
 			// 못 찾은 경우
 			else
@@ -647,7 +656,9 @@ namespace libS101
 					continue;
 				}
 
-				pugi::xml_node* dstFeatureNode = &(dstFeatureElement.node());
+				auto node = dstFeatureElement.node();
+
+				pugi::xml_node* dstFeatureNode = &node;
 				std::string dstFeatureID = "#" + iid;
 
 				//pugi::xml_attribute attr = pElement->attribute("gml:id");
@@ -662,7 +673,8 @@ namespace libS101
 				auto roleName = ritor->second->m_code;
 
 				//dstFeatureNode = &pFeatureNode->append_child("S100:featureAssociation");
-				dstFeatureNode = &(pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str()));
+				auto roleNode = pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str());
+				dstFeatureNode = &roleNode;
 				//dstFeatureNode->append_attribute("xlink:role") = roleName;
 				dstFeatureNode->append_attribute("xlink:href") = dstFeatureID.c_str();
 				//오류 발생 가능성있음
@@ -699,7 +711,8 @@ namespace libS101
 					auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_niac);
 					auto roleName = ritor->second->m_code;
 
-					pElement = &(pFeatureNode->append_child("S100:informationAssociation"));
+					auto node = pFeatureNode->append_child("S100:informationAssociation");
+					pElement = &node;
 					pElement->append_attribute("xlink:role") = roleName;
 					pElement->append_attribute("xlink:href") = eid.c_str();
 				}
@@ -829,7 +842,8 @@ namespace libS101
 				std::string eid = "#";
 
 				pugi::xml_attribute* pAttrib;
-				pAttrib = &(pElement->first_attribute());
+				auto node = pElement->first_attribute();
+				pAttrib = &node;
 
 				while (pAttrib)
 				{
@@ -841,14 +855,16 @@ namespace libS101
 						break;
 					}
 
-					pAttrib = &(pAttrib->next_attribute());
+					auto node = pAttrib->next_attribute();
+					pAttrib = &node;
 				}
 
 				auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
 				auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
 				auto roleName = ritor->second->m_code;
 
-				pElement = &(pInformationNode->append_child("S100:informationAssocination"));
+				auto infoAsscoiNode = pInformationNode->append_child("S100:informationAssocination");
+				pElement = &infoAsscoiNode;
 				pElement->append_attribute("xlink:role") = roleName;
 				pElement->append_attribute("xlink:href") = eid.c_str();
 			}
@@ -959,22 +975,65 @@ namespace libS101
 				}
 
 				std::wstring attributeName = std::wstring(itor->second->m_code);
+
 				pugi::xml_node pElement = doc->append_child(CStringToString(attributeName.c_str()).c_str());
 				//pugi::xml_node pElement= .append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
 
 				attrXmlNodeMap.insert(std::unordered_map<int, pugi::xml_node>::value_type(index, pElement));
 				//attributeVector.insert(std::unordered_map<std::wstring,int>::value_type(attributeName, index)); //테스트
 
-				if (attr->m_paix == 0) //부모의 경우
+				if (attr->m_atvl.IsEmpty()) //true 일 경우 complex
 				{
-					parentNode.append_move(pElement);
+					if (attr->m_paix == 0) //부모의 경우
+					{
+						parentNode.append_move(pElement);
+					}
+					else //자식의 값인경우
+					{
+						auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
+						pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
+						parent.append_move(pElement);
+					}
 				}
-				else //자식의 값인경우
+				else //false 일 경우 simple
 				{
-					auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
-					pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
-					parent.append_move(pElement);
+					std::string inputText = "";
+					inputText = pugi::as_utf8(attr->m_atvl);
+					if (attr->m_paix == 0) //심플 그냥 추가할경우
+					{
+						parentNode.append_move(pElement);
+						pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
+					}
+					else
+					{
+						auto itor = attrXmlNodeMap.find(attr->m_paix);
+						if (itor != attrXmlNodeMap.end())
+						{
+							pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
+							pugi::xml_node parent = itor->second;
+							auto ischild = parent.append_move(pElement);
+							if (!ischild)
+							{
+								OutputDebugString(L"자식화에 실패했습니다.");
+							}
+						}
+
+					}
 				}
+				//if (attr->m_paix == 0) //부모의 경우
+				//{
+				//	parentNode.append_move(pElement);
+				//	auto inputText = pugi::as_utf8(attr->m_atvl);
+
+				//	int i = 0;
+				//	//pElement.set_value()
+				//}
+				//else //자식의 값인경우
+				//{
+				//	auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
+				//	pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
+				//	parent.append_move(pElement);
+				//}
 
 
 
@@ -1542,8 +1601,1377 @@ namespace libS101
 		return pugi::as_utf8(GetDatasetAbstract());
 	}
 
+	bool S101::MakeFullSpatialData()
+	{
+		//	ClearCurveMap();
 
-	std::string S101::CStringToString(CString str) 
+		POSITION spasPos = NULL;
+		R_FeatureRecord* fr;
+
+		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
+		{
+			fr = *(itor);
+			if (fr->m_spas.size() == 0)
+			{
+				continue;
+			}
+
+			for (auto itorParent = fr->m_spas.begin(); itorParent != fr->m_spas.end(); itorParent++)
+			{
+				F_SPAS* spasParent = *itorParent;
+
+				for (auto itor = spasParent->m_arr.begin(); itor != spasParent->m_arr.end(); itor++)
+				{
+					SPAS* spas = *itor;
+
+					if (spas->m_name.RCNM == 110)
+					{
+						MakePointData(fr);
+					}
+					else if (spas->m_name.RCNM == 115)
+					{
+						MakeSoundingData(fr);
+					}
+					else if (spas->m_name.RCNM == 120 || spas->m_name.RCNM == 125)
+					{
+						MakeLineData(fr);
+					}
+					else if (spas->m_name.RCNM == 130)
+					{
+						MakeAreaData(fr);
+					}
+				}
+			}
+		}
+		return true;
+	}
+	bool S101::MakePointData(R_FeatureRecord* fe)
+	{
+		fe->m_curveList.clear();
+		SPAS* spas = NULL;
+		R_PointRecord* r;
+		__int64 iKey;
+
+		GeoPoint geoArr;
+
+		for (auto itorParent = fe->m_spas.begin(); itorParent != fe->m_spas.end(); itorParent++)
+		{
+			F_SPAS* spasParent = *itorParent;
+
+			for (auto itor = spasParent->m_arr.begin(); itor != spasParent->m_arr.end(); itor++)
+			{
+				SPAS* spas = *itor;
+
+				iKey = ((__int64)spas->m_name.RCNM) << 32 | spas->m_name.RCID;
+
+				r = findPointRecord(iKey);
+
+				if (r != nullptr) {
+					if (r->m_c2it)
+					{
+						GeoPoint geoArr;
+						GetFullCurveData(fe, r);
+						GetFullSpatialData(r, geoArr);
+
+						if (fe->m_geometry)
+							delete fe->m_geometry;
+
+						fe->m_geometry = new SPoint();
+						SPoint* geo = (SPoint*)fe->m_geometry;
+
+						geo->SetPoint(geoArr.x, geoArr.y);
+
+						geo->m_mbr.CalcMBR(geoArr.x, geoArr.y);
+					}
+					else if (r->m_c3it)
+					{
+						GeoPointZ geoArr;
+
+						GetFullCurveData(fe, r);
+						GetFullSpatialData(r, geoArr);
+
+						int cnt = 1;
+
+						if (fe->m_geometry)
+							delete fe->m_geometry;
+
+						fe->m_geometry = new SMultiPoint();
+						SMultiPoint* geo = (SMultiPoint*)fe->m_geometry;
+
+						geo->m_numPoints = cnt;
+						if (!geo->m_pPoints)
+						{
+							geo->m_pPoints = new std::vector<GeoPointZ>(geo->m_numPoints);//new GeoPointZ[geo->m_numPoints];
+						}
+						else
+						{
+							geo->m_pPoints->clear();
+							if ((int)(*geo->m_pPoints).size() < geo->m_numPoints)
+								(*geo->m_pPoints).resize(geo->m_numPoints + 1);
+						}
+
+						for (int i = 0; i < cnt; i++)
+						{
+							(*geo->m_pPoints)[i].SetPoint(geoArr.x, geoArr.y, geoArr.z);
+						}
+					}
+				}
+				//if (m_ptMap.Lookup(iKey, r))
+				//{
+				//	if (r->m_c2it)
+				//	{
+				//		GeoPoint geoArr;
+				//		GetFullCurveData(fe, r);
+				//		GetFullSpatialData(r, geoArr);
+
+				//		if (fe->m_geometry)
+				//			delete fe->m_geometry;
+
+				//		fe->m_geometry = new SPoint();
+				//		SPoint* geo = (SPoint*)fe->m_geometry;
+
+				//		geo->SetPoint(geoArr.x, geoArr.y);
+
+				//		geo->m_mbr.CalcMBR(geoArr.x, geoArr.y);
+				//	}
+				//	else if (r->m_c3it)
+				//	{
+				//		GeoPointZ geoArr;
+
+				//		GetFullCurveData(fe, r);
+				//		GetFullSpatialData(r, geoArr);
+
+				//		int cnt = 1;
+
+				//		if (fe->m_geometry)
+				//			delete fe->m_geometry;
+
+				//		fe->m_geometry = new SMultiPoint();
+				//		SMultiPoint* geo = (SMultiPoint*)fe->m_geometry;
+
+				//		geo->m_numPoints = cnt;
+				//		if (!geo->m_pPoints)
+				//		{
+				//			geo->m_pPoints = new std::vector<GeoPointZ>(geo->m_numPoints);//new GeoPointZ[geo->m_numPoints];
+				//		}
+				//		else
+				//		{
+				//			geo->m_pPoints->clear();
+				//			if ((int)(*geo->m_pPoints).size() < geo->m_numPoints)
+				//				(*geo->m_pPoints).resize(geo->m_numPoints + 1);
+				//		}
+
+				//		for (int i = 0; i < cnt; i++)
+				//		{
+				//			(*geo->m_pPoints)[i].SetPoint(geoArr.x, geoArr.y, geoArr.z);
+				//		}
+				//	}
+				//}
+			}
+		}
+		return TRUE;
+	}
+	bool S101::MakeSoundingData(R_FeatureRecord* fe)
+	{
+		fe->m_curveList.clear();
+		R_MultiPointRecord* r;
+		__int64 iKey;
+
+		CArray<GeoPointZ> geoArr;
+
+
+		for (auto itorParent = fe->m_spas.begin(); itorParent != fe->m_spas.end(); itorParent++)
+		{
+			F_SPAS* spasParent = *itorParent;
+
+			for (auto itor = spasParent->m_arr.begin(); itor != spasParent->m_arr.end(); itor++)
+			{
+				SPAS* spas = *itor;
+
+				iKey = ((__int64)spas->m_name.RCNM) << 32 | spas->m_name.RCID;
+
+				r = findMultiPointRecord(iKey);
+				if (r != nullptr) {
+					GetFullSpatialData(r, geoArr);
+				}
+			}
+		}
+
+		int cnt = 0;
+		cnt = (int)geoArr.GetCount();
+
+		if (fe->m_geometry)
+			delete fe->m_geometry;
+
+		fe->m_geometry = new SMultiPoint();
+		SMultiPoint* geo = (SMultiPoint*)fe->m_geometry;
+
+		geo->m_numPoints = cnt;
+		if (!geo->m_pPoints) geo->m_pPoints = new std::vector<GeoPointZ>(geo->m_numPoints);//new GeoPointZ[geo->m_numPoints];
+		else
+		{
+			geo->m_pPoints->clear();
+			if ((int)(*geo->m_pPoints).size() < geo->m_numPoints)
+				(*geo->m_pPoints).resize(geo->m_numPoints + 1);
+		}
+
+		if (geo->m_numPoints > SGeometry::sizeOfPoint)
+		{
+			SGeometry::sizeOfPoint = geo->m_numPoints;
+			delete SGeometry::viewPoints;
+			SGeometry::viewPoints = new CPoint[int(SGeometry::sizeOfPoint * 1.5)];
+		}
+
+		for (int i = 0; i < cnt; i++)
+		{
+			(*geo->m_pPoints)[i].SetPoint(geoArr[i].x, geoArr[i].y, geoArr[i].z);
+			geo->m_mbr.CalcMBR(geoArr[i].x, geoArr[i].y);
+		}
+
+		geoArr.RemoveAll();
+		return TRUE;
+	}
+
+	bool S101::MakeLineData(R_FeatureRecord* fe)
+	{
+		fe->m_curveList.clear();
+
+		R_CurveRecord* cr = nullptr;
+
+		R_CompositeRecord* ccr = nullptr;
+
+		__int64 iKey = 0;
+
+		//CArray<GeoPoint> geoArr;
+
+		if (fe->m_geometry)
+		{
+			delete fe->m_geometry;
+			fe->m_geometry = nullptr;
+		}
+
+		for (auto i = fe->m_spas.begin(); i != fe->m_spas.end(); i++)
+		{
+			F_SPAS* spasParent = *i;
+
+			for (auto j = spasParent->m_arr.begin(); j != spasParent->m_arr.end(); j++)
+			{
+				SPAS* spas = *j;
+				iKey = ((__int64)spas->m_name.RCNM) << 32 | spas->m_name.RCID;
+
+				ccr = findCompositeRecord(iKey);
+				if (ccr!= nullptr)
+				{
+					GetFullCurveData(fe, ccr, spas->m_ornt);
+				}
+
+				cr = findCurveRecord(iKey);
+				if (cr != nullptr)
+				{
+					GetFullCurveData(fe, cr, spas->m_ornt);
+				}
+
+				/*if (m_comMap.Lookup(iKey, ccr))
+				{
+					GetFullCurveData(fe, ccr, spas->m_ornt);
+				}
+				else if (m_curMap.Lookup(iKey, cr))
+				{
+					GetFullCurveData(fe, cr, spas->m_ornt);
+				}*/
+			}
+		}
+
+		SCompositeCurve* scc = new SCompositeCurve();
+		fe->m_geometry = scc;
+
+		//SetSCurveList(&fe->m_curveList, &scc->m_listCurveLink);
+
+		scc->SetMBR();
+
+		/*if (gisLib == nullptr)
+		{
+			return false;
+		}*/
+
+
+		//scc->CreateD2Geometry(gisLib->D2.pD2Factory);
+
+	//	geoArr.RemoveAll();
+
+		return TRUE;
+	}
+
+	bool S101::MakeAreaData(R_FeatureRecord* fe)
+	{
+		fe->m_curveList.clear();
+
+		R_SurfaceRecord* sr;
+		__int64 iKey;
+		CArray<GeoPoint> geoArr;
+		std::vector<POINT> vecPoint;
+		std::vector<int> boundaryList;
+
+		for (auto i = fe->m_spas.begin(); i != fe->m_spas.end(); i++)
+		{
+			F_SPAS* spasParent = *i;
+
+			for (auto j = spasParent->m_arr.begin(); j != spasParent->m_arr.end(); j++)
+			{
+				SPAS* spas = *j;
+
+				iKey = spas->m_name.GetName();
+
+				sr = findSurfaceRecord(iKey);
+				if (sr != nullptr)
+				{
+					for (auto k = sr->m_rias.begin(); k != sr->m_rias.end(); k++)
+					{
+						F_RIAS* riasParent = *k;
+
+						for (auto l = riasParent->m_arr.begin(); l != riasParent->m_arr.end(); l++)
+						{
+							RIAS* rias = *l;
+
+							auto iKey = rias->m_name.GetName();
+							if (rias->m_name.RCNM == 120)
+							{
+								R_CurveRecord* cr = nullptr;
+								cr = findCurveRecord(iKey);
+								if (cr != nullptr)
+								{
+									GetFullCurveData(fe, cr);
+									//GetFullSpatialData(cr, geoArr, rias->m_ornt);
+
+									GetFullSpatialData(cr, vecPoint, rias->m_ornt);
+								}
+
+								//
+								//if (m_curMap.Lookup(iKey, cr))
+								//{
+								//	GetFullCurveData(fe, cr);
+								//	//GetFullSpatialData(cr, geoArr, rias->m_ornt);
+
+								//	GetFullSpatialData(cr, vecPoint, rias->m_ornt);
+								//}
+							}
+							else if (rias->m_name.RCNM == 125)
+							{
+								R_CompositeRecord* ccr = nullptr;
+								ccr = findCompositeRecord(iKey);
+								if (ccr != nullptr)
+								{
+									GetFullCurveData(fe, ccr);
+									//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
+
+									GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
+								}
+								//if (m_comMap.Lookup(iKey, ccr))
+								//{
+								//	GetFullCurveData(fe, ccr);
+								//	//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
+
+								//	GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
+								//}
+							}
+
+							//int sizet = geoArr.GetCount();
+							int sizet = (int)vecPoint.size();
+							//geoArr.GetAt(sizet - 1);
+							//GeoPoint t1 = geoArr[0];
+							//GeoPoint t2 = geoArr[sizet - 1];
+
+							//if (t1 == t2)
+							//{
+							//}
+							//else
+							//{
+							//	geoArr.Add(geoArr[0]);
+							//	sizet++;
+							//}
+
+							if (sizet == 0)
+							{
+								continue;
+							}
+
+							if (rias->m_usag == 1)
+							{
+								boundaryList.push_back(sizet);
+							}
+							else
+							{
+								boundaryList.push_back(sizet);
+							}
+						}
+					}
+				}
+				//if (m_surMap.Lookup(iKey, sr))
+				//{
+				//	for (auto k = sr->m_rias.begin(); k != sr->m_rias.end(); k++)
+				//	{
+				//		F_RIAS* riasParent = *k;
+
+				//		for (auto l = riasParent->m_arr.begin(); l != riasParent->m_arr.end(); l++)
+				//		{
+				//			RIAS* rias = *l;
+
+				//			auto iKey = rias->m_name.GetName();
+				//			if (rias->m_name.RCNM == 120)
+				//			{
+				//				R_CurveRecord* cr = nullptr;
+				//				cr = findCurveRecord(iKey);
+				//				if (cr != nullptr)
+				//				{
+				//					GetFullCurveData(fe, cr);
+				//					//GetFullSpatialData(cr, geoArr, rias->m_ornt);
+
+				//					GetFullSpatialData(cr, vecPoint, rias->m_ornt);
+				//				}
+
+				//				//
+				//				//if (m_curMap.Lookup(iKey, cr))
+				//				//{
+				//				//	GetFullCurveData(fe, cr);
+				//				//	//GetFullSpatialData(cr, geoArr, rias->m_ornt);
+
+				//				//	GetFullSpatialData(cr, vecPoint, rias->m_ornt);
+				//				//}
+				//			}
+				//			else if (rias->m_name.RCNM == 125)
+				//			{
+				//				R_CompositeRecord* ccr = nullptr;
+				//				ccr = findCompositeRecord(iKey);
+				//				if (ccr != nullptr)
+				//				{
+				//					GetFullCurveData(fe, ccr);
+				//					//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
+
+				//					GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
+				//				}
+				//				//if (m_comMap.Lookup(iKey, ccr))
+				//				//{
+				//				//	GetFullCurveData(fe, ccr);
+				//				//	//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
+
+				//				//	GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
+				//				//}
+				//			}
+
+				//			//int sizet = geoArr.GetCount();
+				//			int sizet = (int)vecPoint.size();
+				//			//geoArr.GetAt(sizet - 1);
+				//			//GeoPoint t1 = geoArr[0];
+				//			//GeoPoint t2 = geoArr[sizet - 1];
+
+				//			//if (t1 == t2)
+				//			//{
+				//			//}
+				//			//else
+				//			//{
+				//			//	geoArr.Add(geoArr[0]);
+				//			//	sizet++;
+				//			//}
+
+				//			if (sizet == 0)
+				//			{
+				//				continue;
+				//			}
+
+				//			if (rias->m_usag == 1)
+				//			{
+				//				boundaryList.push_back(sizet);
+				//			}
+				//			else
+				//			{
+				//				boundaryList.push_back(sizet);
+				//			}
+				//		}
+				//	}
+				//}
+			}
+		
+		}
+
+		int i = 0;
+
+		if (fe->m_geometry)
+		{
+			delete fe->m_geometry;
+		}
+
+		fe->m_geometry = new SSurface(vecPoint, boundaryList);
+		//auto surface = (SSurface*)fe->m_geometry;
+
+		SSurface* geo = ((SSurface*)fe->m_geometry);
+		//geo->m_numParts = boundaryList.GetCount();
+		//geo->m_numPoints = geoArr.GetCount();
+
+		//int cnt = boundaryList.GetCount();
+
+		//if (boundaryList.GetCount() < 2)
+		//{
+		//	geo->m_pParts = new int[1];
+		//	geo->m_pParts[0] = 0;
+		//}
+		//else
+		//{
+		//	geo->m_pParts = new int[boundaryList.GetCount()];
+		//	geo->m_pParts[0] = 0;
+
+		//	POSITION partPos = boundaryList.GetHeadPosition();
+		//	for (i = 1; i < cnt; i++)
+		//	{
+		//		geo->m_pParts[i] = boundaryList.GetNext(partPos);
+		//	}
+		//}
+
+
+		//cnt = (int)geoArr.GetCount();
+		//geo->m_pPoints = new GeoPoint[geo->m_numPoints];
+
+		//if (geo->m_numPoints > SGeometry::sizeOfPoint)
+		//{
+		//	SGeometry::sizeOfPoint = geo->m_numPoints;
+		//	delete SGeometry::viewPoints; 
+		//	SGeometry::viewPoints = new CPoint[int(SGeometry::sizeOfPoint * 1.5)];
+		//}
+
+		//for (i = 0; i < cnt; i++)
+		//{
+		//	geo->m_pPoints[i].SetPoint(geoArr[i].x, geoArr[i].y);
+		//	geo->m_mbr.CalcMBR(geoArr[i].x, geoArr[i].y);
+		//}
+
+		fe->m_curveList.clear();
+
+		R_CurveRecord* cr;
+		R_CompositeRecord* ccr;
+
+		for (auto i = fe->m_spas.begin(); i != fe->m_spas.end(); i++)
+		{
+			F_SPAS* spasParent = *i;
+
+			for (auto j = spasParent->m_arr.begin(); j != spasParent->m_arr.end(); j++)
+			{
+				SPAS* spas = *j;
+				iKey = spas->m_name.GetName();
+
+				sr=findSurfaceRecord(iKey);
+				if (sr!=nullptr) 
+				{
+					GetFullCurveData(fe, sr);
+				}
+				/*if (m_surMap.Lookup(iKey, sr))
+				{
+					GetFullCurveData(fe, sr);
+				}*/
+
+				ccr = findCompositeRecord(iKey);
+				if (ccr != nullptr) {
+					GetFullCurveData(fe, ccr);
+				}
+				/*else if (m_comMap.Lookup(iKey, ccr))
+				{
+					GetFullCurveData(fe, ccr);
+				}*/
+
+				cr = findCurveRecord(iKey); 
+				if (cr!= nullptr)
+				{
+					GetFullCurveData(fe, cr);
+				}
+				/*else if (m_curMap.Lookup(iKey, cr))
+				{
+					GetFullCurveData(fe, cr);
+				}*/
+			}
+		}
+
+	//	SetSCurveList(&fe->m_curveList, &geo->m_listCurveLink);
+
+		geoArr.RemoveAll();
+
+	/*	if (gisLib == nullptr)
+		{
+			return false;
+		}
+		geo->CreateD2Geometry(gisLib->D2.pD2Factory);
+
+		geo->CalculateCenterPoint();*/
+		return TRUE;
+	}
+	void S101::CalcMBR()
+	{
+		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
+		{
+			R_FeatureRecord* fe = *(itor);
+			if (fe->m_geometry)
+			{
+				if (fe->m_geometry->type == 3) {
+					SSurface* pSr = (SSurface*)fe->m_geometry;
+					mbr.SetMBR(pSr->m_mbr);
+					//pMBR->ReMBR(pSr->m_mbr);
+				}
+				else if (fe->m_geometry->type == 2) {
+					auto geo = (SCompositeCurve*)fe->m_geometry;
+					mbr.SetMBR(geo->m_mbr);
+					//pMBR->ReMBR(geo->m_mbr);
+				}
+				else if (fe->m_geometry->type == 1) {
+					SPoint* geo = (SPoint*)fe->m_geometry;
+					mbr.SetMBR(geo->m_mbr);
+					//pMBR->ReMBR(geo->m_mbr);
+				}
+			}
+		}
+	}
+
+	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_PointRecord* r, int ornt)
+	{
+		fe->m_pointList.push_back(r);
+		return TRUE;
+	}
+
+	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_MultiPointRecord* r, int ornt)
+	{
+		return TRUE;
+	}
+
+	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_CurveRecord* r, int ornt)
+	{
+		OrientedCurveRecord ocr;
+		ocr.m_pCurveRecord = r;
+		ocr.m_orient = ornt;
+		fe->m_curveList.push_back(ocr);
+		return TRUE;
+	}
+
+	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_CompositeRecord* r, int ornt)
+	{
+		R_CurveRecord* cr = NULL;
+		R_CompositeRecord* ccr = NULL;
+		__int64 iKey;
+
+		// forward
+		if (1 == ornt)
+		{
+			for (auto i = r->m_cuco.begin(); i != r->m_cuco.end(); i++)
+			{
+				F_CUCO* cucoParent = *i;
+
+				for (auto itor = cucoParent->m_arr.begin(); itor != cucoParent->m_arr.end(); itor++)
+				{
+					auto cuco = *itor;
+
+					if (cuco->m_ornt == 2)
+						ornt = (ornt == 2) ? 1 : 2;
+
+					if (cuco->m_name.RCNM == 120)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						cr =  findCurveRecord(iKey);
+						if (cr!=nullptr)
+						{
+							GetFullCurveData(fe, cr, cuco->m_ornt);
+						}
+						/*m_curMap.Lookup(iKey, cr);
+
+						GetFullCurveData(fe, cr, cuco->m_ornt);*/
+					}
+					else if (cuco->m_name.RCNM == 125)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						ccr = findCompositeRecord(iKey);
+						if (ccr != nullptr) {
+							GetFullCurveData(fe, ccr, cuco->m_ornt);
+						}
+						/*m_comMap.Lookup(iKey, ccr);
+						GetFullCurveData(fe, ccr, cuco->m_ornt);*/
+					}
+				}
+			}
+		}
+		else if (2 == ornt)
+		{
+			for (auto i = r->m_cuco.rbegin(); i != r->m_cuco.rend(); i++)
+			{
+				F_CUCO* cucoParent = *i;
+
+				for (auto itor = cucoParent->m_arr.begin(); itor != cucoParent->m_arr.end(); itor++)
+				{
+					auto cuco = *itor;
+
+					if (cuco->m_ornt == 2)
+						ornt = (ornt == 2) ? 1 : 2;
+
+					if (cuco->m_name.RCNM == 120)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						cr = findCurveRecord(iKey);
+						if (cr != nullptr)
+						{
+							GetFullCurveData(fe, cr, cuco->m_ornt);
+						}
+
+						/*m_curMap.Lookup(iKey, cr);
+
+						GetFullCurveData(fe, cr, cuco->m_ornt);*/
+					}
+					else if (cuco->m_name.RCNM == 125)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						ccr = findCompositeRecord(iKey);
+						if (ccr != nullptr) {
+							GetFullCurveData(fe, ccr, cuco->m_ornt);
+						}
+						/*m_comMap.Lookup(iKey, ccr);
+						GetFullCurveData(fe, ccr, cuco->m_ornt);*/
+					}
+				}
+			}
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_SurfaceRecord* r, int ornt)
+	{
+		R_CurveRecord* cr = NULL;
+		R_CompositeRecord* ccr = NULL;
+		__int64 iKey;
+
+		for (auto itorParent = r->m_rias.begin(); itorParent != r->m_rias.end(); itorParent++)
+		{
+			F_RIAS* riasParent = *itorParent;
+
+			for (auto itor = riasParent->m_arr.begin(); itor != riasParent->m_arr.end(); itor++)
+			{
+				RIAS* rias = *itor;
+
+				if (rias->m_ornt == 2)
+					ornt = (ornt == 2) ? 1 : 2;
+
+				iKey = ((__int64)rias->m_name.RCNM) << 32 | rias->m_name.RCID;
+				if (rias->m_name.RCNM == 120)
+				{
+					cr = findCurveRecord(iKey);
+					if (cr != nullptr)
+					{
+						GetFullCurveData(fe, cr, ornt);
+					}
+
+				/*	m_curMap.Lookup(iKey, cr);
+					GetFullCurveData(fe, cr, ornt);*/
+				}
+				else if (rias->m_name.RCNM == 125)
+				{
+					ccr = findCompositeRecord(iKey);
+					if (ccr != nullptr) {
+						GetFullCurveData(fe, ccr, ornt);
+					}
+				/*	m_comMap.Lookup(iKey, ccr);
+					GetFullCurveData(fe, ccr, ornt);*/
+				}
+			}
+		}
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_PointRecord* r, GeoPointZ& geo)
+	{
+		double x = r->m_c3it->m_xcoo;
+		double y = r->m_c3it->m_ycoo;
+		double z = r->m_c3it->m_zcoo;
+
+		if (m_dsgir.m_dssi.m_cmfy && m_dsgir.m_dssi.m_cmfx)
+		{
+			geo.SetPoint(
+				x,
+				y,
+				z);
+		}
+		else
+		{
+			geo.SetPoint(
+				x / 10000000.0,
+				y / 10000000.0,
+				z / 100.);
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_PointRecord* r, GeoPoint& geo)
+	{
+		double x = r->m_c2it->m_xcoo;
+		double y = r->m_c2it->m_ycoo;
+
+		if (m_dsgir.m_dssi.m_cmfy && m_dsgir.m_dssi.m_cmfx)
+		{
+			geo.SetPoint(
+				x / (double)m_dsgir.m_dssi.m_cmfx,
+				y / (double)m_dsgir.m_dssi.m_cmfy);
+		}
+		else
+		{
+			geo.SetPoint(
+				x / 10000000.0,
+				y / 10000000.0);
+		}
+		projection(geo.x, geo.y);
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_MultiPointRecord* r, CArray<GeoPointZ>& geoArr)
+	{
+
+		for (auto itor = r->m_c3il.begin(); itor != r->m_c3il.end(); itor++)
+		{
+			F_C3IL* c3il = *itor;
+			for (auto itor = c3il->m_arr.begin(); itor != c3il->m_arr.end(); itor++)
+			{
+				C3IL* unitC3IL = *itor;
+
+				double x = unitC3IL->m_xcoo;
+				double y = unitC3IL->m_ycoo;
+
+				GeoPointZ gpz;
+				gpz.SetPoint(
+					x / (double)m_dsgir.m_dssi.m_cmfx,
+					y / (double)m_dsgir.m_dssi.m_cmfy,
+					(unitC3IL->m_zcoo > 0 ? unitC3IL->m_zcoo + 0.5 : unitC3IL->m_zcoo - 0.5) / (double)m_dsgir.m_dssi.m_cmfz);
+				projection(gpz.x, gpz.y);
+
+				geoArr.Add(gpz);
+			}
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_CurveRecord* r, CArray<GeoPoint>& geoArr, int ORNT)
+	{
+		POSITION ptasPos = NULL;
+		PTAS* ptas = NULL;
+		IC2D* c2di = NULL;
+		R_PointRecord* spr, * epr;
+		GeoPoint gp;
+		__int64 iKey;
+
+		for (auto i = r->m_ptas->m_arr.begin(); i != r->m_ptas->m_arr.end(); i++)
+		{
+			auto ptas = *i;
+
+			iKey = ((__int64)ptas->m_name.RCNM) << 32 | ptas->m_name.RCID;
+			if (ptas->m_topi == 1 && ORNT == 1 ||	// Beginning node , forward
+				ptas->m_topi == 2 && ORNT == 2		// End node, reverse
+				)
+			{
+				spr = findPointRecord(iKey);
+				//m_ptMap.Lookup(iKey, spr);
+			}
+			else if (ptas->m_topi == 1 && ORNT == 2 ||	// Beginning node , reverse
+				ptas->m_topi == 2 && ORNT == 1		// End node, forward
+				)
+			{
+				epr = findPointRecord(iKey);
+				//m_ptMap.Lookup(iKey, epr);
+			}
+			else if (ptas->m_topi == 3)
+			{
+				spr = findPointRecord(iKey);
+				//m_ptMap.Lookup(iKey, spr);
+				epr = spr;
+			}
+		}
+
+		//ptasPos = r->m_ptas->m_arr.GetHeadPosition();
+
+		//while (ptasPos)
+		//{
+		//	ptas = r->m_ptas->m_arr.GetNext(ptasPos);
+
+		//	iKey = ((__int64)ptas->m_name.RCNM) << 32 | ptas->m_name.RCID;
+		//	if (ptas->m_topi == 1 && ORNT == 1 ||	// Beginning node , forward
+		//		ptas->m_topi == 2 && ORNT == 2		// End node, reverse
+		//		)
+		//	{
+		//		m_ptMap.Lookup(iKey, spr);
+		//	}
+		//	else if (ptas->m_topi == 1 && ORNT == 2 ||	// Beginning node , reverse
+		//		ptas->m_topi == 2 && ORNT == 1		// End node, forward
+		//		)
+		//	{
+		//		m_ptMap.Lookup(iKey, epr);
+		//	}
+		//	else if (ptas->m_topi == 3)
+		//	{
+		//		m_ptMap.Lookup(iKey, spr);
+		//		epr = spr;
+		//	}
+		//}
+
+		double x = spr->m_c2it->m_xcoo;
+		double y = spr->m_c2it->m_ycoo;
+
+		gp.SetPoint(x / (double)m_dsgir.m_dssi.m_cmfx,
+			y / (double)m_dsgir.m_dssi.m_cmfy);
+		projection(gp.x, gp.y);
+		geoArr.Add(gp);
+
+		if (ORNT == 1)
+		{
+			for (auto itorParent = r->m_c2il.begin(); itorParent != r->m_c2il.end(); itorParent++)
+			{
+				for (auto itor = (*itorParent)->m_arr.begin(); itor != (*itorParent)->m_arr.end(); itor++)
+				{
+					IC2D* pIC2D = *itor;
+
+					x = pIC2D->m_xcoo;
+					y = pIC2D->m_ycoo;
+
+					gp.SetPoint(x / (double)m_dsgir.m_dssi.m_cmfx,
+						y / (double)m_dsgir.m_dssi.m_cmfy);
+
+					projection(gp.x, gp.y);
+					geoArr.Add(gp);
+				}
+			}
+		}
+		else if (ORNT == 2)
+		{
+			for (auto itorParent = r->m_c2il.begin(); itorParent != r->m_c2il.end(); itorParent++)
+			{
+				for (auto itor = (*itorParent)->m_arr.rbegin(); itor != (*itorParent)->m_arr.rend(); itor++)
+				{
+					IC2D* pIC2D = *itor;
+
+					x = pIC2D->m_xcoo;
+					y = pIC2D->m_ycoo;
+
+					gp.SetPoint(x / (double)m_dsgir.m_dssi.m_cmfx,
+						y / (double)m_dsgir.m_dssi.m_cmfy);
+
+					projection(gp.x, gp.y);
+					geoArr.Add(gp);
+				}
+			}
+		}
+		x = epr->m_c2it->m_xcoo;
+		y = epr->m_c2it->m_ycoo;
+
+		gp.SetPoint(x / (double)m_dsgir.m_dssi.m_cmfx,
+			y / (double)m_dsgir.m_dssi.m_cmfy);
+		projection(gp.x, gp.y);
+		geoArr.Add(gp);
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_CurveRecord* r, std::vector<POINT>& geoArr, int ORNT)
+	{
+		if (nullptr != r->m_ptas)
+		{
+			auto countPTAS = r->m_ptas->m_arr.size();
+
+			if (countPTAS != 1 && countPTAS != 2)
+			{
+				OutputDebugString(L"Invalid count of PTAS of Curve Record\n");
+			}
+
+			auto beginPointKey = r->m_ptas->m_arr.front()->m_name.GetName();
+			auto endPointKey = r->m_ptas->m_arr.back()->m_name.GetName();
+
+			//auto beginPointRecord = GetPointRecord(beginPointKey);
+			auto beginPointRecord = findPointRecord(beginPointKey);
+			if (nullptr == beginPointRecord || nullptr == beginPointRecord->m_c2it)
+			{
+				return FALSE;
+			}
+
+			//auto endPointRecord = GetPointRecord(endPointKey);
+			auto endPointRecord = findPointRecord(endPointKey);
+			if (nullptr == endPointRecord || nullptr == endPointRecord->m_c2it)
+			{
+				return FALSE;
+			}
+
+			// PTAS
+			if (1 == ORNT)
+			{
+				geoArr.push_back({ beginPointRecord->m_c2it->m_xcoo, beginPointRecord->m_c2it->m_ycoo });
+			}
+			else if (2 == ORNT)
+			{
+				geoArr.push_back({ endPointRecord->m_c2it->m_xcoo, endPointRecord->m_c2it->m_ycoo });
+			}
+			else
+			{
+				OutputDebugString(L"Invalied ORNT\n");
+			}
+
+			// C2IL
+			if (r->m_c2il.size() == 1)
+			{
+				// Forward
+				if (1 == ORNT)
+				{
+					for (auto i = r->m_c2il.front()->m_arr.begin(); i != r->m_c2il.front()->m_arr.end(); i++)
+					{
+						auto segC2IL = *i;
+						geoArr.push_back({ segC2IL->m_xcoo, segC2IL->m_ycoo });
+					}
+				}
+				// Reverse
+				else if (2 == ORNT)
+				{
+					for (auto i = r->m_c2il.front()->m_arr.rbegin(); i != r->m_c2il.front()->m_arr.rend(); i++)
+					{
+						auto segC2IL = *i;
+						geoArr.push_back({ segC2IL->m_xcoo, segC2IL->m_ycoo });
+					}
+				}
+				else
+				{
+					OutputDebugString(L"Invalied ORNT\n");
+				}
+			}
+			else
+			{
+				OutputDebugString(L"Invalied C2IL count\n");
+			}
+
+			// PTAS
+			if (1 == ORNT)
+			{
+				geoArr.push_back({ endPointRecord->m_c2it->m_xcoo, endPointRecord->m_c2it->m_ycoo });
+			}
+			else if (2 == ORNT)
+			{
+				geoArr.push_back({ beginPointRecord->m_c2it->m_xcoo, beginPointRecord->m_c2it->m_ycoo });
+			}
+			else
+			{
+				OutputDebugString(L"Invalied ORNT\n");
+			}
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_CompositeRecord* r, CArray<GeoPoint>& geoArr, int ORNT)
+	{
+		POSITION cucoPos = NULL;
+		CUCO* cuco = NULL;
+		R_CurveRecord* cr = NULL;
+		R_CompositeRecord* ccr = NULL;
+		__int64 iKey;
+
+		if (ORNT == 1)
+		{
+			for (auto itorParent = r->m_cuco.begin(); itorParent != r->m_cuco.end(); itorParent++)
+			{
+				F_CUCO* cucoParent = *itorParent;
+
+				for (auto itor = cucoParent->m_arr.begin(); itor != cucoParent->m_arr.end(); itor++)
+				{
+					cuco = *itor;
+					if (cuco->m_name.RCNM == 120)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						cr = findCurveRecord(iKey);
+						if (cr != nullptr)
+						{
+							GetFullSpatialData(cr, geoArr, cuco->m_ornt);
+						}
+					/*	m_curMap.Lookup(iKey, cr);
+						GetFullSpatialData(cr, geoArr, cuco->m_ornt);*/
+					}
+					else if (cuco->m_name.RCNM == 125)
+					{
+						iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+						ccr = findCompositeRecord(iKey);
+						if (ccr != nullptr) {
+							GetFullSpatialData(ccr, geoArr, cuco->m_ornt);
+						}
+						
+					/*	m_comMap.Lookup(iKey, ccr);
+						GetFullSpatialData(ccr, geoArr, cuco->m_ornt);*/
+					}
+				}
+			}
+		}
+		else if (ORNT == 2)
+		{
+			for (auto itorParent = r->m_cuco.begin(); itorParent != r->m_cuco.end(); itorParent++)
+			{
+				F_CUCO* cucoParent = *itorParent;
+
+				for (auto itor = cucoParent->m_arr.rbegin(); itor != cucoParent->m_arr.rend(); itor++)
+				{
+					cuco = *itor;
+					iKey = ((__int64)cuco->m_name.RCNM) << 32 | cuco->m_name.RCID;
+
+					unsigned ornt = 1;
+					if (cuco->m_ornt == 2)
+						ornt = 1;
+					else
+						ornt = 2;
+
+					if (cuco->m_name.RCNM == 120)
+					{
+						cr = findCurveRecord(iKey);
+						if (cr != nullptr)
+						{
+							GetFullSpatialData(cr, geoArr, ornt);
+						}
+					/*	m_curMap.Lookup(iKey, cr);
+						GetFullSpatialData(cr, geoArr, ornt);*/
+					}
+					else if (cuco->m_name.RCNM == 125)
+					{
+						ccr = findCompositeRecord(iKey);
+						if (ccr != nullptr) {
+							GetFullSpatialData(ccr, geoArr, ornt);
+						}
+						/*m_comMap.Lookup(iKey, ccr);
+						GetFullSpatialData(ccr, geoArr, ornt);*/
+					}
+				}
+			}
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_CompositeRecord* r, std::vector<POINT>& geoArr, int ORNT)
+	{
+		for (auto i = r->m_cuco.begin(); i != r->m_cuco.end(); i++)
+		{
+			auto CUCO = *i;
+			for (auto j = CUCO->m_arr.begin(); j != CUCO->m_arr.end(); j++)
+			{
+				auto segCUCO = *j;
+
+				if (segCUCO->m_name.RCNM == 120)
+				{
+					//auto curveRecord = GetCurveRecord(segCUCO->m_name.GetName());
+					auto curveRecord = findCurveRecord(segCUCO->m_name.GetName());
+					if (nullptr != curveRecord)
+					{
+						GetFullSpatialData(curveRecord, geoArr, segCUCO->m_ornt);
+					}
+				}
+				else if (segCUCO->m_name.RCNM == 125)
+				{
+					//auto compositeCurveRecord = GetCompositeCurveRecord(segCUCO->m_name.GetName());
+					auto compositeCurveRecord = findCompositeRecord(segCUCO->m_name.GetName());
+					if (nullptr != compositeCurveRecord)
+					{
+						GetFullSpatialData(compositeCurveRecord, geoArr, segCUCO->m_ornt);
+					}
+				}
+				else
+				{
+					OutputDebugString(L"Invalid RCNM in CUCO\n");
+					return FALSE;
+				}
+			}
+		}
+
+		return TRUE;
+	}
+
+	bool S101::GetFullSpatialData(R_SurfaceRecord* r, CArray<GeoPoint>& geoArr)
+	{
+		RIAS* rias = NULL;
+		R_CurveRecord* cr = NULL;
+		R_CompositeRecord* ccr = NULL;
+		__int64 iKey;
+
+		///////////////////////////////
+		// for blank interior area
+		int sp = 0;
+		CList<int> boundaryList;
+		BOOL isExtrior = TRUE;
+		///////////////////////////////
+
+		for (auto itorParent = r->m_rias.begin(); itorParent != r->m_rias.end(); itorParent++)
+		{
+			F_RIAS* riasParent = *itorParent;
+
+			for (auto itor = riasParent->m_arr.begin(); itor != riasParent->m_arr.end(); itor++)
+			{
+				RIAS* rias = *itor;
+				///////////////////////////////
+				// for blank interior area
+				if (sp == -1)
+				{
+					sp = (int)geoArr.GetCount();
+				}
+				//////////////////////////////
+
+				iKey = ((__int64)rias->m_name.RCNM) << 32 | rias->m_name.RCID;
+				if (rias->m_name.RCNM == 120)
+				{
+					cr = findCurveRecord(iKey);
+					if (cr != nullptr)
+					{
+						GetFullSpatialData(cr, geoArr, rias->m_ornt);
+					}
+
+			/*		m_curMap.Lookup(iKey, cr);
+					GetFullSpatialData(cr, geoArr, rias->m_ornt);*/
+				}
+				else if (rias->m_name.RCNM == 125)
+				{
+					ccr = findCompositeRecord(iKey);
+					if (ccr != nullptr) {
+						GetFullSpatialData(ccr, geoArr, rias->m_ornt);
+					}
+				/*	m_comMap.Lookup(iKey, ccr);
+					GetFullSpatialData(ccr, geoArr, rias->m_ornt);*/
+				}
+				///////////////////////////////
+				// for blank interior area
+				int sizet = (int)geoArr.GetCount() - 1;
+				if (geoArr[sp].x == geoArr[sizet].x &&
+					geoArr[sp].y == geoArr[sizet].y)
+				{
+					if (isExtrior)
+					{
+						sp = -1;
+						isExtrior = false;
+					}
+					else
+					{
+						sp = -1;
+						boundaryList.AddTail(sizet + 1);
+					}
+				}
+				//////////////////////////////
+				//////////////////////////////////////////////////////////
+			}
+		}
+		///////////////////////////////
+		// for blank interior area
+		int arrIndex = 0;
+		int i = 0;
+		POSITION boundaryPos = boundaryList.GetHeadPosition();
+		int index;
+		int count = 0;
+		while (boundaryPos != NULL)
+		{
+			index = boundaryList.GetNext(boundaryPos) + count;
+			GeoPoint p(geoArr[0].x, geoArr[0].y);
+			geoArr.InsertAt(index, p);
+			count++;
+		}
+		return TRUE;
+	}
+
+	R_MultiPointRecord* S101::findMultiPointRecord(long long value) {
+
+		for (auto itor = vecMultiPoint.begin(); itor != vecMultiPoint.end(); itor++) {
+			R_MultiPointRecord* r = *(itor);
+			if (r->m_mrid.m_name.GetName() == value)
+			{
+				return r;
+			}
+
+		}
+		return nullptr;
+	}
+
+	R_PointRecord* S101::findPointRecord(long long value)
+	{
+		for (auto itor = vecPoint.begin(); itor != vecPoint.end(); itor++) {
+			R_PointRecord* r = *(itor);
+			if (r->m_prid.m_name.GetName() == value)
+			{
+				return r;
+			}
+
+		}
+		return nullptr;
+
+	}
+
+	R_CurveRecord* S101::findCurveRecord(long long value)
+	{
+		for (auto itor = vecCurve.begin(); itor != vecCurve.end(); itor++) {
+			R_CurveRecord* r = *(itor);
+			if (r->m_crid.m_name.GetName() == value)
+			{
+				return r;
+			}
+
+		}
+		return nullptr;
+	}
+
+	R_CompositeRecord* S101::findCompositeRecord(long long value)
+	{
+		for (auto itor = vecComposite.begin(); itor != vecComposite.end(); itor++) {
+			R_CompositeRecord* r = *(itor);
+			if (r->m_ccid.m_name.GetName() == value)
+			{
+				return r;
+			}
+
+		}
+		return nullptr;
+
+	}
+
+	R_SurfaceRecord* S101::findSurfaceRecord(long long value) {
+
+		for (auto itor = vecSurface.begin(); itor != vecSurface.end(); itor++) {
+			R_SurfaceRecord* r = *(itor);
+			if (r->m_srid.m_name.GetName() == value)
+			{
+				return r;
+			}
+
+		}
+		return nullptr;
+	}
+
+	//bool S101::SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList)
+	//{
+	//	for (auto c = inCurveRecordList->begin(); c != inCurveRecordList->end(); c++)
+	//	{
+	//		//geoArr.RemoveAll();
+	//		OrientedCurveRecord* ocr = &(*c);
+
+	//		__int64 iKey = ((__int64)ocr->m_pCurveRecord->m_crid.m_name.RCNM) << 32 | ocr->m_pCurveRecord->m_crid.m_name.RCID;
+	//		//findCurveRecord(iKey);
+
+	//		auto curveIter = m_curveMap.find(iKey);
+	//		//auto curveIter = vecCurve.find(iKey);
+
+	//		bool bOrnt = ocr->m_orient == 1 ? true : false;
+
+	//		if (curveIter != m_curveMap.end())
+	//		{
+	//			SCurveHasOrient curveHasOrient(bOrnt, curveIter->second);
+	//			outSCurveList->push_back(curveHasOrient);
+	//		}
+	//		else
+	//		{
+	//			SCurve* pCurve = GetCurveGeometry(ocr->m_pCurveRecord/*, geoArr, ocr->m_orient*/);
+	//			pCurve->m_id = iKey;
+	//			SCurveHasOrient curveHasOrient(bOrnt, pCurve);
+	//			outSCurveList->push_back(curveHasOrient);
+
+	//			m_curveMap.insert({ iKey, pCurve });
+	//		}
+	//	}
+	//	return TRUE;
+	//}
+
+	std::string S101::CStringToString(CString str)
 	{
 		CT2CA convertedString(str);
 		return std::string(convertedString);

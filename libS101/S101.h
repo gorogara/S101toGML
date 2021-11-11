@@ -5,9 +5,11 @@
 #include "R_DSCRS.h"
 #include "S100SpatialObject.h"
 #include "DDR.h"
+#include "MBR.h"
 
 #include <string>
 #include <vector>
+
 
 #include "..\\extlibs\\pugixml\\include\\pugixml.hpp"
 
@@ -25,6 +27,8 @@ class SCurve;
 class SSurface;
 class SMultiPoint;
 class SCompositeCurve;
+class GeoPointZ;
+class GeoPoint;
 
 namespace libS101
 {
@@ -42,6 +46,7 @@ namespace libS101
 		//bool Open(std::string _filepath);
 
 	public:
+		MBR mbr;
 		DDR m_S101DDR;
 		// Dataset General Information Record 
 		R_DSGIR m_dsgir;
@@ -60,6 +65,10 @@ namespace libS101
 		std::vector<R_SurfaceRecord*> vecSurface;
 		std::vector<R_FeatureRecord*> vecFeature;
 		
+		double xmin = 0;
+		double ymin = 0;
+		double xmax = 0;
+		double ymax = 0;
 
 	public:
 		void Test();
@@ -116,6 +125,43 @@ namespace libS101
 
 		CString GetDatasetAbstract();
 		std::string GetDatasetAbstractToString();
+
+		bool MakeFullSpatialData();
+		bool MakePointData(R_FeatureRecord* fe);
+		bool MakeSoundingData(R_FeatureRecord* fe);
+		bool MakeLineData(R_FeatureRecord* fe);
+		bool MakeAreaData(R_FeatureRecord* fe);
+
+		bool GetFullCurveData(R_FeatureRecord* fe, R_PointRecord* r, int ornt = 1);
+		bool GetFullCurveData(R_FeatureRecord* fe, R_MultiPointRecord* r, int ornt = 1);
+		bool GetFullCurveData(R_FeatureRecord* fe, R_CurveRecord* r, int ornt = 1);
+		bool GetFullCurveData(R_FeatureRecord* fe, R_CompositeRecord* r, int ornt = 1);
+		bool GetFullCurveData(R_FeatureRecord* fe, R_SurfaceRecord* r, int ornt = 1);
+
+
+		bool GetFullSpatialData(R_PointRecord* r, GeoPoint& geo);
+		bool GetFullSpatialData(R_PointRecord* r, GeoPointZ& geo);
+		bool GetFullSpatialData(R_MultiPointRecord* r, CArray<GeoPointZ>& geoArr);
+		bool GetFullSpatialData(R_CurveRecord* r, CArray<GeoPoint>& geoArr, int ORNT = 1);
+		bool GetFullSpatialData(R_CurveRecord* r, std::vector<POINT>& geoArr, int ORNT = 1);
+		bool GetFullSpatialData(R_CompositeRecord* r, CArray<GeoPoint>& geoArr, int ORNT = 1);
+		bool GetFullSpatialData(R_CompositeRecord* r, std::vector<POINT>& geoArr, int ORNT = 1);
+		bool GetFullSpatialData(R_SurfaceRecord* r, CArray<GeoPoint>& geoArr);
+
+		R_MultiPointRecord* findMultiPointRecord(long long value);
+		R_PointRecord* findPointRecord(long long value);
+		R_CurveRecord* findCurveRecord(long long value);
+		R_CompositeRecord* findCompositeRecord(long long value);
+		R_SurfaceRecord* findSurfaceRecord(long long value);
+
+		//R_PointRecord* GetPointRecord(__int64 key);
+
+		SCurve* GetCurveGeometry(R_CurveRecord* r/*, CArray<GeoPoint> &geoArr, unsigned ORNT = 1*/);
+
+		//bool SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList);
+		void CalcMBR();
+
+		
 
 	private :
 		std::string CStringToString(CString str);

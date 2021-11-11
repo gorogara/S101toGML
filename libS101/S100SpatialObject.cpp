@@ -23,7 +23,7 @@ S100::S100_DataProduct S100SpatialObject::GetS100Product()
 	return S100Product;
 }
 
-//
+
 //void S100SpatialObject::SetMBR(MBR& value)
 //{
 //	if (nullptr != m_pLayer)

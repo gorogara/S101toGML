@@ -1,8 +1,8 @@
 #pragma once
 
 #include "SGeometry.h"
-
-#include "..\\GeoMetryLibrary\\GeoPointZ.h"
+#include "GeoPointZ.h"
+//#include "..\\GeoMetryLibrary\\GeoPointZ.h"
 
 class SMultiPoint : public SGeometry
 {
