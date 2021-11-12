@@ -1,4 +1,5 @@
 #include "pch.h"
+
 #include "S101.h"
 #include "R_CompositeRecord.h"
 #include "R_SurfaceRecord.h"
@@ -44,8 +45,7 @@
 #include <iostream>
 #include <sstream>
 #include <iomanip>
-
-//#include <pugixml.hpp>
+#include <vector>
 
 #undef _WINDOWS_
 #include <afxext.h>
@@ -1716,57 +1716,6 @@ namespace libS101
 						}
 					}
 				}
-				//if (m_ptMap.Lookup(iKey, r))
-				//{
-				//	if (r->m_c2it)
-				//	{
-				//		GeoPoint geoArr;
-				//		GetFullCurveData(fe, r);
-				//		GetFullSpatialData(r, geoArr);
-
-				//		if (fe->m_geometry)
-				//			delete fe->m_geometry;
-
-				//		fe->m_geometry = new SPoint();
-				//		SPoint* geo = (SPoint*)fe->m_geometry;
-
-				//		geo->SetPoint(geoArr.x, geoArr.y);
-
-				//		geo->m_mbr.CalcMBR(geoArr.x, geoArr.y);
-				//	}
-				//	else if (r->m_c3it)
-				//	{
-				//		GeoPointZ geoArr;
-
-				//		GetFullCurveData(fe, r);
-				//		GetFullSpatialData(r, geoArr);
-
-				//		int cnt = 1;
-
-				//		if (fe->m_geometry)
-				//			delete fe->m_geometry;
-
-				//		fe->m_geometry = new SMultiPoint();
-				//		SMultiPoint* geo = (SMultiPoint*)fe->m_geometry;
-
-				//		geo->m_numPoints = cnt;
-				//		if (!geo->m_pPoints)
-				//		{
-				//			geo->m_pPoints = new std::vector<GeoPointZ>(geo->m_numPoints);//new GeoPointZ[geo->m_numPoints];
-				//		}
-				//		else
-				//		{
-				//			geo->m_pPoints->clear();
-				//			if ((int)(*geo->m_pPoints).size() < geo->m_numPoints)
-				//				(*geo->m_pPoints).resize(geo->m_numPoints + 1);
-				//		}
-
-				//		for (int i = 0; i < cnt; i++)
-				//		{
-				//			(*geo->m_pPoints)[i].SetPoint(geoArr.x, geoArr.y, geoArr.z);
-				//		}
-				//	}
-				//}
 			}
 		}
 		return TRUE;
@@ -2455,7 +2404,7 @@ namespace libS101
 		POSITION ptasPos = NULL;
 		PTAS* ptas = NULL;
 		IC2D* c2di = NULL;
-		R_PointRecord* spr, * epr;
+		R_PointRecord* spr = nullptr, * epr = nullptr;
 		GeoPoint gp;
 		__int64 iKey;
 

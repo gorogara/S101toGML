@@ -260,6 +260,7 @@
     <ClInclude Include="SCurve.h" />
     <ClInclude Include="SCurveHasOrient.h" />
     <ClInclude Include="SGeometry.h" />
+    <ClInclude Include="SMultiPoint.h" />
     <ClInclude Include="SPAS.h" />
     <ClInclude Include="SpatialObject.h" />
     <ClInclude Include="SPoint.h" />
@@ -356,6 +357,7 @@
     <ClCompile Include="SCurve.cpp" />
     <ClCompile Include="SCurveHasOrient.cpp" />
     <ClCompile Include="SGeometry.cpp" />
+    <ClCompile Include="SMultiPoint.cpp" />
     <ClCompile Include="SPAS.cpp" />
     <ClCompile Include="SpatialObject.cpp" />
     <ClCompile Include="SPoint.cpp" />

@@ -1,5 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "SMultiPoint.h"
+
+#include <stdexcept>
 
 SMultiPoint::SMultiPoint()
 {

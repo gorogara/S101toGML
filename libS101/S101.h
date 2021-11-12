@@ -156,7 +156,7 @@ namespace libS101
 
 		//R_PointRecord* GetPointRecord(__int64 key);
 
-		SCurve* GetCurveGeometry(R_CurveRecord* r/*, CArray<GeoPoint> &geoArr, unsigned ORNT = 1*/);
+	//	SCurve* GetCurveGeometry(R_CurveRecord* r/*, CArray<GeoPoint> &geoArr, unsigned ORNT = 1*/);
 
 		//bool SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList);
 		void CalcMBR();
