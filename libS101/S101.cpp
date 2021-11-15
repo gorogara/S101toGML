@@ -103,6 +103,7 @@ namespace libS101
 
 	S101::~S101()
 	{
+
 		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
 		{
 			R_InformationRecord* ir = *(itor);
