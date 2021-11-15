@@ -101,6 +101,52 @@ namespace libS101
 		return wss.str();
 	}
 
+	S101::~S101()
+	{
+		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
+		{
+			R_InformationRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecPoint.begin(); itor != vecPoint.end(); itor++)
+		{
+			R_PointRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecMultiPoint.begin(); itor != vecMultiPoint.end(); itor++)
+		{
+			R_MultiPointRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecCurve.begin(); itor != vecCurve.end(); itor++)
+		{
+			R_CurveRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecComposite.begin(); itor != vecComposite.end(); itor++)
+		{
+			R_CompositeRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecSurface.begin(); itor != vecSurface.end(); itor++)
+		{
+			R_SurfaceRecord* ir = *(itor);
+			delete ir;
+		}
+
+		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
+		{
+			R_FeatureRecord* ir = *(itor);
+			delete ir;
+		}
+
+	
+	}
 
 	void S101::Test()
 	{

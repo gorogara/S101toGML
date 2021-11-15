@@ -39,7 +39,7 @@ namespace libS101
 	{
 	public:
 		S101() {}
-		virtual ~S101() {}
+		virtual ~S101();
 
 		bool Open(CString _filepath);
 		void Save(CString _filepath, CString extend);
