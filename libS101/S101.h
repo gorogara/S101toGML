@@ -6,10 +6,12 @@
 #include "S100SpatialObject.h"
 #include "DDR.h"
 #include "MBR.h"
+#include "OrientedCurveRecord.h"
+#include "SCurveHasOrient.h"
 
 #include <string>
 #include <vector>
-
+#include <list>
 
 #include "..\\extlibs\\pugixml\\include\\pugixml.hpp"
 
@@ -69,6 +71,11 @@ namespace libS101
 		double ymin = 0;
 		double xmax = 0;
 		double ymax = 0;
+
+	private:
+		std::unordered_map<__int64, SCurve*> m_curveMap;
+
+
 
 	public:
 		void Test();
@@ -132,6 +139,9 @@ namespace libS101
 		bool MakeLineData(R_FeatureRecord* fe);
 		bool MakeAreaData(R_FeatureRecord* fe);
 
+		SCurve* GetCurveGeometry(R_CurveRecord* r/*, CArray<GeoPoint> &geoArr, unsigned ORNT = 1*/);
+		bool SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList);
+
 		bool GetFullCurveData(R_FeatureRecord* fe, R_PointRecord* r, int ornt = 1);
 		bool GetFullCurveData(R_FeatureRecord* fe, R_MultiPointRecord* r, int ornt = 1);
 		bool GetFullCurveData(R_FeatureRecord* fe, R_CurveRecord* r, int ornt = 1);
@@ -154,11 +164,6 @@ namespace libS101
 		R_CompositeRecord* findCompositeRecord(long long value);
 		R_SurfaceRecord* findSurfaceRecord(long long value);
 
-		//R_PointRecord* GetPointRecord(__int64 key);
-
-	//	SCurve* GetCurveGeometry(R_CurveRecord* r/*, CArray<GeoPoint> &geoArr, unsigned ORNT = 1*/);
-
-		//bool SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList);
 		void CalcMBR();
 
 		

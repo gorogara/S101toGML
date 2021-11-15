@@ -2,8 +2,8 @@
 <S101:DataSet xmlns:S101="http://www.iho.int/S101/gml/1.0" xsi:schemaLocation="http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/1.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" gml:id="KRNPI101_TEST002_001">
 	<gml:boundedBy>
 		<gml:Envelope srsName="EPSG:4326" srsDimension="2">
-			<gml:lowerCorner>60.9132734 -32.5455321</gml:lowerCorner>
-			<gml:upperCorner>60.9132734 -32.5455321</gml:upperCorner>
+			<gml:lowerCorner>60.8733138 -32.5523523</gml:lowerCorner>
+			<gml:upperCorner>60.9666667 -32.5000000</gml:upperCorner>
 		</gml:Envelope>
 	</gml:boundedBy>
 	<DatasetIdentificationInformation>
@@ -326,6 +326,28 @@
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0007">
 			<categoryOfRoad>2</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="1">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9624303 -32.5135908 60.9624303 -32.5135908 60.9621508 -32.5132658 60.9615309 -32.5126428 60.9611960 -32.5123956 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="2">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9611960 -32.5123956 60.9611960 -32.5123956 60.9604920 -32.5118761 60.9601937 -32.5114972 60.9600434 -32.5110193 60.9600261 -32.5106674 60.9601430 -32.5102705 60.9605650 -32.5091968 60.9606703 -32.5089532 60.9611678 -32.5075637 60.9614462 -32.5067066 60.9621440 -32.5058402 60.9625025 -32.5052357 60.9626586 -32.5047305 60.9628020 -32.5040357 60.9633593 -32.5031695 60.9640774 -32.5024384 60.9651138 -32.5015991 60.9656328 -32.5009041 60.9659314 -32.5000561 60.9659334 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -705,11 +727,33 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0025">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="3">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953043 -32.5021201 60.8953043 -32.5021201 60.8954524 -32.5021752 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0026">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="4">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9532696 -32.5000000 60.9532696 -32.5000000 60.9529665 -32.5005832 60.9529681 -32.5009074 60.9532272 -32.5010775 60.9534574 -32.5010046 60.9536164 -32.5009230 60.9541395 -32.5003628 60.9544667 -32.5000000 60.9544667 -32.5000000</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -738,11 +782,33 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0028">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="5">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5196663 60.9666667 -32.5196663 60.9664339 -32.5192867 60.9660381 -32.5182242 60.9657943 -32.5179723 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0029">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="6">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666145 -32.5207028 60.9662396 -32.5204756 60.9659633 -32.5202303 60.9655872 -32.5196950 60.9652559 -32.5187972 60.9651260 -32.5185794 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -813,6 +879,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0033">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="7">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505921 -32.5015281 60.9506914 -32.5020620 60.9508908 -32.5027045 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -938,6 +1015,160 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0040">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="8">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952194 -32.5004264 60.8952194 -32.5004264 60.8950504 -32.5007768 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="9">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8950504 -32.5007768 60.8950504 -32.5007768 60.8949769 -32.5009212 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="10">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8949769 -32.5009212 60.8949769 -32.5009212 60.8949097 -32.5010655 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="11">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8949097 -32.5010655 60.8949097 -32.5010655 60.8948331 -32.5012188 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="12">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948331 -32.5012188 60.8948331 -32.5012188 60.8947554 -32.5013812 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="13">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8947554 -32.5013812 60.8947554 -32.5013812 60.8946808 -32.5015345 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="14">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8946808 -32.5015345 60.8946808 -32.5015345 60.8946041 -32.5016879 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="15">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8946041 -32.5016879 60.8946041 -32.5016879 60.8945349 -32.5018322 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="16">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8945349 -32.5018322 60.8945349 -32.5018322 60.8944657 -32.5019765 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="17">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8944657 -32.5019765 60.8944657 -32.5019765 60.8943900 -32.5021299 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="18">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943900 -32.5021299 60.8943900 -32.5021299 60.8943005 -32.5023103 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="19">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943005 -32.5023103 60.8943005 -32.5023103 60.8942324 -32.5024546 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="20">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942324 -32.5024546 60.8942324 -32.5024546 60.8941673 -32.5025808 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="21">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941673 -32.5025808 60.8941673 -32.5025808 60.8940875 -32.5027523 60.8939151 -32.5026801 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -1113,6 +1344,28 @@
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0049">
 			<categoryOfSlope>6</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="22">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9410580 -32.5160490 60.9410580 -32.5160490 60.9407087 -32.5157242 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="23">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9407087 -32.5157242 60.9407087 -32.5157242 60.9401996 -32.5151560 60.9398108 -32.5147321 60.9390026 -32.5139565 60.9388320 -32.5129370 60.9386829 -32.5125944 60.9382430 -32.5118005 60.9380234 -32.5106820 60.9379934 -32.5100596 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
@@ -1234,6 +1487,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0056">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="24">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9584199 -32.5177854 60.9584199 -32.5177854 60.9585603 -32.5174787 60.9585155 -32.5171720 60.9583823 -32.5169826 60.9582406 -32.5168744 60.9577518 -32.5166852 60.9574440 -32.5166492 60.9572248 -32.5166673 60.9568831 -32.5167576 60.9565808 -32.5170283 60.9565808 -32.5170283</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -1369,11 +1633,33 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0063">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="25">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9529491 -32.5090908 60.9529491 -32.5090908 60.9533318 -32.5077376 60.9535185 -32.5062220 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0064">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="26">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9497722 -32.5006751 60.9497722 -32.5006751 60.9499716 -32.5011983 60.9499729 -32.5018117 60.9499729 -32.5018117</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -1988,6 +2274,61 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0097">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="27">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070641 -32.5355454 60.9070641 -32.5355454 60.9131620 -32.5360101 60.9162854 -32.5367244 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="28">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9162854 -32.5367244 60.9162854 -32.5367244 60.9170139 -32.5368910 60.9182519 -32.5376656 60.9217832 -32.5374283 60.9237526 -32.5369563 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="29">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9237526 -32.5369563 60.9237526 -32.5369563 60.9249552 -32.5366681 60.9265888 -32.5363053 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="30">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9265888 -32.5363053 60.9265888 -32.5363053 60.9292393 -32.5357166 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="31">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292393 -32.5357166 60.9292393 -32.5357166 60.9301381 -32.5355361 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -2005,6 +2346,39 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0099">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="32">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9301381 -32.5355361 60.9301381 -32.5355361 60.9297294 -32.5322258 60.9296764 -32.5318342 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="33">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9296764 -32.5318342 60.9296764 -32.5318342 60.9292066 -32.5283608 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="34">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292066 -32.5283608 60.9292066 -32.5283608 60.9291721 -32.5281059 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -2057,6 +2431,28 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0103">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="35">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9245882 -32.5327474 60.9245882 -32.5327474 60.9246386 -32.5327405 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="36">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246386 -32.5327405 60.9246386 -32.5327405 60.9272326 -32.5323610 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -2088,21 +2484,88 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0106">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="37">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964502 -32.5011468 60.8964502 -32.5011468 60.8967120 -32.5011109 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="38">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8967120 -32.5011109 60.8967120 -32.5011109 60.8969409 -32.5010838 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0107">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="39">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8955123 -32.5011107 60.8955123 -32.5011107 60.8957199 -32.5010836 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="40">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957199 -32.5010836 60.8957199 -32.5010836 60.8959211 -32.5010566 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0108">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="41">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9245882 -32.5327474 60.9245882 -32.5327474 60.9223735 -32.5331099 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0109" />
+		<S101:Coastline gml:id="FEATURE_ID_0109">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="42">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9414671 -32.5158634 60.9414671 -32.5158634 60.9415073 -32.5159497 60.9416543 -32.5163736 60.9418776 -32.5167305 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:DepthArea gml:id="FEATURE_ID_0110">
@@ -2126,7 +2589,41 @@
 		</S101:DepthArea>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0111" />
+		<S101:Coastline gml:id="FEATURE_ID_0111">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="43">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9294912 -32.5016620 60.9294912 -32.5016620 60.9294017 -32.5013193 60.9294421 -32.5009584 60.9294923 -32.5008774 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="44">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9294923 -32.5008774 60.9294923 -32.5008774 60.9296422 -32.5006246 60.9297006 -32.5005243 60.9299608 -32.5002410 60.9300142 -32.5002103 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="45">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9300142 -32.5002103 60.9300142 -32.5002103 60.9303804 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:DredgedArea gml:id="FEATURE_ID_0112">
@@ -2174,6 +2671,17 @@
 		<S101:Coastline gml:id="FEATURE_ID_0114">
 			<categoryOfCoastline>1</categoryOfCoastline>
 			<radarConspicuous>1</radarConspicuous>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="46">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446534 -32.5000051 60.9446886 -32.5002637 60.9448994 -32.5007331 60.9449980 -32.5015276 60.9449806 -32.5018437 60.9448161 -32.5022503 60.9446070 -32.5025937 60.9442488 -32.5030999 60.9439713 -32.5033803 60.9435627 -32.5036879 60.9434438 -32.5039409 60.9434339 -32.5042750 60.9433351 -32.5044648 60.9432011 -32.5045824 60.9430904 -32.5046501 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Coastline>
 	</member>
 	<member>
@@ -2200,6 +2708,39 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0116">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="47">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9294289 -32.5359691 60.9294289 -32.5359691 60.9276527 -32.5370338 60.9234827 -32.5411748 60.9225040 -32.5417702 60.9222018 -32.5417439 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="48">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9222018 -32.5417439 60.9222018 -32.5417439 60.9149902 -32.5411156 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="49">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9149902 -32.5411156 60.9149902 -32.5411156 60.9076941 -32.5404800 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -2243,11 +2784,44 @@
 			<categoryOfRecommendedTrack>2</categoryOfRecommendedTrack>
 			<orientationValue>310</orientationValue>
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="50">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9078944 -32.5066601 60.9078944 -32.5066601 60.9222021 -32.5167910 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0119">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="51">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9500347 -32.5019921 60.9500347 -32.5019921 60.9501327 -32.5022716 60.9507908 -32.5027316 60.9507908 -32.5027316</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="52">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9507908 -32.5027316 60.9507908 -32.5027316 60.9508803 -32.5029752 60.9508112 -32.5031916 60.9504026 -32.5036519 60.9503026 -32.5038684 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2274,6 +2848,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0121">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="53">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9592983 -32.5177220 60.9592983 -32.5177220 60.9589395 -32.5177581 60.9589384 -32.5176320 60.9592588 -32.5176138 60.9592983 -32.5177220 60.9592983 -32.5177220</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2315,22 +2900,77 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0123">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="54">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9178959 -32.5001637 60.9178959 -32.5001637 60.9176500 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0124">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="55">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9372102 -32.5300774 60.9372102 -32.5300774 60.9372496 -32.5303210 60.9371784 -32.5306458 60.9368110 -32.5310156 60.9363543 -32.5313044 60.9360902 -32.5315480 60.9360211 -32.5318005 60.9363161 -32.5321524 60.9363364 -32.5323960 60.9361544 -32.5325313 60.9356580 -32.5324953 60.9350096 -32.5327660 60.9346860 -32.5330457 60.9346860 -32.5330457</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0125">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="56">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9597776 -32.5180016 60.9597776 -32.5180016 60.9594380 -32.5180738 60.9593985 -32.5179655 60.9597573 -32.5178843 60.9597776 -32.5180016 60.9597776 -32.5180016</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0126">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="57">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8947374 -32.5009932 60.8947374 -32.5009932 60.8949097 -32.5010655 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="58">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8949097 -32.5010655 60.8949097 -32.5010655 60.8950748 -32.5011286 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2356,6 +2996,61 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0128">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="59">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9539291 -32.5105519 60.9539291 -32.5105519 60.9536471 -32.5108137 60.9533479 -32.5106785 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="60">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9533479 -32.5106785 60.9533479 -32.5106785 60.9532475 -32.5099388 60.9530280 -32.5096141 60.9531078 -32.5092262 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="61">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9531078 -32.5092262 60.9531078 -32.5092262 60.9539656 -32.5087568 60.9540654 -32.5082606 60.9542250 -32.5077193 60.9541843 -32.5072502 60.9536856 -32.5059964 60.9536856 -32.5059964</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="62">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9536856 -32.5059964 60.9536856 -32.5059964 60.9538844 -32.5053559 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="63">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9538844 -32.5053559 60.9538844 -32.5053559 60.9543228 -32.5049678 60.9549817 -32.5046970 60.9552997 -32.5043090 60.9552601 -32.5037317 60.9555388 -32.5032896 60.9555388 -32.5032896</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2374,12 +3069,45 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0130">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="64">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862943 -32.5018936 60.8862943 -32.5018936 60.8864502 -32.5018937 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0131">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="65">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942165 -32.5020577 60.8942165 -32.5020577 60.8943900 -32.5021299 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="66">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943900 -32.5021299 60.8943900 -32.5021299 60.8945550 -32.5022020 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2405,11 +3133,33 @@
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0133">
 			<categoryOfSlope>2</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="67">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8944054 -32.5128289 60.8944054 -32.5128289 60.8957024 -32.5118819 60.8963085 -32.5111151 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0134">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="68">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9380048 -32.5084183 60.9380048 -32.5084183 60.9375258 -32.5087432 60.9371063 -32.5088244 60.9367070 -32.5087704 60.9362683 -32.5085900 60.9354899 -32.5080939 60.9340129 -32.5068671 60.9322367 -32.5053246 60.9302008 -32.5036648 60.9295204 -32.5031868 60.9289636 -32.5028891 60.9277465 -32.5023118 60.9268885 -32.5020412 60.9260101 -32.5019780 60.9256471 -32.5020413 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -2430,6 +3180,17 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0136">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="69">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932965 -32.5013897 60.8932965 -32.5013897 60.8934715 -32.5014622 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2449,29 +3210,260 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0138">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="70">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8975250 -32.5000000 60.8975250 -32.5000000 60.8976460 -32.5001173 60.8977979 -32.5008675 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="71">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8977979 -32.5008675 60.8977979 -32.5008675 60.8978796 -32.5014038 60.8970106 -32.5031321 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="72">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8970106 -32.5031321 60.8970106 -32.5031321 60.8970060 -32.5031308 60.8953974 -32.5029412 60.8954225 -32.5027972 60.8967058 -32.5029500 60.8969262 -32.5028316 60.8976264 -32.5013442 60.8974570 -32.5002851 60.8971970 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0139">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="73">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943308 -32.5006143 60.8943308 -32.5006143 60.8942669 -32.5007406 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="74">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942669 -32.5007406 60.8942669 -32.5007406 60.8941934 -32.5008758 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="75">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941934 -32.5008758 60.8941934 -32.5008758 60.8941263 -32.5010202 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="76">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941263 -32.5010202 60.8941263 -32.5010202 60.8940602 -32.5011555 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="77">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8940602 -32.5011555 60.8940602 -32.5011555 60.8939825 -32.5013089 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="78">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939825 -32.5013089 60.8939825 -32.5013089 60.8939101 -32.5014532 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="79">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939101 -32.5014532 60.8939101 -32.5014532 60.8938452 -32.5015795 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="80">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8938452 -32.5015795 60.8938452 -32.5015795 60.8937620 -32.5017508 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="81">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8937620 -32.5017508 60.8937620 -32.5017508 60.8936907 -32.5018952 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="82">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8936907 -32.5018952 60.8936907 -32.5018952 60.8935991 -32.5020756 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="83">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8935991 -32.5020756 60.8935991 -32.5020756 60.8935437 -32.5021838 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="84">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8935437 -32.5021838 60.8935437 -32.5021838 60.8934745 -32.5023282 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="85">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8934745 -32.5023282 60.8934745 -32.5023282 60.8933720 -32.5025322 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0140">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="86">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9301381 -32.5355361 60.9301381 -32.5355361 60.9284043 -32.5346548 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="87">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9284043 -32.5346548 60.9284043 -32.5346548 60.9246386 -32.5327405 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0141">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="88">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963605 -32.5020669 60.8963605 -32.5020669 60.8965521 -32.5021391 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0142">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="89">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8848072 -32.5015413 60.8848072 -32.5015413 60.8850104 -32.5015466 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="90">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8850104 -32.5015466 60.8850104 -32.5015466 60.8851670 -32.5015505 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2498,6 +3490,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0144">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="91">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8848029 -32.5018391 60.8848029 -32.5018391 60.8849967 -32.5018392 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="92">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849967 -32.5018392 60.8849967 -32.5018392 60.8851627 -32.5018482 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2524,166 +3538,881 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0146">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="93">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854651 -32.5017491 60.8854651 -32.5017491 60.8856609 -32.5017581 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="94">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856609 -32.5017581 60.8856609 -32.5017581 60.8858249 -32.5017581 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0147">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="95">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841317 -32.5032612 60.8841317 -32.5032612 60.8841450 -32.5029756 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="96">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841450 -32.5029756 60.8841450 -32.5029756 60.8841596 -32.5026599 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="97">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841596 -32.5026599 60.8841596 -32.5026599 60.8841704 -32.5024254 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="98">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841704 -32.5024254 60.8841704 -32.5024254 60.8841800 -32.5022177 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="99">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841800 -32.5022177 60.8841800 -32.5022177 60.8841900 -32.5020014 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="100">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841900 -32.5020014 60.8841900 -32.5020014 60.8842009 -32.5017668 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="101">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8842009 -32.5017668 60.8842009 -32.5017668 60.8842122 -32.5015232 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0148">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="102">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8940600 -32.5023824 60.8940600 -32.5023824 60.8942324 -32.5024546 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="103">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942324 -32.5024546 60.8942324 -32.5024546 60.8943974 -32.5025178 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0149">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="104">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8976582 -32.5119814 60.8976582 -32.5119814 60.8978552 -32.5119364 60.8979179 -32.5125047 60.8982564 -32.5127303 60.8983958 -32.5133888 60.8987555 -32.5141465 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="105">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8987555 -32.5141465 60.8987555 -32.5141465 60.8992142 -32.5146699 60.8991940 -32.5150759 60.8994707 -32.5156081 60.8992011 -32.5165373 60.8988657 -32.5167357 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0150">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="106">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8935502 -32.5018229 60.8935502 -32.5018229 60.8936907 -32.5018952 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="107">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8936907 -32.5018952 60.8936907 -32.5018952 60.8938418 -32.5019674 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0151">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="108">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941282 -32.5022381 60.8941282 -32.5022381 60.8943005 -32.5023103 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="109">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943005 -32.5023103 60.8943005 -32.5023103 60.8944656 -32.5023825 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0152">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="110">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8950586 -32.5021480 60.8950586 -32.5021480 60.8952488 -32.5022284 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0153">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="111">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8989246 -32.5088332 60.8989246 -32.5088332 60.8990523 -32.5088152 60.8991151 -32.5091941 60.8992546 -32.5094467 60.8989554 -32.5096360 60.8989522 -32.5099067 60.8986488 -32.5099428 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0154">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="112">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942943 -32.5019043 60.8942943 -32.5019043 60.8944657 -32.5019765 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="113">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8944657 -32.5019765 60.8944657 -32.5019765 60.8946317 -32.5020397 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0155">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="114">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948992 -32.5001331 60.8948992 -32.5001331 60.8948940 -32.5001346 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="115">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948940 -32.5001346 60.8948940 -32.5001346 60.8945070 -32.5005334 60.8943308 -32.5006143 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="116">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943308 -32.5006143 60.8943308 -32.5006143 60.8935100 -32.5009750 60.8934400 -32.5011108 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="117">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8934400 -32.5011108 60.8934400 -32.5011108 60.8933708 -32.5012454 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="118">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933708 -32.5012454 60.8933708 -32.5012454 60.8932965 -32.5013897 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="119">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932965 -32.5013897 60.8932965 -32.5013897 60.8932451 -32.5014897 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="120">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932451 -32.5014897 60.8932451 -32.5014897 60.8931806 -32.5016150 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="121">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8931806 -32.5016150 60.8931806 -32.5016150 60.8930878 -32.5017953 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="122">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8930878 -32.5017953 60.8930878 -32.5017953 60.8930365 -32.5018948 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="123">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8930365 -32.5018948 60.8930365 -32.5018948 60.8929808 -32.5020029 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="124">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8929808 -32.5020029 60.8929808 -32.5020029 60.8929157 -32.5021295 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="125">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8929157 -32.5021295 60.8929157 -32.5021295 60.8928677 -32.5022288 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0156">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="126">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8937707 -32.5013900 60.8937707 -32.5013900 60.8939101 -32.5014532 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="127">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939101 -32.5014532 60.8939101 -32.5014532 60.8940687 -32.5015163 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0157">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="128">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9007086 -32.5177643 60.9007086 -32.5177643 60.9005584 -32.5176741 60.9008577 -32.5173584 60.9017085 -32.5167180 60.9021269 -32.5168083 60.9021279 -32.5171240 60.9019276 -32.5177374 60.9021011 -32.5185223 60.9019807 -32.5187929 60.9015250 -32.5191808 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0158">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="129">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933255 -32.5022650 60.8933255 -32.5022650 60.8934745 -32.5023282 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="130">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8934745 -32.5023282 60.8934745 -32.5023282 60.8936246 -32.5023913 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0159">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="131">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070634 -32.5329383 60.9070634 -32.5329383 60.9070718 -32.5333444 60.9071090 -32.5342014 60.9073027 -32.5356447 60.9073027 -32.5356447</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0160">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="132">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8928922 -32.5018319 60.8928922 -32.5018319 60.8930365 -32.5018948 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0161">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="133">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9242890 -32.5423294 60.9242890 -32.5423294 60.9242335 -32.5425279 60.9242986 -32.5429340 60.9242986 -32.5429340</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="134">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9242986 -32.5429340 60.9242986 -32.5429340 60.9243028 -32.5429608 60.9241240 -32.5432316 60.9241240 -32.5432316</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="135">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9241240 -32.5432316 60.9241240 -32.5432316 60.9238045 -32.5431865 60.9234850 -32.5428436 60.9232911 -32.5427083 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0162">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="136">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8937046 -32.5015253 60.8937046 -32.5015253 60.8938452 -32.5015795 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="137">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8938452 -32.5015795 60.8938452 -32.5015795 60.8939856 -32.5016426 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0163">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="138">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8951459 -32.5019766 60.8951459 -32.5019766 60.8953365 -32.5020572 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0164">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="139">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8866526 -32.5033190 60.8866526 -32.5033190 60.8868718 -32.5034183 60.8873977 -32.5034636 60.8874477 -32.5035357 60.8874902 -32.5036981 60.8872112 -32.5042843 60.8871270 -32.5044467 60.8871312 -32.5047084 60.8870970 -32.5050061 60.8871959 -32.5051956 60.8873386 -32.5053399 60.8875504 -32.5053489 60.8875504 -32.5053489</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0165">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="140">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8936194 -32.5016877 60.8936194 -32.5016877 60.8937620 -32.5017508 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="141">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8937620 -32.5017508 60.8937620 -32.5017508 60.8939175 -32.5018140 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0166">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="142">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8977459 -32.5102584 60.8977459 -32.5102584 60.8976256 -32.5102944 60.8975458 -32.5103576 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0167">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="143">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9012332 -32.5314220 60.9012332 -32.5314220 60.9013418 -32.5314401 60.9015430 -32.5315393 60.9021466 -32.5315845 60.9024863 -32.5314492 60.9027248 -32.5311156 60.9029846 -32.5310434 60.9034435 -32.5312329 60.9039822 -32.5308722 60.9044411 -32.5312961 60.9048201 -32.5312781 60.9050438 -32.5308722 60.9053398 -32.5307280 60.9056187 -32.5307912 60.9060180 -32.5305026 60.9064172 -32.5303042 60.9064172 -32.5303042</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="144">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9064172 -32.5303042 60.9064172 -32.5303042 60.9064530 -32.5303525 60.9065345 -32.5304267 60.9067367 -32.5306380 60.9064395 -32.5310890 60.9065364 -32.5313868 60.9064565 -32.5317386 60.9065896 -32.5319821 60.9066790 -32.5323340 60.9069793 -32.5324692 60.9070559 -32.5327580 60.9070559 -32.5327580</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="145">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070559 -32.5327580 60.9070559 -32.5327580 60.9066959 -32.5331098 60.9065362 -32.5333624 60.9066767 -32.5338044 60.9066692 -32.5342193 60.9067394 -32.5345982 60.9066766 -32.5351034 60.9066766 -32.5351034</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0168">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="146">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933708 -32.5012454 60.8933708 -32.5012454 60.8935461 -32.5013178 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0169">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="147">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932451 -32.5014897 60.8932451 -32.5014897 60.8934172 -32.5015613 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0170">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="148">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9072623 -32.5447920 60.9072623 -32.5447920 60.9072753 -32.5450594 60.9072753 -32.5450594</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="149">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9072753 -32.5450594 60.9072753 -32.5450594 60.9072921 -32.5454055 60.9074826 -32.5460189 60.9076019 -32.5464159 60.9078436 -32.5468308 60.9081301 -32.5472909 60.9084347 -32.5476066 60.9084347 -32.5476066</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0171">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="150">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8994306 -32.5000000 60.8994306 -32.5000000 60.8991805 -32.5002728 60.8989846 -32.5006429 60.8987151 -32.5014103 60.8982604 -32.5019610 60.8981167 -32.5022589 60.8980006 -32.5025478 60.8979377 -32.5029902 60.8978506 -32.5034054 60.8978474 -32.5037394 60.8978602 -32.5038478 60.8979476 -32.5039651 60.8982491 -32.5042087 60.8984569 -32.5043982 60.8986466 -32.5048587 60.8988864 -32.5053190 60.8993861 -32.5058786 60.8996855 -32.5063571 60.9000542 -32.5066909 60.9009854 -32.5073680 60.9012293 -32.5076658 60.9013893 -32.5079095 60.9014884 -32.5082164 60.9014640 -32.5085143 60.9015930 -32.5089114 60.9018061 -32.5092545 60.9022163 -32.5095885 60.9024071 -32.5098322 60.9024029 -32.5100940 60.9023667 -32.5102926 60.9022122 -32.5104551 60.9016232 -32.5107440 60.9014240 -32.5109968 60.9013526 -32.5111954 60.9013942 -32.5114030 60.9015936 -32.5118544 60.9021531 -32.5127750 60.9024408 -32.5131181 60.9030248 -32.5136235 60.9034744 -32.5139936 60.9038922 -32.5144718 60.9042311 -32.5147697 60.9042311 -32.5147697</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0172">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="151">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8884612 -32.5000000 60.8884612 -32.5000000 60.8882782 -32.5003463 60.8878472 -32.5013795 60.8875150 -32.5018198 60.8871262 -32.5019368 60.8868618 -32.5018115 60.8866700 -32.5014072 60.8865029 -32.5011918 60.8862120 -32.5011024 60.8855053 -32.5010675 60.8851363 -32.5010861 60.8846994 -32.5011767 60.8839855 -32.5011689 60.8831800 -32.5010442 60.8828585 -32.5010538 60.8827124 -32.5011350 60.8827124 -32.5011350</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0173">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="152">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8987740 -32.5069749 60.8987740 -32.5069749 60.8990024 -32.5071008 60.8990356 -32.5075150 60.8986968 -32.5077582 60.8985779 -32.5080464 60.8987768 -32.5083255 60.8988501 -32.5086135 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0174">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="153">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8905134 -32.5043664 60.8905134 -32.5043664 60.8907721 -32.5042400 60.8912120 -32.5036989 60.8912120 -32.5036989</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0175">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="154">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9051986 -32.5169078 60.9051986 -32.5169078 60.9049151 -32.5172237 60.9047190 -32.5177110 60.9046092 -32.5181714 60.9046239 -32.5187219 60.9046344 -32.5189565 60.9047335 -32.5191372 60.9051393 -32.5196607 60.9054023 -32.5201212 60.9055716 -32.5206447 60.9055512 -32.5211502 60.9055607 -32.5213668 60.9056917 -32.5215021 60.9058409 -32.5214932 60.9059709 -32.5214481 60.9060668 -32.5212947 60.9060708 -32.5212520 60.9060708 -32.5212520</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="155">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9060708 -32.5212520 60.9060708 -32.5212520 60.9061405 -32.5205094 60.9062972 -32.5199860 60.9064422 -32.5195978 60.9066607 -32.5193721 60.9068706 -32.5192369 60.9070996 -32.5192819 60.9072551 -32.5193994 60.9074096 -32.5195890 60.9074010 -32.5197333 60.9073956 -32.5201757 60.9076799 -32.5207083 60.9077490 -32.5211596 60.9077162 -32.5213478 60.9077162 -32.5213478</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="156">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9077162 -32.5213478 60.9077162 -32.5213478 60.9077128 -32.5213671 60.9074484 -32.5221434 60.9073683 -32.5228474 60.9074363 -32.5234973 60.9073286 -32.5238402 60.9069589 -32.5241020 60.9066701 -32.5244630 60.9065102 -32.5248600 60.9063470 -32.5254197 60.9061198 -32.5266652 60.9060759 -32.5275137 60.9062793 -32.5278566 60.9065040 -32.5281997 60.9068384 -32.5284706 60.9077163 -32.5290845 60.9082159 -32.5295810 60.9083361 -32.5299240 60.9083233 -32.5303482 60.9081484 -32.5309710 60.9080610 -32.5314042 60.9080886 -32.5317292 60.9082962 -32.5325595 60.9084249 -32.5334713 60.9084854 -32.5345996 60.9086642 -32.5352404 60.9091531 -32.5363417 60.9096227 -32.5377678 60.9101808 -32.5386706 60.9102703 -32.5389775 60.9103214 -32.5392754 60.9101135 -32.5398169 60.9101315 -32.5403493 60.9100718 -32.5405750 60.9095825 -32.5413693 60.9094716 -32.5418566 60.9094619 -32.5421544 60.9098709 -32.5430121 60.9099273 -32.5433730 60.9098570 -32.5436800 60.9093739 -32.5445915 60.9093460 -32.5446696 60.9093460 -32.5446696</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="157">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9093460 -32.5446696 60.9093460 -32.5446696 60.9092994 -32.5447992 60.9093088 -32.5450880 60.9092992 -32.5454038 60.9094516 -32.5457650 60.9097712 -32.5461622 60.9103444 -32.5466405 60.9104999 -32.5469204 60.9106500 -32.5475884 60.9108599 -32.5480849 60.9111358 -32.5485361 60.9114608 -32.5488522 60.9124250 -32.5497278 60.9125945 -32.5498993 60.9127575 -32.5501701 60.9128566 -32.5504409 60.9130440 -32.5513526 60.9131035 -32.5516233 60.9133487 -32.5519303 60.9136832 -32.5523365 60.9136832 -32.5523365</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2710,12 +4439,34 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0177">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="158">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9280678 -32.5523403 60.9280678 -32.5523403 60.9278378 -32.5520268 60.9272690 -32.5517832 60.9271624 -32.5516930 60.9271390 -32.5515216 60.9272987 -32.5511518 60.9273402 -32.5507458 60.9275883 -32.5502857 60.9276074 -32.5500241 60.9271792 -32.5489868 60.9270769 -32.5487431 60.9270331 -32.5480576 60.9270885 -32.5477058 60.9273877 -32.5471645 60.9273866 -32.5469209 60.9269690 -32.5465060 60.9269477 -32.5462984 60.9270382 -32.5459466 60.9270360 -32.5455948 60.9271775 -32.5452611 60.9271775 -32.5450896 60.9270104 -32.5447558 60.9270082 -32.5444762 60.9266684 -32.5442958 60.9264895 -32.5439711 60.9264288 -32.5435922 60.9265395 -32.5435200 60.9267685 -32.5435470 60.9272243 -32.5436824 60.9278559 -32.5435650 60.9280955 -32.5436733 60.9284055 -32.5442144 60.9286952 -32.5444400 60.9290840 -32.5446383 60.9296624 -32.5447917 60.9297902 -32.5449270 60.9299138 -32.5453961 60.9302674 -32.5457840 60.9302516 -32.5463072 60.9303719 -32.5464696 60.9308810 -32.5466319 60.9310068 -32.5468213 60.9310612 -32.5472814 60.9312902 -32.5477234 60.9317494 -32.5484449 60.9317494 -32.5486164 60.9316099 -32.5488780 60.9315886 -32.5490403 60.9317496 -32.5495997 60.9316889 -32.5499335 60.9314919 -32.5500598 60.9310924 -32.5497351 60.9309059 -32.5497260 60.9306238 -32.5499155 60.9304598 -32.5500870 60.9303629 -32.5504027 60.9304035 -32.5507275 60.9305526 -32.5509530 60.9310490 -32.5513137 60.9311257 -32.5515031 60.9311386 -32.5519092 60.9311993 -32.5519993 60.9313719 -32.5520625 60.9316818 -32.5519542 60.9320598 -32.5513768 60.9322633 -32.5513497 60.9324390 -32.5514309 60.9329855 -32.5519811 60.9333349 -32.5523439 60.9333349 -32.5523439</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0178">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="159">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8955310 -32.5016785 60.8955310 -32.5016785 60.8956782 -32.5017331 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2763,11 +4514,33 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0181">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="160">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9485166 -32.5046988 60.9485166 -32.5046988 60.9481981 -32.5042207 60.9481981 -32.5042207</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0182">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="161">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9499944 -32.5000000 60.9499944 -32.5000000 60.9500164 -32.5001022 60.9499616 -32.5005118 60.9499320 -32.5006209 60.9499320 -32.5006209</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2792,6 +4565,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0184">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="162">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9540333 -32.5049318 60.9540333 -32.5049318 60.9546872 -32.5038967 60.9552392 -32.5025293 60.9554542 -32.5015761 60.9556495 -32.5012791 60.9562679 -32.5007293 60.9566312 -32.5003060 60.9568084 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2831,6 +4615,17 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0188">
 			<elevation>50</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="163">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5058722 60.9666667 -32.5058722 60.9664911 -32.5061509 60.9660847 -32.5066665 60.9652822 -32.5075640 60.9650624 -32.5080177 60.9650973 -32.5082051 60.9652677 -32.5084017 60.9657893 -32.5086530 60.9666337 -32.5089372 60.9666667 -32.5089500 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -2887,6 +4682,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0192">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="164">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8839668 -32.5026598 60.8839668 -32.5026598 60.8841596 -32.5026599 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="165">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841596 -32.5026599 60.8841596 -32.5026599 60.8843257 -32.5026690 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -2915,11 +4732,55 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0194">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="166">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9293484 -32.5391266 60.9293484 -32.5391266 60.9288138 -32.5394424 60.9283047 -32.5398753 60.9277660 -32.5405791 60.9275243 -32.5407415 60.9271974 -32.5409310 60.9264507 -32.5410844 60.9261399 -32.5413279 60.9259855 -32.5415806 60.9259855 -32.5415806</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0195">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="167">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9296081 -32.5380711 60.9296081 -32.5380711 60.9296220 -32.5382244 60.9297510 -32.5388018 60.9297510 -32.5388018</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="168">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9297510 -32.5388018 60.9297510 -32.5388018 60.9296040 -32.5390093 60.9294325 -32.5390453 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="169">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9294325 -32.5390453 60.9294325 -32.5390453 60.9288905 -32.5389462 60.9286796 -32.5389823 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -2962,6 +4823,39 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0199">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="170">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9317430 -32.5359509 60.9317430 -32.5359509 60.9317165 -32.5362396 60.9317772 -32.5365463 60.9317772 -32.5365463</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="171">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9317772 -32.5365463 60.9317772 -32.5365463 60.9314972 -32.5367538 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="172">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9314972 -32.5367538 60.9314972 -32.5367538 60.9310382 -32.5367629 60.9307954 -32.5368169 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -3177,6 +5071,28 @@
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0215">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="173">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933178 -32.5053818 60.8933178 -32.5053818 60.8932111 -32.5059232 60.8927516 -32.5067353 60.8919072 -32.5077001 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="174">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8919072 -32.5077001 60.8919072 -32.5077001 60.8917728 -32.5078538 60.8916320 -32.5081697 60.8915518 -32.5089369 60.8912999 -32.5098574 60.8910398 -32.5102634 60.8904365 -32.5110304 60.8904002 -32.5112830 60.8906503 -32.5115540 60.8917674 -32.5120057 60.8927961 -32.5127822 60.8935733 -32.5135497 60.8942249 -32.5142178 60.8945646 -32.5143985 60.8949417 -32.5144347 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -3222,6 +5138,50 @@
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0219">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="175">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8905111 -32.5000000 60.8905111 -32.5000000 60.8905672 -32.5002193 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="176">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8905672 -32.5002193 60.8905672 -32.5002193 60.8907013 -32.5004198 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="177">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8907013 -32.5004198 60.8907013 -32.5004198 60.8907741 -32.5005281 60.8909158 -32.5005955 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="178">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8909158 -32.5005955 60.8909158 -32.5005955 60.8911740 -32.5007195 60.8916939 -32.5008033 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -3244,6 +5204,17 @@
 			<orientation>
 				<orientationValue>52</orientationValue>
 			</orientation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="179">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9181182 -32.5000000 60.9181182 -32.5000000 60.9176601 -32.5003015 60.9080924 -32.5065969 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:NavigationLine>
 	</member>
 	<member>
@@ -3403,23 +5374,111 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0234">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="180">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8944306 -32.5016156 60.8944306 -32.5016156 60.8946041 -32.5016879 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="181">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8946041 -32.5016879 60.8946041 -32.5016879 60.8947691 -32.5017601 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0235">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="182">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8945084 -32.5014623 60.8945084 -32.5014623 60.8946808 -32.5015345 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="183">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8946808 -32.5015345 60.8946808 -32.5015345 60.8948469 -32.5015977 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0236">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="184">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8961444 -32.5020580 60.8961444 -32.5020580 60.8963243 -32.5021302 60.8963371 -32.5021391 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:FerryRoute gml:id="FEATURE_ID_0237">
 			<categoryOfFerry>1</categoryOfFerry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="185">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9192417 -32.5000000 60.9192417 -32.5000000 60.9152511 -32.5009330 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="186">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9152511 -32.5009330 60.9152511 -32.5009330 60.8983106 -32.5048300 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="187">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8983106 -32.5048300 60.8983106 -32.5048300 60.8977747 -32.5049540 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:FerryRoute>
 	</member>
 	<member>
@@ -3457,6 +5516,17 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0240">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="188">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8976860 -32.5064696 60.8976860 -32.5064696 60.8975242 -32.5063612 60.8973293 -32.5063071 60.8964884 -32.5063791 60.8957006 -32.5063520 60.8944242 -32.5061352 60.8929776 -32.5056388 60.8918800 -32.5054943 60.8911710 -32.5056293 60.8906322 -32.5058729 60.8900146 -32.5063419 60.8894352 -32.5071626 60.8888940 -32.5082992 60.8882494 -32.5099498 60.8877114 -32.5112398 60.8873938 -32.5119163 60.8868134 -32.5128904 60.8863511 -32.5134406 60.8858334 -32.5139547 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -3497,16 +5567,49 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0243">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="189">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8940173 -32.5069290 60.8940173 -32.5069290 60.8935383 -32.5068927 60.8927398 -32.5068837 60.8921990 -32.5069196 60.8915602 -32.5071270 60.8910937 -32.5075870 60.8901630 -32.5083806 60.8897637 -32.5088587 60.8894228 -32.5093999 60.8893338 -32.5112311 60.8891964 -32.5119618 60.8888863 -32.5126743 60.8882696 -32.5134140 60.8876690 -32.5139551 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0244">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="190">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9344730 -32.5168981 60.9344730 -32.5168981 60.9347167 -32.5171325 60.9352013 -32.5172498 60.9366483 -32.5173487 60.9381954 -32.5175019 60.9386436 -32.5174116 60.9393122 -32.5171047 60.9398710 -32.5165003 60.9400604 -32.5159139 60.9401081 -32.5152012 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0245">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="191">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9417722 -32.5000000 60.9417722 -32.5000000 60.9414438 -32.5009137 60.9411052 -32.5021529 60.9406862 -32.5031390 60.9402115 -32.5040800 60.9392703 -32.5055729 60.9391191 -32.5057902 60.9386474 -32.5065232 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -3533,6 +5636,17 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0247">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="192">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8733258 -32.5009313 60.8733258 -32.5009313 60.8740361 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -3601,17 +5715,50 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0251">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="193">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8931747 -32.5170866 60.8931747 -32.5170866 60.8932940 -32.5168611 60.8940032 -32.5165004 60.8944717 -32.5161125 60.8947413 -32.5154540 60.8947020 -32.5149669 60.8944126 -32.5140015 60.8943648 -32.5137310 60.8944629 -32.5133792 60.8945161 -32.5131086 60.8946855 -32.5128649 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0252">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="194">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8960539 -32.5022384 60.8960539 -32.5022384 60.8962338 -32.5023106 60.8962465 -32.5023196 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0253">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="195">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9388822 -32.5135054 60.9388822 -32.5135054 60.9381442 -32.5127839 60.9376852 -32.5120713 60.9374359 -32.5113226 60.9373132 -32.5104927 60.9373578 -32.5098342 60.9370554 -32.5096177 60.9367360 -32.5095726 60.9365274 -32.5096087 60.9361580 -32.5098073 60.9357790 -32.5101862 60.9354694 -32.5108358 60.9352736 -32.5116477 60.9351055 -32.5124234 60.9345215 -32.5145255 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -3701,12 +5848,56 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0258">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="196">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266338 -32.5392891 60.9266338 -32.5392891 60.9266838 -32.5390186 60.9266880 -32.5388651 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="197">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266880 -32.5388651 60.9266880 -32.5388651 60.9266934 -32.5386937 60.9268872 -32.5384953 60.9273866 -32.5384320 60.9276060 -32.5382788 60.9277955 -32.5378185 60.9279552 -32.5376472 60.9285633 -32.5372502 60.9286634 -32.5370608 60.9286431 -32.5366548 60.9287038 -32.5365015 60.9288506 -32.5363752 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="198">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9288506 -32.5363752 60.9288506 -32.5363752 60.9291425 -32.5363481 60.9292724 -32.5362850 60.9294620 -32.5359962 60.9296334 -32.5358247 60.9299763 -32.5357166 60.9299763 -32.5357166</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0259">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="199">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8934400 -32.5011108 60.8934400 -32.5011108 60.8936132 -32.5011824 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3755,6 +5946,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0262">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="200">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948034 -32.5008579 60.8948034 -32.5008579 60.8949769 -32.5009212 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="201">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8949769 -32.5009212 60.8949769 -32.5009212 60.8951418 -32.5009934 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3778,6 +5991,17 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0264">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="202">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954537 -32.5013723 60.8954537 -32.5013723 60.8956463 -32.5014534 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3805,24 +6029,79 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0266">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="203">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962509 -32.5018505 60.8962509 -32.5018505 60.8964298 -32.5019227 60.8964436 -32.5019318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0267">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="204">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8945829 -32.5013090 60.8945829 -32.5013090 60.8947554 -32.5013812 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="205">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8947554 -32.5013812 60.8947554 -32.5013812 60.8949204 -32.5014443 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0268">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="206">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956925 -32.5013637 60.8956925 -32.5013637 60.8958359 -32.5014264 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0269">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="207">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952087 -32.5018504 60.8952087 -32.5018504 60.8954010 -32.5019315 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3844,18 +6123,51 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0271">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="208">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952780 -32.5017150 60.8952780 -32.5017150 60.8954706 -32.5017962 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0272">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="209">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942669 -32.5007406 60.8942669 -32.5007406 60.8944330 -32.5008037 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0273">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="210">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954426 -32.5018507 60.8954426 -32.5018507 60.8955877 -32.5019136 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3882,12 +6194,221 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0275">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="211">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965705 -32.5001723 60.8965705 -32.5001723 60.8966079 -32.5004252 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="212">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966079 -32.5004252 60.8966079 -32.5004252 60.8966344 -32.5005967 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="213">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966344 -32.5005967 60.8966344 -32.5005967 60.8966600 -32.5007680 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="214">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966600 -32.5007680 60.8966600 -32.5007680 60.8966876 -32.5009575 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="215">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966876 -32.5009575 60.8966876 -32.5009575 60.8967120 -32.5011109 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="216">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8967120 -32.5011109 60.8967120 -32.5011109 60.8967344 -32.5012641 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="217">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8967344 -32.5012641 60.8967344 -32.5012641 60.8967484 -32.5013110 60.8967205 -32.5013905 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="218">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8967205 -32.5013905 60.8967205 -32.5013905 60.8966736 -32.5014446 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="219">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966736 -32.5014446 60.8966736 -32.5014446 60.8966278 -32.5015709 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="220">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966278 -32.5015709 60.8966278 -32.5015709 60.8965725 -32.5016427 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="221">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965725 -32.5016427 60.8965725 -32.5016427 60.8965362 -32.5017514 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="222">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965362 -32.5017514 60.8965362 -32.5017514 60.8964681 -32.5018506 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="223">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964681 -32.5018506 60.8964681 -32.5018506 60.8964436 -32.5019318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="224">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964436 -32.5019318 60.8964436 -32.5019318 60.8963605 -32.5020669 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="225">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963605 -32.5020669 60.8963605 -32.5020669 60.8963371 -32.5021391 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="226">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963371 -32.5021391 60.8963371 -32.5021391 60.8962615 -32.5022564 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="227">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962615 -32.5022564 60.8962615 -32.5022564 60.8962465 -32.5023196 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="228">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962465 -32.5023196 60.8962465 -32.5023196 60.8961826 -32.5024098 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0276">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="229">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8955325 -32.5012189 60.8955325 -32.5012189 60.8957249 -32.5013005 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3908,6 +6429,17 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0278">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="230">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956048 -32.5015347 60.8956048 -32.5015347 60.8957507 -32.5015978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -3953,15 +6485,71 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0281">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="231">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957299 -32.5011828 60.8957299 -32.5011828 60.8959274 -32.5012551 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0282" />
+		<S101:Coastline gml:id="FEATURE_ID_0282">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="232">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246326 -32.5016625 60.9246326 -32.5016625 60.9247933 -32.5015001 60.9252223 -32.5013196 60.9255892 -32.5012286 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="233">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9255892 -32.5012286 60.9255892 -32.5012286 60.9257312 -32.5011932 60.9265189 -32.5011481 60.9266636 -32.5011578 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="234">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266636 -32.5011578 60.9266636 -32.5011578 60.9273269 -32.5012022 60.9277059 -32.5013014 60.9282243 -32.5014546 60.9286289 -32.5016712 60.9291133 -32.5020049 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0283">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="235">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963436 -32.5016701 60.8963436 -32.5016701 60.8965214 -32.5017422 60.8965362 -32.5017514 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4033,23 +6621,91 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0287">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="236">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953696 -32.5015436 60.8953696 -32.5015436 60.8955589 -32.5016240 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0288">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="237">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8946607 -32.5011466 60.8946607 -32.5011466 60.8948331 -32.5012188 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="238">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948331 -32.5012188 60.8948331 -32.5012188 60.8949981 -32.5012910 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0289" />
+		<S101:Coastline gml:id="FEATURE_ID_0289">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="239">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9569479 -32.5069968 60.9569479 -32.5069968 60.9569575 -32.5070690 60.9568682 -32.5071862 60.9568086 -32.5073486 60.9567287 -32.5073938 60.9566883 -32.5073306 60.9567585 -32.5071412 60.9568479 -32.5070239 60.9569479 -32.5069968 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0290" />
+		<S101:Coastline gml:id="FEATURE_ID_0290">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="240">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8984842 -32.5072906 60.8984842 -32.5072906 60.8986035 -32.5074350 60.8986365 -32.5075071 60.8985960 -32.5075793 60.8984470 -32.5075883 60.8984640 -32.5076785 60.8984342 -32.5078950 60.8983841 -32.5079761 60.8982946 -32.5081024 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0291">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="241">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9211112 -32.5256105 60.9211112 -32.5256105 60.9216736 -32.5277065 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4072,7 +6728,52 @@
 		</S101:LightAllAround>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0293" />
+		<S101:Coastline gml:id="FEATURE_ID_0293">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="242">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9430904 -32.5046501 60.9430904 -32.5046501 60.9429809 -32.5047170 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="243">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9429809 -32.5047170 60.9429809 -32.5047170 60.9427424 -32.5048625 60.9425454 -32.5050339 60.9422443 -32.5053677 60.9417473 -32.5059814 60.9414366 -32.5064054 60.9412545 -32.5065408 60.9410650 -32.5066130 60.9408660 -32.5066220 60.9406563 -32.5067031 60.9404370 -32.5068296 60.9402082 -32.5070371 60.9398995 -32.5074340 60.9398289 -32.5074952 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="244">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9398289 -32.5074952 60.9398289 -32.5074952 60.9394823 -32.5077949 60.9388883 -32.5080928 60.9386616 -32.5083454 60.9384818 -32.5086701 60.9383626 -32.5089860 60.9383627 -32.5091935 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="245">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9383627 -32.5091935 60.9383627 -32.5091935 60.9383627 -32.5095994 60.9384022 -32.5097347 60.9383724 -32.5098339 60.9382532 -32.5099693 60.9382386 -32.5101058 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:LightFogDetector gml:id="FEATURE_ID_0294">
@@ -4126,30 +6827,119 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0297">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="246">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9211112 -32.5256105 60.9211112 -32.5256105 60.9236295 -32.5252978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0298">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="247">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246647 -32.5160240 60.9246647 -32.5160240 60.9228920 -32.5165384 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0299">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="248">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291249 -32.5281126 60.9291249 -32.5281126 60.9285288 -32.5258386 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0300">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="249">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291249 -32.5281126 60.9291249 -32.5281126 60.9291721 -32.5281059 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="250">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291721 -32.5281059 60.9291721 -32.5281059 60.9318812 -32.5277237 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0301">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="251">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246647 -32.5160240 60.9246647 -32.5160240 60.9248967 -32.5142739 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0302" />
+		<S101:Coastline gml:id="FEATURE_ID_0302">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="252">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9610922 -32.5151593 60.9610922 -32.5151593 60.9605343 -32.5152950 60.9598168 -32.5154846 60.9594378 -32.5155027 60.9591290 -32.5153585 60.9587966 -32.5149888 60.9586442 -32.5147272 60.9585824 -32.5144476 60.9585597 -32.5138162 60.9585148 -32.5136432 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="253">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9585148 -32.5136432 60.9585148 -32.5136432 60.9584755 -32.5134915 60.9583434 -32.5132390 60.9579559 -32.5127341 60.9579228 -32.5126440 60.9577227 -32.5122923 60.9576343 -32.5120848 60.9576267 -32.5115257 60.9576543 -32.5112012 60.9577936 -32.5109306 60.9580946 -32.5105158 60.9582245 -32.5102362 60.9585722 -32.5092983 60.9586924 -32.5090998 60.9587892 -32.5086670 60.9588837 -32.5081079 60.9590230 -32.5078102 60.9591358 -32.5076119 60.9597930 -32.5061419 60.9600218 -32.5058532 60.9603005 -32.5055827 60.9605037 -32.5054564 60.9608324 -32.5051406 60.9612686 -32.5048340 60.9614623 -32.5046536 60.9616175 -32.5042748 60.9617621 -32.5039051 60.9618160 -32.5027508 60.9619840 -32.5022368 60.9624489 -32.5018399 60.9628339 -32.5016052 60.9630979 -32.5013618 60.9632192 -32.5012806 60.9637990 -32.5010099 60.9641373 -32.5007031 60.9644563 -32.5000990 60.9644496 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:DepthArea gml:id="FEATURE_ID_0303">
@@ -4173,11 +6963,353 @@
 		</S101:DepthArea>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0304" />
+		<S101:Coastline gml:id="FEATURE_ID_0304">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="254">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8987553 -32.5098705 60.8987553 -32.5098705 60.8986488 -32.5099428 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="255">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8986488 -32.5099428 60.8986488 -32.5099428 60.8984358 -32.5100871 60.8981207 -32.5102404 60.8980014 -32.5102674 60.8978449 -32.5102314 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="256">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8978449 -32.5102314 60.8978449 -32.5102314 60.8977162 -32.5100780 60.8975160 -32.5100689 60.8973595 -32.5100870 60.8973190 -32.5101951 60.8973594 -32.5103124 60.8975063 -32.5104749 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="257">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8975063 -32.5104749 60.8975063 -32.5104749 60.8975755 -32.5106282 60.8975563 -32.5109710 60.8975786 -32.5113048 60.8976552 -32.5115304 60.8976582 -32.5119814 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="258">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8976582 -32.5119814 60.8976582 -32.5119814 60.8976826 -32.5124866 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="259">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8976826 -32.5124866 60.8976826 -32.5124866 60.8977622 -32.5127567 60.8979808 -32.5130538 60.8981707 -32.5135130 60.8983042 -32.5140261 60.8988305 -32.5151515 60.8989725 -32.5156915 60.8989426 -32.5160876 60.8988657 -32.5167357 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="260">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988657 -32.5167357 60.8988657 -32.5167357 60.8989487 -32.5172048 60.8991626 -32.5176108 60.8994064 -32.5178724 60.8997566 -32.5180257 60.9002113 -32.5180349 60.9003955 -32.5179718 60.9007086 -32.5177643 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="261">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9007086 -32.5177643 60.9007086 -32.5177643 60.9011590 -32.5173765 60.9013294 -32.5173133 60.9014890 -32.5173585 60.9016083 -32.5174938 60.9016381 -32.5176833 60.9015986 -32.5179087 60.9016976 -32.5181794 60.9017284 -32.5184320 60.9016880 -32.5186756 60.9015782 -32.5189101 60.9015250 -32.5191808 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="262">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9015250 -32.5191808 60.9015250 -32.5191808 60.9014983 -32.5193161 60.9014726 -32.5198753 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="263">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9014726 -32.5198753 60.9014726 -32.5198753 60.9015290 -32.5202362 60.9016919 -32.5207144 60.9020665 -32.5214811 60.9022177 -32.5219141 60.9022964 -32.5222570 60.9023112 -32.5228072 60.9021972 -32.5232313 60.9016966 -32.5242506 60.9016636 -32.5244490 60.9016774 -32.5247286 60.9018370 -32.5250715 60.9018763 -32.5253151 60.9018370 -32.5255135 60.9016974 -32.5256940 60.9014780 -32.5258022 60.9012086 -32.5258652 60.9008296 -32.5258652 60.9007199 -32.5259194 60.9006090 -32.5260637 60.9005793 -32.5262170 60.9005100 -32.5262982 60.9003695 -32.5263613 60.9002002 -32.5263704 60.8999606 -32.5263072 60.8997210 -32.5262801 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="264">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8997210 -32.5262801 60.8997210 -32.5262801 60.8995453 -32.5264695 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="265">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8995453 -32.5264695 60.8995453 -32.5264695 60.8995420 -32.5266770 60.8996516 -32.5269116 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="266">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8996516 -32.5269116 60.8996516 -32.5269116 60.8998806 -32.5270920 60.8999806 -32.5272182 60.8999913 -32.5273535 60.8999508 -32.5274708 60.8997718 -32.5276784 60.8996920 -32.5278858 60.8996918 -32.5282285 60.8997610 -32.5285534 60.9000112 -32.5290947 60.9001996 -32.5293923 60.9002773 -32.5296180 60.9004518 -32.5305111 60.9006775 -32.5307726 60.9009245 -32.5310524 60.9011300 -32.5312238 60.9011981 -32.5313230 60.9012332 -32.5314220 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="267">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9012332 -32.5314220 60.9012332 -32.5314220 60.9013258 -32.5316839 60.9014270 -32.5318824 60.9016964 -32.5321260 60.9018166 -32.5322613 60.9019359 -32.5325410 60.9020860 -32.5326042 60.9022852 -32.5325861 60.9023757 -32.5324869 60.9024354 -32.5322794 60.9025749 -32.5319817 60.9028146 -32.5317382 60.9030935 -32.5315577 60.9033130 -32.5314856 60.9035430 -32.5315218 60.9037528 -32.5314856 60.9040318 -32.5316391 60.9042607 -32.5316662 60.9045205 -32.5317925 60.9047207 -32.5318106 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="268">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9047207 -32.5318106 60.9047207 -32.5318106 60.9048804 -32.5317204 60.9050998 -32.5314768 60.9051989 -32.5314677 60.9053288 -32.5314137 60.9055588 -32.5314588 60.9057186 -32.5315490 60.9058186 -32.5316663 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="269">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9058186 -32.5316663 60.9058186 -32.5316663 60.9059176 -32.5317836 60.9061178 -32.5318829 60.9062168 -32.5320904 60.9062903 -32.5323429 60.9063499 -32.5325234 60.9064701 -32.5326767 60.9064596 -32.5329744 60.9063264 -32.5331639 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="270">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9063264 -32.5331639 60.9063264 -32.5331639 60.9063168 -32.5332902 60.9063966 -32.5335608 60.9063668 -32.5338585 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="271">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9063668 -32.5338585 60.9063668 -32.5338585 60.9064466 -32.5341021 60.9064466 -32.5344448 60.9064966 -32.5347696 60.9065392 -32.5348238 60.9066766 -32.5351034 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="272">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9066766 -32.5351034 60.9066766 -32.5351034 60.9070641 -32.5355454 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="273">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070641 -32.5355454 60.9070641 -32.5355454 60.9072611 -32.5358070 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="274">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9072611 -32.5358070 60.9072611 -32.5358070 60.9073878 -32.5361409 60.9073771 -32.5363394 60.9074239 -32.5366461 60.9073642 -32.5370881 60.9074250 -32.5373677 60.9074249 -32.5377015 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="275">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9074249 -32.5377015 60.9074249 -32.5377015 60.9073843 -32.5379000 60.9072247 -32.5382247 60.9071448 -32.5385134 60.9070978 -32.5389824 60.9071724 -32.5394426 60.9073949 -32.5398305 60.9075226 -32.5401553 60.9075940 -32.5402545 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="276">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9075940 -32.5402545 60.9075940 -32.5402545 60.9076941 -32.5404800 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="277">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9076941 -32.5404800 60.9076941 -32.5404800 60.9077143 -32.5406966 60.9076738 -32.5412919 60.9076865 -32.5418873 60.9076534 -32.5420586 60.9075340 -32.5424375 60.9074478 -32.5427623 60.9073849 -32.5432945 60.9072346 -32.5438628 60.9071942 -32.5444673 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="278">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9071942 -32.5444673 60.9071942 -32.5444673 60.9071228 -32.5448100 60.9070839 -32.5450953 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="279">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070839 -32.5450953 60.9070839 -32.5450953 60.9070748 -32.5451618 60.9069853 -32.5455047 60.9069587 -32.5458293 60.9070151 -32.5462895 60.9070651 -32.5467225 60.9071652 -32.5470202 60.9073142 -32.5472187 60.9076338 -32.5474352 60.9080864 -32.5476337 60.9083250 -32.5476968 60.9086722 -32.5479224 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="280">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9086722 -32.5479224 60.9086722 -32.5479224 60.9088713 -32.5480036 60.9090311 -32.5481119 60.9093005 -32.5484095 60.9095625 -32.5486081 60.9096924 -32.5488246 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="281">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9096924 -32.5488246 60.9096924 -32.5488246 60.9097499 -32.5491494 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="282">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9097499 -32.5491494 60.9097499 -32.5491494 60.9097200 -32.5494120 60.9097800 -32.5496747 60.9097596 -32.5498468 60.9096699 -32.5502001 60.9096528 -32.5506983 60.9095502 -32.5511150 60.9095095 -32.5517038 60.9095803 -32.5523379 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0305">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="283">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291249 -32.5281126 60.9291249 -32.5281126 60.9292066 -32.5283608 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="284">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292066 -32.5283608 60.9292066 -32.5283608 60.9297571 -32.5300333 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4197,11 +7329,155 @@
 		</S101:LightAllAround>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0307" />
+		<S101:Coastline gml:id="FEATURE_ID_0307">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="285">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9406080 -32.5188796 60.9406080 -32.5188796 60.9404710 -32.5188727 60.9401612 -32.5188096 60.9397619 -32.5187014 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="286">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9397619 -32.5187014 60.9397619 -32.5187014 60.9396128 -32.5186924 60.9394361 -32.5187466 60.9390944 -32.5189541 60.9388250 -32.5190173 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="287">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9388250 -32.5190173 60.9388250 -32.5190173 60.9385854 -32.5189813 60.9382064 -32.5188460 60.9378273 -32.5187197 60.9373374 -32.5186838 60.9370085 -32.5187380 60.9365294 -32.5188913 60.9359512 -32.5189727 60.9352326 -32.5189728 60.9348332 -32.5188916 60.9343349 -32.5186391 60.9339963 -32.5183144 60.9336363 -32.5178634 60.9334414 -32.5174485 60.9334360 -32.5170155 60.9335360 -32.5166726 60.9337086 -32.5162503 60.9338020 -32.5160313 60.9339446 -32.5153646 60.9339462 -32.5148308 60.9338893 -32.5146023 60.9338444 -32.5144986 60.9333662 -32.5137318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="288">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9333662 -32.5137318 60.9333662 -32.5137318 60.9332756 -32.5132897 60.9333351 -32.5127666 60.9332861 -32.5125591 60.9331880 -32.5124592 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="289">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9331880 -32.5124592 60.9331880 -32.5124592 60.9329762 -32.5122434 60.9327568 -32.5118826 60.9325970 -32.5114316 60.9324267 -32.5112060 60.9318986 -32.5108543 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="290">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9318986 -32.5108543 60.9318986 -32.5108543 60.9315790 -32.5105566 60.9313395 -32.5101778 60.9311297 -32.5099884 60.9305314 -32.5096186 60.9297232 -32.5091947 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="291">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9297232 -32.5091947 60.9297232 -32.5091947 60.9294336 -32.5089782 60.9292238 -32.5086715 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="292">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292238 -32.5086715 60.9292238 -32.5086715 60.9289044 -32.5081212 60.9286052 -32.5076791 60.9284359 -32.5075530 60.9281463 -32.5074628 60.9276278 -32.5073996 60.9270689 -32.5072734 60.9266196 -32.5072825 60.9262310 -32.5072284 60.9256816 -32.5070300 60.9254443 -32.5068766 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="293">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9254443 -32.5068766 60.9254443 -32.5068766 60.9253430 -32.5068134 60.9250897 -32.5063444 60.9250503 -32.5060828 60.9251333 -32.5056497 60.9253952 -32.5053070 60.9257720 -32.5050182 60.9258879 -32.5046931 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="294">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9258879 -32.5046931 60.9258879 -32.5046931 60.9259199 -32.5046033 60.9259156 -32.5043056 60.9258230 -32.5041252 60.9254513 -32.5037734 60.9253024 -32.5035658 60.9251810 -32.5029253 60.9250926 -32.5027811 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="295">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9250926 -32.5027811 60.9250926 -32.5027811 60.9249510 -32.5026818 60.9246242 -32.5025195 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="296">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246242 -32.5025195 60.9246242 -32.5025195 60.9245241 -32.5023932 60.9243963 -32.5021136 60.9244463 -32.5019240 60.9245336 -32.5018339 60.9246134 -32.5017707 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0308">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="297">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291249 -32.5281126 60.9291249 -32.5281126 60.9269127 -32.5283917 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4224,14 +7500,93 @@
 		</S101:LightAllAround>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0310" />
+		<S101:Coastline gml:id="FEATURE_ID_0310">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="298">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9559104 -32.5079442 60.9559104 -32.5079442 60.9558806 -32.5080164 60.9558114 -32.5080797 60.9557316 -32.5080797 60.9557411 -32.5080164 60.9558114 -32.5079623 60.9559104 -32.5079442 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0311" />
+		<S101:Coastline gml:id="FEATURE_ID_0311">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="299">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9468248 -32.5138285 60.9468248 -32.5138285 60.9465150 -32.5138106 60.9462957 -32.5138557 60.9461157 -32.5137565 60.9459666 -32.5137476 60.9457175 -32.5137747 60.9455376 -32.5137026 60.9454577 -32.5135853 60.9455172 -32.5134499 60.9456972 -32.5133958 60.9462561 -32.5133867 60.9465148 -32.5132331 60.9466699 -32.5132215 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="300">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9466699 -32.5132215 60.9466699 -32.5132215 60.9467543 -32.5132152 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="301">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9467543 -32.5132152 60.9467543 -32.5132152 60.9469439 -32.5133143 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="302">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9469439 -32.5133143 60.9469439 -32.5133143 60.9470344 -32.5134767 60.9469940 -32.5136932 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="303">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9469940 -32.5136932 60.9469940 -32.5136932 60.9468248 -32.5138285 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0312">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="304">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9245882 -32.5327474 60.9245882 -32.5327474 60.9242688 -32.5305930 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4258,12 +7613,254 @@
 	<member>
 		<S101:Coastline gml:id="FEATURE_ID_0314">
 			<natureOfSurface>5</natureOfSurface>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="305">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9418776 -32.5167305 60.9418776 -32.5167305 60.9420549 -32.5170140 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="306">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9420549 -32.5170140 60.9420549 -32.5170140 60.9422988 -32.5173568 60.9423894 -32.5175642 60.9423905 -32.5178889 60.9422862 -32.5182047 60.9421170 -32.5183942 60.9417785 -32.5185748 60.9411195 -32.5188365 60.9408299 -32.5188907 60.9406080 -32.5188796 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Coastline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0315">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="307">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956502 -32.5004092 60.8956502 -32.5004092 60.8956646 -32.5005604 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="308">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956646 -32.5005604 60.8956646 -32.5005604 60.8956796 -32.5007048 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="309">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956796 -32.5007048 60.8956796 -32.5007048 60.8957008 -32.5009032 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="310">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957008 -32.5009032 60.8957008 -32.5009032 60.8957199 -32.5010836 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="311">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957199 -32.5010836 60.8957199 -32.5010836 60.8957299 -32.5011828 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="312">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957299 -32.5011828 60.8957299 -32.5011828 60.8957390 -32.5012731 60.8957249 -32.5013005 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="313">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957249 -32.5013005 60.8957249 -32.5013005 60.8956925 -32.5013637 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="314">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956925 -32.5013637 60.8956925 -32.5013637 60.8956463 -32.5014534 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="315">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956463 -32.5014534 60.8956463 -32.5014534 60.8956048 -32.5015347 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="316">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956048 -32.5015347 60.8956048 -32.5015347 60.8955589 -32.5016240 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="317">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8955589 -32.5016240 60.8955589 -32.5016240 60.8955310 -32.5016785 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="318">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8955310 -32.5016785 60.8955310 -32.5016785 60.8954706 -32.5017962 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="319">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954706 -32.5017962 60.8954706 -32.5017962 60.8954426 -32.5018507 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="320">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954426 -32.5018507 60.8954426 -32.5018507 60.8954010 -32.5019315 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="321">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954010 -32.5019315 60.8954010 -32.5019315 60.8953688 -32.5019945 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="322">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953688 -32.5019945 60.8953688 -32.5019945 60.8953365 -32.5020572 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="323">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953365 -32.5020572 60.8953365 -32.5020572 60.8953043 -32.5021201 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="324">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953043 -32.5021201 60.8953043 -32.5021201 60.8952488 -32.5022284 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="325">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952488 -32.5022284 60.8952488 -32.5022284 60.8952021 -32.5023190 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="326">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952021 -32.5023190 60.8952021 -32.5023190 60.8951649 -32.5023916 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4332,6 +7929,28 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0319">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="327">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9631799 -32.5173711 60.9631799 -32.5173711 60.9626410 -32.5174161 60.9621416 -32.5176327 60.9610937 -32.5185079 60.9605687 -32.5190945 60.9602130 -32.5194102 60.9596964 -32.5196810 60.9593312 -32.5197892 60.9589925 -32.5198163 60.9585367 -32.5197260 60.9580990 -32.5194734 60.9577476 -32.5190583 60.9574889 -32.5183095 60.9572578 -32.5180298 60.9569564 -32.5179123 60.9558840 -32.5180658 60.9553855 -32.5180658 60.9551332 -32.5179484 60.9548393 -32.5176055 60.9542802 -32.5163604 60.9538161 -32.5155301 60.9534124 -32.5148806 60.9533125 -32.5148041 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="328">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9533125 -32.5148041 60.9533125 -32.5148041 60.9525872 -32.5142489 60.9523497 -32.5139601 60.9522498 -32.5135632 60.9523915 -32.5125707 60.9524235 -32.5122278 60.9522776 -32.5116954 60.9518625 -32.5105946 60.9517921 -32.5102246 60.9517827 -32.5094125 60.9519627 -32.5084923 60.9520395 -32.5080682 60.9523430 -32.5071569 60.9524390 -32.5064440 60.9525508 -32.5056862 60.9528074 -32.5050365 60.9535615 -32.5039447 60.9538233 -32.5034214 60.9541004 -32.5020862 60.9542665 -32.5016620 60.9545721 -32.5011749 60.9555858 -32.5001553 60.9556833 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -4369,6 +7988,17 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0322">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="329">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9211112 -32.5256105 60.9211112 -32.5256105 60.9206458 -32.5233584 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4396,19 +8026,75 @@
 		<S101:Coastline gml:id="FEATURE_ID_0324">
 			<categoryOfCoastline>1</categoryOfCoastline>
 			<radarConspicuous>1</radarConspicuous>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="330">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382330 -32.5101588 60.9383033 -32.5103301 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="331">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9383033 -32.5103301 60.9383033 -32.5103301 60.9385323 -32.5106367 60.9386526 -32.5108623 60.9387124 -32.5113223 60.9388424 -32.5118184 60.9393015 -32.5126123 60.9393516 -32.5127927 60.9394016 -32.5130542 60.9394815 -32.5132979 60.9394815 -32.5135774 60.9396010 -32.5138391 60.9397607 -32.5140285 60.9399800 -32.5141637 60.9401801 -32.5143260 60.9403698 -32.5145156 60.9405392 -32.5148944 60.9406894 -32.5150657 60.9409790 -32.5152642 60.9411484 -32.5153995 60.9412676 -32.5155889 60.9414274 -32.5157783 60.9414671 -32.5158634 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Coastline>
 	</member>
 	<member>
-		<S101:Coastline gml:id="FEATURE_ID_0325" />
+		<S101:Coastline gml:id="FEATURE_ID_0325">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="332">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9571074 -32.5065997 60.9571074 -32.5065997 60.9569680 -32.5067171 60.9568774 -32.5067172 60.9568583 -32.5066179 60.9567880 -32.5065548 60.9566986 -32.5065278 60.9565283 -32.5065458 60.9564591 -32.5066000 60.9563591 -32.5067082 60.9562899 -32.5067264 60.9562600 -32.5066091 60.9562397 -32.5064377 60.9561300 -32.5063565 60.9561002 -32.5062302 60.9561598 -32.5062121 60.9562396 -32.5062482 60.9562897 -32.5062302 60.9563002 -32.5060948 60.9563801 -32.5060136 60.9565280 -32.5060497 60.9567187 -32.5062120 60.9569977 -32.5063743 60.9570967 -32.5064825 60.9571074 -32.5065997 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0326">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="333">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9211112 -32.5256105 60.9211112 -32.5256105 60.9187995 -32.5258753 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0327">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="334">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246647 -32.5160240 60.9246647 -32.5160240 60.9262289 -32.5168808 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -4479,24 +8165,167 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0332">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="335">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834401 -32.5023259 60.8834401 -32.5023259 60.8836264 -32.5023260 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="336">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836264 -32.5023260 60.8836264 -32.5023260 60.8838127 -32.5023350 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0333">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="337">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988432 -32.5064066 60.8988432 -32.5064066 60.8990722 -32.5063434 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="338">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8990722 -32.5063434 60.8990722 -32.5063434 60.8994149 -32.5062533 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0334">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="339">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834487 -32.5020823 60.8834487 -32.5020823 60.8836350 -32.5020823 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="340">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836350 -32.5020823 60.8836350 -32.5020823 60.8838213 -32.5020915 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0335">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="341">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8829947 -32.5032636 60.8829947 -32.5032636 60.8830038 -32.5029663 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="342">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830038 -32.5029663 60.8830038 -32.5029663 60.8830130 -32.5026596 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="343">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830130 -32.5026596 60.8830130 -32.5026596 60.8830206 -32.5024341 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="344">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830206 -32.5024341 60.8830206 -32.5024341 60.8830292 -32.5021543 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="345">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830292 -32.5021543 60.8830292 -32.5021543 60.8830379 -32.5018657 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="346">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830379 -32.5018657 60.8830379 -32.5018657 60.8830454 -32.5016040 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="347">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830454 -32.5016040 60.8830454 -32.5016040 60.8830508 -32.5014237 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4541,6 +8370,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0338">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="348">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828129 -32.5024250 60.8828129 -32.5024250 60.8830206 -32.5024341 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="349">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830206 -32.5024341 60.8830206 -32.5024341 60.8831910 -32.5024341 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4559,6 +8410,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0340">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="350">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8847578 -32.5028134 60.8847578 -32.5028134 60.8849510 -32.5028135 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="351">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849510 -32.5028135 60.8849510 -32.5028135 60.8852454 -32.5028226 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4588,90 +8461,497 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0342">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="352">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862834 -32.5025070 60.8862834 -32.5025070 60.8864122 -32.5025161 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="353">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864122 -32.5025161 60.8864122 -32.5025161 60.8867242 -32.5025251 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0343">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="354">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8839519 -32.5029756 60.8839519 -32.5029756 60.8841450 -32.5029756 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="355">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841450 -32.5029756 60.8841450 -32.5029756 60.8843117 -32.5029757 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0344">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="356">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854854 -32.5014694 60.8854854 -32.5014694 60.8856686 -32.5014741 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="357">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856686 -32.5014741 60.8856686 -32.5014741 60.8858451 -32.5014785 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0345">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="358">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834229 -32.5028221 60.8834229 -32.5028221 60.8836092 -32.5028221 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="359">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836092 -32.5028221 60.8836092 -32.5028221 60.8837944 -32.5028312 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0346">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="360">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8839776 -32.5024253 60.8839776 -32.5024253 60.8841704 -32.5024254 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="361">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841704 -32.5024254 60.8841704 -32.5024254 60.8843364 -32.5024344 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0347">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="362">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8839873 -32.5022088 60.8839873 -32.5022088 60.8841800 -32.5022177 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="363">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841800 -32.5022177 60.8841800 -32.5022177 60.8843471 -32.5022179 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0348">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="364">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863661 -32.5032562 60.8863661 -32.5032562 60.8863898 -32.5028769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="365">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863898 -32.5028769 60.8863898 -32.5028769 60.8864122 -32.5025161 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="366">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864122 -32.5025161 60.8864122 -32.5025161 60.8864320 -32.5021913 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="367">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864320 -32.5021913 60.8864320 -32.5021913 60.8864375 -32.5021012 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="368">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864375 -32.5021012 60.8864375 -32.5021012 60.8864502 -32.5018937 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="369">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864502 -32.5018937 60.8864502 -32.5018937 60.8864590 -32.5017494 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="370">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864590 -32.5017494 60.8864590 -32.5017494 60.8864732 -32.5015148 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0349">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="371">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834154 -32.5030295 60.8834154 -32.5030295 60.8836015 -32.5030386 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="372">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836015 -32.5030386 60.8836015 -32.5030386 60.8837880 -32.5030387 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0350">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="373">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828570 -32.5016040 60.8828570 -32.5016040 60.8830454 -32.5016040 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="374">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830454 -32.5016040 60.8830454 -32.5016040 60.8832349 -32.5016042 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0351">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="375">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8847077 -32.5030569 60.8847077 -32.5030569 60.8849392 -32.5030659 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0352">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="376">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8839970 -32.5020013 60.8839970 -32.5020013 60.8841900 -32.5020014 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="377">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841900 -32.5020014 60.8841900 -32.5020014 60.8843568 -32.5020104 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0353">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="378">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854650 -32.5020196 60.8854650 -32.5020196 60.8856516 -32.5020288 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0354">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="379">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854158 -32.5027503 60.8854158 -32.5027503 60.8856254 -32.5027594 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="380">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856254 -32.5027594 60.8856254 -32.5027594 60.8857745 -32.5027594 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0355">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="381">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849302 -32.5032593 60.8849302 -32.5032593 60.8849392 -32.5030659 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="382">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849392 -32.5030659 60.8849392 -32.5030659 60.8849510 -32.5028135 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="383">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849510 -32.5028135 60.8849510 -32.5028135 60.8849679 -32.5024526 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="384">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849679 -32.5024526 60.8849679 -32.5024526 60.8849810 -32.5021730 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="385">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849810 -32.5021730 60.8849810 -32.5021730 60.8849967 -32.5018392 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="386">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849967 -32.5018392 60.8849967 -32.5018392 60.8850104 -32.5015466 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0356">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="387">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834808 -32.5018027 60.8834808 -32.5018027 60.8836447 -32.5018028 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="388">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836447 -32.5018028 60.8836447 -32.5018028 60.8838310 -32.5018118 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4695,90 +8975,376 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0358">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="389">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828430 -32.5021453 60.8828430 -32.5021453 60.8830292 -32.5021543 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="390">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830292 -32.5021543 60.8830292 -32.5021543 60.8832209 -32.5021544 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0359">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="391">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834670 -32.5015590 60.8834670 -32.5015590 60.8836533 -32.5015592 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="392">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836533 -32.5015592 60.8836533 -32.5015592 60.8838396 -32.5015682 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0360">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="393">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862322 -32.5028768 60.8862322 -32.5028768 60.8863898 -32.5028769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="394">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863898 -32.5028769 60.8863898 -32.5028769 60.8866729 -32.5028860 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0361">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="395">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8840195 -32.5015232 60.8840195 -32.5015232 60.8842122 -32.5015232 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="396">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8842122 -32.5015232 60.8842122 -32.5015232 60.8843781 -32.5015323 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0362">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="397">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8840076 -32.5017577 60.8840076 -32.5017577 60.8842009 -32.5017668 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="398">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8842009 -32.5017668 60.8842009 -32.5017668 60.8843675 -32.5017668 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0363">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="399">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864590 -32.5017494 60.8864590 -32.5017494 60.8867627 -32.5017584 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0364">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="400">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854553 -32.5022812 60.8854553 -32.5022812 60.8856426 -32.5022904 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="401">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856426 -32.5022904 60.8856426 -32.5022904 60.8858151 -32.5022904 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0365">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="402">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8847878 -32.5021729 60.8847878 -32.5021729 60.8849810 -32.5021730 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="403">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849810 -32.5021730 60.8849810 -32.5021730 60.8851466 -32.5021730 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0366">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="404">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932190 -32.5024724 60.8932190 -32.5024724 60.8933720 -32.5025322 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="405">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933720 -32.5025322 60.8933720 -32.5025322 60.8935191 -32.5025898 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0367">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="406">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828558 -32.5018657 60.8828558 -32.5018657 60.8830379 -32.5018657 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="407">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830379 -32.5018657 60.8830379 -32.5018657 60.8832338 -32.5018748 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0368">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="408">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939950 -32.5025086 60.8939950 -32.5025086 60.8941673 -32.5025808 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="409">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941673 -32.5025808 60.8941673 -32.5025808 60.8943335 -32.5026531 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0369">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="410">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862740 -32.5021912 60.8862740 -32.5021912 60.8864320 -32.5021913 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0370">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="411">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8834315 -32.5025514 60.8834315 -32.5025514 60.8836178 -32.5025605 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="412">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836178 -32.5025605 60.8836178 -32.5025605 60.8838041 -32.5025605 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0371">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="413">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854455 -32.5029939 60.8854455 -32.5029939 60.8856169 -32.5029939 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0372">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="414">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854456 -32.5024978 60.8854456 -32.5024978 60.8856349 -32.5024978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4801,24 +9367,101 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0374">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="415">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864375 -32.5021012 60.8864375 -32.5021012 60.8867541 -32.5021102 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0375">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="416">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8847750 -32.5024434 60.8847750 -32.5024434 60.8849679 -32.5024526 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="417">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849679 -32.5024526 60.8849679 -32.5024526 60.8851338 -32.5024526 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0376">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="418">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8934533 -32.5020124 60.8934533 -32.5020124 60.8935991 -32.5020756 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="419">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8935991 -32.5020756 60.8935991 -32.5020756 60.8937524 -32.5021388 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0377">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="420">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828633 -32.5014236 60.8828633 -32.5014236 60.8830508 -32.5014237 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="421">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830508 -32.5014237 60.8830508 -32.5014237 60.8832414 -32.5014328 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4841,12 +9484,100 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0379">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="422">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856083 -32.5032579 60.8856083 -32.5032579 60.8856169 -32.5029939 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="423">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856169 -32.5029939 60.8856169 -32.5029939 60.8856254 -32.5027594 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="424">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856254 -32.5027594 60.8856254 -32.5027594 60.8856349 -32.5024978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="425">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856349 -32.5024978 60.8856349 -32.5024978 60.8856426 -32.5022904 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="426">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856426 -32.5022904 60.8856426 -32.5022904 60.8856516 -32.5020288 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="427">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856516 -32.5020288 60.8856516 -32.5020288 60.8856609 -32.5017581 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="428">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856609 -32.5017581 60.8856609 -32.5017581 60.8856686 -32.5014741 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0380">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="429">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8929808 -32.5020029 60.8929808 -32.5020029 60.8931563 -32.5020754 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4871,6 +9602,83 @@
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0382">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="430">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8833333 -32.5000000 60.8833333 -32.5000000 60.8828998 -32.5002536 60.8828897 -32.5002594 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="431">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828897 -32.5002594 60.8828897 -32.5002594 60.8825328 -32.5004650 60.8826123 -32.5011620 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="432">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8826123 -32.5011620 60.8826123 -32.5011620 60.8828553 -32.5032639 60.8829947 -32.5032636 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="433">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8829947 -32.5032636 60.8829947 -32.5032636 60.8835930 -32.5032624 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="434">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8835930 -32.5032624 60.8835930 -32.5032624 60.8841317 -32.5032612 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="435">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8841317 -32.5032612 60.8841317 -32.5032612 60.8849302 -32.5032593 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="436">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8849302 -32.5032593 60.8849302 -32.5032593 60.8854123 -32.5032584 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -4923,11 +9731,44 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0386">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="437">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933968 -32.5021207 60.8933968 -32.5021207 60.8935437 -32.5021838 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="438">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8935437 -32.5021838 60.8935437 -32.5021838 60.8936949 -32.5022469 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0387">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="439">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9569952 -32.5008082 60.9569952 -32.5008082 60.9571552 -32.5002767 60.9574361 -32.5000000 60.9574361 -32.5000000</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -4989,6 +9830,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0391">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="440">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9557399 -32.5028293 60.9557399 -32.5028293 60.9559697 -32.5024956 60.9560887 -32.5019000 60.9562376 -32.5016204 60.9567866 -32.5010249 60.9567866 -32.5010249</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -5012,6 +9864,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0393">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="441">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8938452 -32.5012457 60.8938452 -32.5012457 60.8939825 -32.5013089 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="442">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939825 -32.5013089 60.8939825 -32.5013089 60.8941433 -32.5013720 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -5083,11 +9957,33 @@
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0398">
 			<categoryOfRoad>4</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="443">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8989942 -32.5184136 60.8989942 -32.5184136 60.8994009 -32.5186212 60.8999194 -32.5186843 60.9002985 -32.5185762 60.9008181 -32.5182604 60.9010097 -32.5182786 60.9012589 -32.5185132 60.9012737 -32.5188199 60.9011224 -32.5198934 60.9016715 -32.5214541 60.9018407 -32.5222028 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0399">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="444">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9362861 -32.5017695 60.9362861 -32.5017695 60.9374999 -32.5006363 60.9380889 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -5416,6 +10312,17 @@
 				<name>Huck`s Wharf</name>
 			</featureName>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="445">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8893198 -32.5014433 60.8893198 -32.5014433 60.8895889 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -5794,6 +10701,17 @@
 				<name>Phoenix Wharf</name>
 			</featureName>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="446">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8920718 -32.5047003 60.8920718 -32.5047003 60.8939475 -32.5050707 60.8954644 -32.5055039 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6103,6 +11021,61 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0434">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="447">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9063668 -32.5338585 60.9063668 -32.5338585 60.9149191 -32.5349324 60.9167502 -32.5351489 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="448">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9167502 -32.5351489 60.9167502 -32.5351489 60.9262199 -32.5362621 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="449">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9262199 -32.5362621 60.9262199 -32.5362621 60.9265888 -32.5363053 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="450">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9265888 -32.5363053 60.9265888 -32.5363053 60.9275728 -32.5364204 60.9294289 -32.5359691 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="451">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9294289 -32.5359691 60.9294289 -32.5359691 60.9301381 -32.5355361 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
@@ -6191,6 +11164,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0439">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="452">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964098 -32.5006236 60.8964098 -32.5006236 60.8966344 -32.5005967 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="453">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966344 -32.5005967 60.8966344 -32.5005967 60.8968718 -32.5005696 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6225,12 +11220,45 @@
 	<member>
 		<S101:CableSubmarine gml:id="FEATURE_ID_0441">
 			<categoryOfCable>6</categoryOfCable>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="454">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9245882 -32.5327474 60.9245882 -32.5327474 60.9249582 -32.5346164 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:CableSubmarine>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0442">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="455">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954921 -32.5009302 60.8954921 -32.5009302 60.8957008 -32.5009032 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="456">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8957008 -32.5009032 60.8957008 -32.5009032 60.8959009 -32.5008852 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6335,35 +11363,123 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0448">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="457">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964502 -32.5009845 60.8964502 -32.5009845 60.8966876 -32.5009575 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="458">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966876 -32.5009575 60.8966876 -32.5009575 60.8969196 -32.5009215 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0449">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="459">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965725 -32.5016427 60.8965725 -32.5016427 60.8967662 -32.5017243 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0450">
 			<categoryOfSlope>2</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="460">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8951724 -32.5069202 60.8951724 -32.5069202 60.8949020 -32.5071006 60.8945261 -32.5072178 60.8941045 -32.5072628 60.8936957 -32.5072447 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0451">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="461">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964681 -32.5018506 60.8964681 -32.5018506 60.8966608 -32.5019318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0452">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="462">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954422 -32.5005874 60.8954422 -32.5005874 60.8956646 -32.5005604 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="463">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956646 -32.5005604 60.8956646 -32.5005604 60.8958510 -32.5005334 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0453">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="464">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941934 -32.5008758 60.8941934 -32.5008758 60.8943604 -32.5009480 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6390,17 +11506,94 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0455">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="465">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964300 -32.5007951 60.8964300 -32.5007951 60.8966600 -32.5007680 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="466">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966600 -32.5007680 60.8966600 -32.5007680 60.8968941 -32.5007409 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0456">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="467">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965288 -32.5013093 60.8965288 -32.5013093 60.8967056 -32.5013814 60.8967205 -32.5013905 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0457">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="468">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8971970 -32.5000000 60.8971970 -32.5000000 60.8965705 -32.5001723 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="469">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965705 -32.5001723 60.8965705 -32.5001723 60.8957540 -32.5003979 60.8956502 -32.5004092 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="470">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956502 -32.5004092 60.8956502 -32.5004092 60.8952548 -32.5004520 60.8952194 -32.5004264 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="471">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952194 -32.5004264 60.8952194 -32.5004264 60.8951107 -32.5003449 60.8954389 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6427,104 +11620,445 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0459">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="472">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954624 -32.5007317 60.8954624 -32.5007317 60.8956796 -32.5007048 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="473">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956796 -32.5007048 60.8956796 -32.5007048 60.8958712 -32.5006777 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0460">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="474">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966736 -32.5014446 60.8966736 -32.5014446 60.8968652 -32.5015259 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0461">
 			<categoryOfSlope>2</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="475">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964480 -32.5107182 60.8964480 -32.5107182 60.8965386 -32.5103214 60.8967176 -32.5099064 60.8969273 -32.5096719 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0462">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="476">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939912 -32.5009661 60.8939912 -32.5009661 60.8941263 -32.5010202 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="477">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8941263 -32.5010202 60.8941263 -32.5010202 60.8942892 -32.5010924 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0463">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="478">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965993 -32.5055942 60.8965993 -32.5055942 60.8966419 -32.5051794 60.8965121 -32.5050892 60.8965217 -32.5049988 60.8985167 -32.5050985 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="479">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8985167 -32.5050985 60.8985167 -32.5050985 60.8984812 -32.5052335 60.8983675 -32.5056668 60.8987241 -32.5060728 60.8988432 -32.5064066 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="480">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988432 -32.5064066 60.8988432 -32.5064066 60.8988365 -32.5066951 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="481">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988365 -32.5066951 60.8988365 -32.5066951 60.8988336 -32.5068216 60.8987740 -32.5069749 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="482">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8987740 -32.5069749 60.8987740 -32.5069749 60.8986557 -32.5071553 60.8984842 -32.5072906 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0464">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="483">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8964352 -32.5014897 60.8964352 -32.5014897 60.8966140 -32.5015619 60.8966278 -32.5015709 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0465">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="484">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8910453 -32.5018856 60.8910453 -32.5018856 60.8905269 -32.5017683 60.8902277 -32.5016418 60.8900075 -32.5015156 60.8898191 -32.5013531 60.8894390 -32.5015064 60.8893198 -32.5014433 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0466">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="485">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948780 -32.5007046 60.8948780 -32.5007046 60.8950504 -32.5007768 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="486">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8950504 -32.5007768 60.8950504 -32.5007768 60.8952154 -32.5008400 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0467">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="487">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939230 -32.5010924 60.8939230 -32.5010924 60.8940602 -32.5011555 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="488">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8940602 -32.5011555 60.8940602 -32.5011555 60.8942210 -32.5012187 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0468">
 			<categoryOfSlope>2</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="489">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9362184 -32.5134697 60.9362184 -32.5134697 60.9359097 -32.5139299 60.9354509 -32.5142908 60.9348218 -32.5146698 60.9346121 -32.5150758 60.9345068 -32.5153104 60.9346325 -32.5157524 60.9348924 -32.5163297 60.9353609 -32.5167266 60.9361595 -32.5169970 60.9371082 -32.5170240 60.9376565 -32.5168886 60.9384645 -32.5163201 60.9391021 -32.5157156 60.9393117 -32.5152555 60.9392221 -32.5146240 60.9390123 -32.5142542 60.9386236 -32.5139656 60.9379049 -32.5137582 60.9370563 -32.5135779 60.9367273 -32.5134517 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0469">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="490">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954644 -32.5055039 60.8954644 -32.5055039 60.8954747 -32.5057297 60.8958040 -32.5057289 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0470">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="491">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8967344 -32.5012641 60.8967344 -32.5012641 60.8969643 -32.5012552 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0471">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="492">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5146248 60.9666667 -32.5146248 60.9665161 -32.5144703 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="493">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9665161 -32.5144703 60.9665161 -32.5144703 60.9662149 -32.5141610 60.9656649 -32.5137799 60.9654353 -32.5136674 60.9651740 -32.5135911 60.9649838 -32.5135612 60.9649827 -32.5133899 60.9637252 -32.5132910 60.9626778 -32.5135441 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0472">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="494">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963800 -32.5004523 60.8963800 -32.5004523 60.8966079 -32.5004252 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="495">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966079 -32.5004252 60.8966079 -32.5004252 60.8968474 -32.5003891 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0473">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="496">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8929472 -32.5000000 60.8929472 -32.5000000 60.8928012 -32.5002982 60.8924722 -32.5003434 60.8923722 -32.5004155 60.8923423 -32.5005237 60.8923529 -32.5007312 60.8922730 -32.5008484 60.8920729 -32.5009567 60.8920334 -32.5010288 60.8920334 -32.5012182 60.8919631 -32.5013536 60.8917810 -32.5014799 60.8916714 -32.5015970 60.8915712 -32.5019038 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0474">
 			<categoryOfSlope>6</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="497">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9428008 -32.5045468 60.9428008 -32.5045468 60.9430431 -32.5038251 60.9434419 -32.5032839 60.9438802 -32.5029861 60.9442885 -32.5024538 60.9443883 -32.5018315 60.9443347 -32.5013624 60.9442043 -32.5001270 60.9442359 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:SlopeTopline gml:id="FEATURE_ID_0475">
 			<categoryOfSlope>2</categoryOfSlope>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="498">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8971669 -32.5094554 60.8971669 -32.5094554 60.8972564 -32.5091306 60.8970575 -32.5085714 60.8970777 -32.5081744 60.8972195 -32.5074347 60.8974666 -32.5069566 60.8977190 -32.5065055 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:SlopeTopline>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0476">
 			<visuallyConspicuous>2</visuallyConspicuous>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="499">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8914640 -32.5044657 60.8914640 -32.5044657 60.8904357 -32.5044566 60.8904357 -32.5044566</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="500">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8904357 -32.5044566 60.8904357 -32.5044566 60.8888101 -32.5044382 60.8887410 -32.5040142 60.8879820 -32.5039869 60.8880615 -32.5046545 60.8876824 -32.5053489 60.8876824 -32.5053489</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="501">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8876824 -32.5053489 60.8876824 -32.5053489 60.8871306 -32.5063593 60.8867910 -32.5063140 60.8866516 -32.5061336 60.8866614 -32.5056283 60.8864826 -32.5055833 60.8862168 -32.5044195 60.8855684 -32.5045095 60.8854889 -32.5035533 60.8854889 -32.5035533</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0477">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="502">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9624288 -32.5138599 60.9624288 -32.5138599 60.9613911 -32.5146271 60.9614414 -32.5152315 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6548,6 +12082,17 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0479">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="503">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8931806 -32.5016150 60.8931806 -32.5016150 60.8933554 -32.5016876 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6577,6 +12122,17 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0482">
 			<categoryOfShorelineConstruction>13</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="504">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8961319 -32.5055582 60.8961319 -32.5055582 60.8965993 -32.5055942 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6621,6 +12177,28 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0486">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="505">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8927815 -32.5020754 60.8927815 -32.5020754 60.8929157 -32.5021295 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="506">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8929157 -32.5021295 60.8929157 -32.5021295 60.8930902 -32.5022017 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
@@ -6677,6 +12255,17 @@
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0490">
 			<categoryOfRoad>5</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="507">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8798953 -32.5109671 60.8798953 -32.5109671 60.8815956 -32.5112022 60.8831319 -32.5113199 60.8838698 -32.5112390 60.8847750 -32.5109145 60.8854417 -32.5103643 60.8860649 -32.5094984 60.8863655 -32.5085691 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -6880,6 +12469,17 @@
 	<member>
 		<S101:PipelineSubmarineOnLand gml:id="FEATURE_ID_0496">
 			<status>4</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="508">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9250926 -32.5027811 60.9250926 -32.5027811 60.8988365 -32.5066951 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:PipelineSubmarineOnLand>
 	</member>
 	<member>
@@ -6888,6 +12488,17 @@
 			<orientation>
 				<orientationValue>310</orientationValue>
 			</orientation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="509">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9222021 -32.5167910 60.9222021 -32.5167910 60.8985000 -32.5000000 60.8985000 -32.5000000</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:NavigationLine>
 	</member>
 	<member>
@@ -7001,6 +12612,17 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0500">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="510">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9462545 -32.5084250 60.9462545 -32.5084250 60.9461045 -32.5088581 60.9461045 -32.5088581</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7041,11 +12663,33 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0503">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="511">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9647694 -32.5000000 60.9647694 -32.5000000 60.9646384 -32.5003994 60.9643536 -32.5009319 60.9627436 -32.5024137 60.9623875 -32.5029192 60.9622472 -32.5033703 60.9620473 -32.5042273 60.9618040 -32.5047507 60.9610757 -32.5057348 60.9602918 -32.5070167 60.9594688 -32.5088485 60.9591550 -32.5096786 60.9590140 -32.5102559 60.9587098 -32.5119065 60.9587004 -32.5123754 60.9588703 -32.5126455 60.9593104 -32.5129332 60.9596172 -32.5130047 60.9598990 -32.5129501 60.9602508 -32.5127781 60.9611333 -32.5121271 60.9614064 -32.5120185 60.9617607 -32.5119728 60.9626035 -32.5119981 60.9633870 -32.5121047 60.9646635 -32.5123638 60.9654122 -32.5125878 60.9659010 -32.5127672 60.9665865 -32.5132076 60.9666667 -32.5132778 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0504">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="512">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9480564 -32.5039953 60.9480564 -32.5039953 60.9478220 -32.5035082 60.9476006 -32.5033277 60.9472301 -32.5032738 60.9468660 -32.5034543 60.9466542 -32.5037069 60.9466235 -32.5039505 60.9467577 -32.5042392 60.9470484 -32.5045909 60.9469933 -32.5050420 60.9471710 -32.5052134 60.9478855 -32.5053124 60.9481250 -32.5054747 60.9482870 -32.5058354 60.9483106 -32.5061874 60.9482287 -32.5065572 60.9482000 -32.5066926 60.9478606 -32.5072067 60.9477000 -32.5077211 60.9474808 -32.5079015 60.9466833 -32.5081182 60.9465195 -32.5082266 60.9464738 -32.5084700 60.9464738 -32.5084700</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7064,40 +12708,239 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0506">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="513">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9262205 -32.5077335 60.9262205 -32.5077335 60.9253124 -32.5077697 60.9243531 -32.5076074 60.9238570 -32.5073007 60.9235759 -32.5068768 60.9234800 -32.5065339 60.9234959 -32.5061821 60.9235407 -32.5058754 60.9236759 -32.5055777 60.9241389 -32.5047297 60.9244518 -32.5039629 60.9245870 -32.5033313 60.9245826 -32.5026457 60.9245826 -32.5026457</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
-		<S101:ShorelineConstruction gml:id="FEATURE_ID_0507" />
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0507">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="514">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9291133 -32.5020049 60.9291133 -32.5020049 60.9292426 -32.5021006 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="515">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292426 -32.5021006 60.9292426 -32.5021006 60.9297905 -32.5025058 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="516">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9297905 -32.5025058 60.9297905 -32.5025058 60.9303696 -32.5029340 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="517">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9303696 -32.5029340 60.9303696 -32.5029340 60.9304196 -32.5030873 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="518">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9304196 -32.5030873 60.9304196 -32.5030873 60.9332734 -32.5056489 60.9342968 -32.5055935 60.9342968 -32.5055935</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="519">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9342968 -32.5055935 60.9342968 -32.5055935 60.9360755 -32.5073896 60.9364544 -32.5071099 60.9349413 -32.5055584 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="520">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9349413 -32.5055584 60.9349413 -32.5055584 60.9382021 -32.5053776 60.9381218 -32.5039523 60.9360662 -32.5040338 60.9360470 -32.5037632 60.9381218 -32.5036636 60.9380810 -32.5025540 60.9313373 -32.5030421 60.9308673 -32.5026907 60.9308673 -32.5026907</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="521">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9308673 -32.5026907 60.9308673 -32.5026907 60.9307267 -32.5025856 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="522">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9307267 -32.5025856 60.9307267 -32.5025856 60.9301642 -32.5021651 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="523">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9301642 -32.5021651 60.9301642 -32.5021651 60.9296033 -32.5017460 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="524">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9296033 -32.5017460 60.9296033 -32.5017460 60.9294912 -32.5016620 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0508">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="525">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8931002 -32.5210468 60.8931002 -32.5210468 60.8933803 -32.5207131 60.8937490 -32.5197479 60.8940782 -32.5190984 60.8945340 -32.5184489 60.8949100 -32.5180161 60.8956096 -32.5174929 60.8961123 -32.5169157 60.8961976 -32.5166000 60.8963925 -32.5160046 60.8964181 -32.5155446 60.8962620 -32.5143356 60.8962981 -32.5140380 60.8963217 -32.5137222 60.8964378 -32.5134787 60.8969384 -32.5124053 60.8970898 -32.5117919 60.8970272 -32.5108898 60.8971668 -32.5103214 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0509">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="526">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8733558 -32.5052006 60.8733558 -32.5052006 60.8736529 -32.5045687 60.8739128 -32.5041807 60.8745625 -32.5030796 60.8749672 -32.5025922 60.8753825 -32.5020055 60.8759384 -32.5014731 60.8772110 -32.5002094 60.8774889 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0510">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="527">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9384794 -32.5074524 60.9384794 -32.5074524 60.9385518 -32.5075606 60.9387424 -32.5075876 60.9389404 -32.5075154 60.9398387 -32.5066854 60.9402069 -32.5063966 60.9408956 -32.5060717 60.9412149 -32.5058461 60.9415544 -32.5053499 60.9420227 -32.5047634 60.9423962 -32.5044025 60.9428103 -32.5041408 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0511">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="528">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9369400 -32.5079488 60.9369400 -32.5079488 60.9364416 -32.5084449 60.9350824 -32.5100503 60.9344546 -32.5111050 60.9341987 -32.5117719 60.9340555 -32.5123576 60.9339859 -32.5130691 60.9340518 -32.5140328 60.9341339 -32.5146361 60.9341744 -32.5156268 60.9340130 -32.5166807 60.9340211 -32.5169870 60.9341974 -32.5174279 60.9346862 -32.5178055 60.9354245 -32.5180565 60.9359816 -32.5180916 60.9374460 -32.5179272 60.9383456 -32.5180428 60.9388016 -32.5180241 60.9399065 -32.5177611 60.9404637 -32.5173549 60.9407610 -32.5167420 60.9407087 -32.5157242 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0512">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="529">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8953688 -32.5019945 60.8953688 -32.5019945 60.8955141 -32.5020578 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0513">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="530">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962690 -32.5068843 60.8962690 -32.5068843 60.8958730 -32.5068029 60.8951756 -32.5068210 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -7123,6 +12966,17 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0515">
 			<elevation>30</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="531">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5003310 60.9666667 -32.5003310 60.9664515 -32.5009571 60.9659624 -32.5016951 60.9647920 -32.5030364 60.9643338 -32.5038553 60.9636858 -32.5054567 60.9630784 -32.5065726 60.9620492 -32.5081025 60.9617711 -32.5087143 60.9616434 -32.5092181 60.9617036 -32.5096585 60.9619630 -32.5099731 60.9623910 -32.5101524 60.9629281 -32.5102238 60.9648471 -32.5102755 60.9655827 -32.5103557 60.9666667 -32.5105972 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -7148,16 +13002,49 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0517">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="532">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962615 -32.5022564 60.8962615 -32.5022564 60.8964531 -32.5023377 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0518">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="533">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9414194 -32.5000000 60.9414194 -32.5000000 60.9412733 -32.5002549 60.9409181 -32.5011942 60.9405162 -32.5024406 60.9399950 -32.5037863 60.9395831 -32.5046083 60.9392892 -32.5050690 60.9387996 -32.5057916 60.9385015 -32.5062162 60.9382757 -32.5064690 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0519">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="534">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8982083 -32.5000000 60.8982083 -32.5000000 60.8980669 -32.5001753 60.8979210 -32.5004579 60.8979065 -32.5007952 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7176,87 +13063,373 @@
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0521">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="535">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8952021 -32.5023190 60.8952021 -32.5023190 60.8953492 -32.5023826 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0522">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="536">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9226317 -32.5418063 60.9226317 -32.5418063 60.9224412 -32.5418695 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="537">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9224412 -32.5418695 60.9224412 -32.5418695 60.9224071 -32.5418875 60.9221579 -32.5420048 60.9220876 -32.5422484 60.9221034 -32.5422676 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="538">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9221034 -32.5422676 60.9221034 -32.5422676 60.9222877 -32.5424918 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="539">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9222877 -32.5424918 60.9222877 -32.5424918 60.9225967 -32.5425640 60.9228714 -32.5425460 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0523">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="540">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9116460 -32.5432226 60.9116460 -32.5432226 60.9119166 -32.5433580 60.9119964 -32.5436466 60.9118164 -32.5438812 60.9115268 -32.5439263 60.9112776 -32.5438179 60.9111871 -32.5435744 60.9113575 -32.5432947 60.9116460 -32.5432226 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0524">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="541">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9064172 -32.5303042 60.9064172 -32.5303042 60.9057688 -32.5304364 60.9054157 -32.5304961 60.9050776 -32.5304964 60.9042485 -32.5304038 60.9036898 -32.5302686 60.9031661 -32.5300760 60.9027225 -32.5298068 60.9023790 -32.5295186 60.9019974 -32.5287594 60.9016758 -32.5279673 60.9012743 -32.5274075 60.9012540 -32.5270766 60.9014991 -32.5268217 60.9019497 -32.5266983 60.9021732 -32.5266679 60.9021732 -32.5266679</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="542">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9021732 -32.5266679 60.9021732 -32.5266679 60.9027943 -32.5265422 60.9031703 -32.5263608 60.9034869 -32.5259585 60.9037292 -32.5253570 60.9037755 -32.5249499 60.9036871 -32.5244282 60.9035188 -32.5238553 60.9034701 -32.5234226 60.9034701 -32.5234226</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="543">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9034701 -32.5234226 60.9034701 -32.5234226 60.9034694 -32.5228964 60.9037982 -32.5214257 60.9038273 -32.5207211 60.9036460 -32.5199574 60.9032643 -32.5191261 60.9032435 -32.5184980 60.9033532 -32.5180905 60.9034512 -32.5178395 60.9035333 -32.5176113 60.9035333 -32.5176113</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0525">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="544">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8942739 -32.5000000 60.8942739 -32.5000000 60.8937809 -32.5000447 60.8934347 -32.5002523 60.8930916 -32.5006854 60.8925171 -32.5016961 60.8920397 -32.5023909 60.8916603 -32.5027789 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0526">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="545">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8986115 -32.5052746 60.8986115 -32.5052746 60.8986428 -32.5054542 60.8989220 -32.5058223 60.8990422 -32.5062716 60.8990722 -32.5063434 60.8990722 -32.5063434</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="546">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8990722 -32.5063434 60.8990722 -32.5063434 60.8992222 -32.5067223 60.8994020 -32.5070922 60.8997011 -32.5074441 60.8998171 -32.5076606 60.8998213 -32.5082831 60.8997508 -32.5091400 60.8998508 -32.5094648 60.8997390 -32.5096182 60.8994015 -32.5097805 60.8991321 -32.5100692 60.8983623 -32.5103758 60.8982122 -32.5104839 60.8981547 -32.5106374 60.8981152 -32.5110162 60.8982640 -32.5115935 60.8985238 -32.5120898 60.8993413 -32.5130642 60.8999703 -32.5141017 60.9002950 -32.5144806 60.9006984 -32.5148776 60.9006984 -32.5148776</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0527">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="547">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9072389 -32.5000000 60.9072389 -32.5000000 60.9075333 -32.5004260 60.9081125 -32.5012830 60.9084170 -32.5017432 60.9086310 -32.5021672 60.9088097 -32.5025821 60.9089812 -32.5031685 60.9090558 -32.5035113 60.9091090 -32.5041067 60.9091090 -32.5045668 60.9090750 -32.5048554 60.9090320 -32.5050038 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="548">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9090320 -32.5050038 60.9090320 -32.5050038 60.9089310 -32.5053511 60.9085732 -32.5058461 60.9079953 -32.5062781 60.9074570 -32.5064328 60.9068587 -32.5064574 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="549">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9068587 -32.5064574 60.9068587 -32.5064574 60.9065222 -32.5064703 60.9058632 -32.5063260 60.9052616 -32.5060283 60.9047602 -32.5056494 60.9041321 -32.5049547 60.9037381 -32.5044676 60.9035040 -32.5040527 60.9030068 -32.5030242 60.9025544 -32.5019236 60.9023362 -32.5009944 60.9022084 -32.5001194 60.9021833 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0528">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="550">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8908128 -32.5033110 60.8908128 -32.5033110 60.8908128 -32.5035726 60.8906754 -32.5037349 60.8903507 -32.5038521 60.8898184 -32.5038971 60.8893064 -32.5038157 60.8889008 -32.5036894 60.8886954 -32.5035721 60.8886475 -32.5034458 60.8887061 -32.5033466 60.8888211 -32.5033105 60.8891596 -32.5032294 60.8895855 -32.5031303 60.8898740 -32.5030851 60.8902444 -32.5031123 60.8906436 -32.5031846 60.8908128 -32.5033110 60.8908128 -32.5033110</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0529">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="551">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8911749 -32.5030404 60.8911749 -32.5030404 60.8902243 -32.5029410 60.8898272 -32.5028326 60.8895356 -32.5026972 60.8892461 -32.5024356 60.8891290 -32.5022822 60.8891067 -32.5021198 60.8890738 -32.5020296 60.8891143 -32.5017680 60.8892964 -32.5015424 60.8892964 -32.5015424</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0530">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="552">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9224433 -32.5417702 60.9224433 -32.5417702 60.9224337 -32.5415446 60.9225561 -32.5412290 60.9227233 -32.5411297 60.9229459 -32.5411117 60.9233155 -32.5412740 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="553">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9233155 -32.5412740 60.9233155 -32.5412740 60.9236105 -32.5412740 60.9236105 -32.5412740</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0531">
 			<categoryOfRoad>4</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="554">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9366283 -32.5140290 60.9366283 -32.5140290 60.9364483 -32.5131721 60.9363884 -32.5119362 60.9366277 -32.5107995 60.9370661 -32.5098071 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0532">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="555">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8930878 -32.5017953 60.8930878 -32.5017953 60.8932628 -32.5018679 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0533">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="556">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9098777 -32.5492125 60.9098777 -32.5492125 60.9102977 -32.5503811 60.9105662 -32.5511782 60.9107444 -32.5523375 60.9107444 -32.5523375</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0534">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="557">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9029456 -32.5164204 60.9029456 -32.5164204 60.9028659 -32.5161137 60.9035836 -32.5155365 60.9042022 -32.5155185 60.9044492 -32.5156538 60.9044098 -32.5159876 60.9040424 -32.5162492 60.9032843 -32.5165198 60.9029456 -32.5164204 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0535">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="558">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8918538 -32.5037080 60.8918538 -32.5037080 60.8920901 -32.5038434 60.8923286 -32.5040419 60.8926883 -32.5044840 60.8928778 -32.5045923 60.8933366 -32.5046916 60.8943543 -32.5047911 60.8947130 -32.5048182 60.8956168 -32.5048815 60.8956168 -32.5048815</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:PipelineSubmarineOnLand gml:id="FEATURE_ID_0536">
 			<categoryOfPipelinePipe>2</categoryOfPipelinePipe>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="559">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8976826 -32.5124866 60.8976826 -32.5124866 60.9001422 -32.5117201 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:PipelineSubmarineOnLand>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0537">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="560">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9238204 -32.5432767 60.9238204 -32.5432767 60.9235553 -32.5433038 60.9230036 -32.5432587 60.9225765 -32.5429971 60.9223634 -32.5426361 60.9223634 -32.5426361</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7264,71 +13437,579 @@
 			<categoryOfRecommendedTrack>2</categoryOfRecommendedTrack>
 			<orientationValue>30</orientationValue>
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="561">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9637705 -32.5184330 60.9637705 -32.5184330 60.9594741 -32.5246681 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0539">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="562">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9177337 -32.5326320 60.9177337 -32.5326320 60.9176666 -32.5329029 60.9172860 -32.5332460 60.9172555 -32.5333174 60.9172555 -32.5333174</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="563">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9172555 -32.5333174 60.9172555 -32.5333174 60.9171933 -32.5334627 60.9171984 -32.5336290 60.9171984 -32.5336290</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="564">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9171984 -32.5336290 60.9171984 -32.5336290 60.9172135 -32.5341129 60.9171240 -32.5346276 60.9169066 -32.5348894 60.9168141 -32.5349320 60.9168141 -32.5349320</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="565">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9168141 -32.5349320 60.9168141 -32.5349320 60.9165143 -32.5350701 60.9159749 -32.5352417 60.9157553 -32.5354674 60.9154558 -32.5361445 60.9152287 -32.5363343 60.9146499 -32.5365599 60.9144686 -32.5367045 60.9143599 -32.5370115 60.9144516 -32.5377339 60.9144302 -32.5380860 60.9145315 -32.5383479 60.9150187 -32.5387182 60.9151168 -32.5388988 60.9151391 -32.5393051 60.9154345 -32.5396094 60.9154345 -32.5396094</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="566">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9154345 -32.5396094 60.9154345 -32.5396094 60.9154547 -32.5396302 60.9154227 -32.5399190 60.9152942 -32.5400851 60.9152942 -32.5400851</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="567">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9152942 -32.5400851 60.9152942 -32.5400851 60.9150592 -32.5403887 60.9149952 -32.5405332 60.9150698 -32.5407047 60.9151002 -32.5407426 60.9151002 -32.5407426</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="568">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9151002 -32.5407426 60.9151002 -32.5407426 60.9153886 -32.5411020 60.9154770 -32.5413097 60.9154387 -32.5415535 60.9151892 -32.5420321 60.9150794 -32.5426009 60.9148971 -32.5430705 60.9145519 -32.5436894 60.9145519 -32.5436894</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="569">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9145519 -32.5436894 60.9145519 -32.5436894 60.9144589 -32.5438561 60.9142233 -32.5443979 60.9139444 -32.5451304 60.9139444 -32.5451304</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="570">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9139444 -32.5451304 60.9139444 -32.5451304 60.9138107 -32.5454813 60.9134514 -32.5459781 60.9133064 -32.5463934 60.9132606 -32.5469532 60.9132819 -32.5473235 60.9134034 -32.5475944 60.9135420 -32.5478653 60.9137786 -32.5481001 60.9141795 -32.5484070 60.9150100 -32.5488857 60.9154791 -32.5493643 60.9157286 -32.5497706 60.9160058 -32.5503937 60.9161198 -32.5506103 60.9164077 -32.5508813 60.9173172 -32.5516216 60.9175688 -32.5520551 60.9176338 -32.5523351 60.9176338 -32.5523351</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0540">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="571">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830038 -32.5029663 60.8830038 -32.5029663 60.8832003 -32.5029664 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0541">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="572">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8835930 -32.5032624 60.8835930 -32.5032624 60.8836015 -32.5030386 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="573">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836015 -32.5030386 60.8836015 -32.5030386 60.8836092 -32.5028221 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="574">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836092 -32.5028221 60.8836092 -32.5028221 60.8836178 -32.5025605 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="575">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836178 -32.5025605 60.8836178 -32.5025605 60.8836264 -32.5023260 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="576">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836264 -32.5023260 60.8836264 -32.5023260 60.8836350 -32.5020823 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="577">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836350 -32.5020823 60.8836350 -32.5020823 60.8836447 -32.5018028 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="578">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8836447 -32.5018028 60.8836447 -32.5018028 60.8836533 -32.5015592 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0542">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="579">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933720 -32.5025322 60.8933720 -32.5025322 60.8931667 -32.5028333 60.8923395 -32.5030406 60.8921617 -32.5030586 60.8921021 -32.5031939 60.8921521 -32.5033112 60.8923192 -32.5033563 60.8928558 -32.5031850 60.8930378 -32.5031940 60.8932273 -32.5032844 60.8934604 -32.5034828 60.8936860 -32.5035010 60.8938755 -32.5035461 60.8939458 -32.5036273 60.8938361 -32.5037626 60.8938659 -32.5038347 60.8940351 -32.5039250 60.8947430 -32.5039973 60.8954712 -32.5041778 60.8959204 -32.5041689 60.8965996 -32.5040337 60.8968402 -32.5040518 60.8970574 -32.5041420 60.8973373 -32.5044127 60.8979951 -32.5047555 60.8982451 -32.5049179 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0543">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="580">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9599946 -32.5153132 60.9599946 -32.5153132 60.9603937 -32.5151416 60.9606928 -32.5149250 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="581">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9606928 -32.5149250 60.9606928 -32.5149250 60.9612667 -32.5144323 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="582">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9612667 -32.5144323 60.9612667 -32.5144323 60.9613026 -32.5144016 60.9614358 -32.5143075 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="583">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9614358 -32.5143075 60.9614358 -32.5143075 60.9619421 -32.5139512 60.9624083 -32.5136073 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="584">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9624083 -32.5136073 60.9624083 -32.5136073 60.9624303 -32.5135908 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="585">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9624303 -32.5135908 60.9624303 -32.5135908 60.9628474 -32.5133178 60.9632274 -32.5132255 60.9633068 -32.5132191 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="586">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9633068 -32.5132191 60.9633068 -32.5132191 60.9640663 -32.5131644 60.9643294 -32.5131879 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="587">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9643294 -32.5131879 60.9643294 -32.5131879 60.9647224 -32.5132216 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="588">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9647224 -32.5132216 60.9647224 -32.5132216 60.9649080 -32.5132546 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="589">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9649080 -32.5132546 60.9649080 -32.5132546 60.9653439 -32.5133638 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="590">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9653439 -32.5133638 60.9653439 -32.5133638 60.9659619 -32.5137244 60.9666667 -32.5143384 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
-		<S101:Railway gml:id="FEATURE_ID_0544" />
+		<S101:Railway gml:id="FEATURE_ID_0544">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="591">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9355375 -32.5056847 60.9355375 -32.5056847 60.9374238 -32.5056393 60.9381521 -32.5055761 60.9387003 -32.5053775 60.9391399 -32.5050255 60.9393792 -32.5046106 60.9395388 -32.5039881 60.9396972 -32.5030769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="592">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9396972 -32.5030769 60.9396972 -32.5030769 60.9399567 -32.5021747 60.9404653 -32.5009839 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Railway>
 	</member>
 	<member>
 		<S101:RecommendedTrack gml:id="FEATURE_ID_0545">
 			<categoryOfRecommendedTrack>1</categoryOfRecommendedTrack>
 			<orientationValue>15.5</orientationValue>
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="593">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9182632 -32.5433851 60.9182632 -32.5433851 60.9245270 -32.5243054 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0546">
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="594">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8982946 -32.5081024 60.8982946 -32.5081024 60.8984745 -32.5083550 60.8986236 -32.5083641 60.8987066 -32.5085806 60.8988501 -32.5086135 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="595">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988501 -32.5086135 60.8988501 -32.5086135 60.8989429 -32.5086348 60.8989246 -32.5088332 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="596">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8989246 -32.5088332 60.8989246 -32.5088332 60.8988629 -32.5095008 60.8984838 -32.5095638 60.8985041 -32.5093384 60.8983668 -32.5091218 60.8982274 -32.5091669 60.8980846 -32.5098705 60.8981644 -32.5099426 60.8984338 -32.5098436 60.8987553 -32.5098705 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0547">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="597">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9611134 -32.5150241 60.9611134 -32.5150241 60.9611200 -32.5147579 60.9612555 -32.5144574 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="598">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9612555 -32.5144574 60.9612555 -32.5144574 60.9612667 -32.5144323 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
-		<S101:Railway gml:id="FEATURE_ID_0548" />
+		<S101:Railway gml:id="FEATURE_ID_0548">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="599">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9322559 -32.5027893 60.9322559 -32.5027893 60.9376127 -32.5024368 60.9383802 -32.5023465 60.9391391 -32.5020577 60.9396372 -32.5017689 60.9404653 -32.5009839 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="600">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9404653 -32.5009839 60.9404653 -32.5009839 60.9410750 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Railway>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0549">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="601">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9409985 -32.5165362 60.9409985 -32.5165362 60.9410987 -32.5167166 60.9411786 -32.5170052 60.9411191 -32.5175013 60.9409201 -32.5178531 60.9405209 -32.5180067 60.9396818 -32.5180880 60.9386055 -32.5182055 60.9377664 -32.5180884 60.9373874 -32.5181245 60.9364697 -32.5184314 60.9356317 -32.5184675 60.9350525 -32.5183324 60.9345339 -32.5180618 60.9343538 -32.5177369 60.9342941 -32.5170424 60.9343940 -32.5162125 60.9342340 -32.5143361 60.9341539 -32.5130009 60.9343325 -32.5122882 60.9348712 -32.5114311 60.9355300 -32.5108358 60.9365072 -32.5102132 60.9370661 -32.5098071 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="602">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9370661 -32.5098071 60.9370661 -32.5098071 60.9375440 -32.5091485 60.9379239 -32.5085349 60.9380048 -32.5084183 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="603">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9380048 -32.5084183 60.9380048 -32.5084183 60.9386806 -32.5074414 60.9387202 -32.5074158 60.9393318 -32.5065464 60.9409720 -32.5043163 60.9425454 -32.5023208 60.9429223 -32.5017340 60.9430809 -32.5011202 60.9430995 -32.5000558 60.9431088 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0550">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="604">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8913552 -32.5015519 60.8913552 -32.5015519 60.8916939 -32.5008033 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="605">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8916939 -32.5008033 60.8916939 -32.5008033 60.8920672 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0551">
 			<elevation>30</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="606">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9425117 -32.5000000 60.9425117 -32.5000000 60.9423238 -32.5003114 60.9421582 -32.5009816 60.9420537 -32.5015880 60.9419123 -32.5022194 60.9417474 -32.5027156 60.9414314 -32.5032751 60.9401470 -32.5050434 60.9399874 -32.5053411 60.9399981 -32.5056028 60.9402610 -32.5055666 60.9412019 -32.5047636 60.9422524 -32.5039605 60.9429548 -32.5032296 60.9433251 -32.5026432 60.9435687 -32.5020117 60.9436652 -32.5012268 60.9435438 -32.5006224 60.9433883 -32.5002886 60.9431088 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -7337,16 +14018,71 @@
 			<orientation>
 				<orientationValue>30</orientationValue>
 			</orientation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="607">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5142529 60.9666667 -32.5142529 60.9665161 -32.5144703 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="608">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9665161 -32.5144703 60.9665161 -32.5144703 60.9637705 -32.5184330 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="609">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9637705 -32.5184330 60.9637705 -32.5184330 60.9594741 -32.5246681 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:NavigationLine>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0553">
 			<categoryOfRoad>1</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="610">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8792677 -32.5000000 60.8792677 -32.5000000 60.8785828 -32.5019086 60.8770180 -32.5066091 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0554">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="611">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8963359 -32.5451515 60.8963359 -32.5451515 60.8968354 -32.5453050 60.8973946 -32.5453050 60.8980762 -32.5451248 60.8984714 -32.5449084 60.8990743 -32.5445386 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
@@ -7354,27 +14090,247 @@
 			<categoryOfRecommendedTrack>2</categoryOfRecommendedTrack>
 			<orientationValue />
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="612">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9179628 -32.5454600 60.9179628 -32.5454600 60.9182632 -32.5433851 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0556">
 			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="613">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8989942 -32.5184136 60.8989942 -32.5184136 60.8986642 -32.5181159 60.8985276 -32.5178264 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="614">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8985276 -32.5178264 60.8985276 -32.5178264 60.8983960 -32.5175475 60.8981566 -32.5165552 60.8978173 -32.5152019 60.8977962 -32.5151148 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="615">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8977962 -32.5151148 60.8977962 -32.5151148 60.8974592 -32.5137130 60.8971815 -32.5127746 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="616">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8971815 -32.5127746 60.8971815 -32.5127746 60.8970619 -32.5125402 60.8968816 -32.5123238 60.8968216 -32.5120893 60.8968605 -32.5118458 60.8968806 -32.5116292 60.8968004 -32.5114579 60.8966800 -32.5113587 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:Road gml:id="FEATURE_ID_0557">
 			<categoryOfRoad>2</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="617">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8932468 -32.5182954 60.8932468 -32.5182954 60.8936462 -32.5177813 60.8940530 -32.5174205 60.8946439 -32.5169696 60.8950232 -32.5165636 60.8951830 -32.5161307 60.8952033 -32.5156526 60.8949417 -32.5144347 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="618">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8949417 -32.5144347 60.8949417 -32.5144347 60.8951016 -32.5134966 60.8953403 -32.5128470 60.8956300 -32.5124772 60.8960889 -32.5120984 60.8963807 -32.5118008 60.8966800 -32.5113587 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="619">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8966800 -32.5113587 60.8966800 -32.5113587 60.8969196 -32.5105470 60.8970592 -32.5101410 60.8972797 -32.5098703 60.8975182 -32.5096539 60.8976982 -32.5093653 60.8978580 -32.5086527 60.8980574 -32.5074710 60.8981374 -32.5064696 60.8980778 -32.5062351 60.8978777 -32.5060816 60.8974594 -32.5059463 60.8970804 -32.5059282 60.8965012 -32.5060634 60.8960424 -32.5060634 60.8953643 -32.5059278 60.8939474 -32.5055578 60.8933178 -32.5053818 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="620">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8933178 -32.5053818 60.8933178 -32.5053818 60.8932693 -32.5053682 60.8928132 -32.5051794 60.8920340 -32.5048776 60.8916314 -32.5047762 60.8913658 -32.5047335 60.8910122 -32.5047240 60.8906395 -32.5047513 60.8901268 -32.5048623 60.8894551 -32.5050213 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="621">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8894551 -32.5050213 60.8894551 -32.5050213 60.8890195 -32.5051688 60.8886799 -32.5054214 60.8884402 -32.5057732 60.8878607 -32.5070089 60.8872375 -32.5082718 60.8870639 -32.5084612 60.8867445 -32.5085964 60.8866401 -32.5085889 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="622">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8866401 -32.5085889 60.8866401 -32.5085889 60.8864700 -32.5085766 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="623">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8864700 -32.5085766 60.8864700 -32.5085766 60.8863655 -32.5085691 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="624">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863655 -32.5085691 60.8863655 -32.5085691 60.8863250 -32.5085510 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="625">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863250 -32.5085510 60.8863250 -32.5085510 60.8862774 -32.5085296 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="626">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862774 -32.5085296 60.8862774 -32.5085296 60.8859848 -32.5083978 60.8857522 -32.5081632 60.8856217 -32.5076755 60.8856508 -32.5068174 60.8856346 -32.5064736 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="627">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856346 -32.5064736 60.8856346 -32.5064736 60.8856236 -32.5062393 60.8855872 -32.5061010 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="628">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8855872 -32.5061010 60.8855872 -32.5061010 60.8854097 -32.5054267 60.8851597 -32.5049933 60.8848228 -32.5047858 60.8844828 -32.5047589 60.8835651 -32.5048227 60.8825258 -32.5048053 60.8819065 -32.5047064 60.8814000 -32.5045170 60.8810970 -32.5041740 60.8809730 -32.5038579 60.8808661 -32.5034244 60.8808244 -32.5020696 60.8808638 -32.5007148 60.8810232 -32.5001726 60.8811150 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:Road>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0558">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="629">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8828928 -32.5026596 60.8828928 -32.5026596 60.8830130 -32.5026596 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="630">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8830130 -32.5026596 60.8830130 -32.5026596 60.8831706 -32.5026596 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:River gml:id="FEATURE_ID_0559">
 			<status>5</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="631">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939248 -32.5235188 60.8939248 -32.5235188 60.8947958 -32.5234827 60.8954112 -32.5235461 60.8959968 -32.5236905 60.8962130 -32.5237717 60.8967283 -32.5240063 60.8971914 -32.5242950 60.8975491 -32.5245658 60.8982889 -32.5252966 60.8986978 -32.5256484 60.8990268 -32.5259011 60.8994857 -32.5261177 60.8997210 -32.5262801 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:River>
 	</member>
 	<member>
@@ -7432,7 +14388,19 @@
 		</S101:SiloTank>
 	</member>
 	<member>
-		<S101:Railway gml:id="FEATURE_ID_0564" />
+		<S101:Railway gml:id="FEATURE_ID_0564">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="632">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9362461 -32.5038894 60.9362461 -32.5038894 60.9371925 -32.5038352 60.9382411 -32.5037808 60.9389500 -32.5036724 60.9392992 -32.5035100 60.9395184 -32.5033296 60.9396972 -32.5030769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Railway>
 	</member>
 	<member>
 		<S101:FogSignal gml:id="FEATURE_ID_0565">
@@ -7481,6 +14449,28 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0568">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="633">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9512556 -32.5406380 60.9512556 -32.5406380 60.9511088 -32.5410350 60.9509076 -32.5411612 60.9506764 -32.5410892 60.9506187 -32.5406562 60.9505292 -32.5402682 60.9506398 -32.5400066 60.9509816 -32.5398621 60.9513511 -32.5396005 60.9515651 -32.5396095 60.9517069 -32.5398260 60.9516792 -32.5399884 60.9516441 -32.5400580 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="634">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9516441 -32.5400580 60.9516441 -32.5400580 60.9515791 -32.5401867 60.9515791 -32.5401867</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7517,6 +14507,17 @@
 			<categoryOfRecommendedTrack>2</categoryOfRecommendedTrack>
 			<orientationValue />
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="635">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9245270 -32.5243054 60.9245270 -32.5243054 60.9247069 -32.5233582 60.9247664 -32.5222756 60.9246662 -32.5209043 60.9244468 -32.5198580 60.9240474 -32.5189830 60.9235278 -32.5181080 60.9228495 -32.5173412 60.9222021 -32.5167910 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
@@ -7550,6 +14551,17 @@
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0574">
 			<elevation>40</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="636">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5030194 60.9666667 -32.5030194 60.9661369 -32.5036972 60.9657563 -32.5042982 60.9649214 -32.5060288 60.9639764 -32.5075711 60.9636921 -32.5082975 60.9637030 -32.5087548 60.9639803 -32.5090683 60.9645550 -32.5092744 60.9661020 -32.5095697 60.9666667 -32.5097499 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
@@ -7571,26 +14583,125 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0576">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="637">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5170889 60.9666667 -32.5170889 60.9659110 -32.5176875 60.9656776 -32.5178909 60.9656776 -32.5178909</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="638">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9656776 -32.5178909 60.9656776 -32.5178909 60.9649566 -32.5185344 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="639">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9649566 -32.5185344 60.9649566 -32.5185344 60.9648959 -32.5184442 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0577">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="640">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9513547 -32.5408184 60.9513547 -32.5408184 60.9513857 -32.5411251 60.9512932 -32.5413777 60.9510355 -32.5415402 60.9505840 -32.5416034 60.9503402 -32.5417568 60.9500602 -32.5421627 60.9498568 -32.5422441 60.9497194 -32.5422261 60.9495521 -32.5418832 60.9493400 -32.5414865 60.9494102 -32.5411436 60.9497412 -32.5408008 60.9498807 -32.5405300 60.9498879 -32.5398264 60.9499400 -32.5396370 60.9501464 -32.5390235 60.9502390 -32.5389422 60.9503412 -32.5388700 60.9505776 -32.5388249 60.9513540 -32.5389961 60.9515340 -32.5390231 60.9515809 -32.5390321 60.9520814 -32.5388967 60.9522858 -32.5388425 60.9524957 -32.5389326 60.9525479 -32.5391582 60.9523574 -32.5394830 60.9519837 -32.5397537 60.9518443 -32.5399251 60.9518443 -32.5399251</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:River gml:id="FEATURE_ID_0578">
 			<status>5</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="641">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8951556 -32.5239249 60.8951556 -32.5239249 60.8957806 -32.5242136 60.8966984 -32.5245475 60.8971774 -32.5248183 60.8977960 -32.5252604 60.8984146 -32.5258378 60.8989735 -32.5262439 60.8995453 -32.5264695 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:River>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0579">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="642">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9233708 -32.5411748 60.9233708 -32.5411748 60.9235700 -32.5409944 60.9237404 -32.5406155 60.9239789 -32.5404170 60.9246381 -32.5401914 60.9249278 -32.5400471 60.9249278 -32.5400471</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:River gml:id="FEATURE_ID_0580">
 			<status>5</status>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="643">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8931198 -32.5235727 60.8931198 -32.5235727 60.8939248 -32.5235188 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="644">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8939248 -32.5235188 60.8939248 -32.5235188 60.8946626 -32.5236902 60.8951556 -32.5239249 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="645">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8951556 -32.5239249 60.8951556 -32.5239249 60.8958635 -32.5244843 60.8962330 -32.5247009 60.8969580 -32.5250258 60.8973168 -32.5252422 60.8980152 -32.5259190 60.8988531 -32.5265777 60.8992726 -32.5268122 60.8996516 -32.5269116 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:River>
 	</member>
 	<member>
@@ -7613,21 +14724,175 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0582">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="646">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9331880 -32.5124592 60.9331880 -32.5124592 60.9330561 -32.5125404 60.9326375 -32.5122610 60.9323231 -32.5119185 60.9322835 -32.5116208 60.9321077 -32.5114855 60.9320829 -32.5111519 60.9318986 -32.5108543 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0583">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="647">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9257755 -32.5396320 60.9257755 -32.5396320 60.9262196 -32.5394064 60.9265646 -32.5389824 60.9265646 -32.5389824</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0584">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="648">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468047 -32.5140991 60.9453483 -32.5144694 60.9448991 -32.5147762 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="649">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9448991 -32.5147762 60.9448991 -32.5147762 60.9443700 -32.5150920 60.9439517 -32.5156244 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="650">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9439517 -32.5156244 60.9439517 -32.5156244 60.9441520 -32.5160303 60.9440521 -32.5163640 60.9433738 -32.5162650 60.9429542 -32.5159133 60.9427147 -32.5161298 60.9429746 -32.5164003 60.9429543 -32.5166350 60.9423955 -32.5167524 60.9423895 -32.5169483 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="651">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423859 -32.5170680 60.9425554 -32.5173387 60.9426949 -32.5178078 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="652">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9426949 -32.5178078 60.9426949 -32.5178078 60.9426557 -32.5182227 60.9423364 -32.5186106 60.9418584 -32.5188814 60.9415391 -32.5192424 60.9403413 -32.5194951 60.9399026 -32.5194772 60.9396227 -32.5199012 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="653">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9396227 -32.5199012 60.9396227 -32.5199012 60.9393438 -32.5200456 60.9388050 -32.5200548 60.9385968 -32.5201959 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="654">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9385968 -32.5201959 60.9385968 -32.5201959 60.9384856 -32.5202713 60.9383484 -32.5206773 60.9381472 -32.5207765 60.9380886 -32.5206232 60.9377073 -32.5202353 60.9372759 -32.5200821 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="655">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9372759 -32.5200821 60.9372759 -32.5200821 60.9369087 -32.5199558 60.9366094 -32.5196853 60.9355127 -32.5195500 60.9351730 -32.5193607 60.9341348 -32.5192797 60.9338356 -32.5190722 60.9336556 -32.5183957 60.9332370 -32.5180078 60.9330368 -32.5175026 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="656">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9330368 -32.5175026 60.9330368 -32.5175026 60.9331400 -32.5172410 60.9330005 -32.5168441 60.9330771 -32.5167899 60.9330504 -32.5164021 60.9332302 -32.5160954 60.9332367 -32.5158789 60.9329564 -32.5148144 60.9331757 -32.5144265 60.9331565 -32.5140024 60.9333662 -32.5137318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0585">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="657">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9259056 -32.5412378 60.9259056 -32.5412378 60.9258555 -32.5414182 60.9259003 -32.5418332 60.9259003 -32.5418332</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="658">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9259003 -32.5418332 60.9259003 -32.5418332 60.9257704 -32.5420406 60.9255212 -32.5420767 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="659">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9255212 -32.5420767 60.9255212 -32.5420767 60.9250739 -32.5418963 60.9248779 -32.5419054 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7647,6 +14912,39 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0587">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="660">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9248874 -32.5404350 60.9248874 -32.5404350 60.9250513 -32.5400289 60.9250737 -32.5399929 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="661">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9250737 -32.5399929 60.9250737 -32.5399929 60.9252206 -32.5397584 60.9254975 -32.5396862 60.9254975 -32.5396862</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="662">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9254975 -32.5396862 60.9254975 -32.5396862 60.9258361 -32.5397313 60.9261855 -32.5396410 60.9261855 -32.5396410</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7671,6 +14969,28 @@
 			<categoryOfRecommendedTrack>2</categoryOfRecommendedTrack>
 			<orientationValue>340</orientationValue>
 			<trafficFlow>4</trafficFlow>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="663">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9206524 -32.5523349 60.9206524 -32.5523349 60.9194507 -32.5494220 60.9184727 -32.5471152 60.9180590 -32.5457722 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="664">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9180590 -32.5457722 60.9180590 -32.5457722 60.9179628 -32.5454600 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:RecommendedTrack>
 	</member>
 	<member>
@@ -7701,21 +15021,76 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0592">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="665">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9267008 -32.5360536 60.9267008 -32.5360536 60.9266418 -32.5360929 60.9266418 -32.5360929</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="666">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266418 -32.5360929 60.9266418 -32.5360929 60.9262402 -32.5361673 60.9260286 -32.5361047 60.9259881 -32.5359243 60.9260498 -32.5357891 60.9262884 -32.5354732 60.9265769 -32.5352658 60.9267558 -32.5352297 60.9271360 -32.5352658 60.9271968 -32.5355274 60.9270562 -32.5358160 60.9267008 -32.5360536 60.9267008 -32.5360536</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0593">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="667">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9252571 -32.5420857 60.9252571 -32.5420857 60.9249290 -32.5421490 60.9246181 -32.5423474 60.9243593 -32.5427083 60.9243593 -32.5427083</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0594">
 			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="668">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9379265 -32.5106730 60.9379265 -32.5106730 60.9378242 -32.5100144 60.9379337 -32.5094461 60.9381135 -32.5089319 60.9383338 -32.5084988 60.9386115 -32.5081289 60.9396195 -32.5073620 60.9401378 -32.5068116 60.9404966 -32.5065499 60.9412353 -32.5061799 60.9415439 -32.5058640 60.9420622 -32.5050611 60.9425656 -32.5045557 60.9427806 -32.5044023 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0595">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="669">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9298478 -32.5385762 60.9298478 -32.5385762 60.9299628 -32.5382695 60.9301268 -32.5380619 60.9308061 -32.5374574 60.9313641 -32.5368711 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7753,177 +15128,980 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0598">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="670">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9099118 -32.5489419 60.9099118 -32.5489419 60.9102968 -32.5497769 60.9108092 -32.5506030 60.9112696 -32.5513112 60.9118981 -32.5523371 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:ShorelineConstruction gml:id="FEATURE_ID_0599">
 			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
 			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="671">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8943614 -32.5017600 60.8943614 -32.5017600 60.8945349 -32.5018322 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="672">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8945349 -32.5018322 60.8945349 -32.5018322 60.8946999 -32.5019044 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:ShorelineConstruction>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0600">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="673">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9385066 -32.5274972 60.9385066 -32.5274972 60.9386898 -32.5276325 60.9388761 -32.5276775 60.9396183 -32.5277405 60.9399250 -32.5277946 60.9400965 -32.5279480 60.9403436 -32.5283538 60.9406558 -32.5287236 60.9407218 -32.5290122 60.9406102 -32.5294904 60.9406688 -32.5298964 60.9408606 -32.5301670 60.9411066 -32.5303833 60.9415422 -32.5305548 60.9423409 -32.5307260 60.9430364 -32.5310172 60.9436886 -32.5315764 60.9438416 -32.5318353 60.9440600 -32.5320607 60.9444988 -32.5323313 60.9452816 -32.5326108 60.9457269 -32.5330706 60.9463436 -32.5334495 60.9469444 -32.5340536 60.9474908 -32.5343964 60.9482323 -32.5350457 60.9485614 -32.5351720 60.9490002 -32.5352440 60.9493271 -32.5352620 60.9497392 -32.5353250 60.9506636 -32.5353157 60.9512461 -32.5353426 60.9519447 -32.5352883 60.9521598 -32.5353062 60.9526562 -32.5354956 60.9532536 -32.5354503 60.9535933 -32.5354683 60.9541078 -32.5358109 60.9546170 -32.5361175 60.9547949 -32.5363067 60.9549868 -32.5367308 60.9553330 -32.5370554 60.9555577 -32.5373350 60.9556527 -32.5375605 60.9556678 -32.5378312 60.9555180 -32.5387332 60.9557685 -32.5392384 60.9562969 -32.5397523 60.9564323 -32.5399508 60.9566423 -32.5404920 60.9570653 -32.5409609 60.9571112 -32.5411503 60.9570868 -32.5413489 60.9568068 -32.5416557 60.9564416 -32.5417460 60.9559389 -32.5417731 60.9555820 -32.5417373 60.9553404 -32.5417464 60.9546311 -32.5419090 60.9538824 -32.5417739 60.9533244 -32.5418913 60.9527952 -32.5421440 60.9524768 -32.5422344 60.9520614 -32.5423066 60.9519070 -32.5424510 60.9518732 -32.5429201 60.9517486 -32.5431456 60.9510853 -32.5435337 60.9510086 -32.5436601 60.9510290 -32.5439668 60.9509492 -32.5442555 60.9508214 -32.5443728 60.9501985 -32.5446256 60.9498685 -32.5449775 60.9496426 -32.5450497 60.9494669 -32.5449505 60.9494496 -32.5440844 60.9493046 -32.5437508 60.9488336 -32.5431014 60.9487088 -32.5425601 60.9487714 -32.5418654 60.9487319 -32.5416129 60.9485924 -32.5414596 60.9483144 -32.5414958 60.9480727 -32.5417394 60.9478033 -32.5418025 60.9475977 -32.5415952 60.9474782 -32.5411350 60.9473471 -32.5407292 60.9471660 -32.5406300 60.9469435 -32.5407111 60.9467625 -32.5410721 60.9466274 -32.5412526 60.9462781 -32.5414602 60.9460886 -32.5418210 60.9458299 -32.5421008 60.9457097 -32.5423173 60.9457300 -32.5427232 60.9458632 -32.5429938 60.9458302 -32.5431382 60.9456205 -32.5432645 60.9452680 -32.5432375 60.9449143 -32.5430211 60.9445734 -32.5429580 60.9444466 -32.5428228 60.9441026 -32.5425521 60.9439534 -32.5419659 60.9438233 -32.5417764 60.9436636 -32.5417404 60.9433143 -32.5418396 60.9428957 -32.5416773 60.9426454 -32.5416594 60.9425389 -32.5414699 60.9420648 -32.5411904 60.9419764 -32.5408928 60.9417974 -32.5406401 60.9417771 -32.5403425 60.9418568 -32.5400267 60.9420048 -32.5397020 60.9421357 -32.5393591 60.9420856 -32.5391336 60.9418703 -32.5390254 60.9416628 -32.5390975 60.9412177 -32.5394856 60.9410079 -32.5395036 60.9409088 -32.5393864 60.9408992 -32.5389624 60.9408192 -32.5388272 60.9406020 -32.5388002 60.9401207 -32.5390798 60.9397000 -32.5390168 60.9392421 -32.5390530 60.9389428 -32.5389087 60.9386531 -32.5388456 60.9385231 -32.5387013 60.9384730 -32.5384848 60.9386327 -32.5381419 60.9386358 -32.5379706 60.9385036 -32.5374654 60.9385130 -32.5366535 60.9382136 -32.5357515 60.9382900 -32.5349396 60.9381696 -32.5344525 60.9379811 -32.5342450 60.9376935 -32.5341909 60.9375444 -32.5342451 60.9374646 -32.5344254 60.9373251 -32.5349668 60.9372049 -32.5351472 60.9365128 -32.5354631 60.9364127 -32.5356706 60.9365066 -32.5363832 60.9364002 -32.5369065 60.9362278 -32.5372583 60.9362279 -32.5376281 60.9364676 -32.5381424 60.9364474 -32.5383769 60.9362984 -32.5384851 60.9359990 -32.5385302 60.9355891 -32.5386928 60.9354699 -32.5388371 60.9352005 -32.5392341 60.9347416 -32.5396671 60.9344987 -32.5398927 60.9342922 -32.5400550 60.9337245 -32.5402445 60.9332944 -32.5406056 60.9331113 -32.5406597 60.9329153 -32.5406146 60.9326564 -32.5403982 60.9322368 -32.5402809 60.9321570 -32.5401275 60.9322496 -32.5397577 60.9321696 -32.5395683 60.9319768 -32.5394600 60.9313879 -32.5393338 60.9311683 -32.5389460 60.9306093 -32.5387476 60.9303601 -32.5387205 60.9301812 -32.5387565 60.9299256 -32.5390001 60.9293719 -32.5393160 60.9291632 -32.5395506 60.9286840 -32.5404166 60.9284242 -32.5406150 60.9276724 -32.5409218 60.9273572 -32.5411564 60.9269142 -32.5416888 60.9263061 -32.5419234 60.9258546 -32.5423293 60.9250878 -32.5426541 60.9246681 -32.5430601 60.9243487 -32.5431954 60.9243487 -32.5431954</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:LandElevation gml:id="FEATURE_ID_0601">
 			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="674">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9654583 -32.5000000 60.9654583 -32.5000000 60.9653433 -32.5005624 60.9651101 -32.5010600 60.9646813 -32.5015496 60.9641355 -32.5021141 60.9636869 -32.5024960 60.9631797 -32.5029609 60.9629068 -32.5032267 60.9627511 -32.5034921 60.9626152 -32.5037740 60.9624798 -32.5043210 60.9624218 -32.5045366 60.9621887 -32.5050671 60.9620135 -32.5053824 60.9617022 -32.5058966 60.9614101 -32.5063114 60.9612349 -32.5065935 60.9610599 -32.5069418 60.9608464 -32.5074890 60.9607691 -32.5078205 60.9606334 -32.5082515 60.9604201 -32.5088816 60.9602840 -32.5091469 60.9602260 -32.5093790 60.9600510 -32.5097604 60.9599154 -32.5101748 60.9598576 -32.5105064 60.9598777 -32.5107051 60.9601527 -32.5111354 60.9603291 -32.5113007 60.9606618 -32.5113829 60.9613266 -32.5113980 60.9619325 -32.5113305 60.9624018 -32.5112800 60.9626364 -32.5112629 60.9635945 -32.5112610 60.9642009 -32.5113426 60.9648661 -32.5114737 60.9653357 -32.5115887 60.9658250 -32.5117203 60.9662751 -32.5118520 60.9666667 -32.5120334 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:LandElevation>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0602">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="675">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9277365 -32.5079139 60.9277365 -32.5079139 60.9272478 -32.5077606 60.9267592 -32.5077064 60.9267592 -32.5077064</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0603">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="676">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9341796 -32.5360497 60.9341796 -32.5360497 60.9344075 -32.5359415 60.9347409 -32.5360317 60.9349805 -32.5362482 60.9349902 -32.5364917 60.9347804 -32.5365458 60.9344588 -32.5364918 60.9341882 -32.5363204 60.9341796 -32.5360497 60.9341796 -32.5360497</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0604">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="677">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9354860 -32.5343355 60.9354860 -32.5343355 60.9356574 -32.5344438 60.9357384 -32.5346604 60.9356980 -32.5348859 60.9354510 -32.5350573 60.9351198 -32.5350122 60.9349898 -32.5348770 60.9350494 -32.5345161 60.9353188 -32.5343627 60.9354860 -32.5343355 60.9354860 -32.5343355</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0605">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="678">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9494452 -32.5055645 60.9494452 -32.5055645 60.9487587 -32.5061782 60.9485278 -32.5065572 60.9480992 -32.5076939 60.9476576 -32.5081992 60.9475214 -32.5084608 60.9474204 -32.5088849 60.9474015 -32.5096426 60.9472834 -32.5099223 60.9469536 -32.5104816 60.9467738 -32.5111042 60.9468242 -32.5118980 60.9469318 -32.5121596 60.9469861 -32.5122858 60.9469439 -32.5133143 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0606">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="679">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9318528 -32.5362756 60.9318528 -32.5362756 60.9319720 -32.5360411 60.9327610 -32.5355808 60.9330102 -32.5353283 60.9333030 -32.5347779 60.9335095 -32.5345974 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0607">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="680">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9357327 -32.5277501 60.9357327 -32.5277501 60.9355665 -32.5278764 60.9353972 -32.5278401 60.9353068 -32.5277680 60.9351984 -32.5275515 60.9351882 -32.5274929 60.9351882 -32.5274929</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="681">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9351882 -32.5274929 60.9351882 -32.5274929 60.9350808 -32.5268748 60.9348117 -32.5265230 60.9341860 -32.5260985 60.9340818 -32.5259361 60.9340596 -32.5257648 60.9341609 -32.5255394 60.9344529 -32.5251606 60.9344882 -32.5249172 60.9346685 -32.5245474 60.9350169 -32.5242950 60.9351766 -32.5242411 60.9356656 -32.5239436 60.9360872 -32.5238086 60.9367495 -32.5237550 60.9374568 -32.5233855 60.9377304 -32.5233406 60.9379876 -32.5233789 60.9379876 -32.5233789</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="682">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9379876 -32.5233789 60.9379876 -32.5233789 60.9385171 -32.5234583 60.9388845 -32.5233593 60.9392424 -32.5230979 60.9395906 -32.5227006 60.9395906 -32.5227006</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="683">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9395906 -32.5227006 60.9395906 -32.5227006 60.9396612 -32.5226200 60.9399201 -32.5223857 60.9404058 -32.5221153 60.9411459 -32.5219082 60.9415964 -32.5217101 60.9419043 -32.5214306 60.9424326 -32.5211151 60.9438948 -32.5206109 60.9454601 -32.5199803 60.9457892 -32.5199083 60.9462353 -32.5198905 60.9468549 -32.5199359 60.9476236 -32.5198641 60.9480528 -32.5197110 60.9483904 -32.5194496 60.9486303 -32.5190167 60.9486858 -32.5185656 60.9485236 -32.5176997 60.9486452 -32.5173840 60.9493057 -32.5167530 60.9495638 -32.5160135 60.9498163 -32.5157791 60.9500111 -32.5157341 60.9502868 -32.5158064 60.9504251 -32.5159778 60.9506473 -32.5164379 60.9509165 -32.5166365 60.9515146 -32.5167991 60.9518222 -32.5170157 60.9521285 -32.5175390 60.9525169 -32.5178369 60.9529096 -32.5179903 60.9534600 -32.5180898 60.9537334 -32.5182884 60.9541568 -32.5189020 60.9548335 -32.5194975 60.9552390 -32.5196871 60.9557702 -32.5197866 60.9560831 -32.5200032 60.9562097 -32.5202108 60.9563170 -32.5205356 60.9564518 -32.5211129 60.9566529 -32.5214738 60.9572137 -32.5218889 60.9580364 -32.5223222 60.9583866 -32.5224306 60.9588358 -32.5225210 60.9594310 -32.5225393 60.9607108 -32.5225487 60.9617381 -32.5226484 60.9623034 -32.5228200 60.9628249 -32.5230908 60.9635529 -32.5235962 60.9644119 -32.5238581 60.9655415 -32.5239938 60.9666667 -32.5245135 60.9666667 -32.5245135</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0608">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="684">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9301967 -32.5354369 60.9301967 -32.5354369 60.9302701 -32.5353015 60.9303499 -32.5347062 60.9305682 -32.5344986 60.9309186 -32.5345076 60.9312018 -32.5344264 60.9313871 -32.5343181 60.9316437 -32.5340114 60.9319822 -32.5336414 60.9322718 -32.5331543 60.9322718 -32.5331543</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0609">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="685">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9335782 -32.5317739 60.9335782 -32.5317739 60.9331992 -32.5323423 60.9328606 -32.5325769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0610">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="686">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9323315 -32.5335421 60.9323315 -32.5335421 60.9324114 -32.5333167 60.9324422 -32.5330009 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="687">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9324422 -32.5330009 60.9324422 -32.5330009 60.9324506 -32.5329016 60.9326839 -32.5327121 60.9326839 -32.5327121</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="688">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9326839 -32.5327121 60.9326839 -32.5327121 60.9331897 -32.5326490 60.9331897 -32.5326490</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0611">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="689">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9519864 -32.5000000 60.9519864 -32.5000000 60.9518086 -32.5006244 60.9517257 -32.5010486 60.9517395 -32.5029618 60.9516801 -32.5033950 60.9515110 -32.5038642 60.9505937 -32.5053447 60.9502896 -32.5062834 60.9499462 -32.5075198 60.9496165 -32.5084856 60.9495219 -32.5089638 60.9495074 -32.5098393 60.9493884 -32.5103447 60.9490096 -32.5110397 60.9488575 -32.5114188 60.9488374 -32.5116895 60.9488899 -32.5123574 60.9490906 -32.5135215 60.9490707 -32.5140449 60.9488420 -32.5148030 60.9487324 -32.5150376 60.9484471 -32.5153356 60.9476549 -32.5157961 60.9475258 -32.5159401 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="690">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9475258 -32.5159401 60.9475258 -32.5159401 60.9474282 -32.5160489 60.9471654 -32.5166897 60.9470408 -32.5169064 60.9467661 -32.5170598 60.9462453 -32.5171412 60.9459258 -32.5171323 60.9451876 -32.5171957 60.9445604 -32.5173853 60.9442345 -32.5175390 60.9439651 -32.5177375 60.9433008 -32.5185049 60.9429590 -32.5187396 60.9420708 -32.5191550 60.9417673 -32.5193717 60.9414223 -32.5196876 60.9409251 -32.5202202 60.9405694 -32.5205180 60.9395833 -32.5209606 60.9393650 -32.5211862 60.9391649 -32.5216014 60.9390531 -32.5217278 60.9386335 -32.5218814 60.9382330 -32.5220968 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="691">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9382330 -32.5220968 60.9382330 -32.5220968 60.9381467 -32.5221432 60.9377484 -32.5221704 60.9373723 -32.5219719 60.9372252 -32.5217644 60.9367093 -32.5206544 60.9363002 -32.5202485 60.9358431 -32.5200140 60.9351400 -32.5197885 60.9339747 -32.5195722 60.9334356 -32.5193467 60.9332652 -32.5192114 60.9330265 -32.5189858 60.9328720 -32.5187150 60.9323924 -32.5177405 60.9320385 -32.5168472 60.9311750 -32.5143837 60.9304653 -32.5129399 60.9303213 -32.5121367 60.9302445 -32.5118570 60.9301614 -32.5116224 60.9299834 -32.5113336 60.9293879 -32.5107742 60.9284687 -32.5103501 60.9273450 -32.5099713 60.9252148 -32.5094302 60.9248430 -32.5093400 60.9241358 -32.5090875 60.9233231 -32.5086093 60.9227298 -32.5080769 60.9222983 -32.5073911 60.9221662 -32.5069760 60.9221395 -32.5065789 60.9222224 -32.5057847 60.9221286 -32.5051260 60.9219826 -32.5047018 60.9216161 -32.5040701 60.9210391 -32.5033525 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="692">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9210391 -32.5033525 60.9210391 -32.5033525 60.9209631 -32.5032579 60.9204859 -32.5027527 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0612">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="693">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9461429 -32.5090385 60.9461429 -32.5090385 60.9460887 -32.5092731 60.9463348 -32.5099496 60.9462945 -32.5102203 60.9459455 -32.5108698 60.9459754 -32.5112758 60.9464048 -32.5121327 60.9466742 -32.5124935 60.9466742 -32.5124935</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0613">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="694">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9373262 -32.5390804 60.9373262 -32.5390804 60.9370866 -32.5390713 60.9369066 -32.5391707 60.9368374 -32.5394413 60.9368865 -32.5397210 60.9371166 -32.5398202 60.9373338 -32.5397840 60.9374562 -32.5397298 60.9375925 -32.5395494 60.9375956 -32.5392607 60.9373262 -32.5390804 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0614">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="695">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9353743 -32.5297800 60.9353743 -32.5297800 60.9352518 -32.5295093 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="696">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9352518 -32.5295093 60.9352518 -32.5295093 60.9352443 -32.5294914 60.9352144 -32.5292027 60.9352943 -32.5291033 60.9356340 -32.5290763 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="697">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9356340 -32.5290763 60.9356340 -32.5290763 60.9358533 -32.5289680 60.9358533 -32.5289680</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0615">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="698">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9288640 -32.5086354 60.9288640 -32.5086354 60.9286771 -32.5084452 60.9283833 -32.5082363 60.9283833 -32.5082363</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0616">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="699">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9356840 -32.5289230 60.9356840 -32.5289230 60.9358830 -32.5286884 60.9359522 -32.5283546 60.9359361 -32.5281381 60.9358158 -32.5276600 60.9358158 -32.5276600</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="700">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9358158 -32.5276600 60.9358158 -32.5276600 60.9358358 -32.5273813 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="701">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9358358 -32.5273813 60.9358358 -32.5273813 60.9358359 -32.5273804 60.9358869 -32.5272450 60.9361159 -32.5271817 60.9364130 -32.5271998 60.9365488 -32.5272584 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="702">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9365488 -32.5272584 60.9365488 -32.5272584 60.9369146 -32.5274162 60.9372105 -32.5274385 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="703">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9372105 -32.5274385 60.9372105 -32.5274385 60.9375120 -32.5274612 60.9379912 -32.5274251 60.9383266 -32.5274882 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="704">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9383266 -32.5274882 60.9383266 -32.5274882 60.9384672 -32.5276415 60.9384609 -32.5278761 60.9382010 -32.5281918 60.9379786 -32.5283904 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0617">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="705">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9495058 -32.5053391 60.9495058 -32.5053391 60.9492961 -32.5054925 60.9491375 -32.5055195 60.9489767 -32.5054565 60.9487169 -32.5052399 60.9484474 -32.5048702 60.9484474 -32.5048702</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0618">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="706">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9555660 -32.5166317 60.9555660 -32.5166317 60.9558852 -32.5164512 60.9563048 -32.5163517 60.9564239 -32.5164509 60.9561452 -32.5167037 60.9556459 -32.5167309 60.9555660 -32.5166317 60.9555660 -32.5166317</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0619">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="707">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9549462 -32.5139706 60.9549462 -32.5139706 60.9549758 -32.5135918 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="708">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9549758 -32.5135918 60.9549758 -32.5135918 60.9548959 -32.5131767 60.9544867 -32.5123470 60.9544674 -32.5120944 60.9546056 -32.5116974 60.9545864 -32.5114539 60.9544468 -32.5111742 60.9540421 -32.5108225 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0620">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="709">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9346668 -32.5328563 60.9346668 -32.5328563 60.9345071 -32.5332172 60.9345071 -32.5332172</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="710">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9345071 -32.5332172 60.9345071 -32.5332172 60.9341376 -32.5336953 60.9340717 -32.5342275 60.9338087 -32.5344441 60.9338087 -32.5344441</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="711">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9338087 -32.5344441 60.9338087 -32.5344441 60.9332976 -32.5345524 60.9330719 -32.5347870 60.9328142 -32.5352110 60.9325108 -32.5354546 60.9321828 -32.5355178 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0621">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="712">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9502323 -32.5038865 60.9502323 -32.5038865 60.9500336 -32.5048968 60.9497101 -32.5050683 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0622">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="713">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9393864 -32.5201990 60.9393864 -32.5201990 60.9389372 -32.5204426 60.9386380 -32.5207133 60.9383946 -32.5212527 60.9383946 -32.5212527</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="714">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9383946 -32.5212527 60.9383946 -32.5212527 60.9382390 -32.5215975 60.9378706 -32.5217780 60.9374904 -32.5216155 60.9373806 -32.5213180 60.9374678 -32.5206773 60.9373176 -32.5201994 60.9373176 -32.5201994</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0623">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="715">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9506344 -32.5142064 60.9506344 -32.5142064 60.9505268 -32.5141884 60.9503842 -32.5141434 60.9503169 -32.5139540 60.9501549 -32.5131421 60.9500706 -32.5126099 60.9501363 -32.5118250 60.9502554 -32.5114461 60.9505552 -32.5103184 60.9506222 -32.5101290 60.9507840 -32.5100748 60.9508724 -32.5101469 60.9509044 -32.5102551 60.9509249 -32.5109949 60.9510946 -32.5121496 60.9510650 -32.5127900 60.9508227 -32.5138725 60.9507961 -32.5140260 60.9506344 -32.5142064 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0624">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="716">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9328973 -32.5173853 60.9328973 -32.5173853 60.9327375 -32.5169434 60.9320921 -32.5157708 60.9319983 -32.5153378 60.9321398 -32.5148776 60.9321876 -32.5140838 60.9325463 -32.5133892 60.9325558 -32.5131004 60.9324770 -32.5127486 60.9320170 -32.5121893 60.9317209 -32.5117654 60.9312246 -32.5108093 60.9305357 -32.5100877 60.9299192 -32.5096006 60.9296923 -32.5093300 60.9296923 -32.5093300</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0625">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="717">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292238 -32.5086715 60.9292238 -32.5086715 60.9290440 -32.5087256 60.9290440 -32.5087256</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="718">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9290440 -32.5087256 60.9290440 -32.5087256 60.9285744 -32.5080762 60.9280473 -32.5076432 60.9270487 -32.5075080 60.9264696 -32.5077064 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="719">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9264696 -32.5077064 60.9264696 -32.5077064 60.9258521 -32.5074359 60.9252729 -32.5075081 60.9248535 -32.5072556 60.9245352 -32.5072195 60.9243956 -32.5069128 60.9245351 -32.5065249 60.9244627 -32.5063986 60.9245232 -32.5061278 60.9243956 -32.5058122 60.9245829 -32.5055867 60.9248118 -32.5054784 60.9250332 -32.5052348 60.9253313 -32.5051715 60.9256314 -32.5047837 60.9258879 -32.5046931 60.9258879 -32.5046931</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0626">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="720">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9288688 -32.5362579 60.9288688 -32.5362579 60.9288304 -32.5358159 60.9285546 -32.5356716 60.9278954 -32.5357347 60.9275855 -32.5356717 60.9275482 -32.5355476 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="721">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9275482 -32.5355476 60.9275482 -32.5355476 60.9275257 -32.5354732 60.9276727 -32.5351393 60.9277249 -32.5347064 60.9278846 -32.5343816 60.9281337 -32.5341561 60.9283733 -32.5337952 60.9285212 -32.5333802 60.9286011 -32.5329112 60.9285158 -32.5319910 60.9285828 -32.5316392 60.9286360 -32.5314406 60.9287989 -32.5313324 60.9290918 -32.5312873 60.9296817 -32.5313594 60.9302386 -32.5312872 60.9305932 -32.5311608 60.9315526 -32.5305293 60.9323448 -32.5300962 60.9326630 -32.5297443 60.9329026 -32.5291127 60.9332400 -32.5283189 60.9333203 -32.5278147 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="722">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9333203 -32.5278147 60.9333203 -32.5278147 60.9333219 -32.5278046 60.9333154 -32.5276873 60.9331695 -32.5271732 60.9329021 -32.5265778 60.9328914 -32.5263524 60.9329308 -32.5257807 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="723">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9329308 -32.5257807 60.9329308 -32.5257807 60.9329424 -32.5256126 60.9328817 -32.5254232 60.9327358 -32.5252067 60.9323726 -32.5249181 60.9313848 -32.5246318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="724">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9313848 -32.5246318 60.9313848 -32.5246318 60.9313185 -32.5246125 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="725">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9313185 -32.5246125 60.9313185 -32.5246125 60.9308573 -32.5244790 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="726">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9308573 -32.5244790 60.9308573 -32.5244790 60.9308169 -32.5244671 60.9306262 -32.5243624 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="727">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9306262 -32.5243624 60.9306262 -32.5243624 60.9303078 -32.5241875 60.9299820 -32.5238539 60.9299073 -32.5236825 60.9298179 -32.5232314 60.9296485 -32.5230330 60.9291566 -32.5228797 60.9290001 -32.5227172 60.9289500 -32.5223023 60.9287508 -32.5217611 60.9288540 -32.5210033 60.9290093 -32.5203177 60.9290103 -32.5198396 60.9289294 -32.5196502 60.9286898 -32.5194698 60.9284981 -32.5194336 60.9283629 -32.5195059 60.9280148 -32.5197856 60.9278721 -32.5200652 60.9278624 -32.5202546 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="728">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9278624 -32.5202546 60.9278624 -32.5202546 60.9278476 -32.5205434 60.9276529 -32.5211838 60.9277137 -32.5216710 60.9277030 -32.5218513 60.9276637 -32.5219687 60.9275305 -32.5220678 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0627">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="729">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9665559 -32.5168631 60.9665559 -32.5168631 60.9665110 -32.5165730 60.9663805 -32.5163009 60.9662143 -32.5161284 60.9660435 -32.5160554 60.9656408 -32.5159547 60.9651010 -32.5158897 60.9648147 -32.5158075 60.9638375 -32.5152067 60.9636016 -32.5150794 60.9632916 -32.5150514 60.9628360 -32.5150864 60.9624397 -32.5152574 60.9622023 -32.5155376 60.9621837 -32.5159460 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0628">
 			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="730">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9472577 -32.5438956 60.9472577 -32.5438956 60.9471724 -32.5438415 60.9470818 -32.5436160 60.9471371 -32.5432552 60.9472669 -32.5429484 60.9475661 -32.5426505 60.9479143 -32.5424611 60.9481336 -32.5424791 60.9481838 -32.5426866 60.9481051 -32.5428670 60.9477964 -32.5433993 60.9475271 -32.5438053 60.9474025 -32.5439045 60.9472577 -32.5438956 60.9472577 -32.5438956</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0629">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="731">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9538391 -32.5143680 60.9538391 -32.5143680 60.9536143 -32.5139259 60.9535896 -32.5134479 60.9539184 -32.5129155 60.9539885 -32.5125095 60.9539180 -32.5119683 60.9536983 -32.5113550 60.9533937 -32.5108679 60.9533937 -32.5108679</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0630">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="732">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9337082 -32.5321348 60.9337082 -32.5321348 60.9336496 -32.5318821 60.9337315 -32.5315483 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="733">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9337315 -32.5315483 60.9337315 -32.5315483 60.9338795 -32.5314672 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="734">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9338795 -32.5314672 60.9338795 -32.5314672 60.9341276 -32.5314671 60.9344066 -32.5313949 60.9344066 -32.5313949</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0631">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="735">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9626940 -32.5167106 60.9626940 -32.5167106 60.9625801 -32.5167738 60.9620510 -32.5167470 60.9615718 -32.5165126 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="736">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9615718 -32.5165126 60.9615718 -32.5165126 60.9610927 -32.5165488 60.9602954 -32.5168738 60.9597960 -32.5168830 60.9594169 -32.5166666 60.9592099 -32.5162073 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="737">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9592099 -32.5162073 60.9592099 -32.5162073 60.9591973 -32.5161796 60.9587181 -32.5157557 60.9584784 -32.5152777 60.9583183 -32.5144027 60.9578795 -32.5139969 60.9573775 -32.5139098 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="738">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9573775 -32.5139098 60.9573775 -32.5139098 60.9571012 -32.5138617 60.9567016 -32.5140681 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="739">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9567016 -32.5140681 60.9567016 -32.5140681 60.9566818 -32.5140783 60.9564626 -32.5145386 60.9565235 -32.5149083 60.9569015 -32.5151608 60.9568825 -32.5154134 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="740">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9568825 -32.5154134 60.9568825 -32.5154134 60.9566036 -32.5155038 60.9559242 -32.5152784 60.9553459 -32.5151433 60.9549466 -32.5147735 60.9548464 -32.5145030 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="741">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548665 -32.5141962 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0632">
 			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="742">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9351346 -32.5295545 60.9351346 -32.5295545 60.9349250 -32.5302311 60.9347760 -32.5304295 60.9343267 -32.5311604 60.9340872 -32.5313679 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -7942,6 +16120,39 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0634">
 			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="743">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9368215 -32.5300954 60.9368215 -32.5300954 60.9372038 -32.5299510 60.9372038 -32.5299510</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="744">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9372038 -32.5299510 60.9372038 -32.5299510 60.9374891 -32.5297707 60.9375881 -32.5295992 60.9375028 -32.5292745 60.9375890 -32.5289316 60.9377615 -32.5287242 60.9378700 -32.5283723 60.9378700 -32.5283723</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="745">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9378700 -32.5283723 60.9378700 -32.5283723 60.9377187 -32.5279122 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -8386,6 +16597,325 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0655">
 			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="746">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9303042 -32.5357345 60.9303042 -32.5357345 60.9323092 -32.5337677 60.9323092 -32.5337677</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="747">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9323092 -32.5337677 60.9323092 -32.5337677 60.9325924 -32.5334880 60.9334027 -32.5326399 60.9334027 -32.5326399</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="748">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9334027 -32.5326399 60.9334027 -32.5326399 60.9337178 -32.5323062 60.9337178 -32.5323062</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="749">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9337178 -32.5323062 60.9337178 -32.5323062 60.9346867 -32.5312865 60.9346867 -32.5312865</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="750">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9346867 -32.5312865 60.9346867 -32.5312865 60.9354914 -32.5299153 60.9354914 -32.5299153</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="751">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9354914 -32.5299153 60.9354914 -32.5299153 60.9360705 -32.5289319 60.9360705 -32.5289319</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="752">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9360705 -32.5289319 60.9360705 -32.5289319 60.9363930 -32.5283816 60.9363632 -32.5281289 60.9364012 -32.5280389 60.9364012 -32.5280389</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="753">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9364012 -32.5280389 60.9364012 -32.5280389 60.9364622 -32.5278943 60.9367123 -32.5277140 60.9369818 -32.5276508 60.9371646 -32.5276784 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="754">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9371646 -32.5276784 60.9371646 -32.5276784 60.9372714 -32.5276943 60.9373406 -32.5277048 60.9375302 -32.5278131 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="755">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9375302 -32.5278131 60.9375302 -32.5278131 60.9376602 -32.5280566 60.9376900 -32.5283002 60.9376006 -32.5285167 60.9374505 -32.5286611 60.9372716 -32.5288145 60.9365457 -32.5301497 60.9365457 -32.5301497</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="756">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9365457 -32.5301497 60.9365457 -32.5301497 60.9362540 -32.5306820 60.9356249 -32.5317285 60.9348274 -32.5325044 60.9346571 -32.5326759 60.9346571 -32.5326759</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="757">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9346571 -32.5326759 60.9346571 -32.5326759 60.9327822 -32.5346247 60.9319240 -32.5355088 60.9319240 -32.5355088</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="758">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9319240 -32.5355088 60.9319240 -32.5355088 60.9316642 -32.5357704 60.9316642 -32.5357704</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="759">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9316642 -32.5357704 60.9316642 -32.5357704 60.9305771 -32.5368531 60.9305771 -32.5368531</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="760">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9305771 -32.5368531 60.9305771 -32.5368531 60.9295314 -32.5378996 60.9295314 -32.5378996</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="761">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9295314 -32.5378996 60.9295314 -32.5378996 60.9284900 -32.5389551 60.9284900 -32.5389551</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="762">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9284900 -32.5389551 60.9284900 -32.5389551 60.9280726 -32.5393792 60.9272740 -32.5401732 60.9268054 -32.5405070 60.9259194 -32.5410393 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="763">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9259194 -32.5410393 60.9259194 -32.5410393 60.9246669 -32.5417972 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="764">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246669 -32.5417972 60.9246669 -32.5417972 60.9241207 -32.5421309 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="765">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9241207 -32.5421309 60.9241207 -32.5421309 60.9240014 -32.5423385 60.9237820 -32.5425189 60.9234519 -32.5426001 60.9231728 -32.5425731 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="766">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9231728 -32.5425731 60.9231728 -32.5425731 60.9229466 -32.5424420 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="767">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9229466 -32.5424420 60.9229466 -32.5424420 60.9227742 -32.5422724 60.9227550 -32.5421450 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="768">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227349 -32.5419680 60.9228533 -32.5416800 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="769">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9228533 -32.5416800 60.9228533 -32.5416800 60.9229686 -32.5416094 60.9229686 -32.5416094</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="770">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9229686 -32.5416094 60.9229686 -32.5416094 60.9231036 -32.5415266 60.9233624 -32.5414815 60.9235519 -32.5414815 60.9237724 -32.5413372 60.9237724 -32.5413372</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="771">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9237724 -32.5413372 60.9237724 -32.5413372 60.9245998 -32.5408048 60.9248597 -32.5406425 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="772">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9248597 -32.5406425 60.9248597 -32.5406425 60.9256179 -32.5401824 60.9263964 -32.5397042 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="773">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9263964 -32.5397042 60.9263964 -32.5397042 60.9266424 -32.5394606 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="774">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266424 -32.5394606 60.9266424 -32.5394606 60.9297850 -32.5363264 60.9297850 -32.5363264</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>
@@ -9516,6 +18046,28 @@
 	<member>
 		<S101:DepthContour gml:id="FEATURE_ID_0702">
 			<valueOfDepthContour>20</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="775">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5305945 60.9666667 -32.5305945 60.9633360 -32.5304402 60.9609544 -32.5300800 60.9605495 -32.5300893 60.9600562 -32.5300623 60.9596609 -32.5301438 60.9592124 -32.5303063 60.9590729 -32.5304328 60.9589782 -32.5306856 60.9590177 -32.5308932 60.9592128 -32.5312180 60.9597714 -32.5316962 60.9612083 -32.5326796 60.9616026 -32.5329953 60.9626090 -32.5338435 60.9638676 -32.5352544 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="776">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9638676 -32.5352544 60.9638676 -32.5352544 60.9645570 -32.5360272 60.9658204 -32.5372182 60.9666667 -32.5379390 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
 		</S101:DepthContour>
 	</member>
 	<member>

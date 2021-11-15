@@ -1,0 +1,1972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S101:DataSet xmlns:S101="http://www.iho.int/S101/gml/1.0" xsi:schemaLocation="http://www.iho.int/S-101/gml/1.0 ../../../schemas/S101/1.0/20170430/S101.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/1.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" gml:id="KRNPI101_TEST002_001">
+	<gml:boundedBy>
+		<gml:Envelope srsName="EPSG:4326" srsDimension="2">
+			<gml:lowerCorner>60.9132734 -32.5455321</gml:lowerCorner>
+			<gml:upperCorner>60.9132734 -32.5455321</gml:upperCorner>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<DatasetIdentificationInformation>
+		<S100:encodingSpecification>S-100 Part 10a</S100:encodingSpecification>
+		<S100:encodingSpecificationEdition>1.1</S100:encodingSpecificationEdition>
+		<S100:productIdentifier>INT.IHO.S-101.1.0</S100:productIdentifier>
+		<S100:productEdition>1.0</S100:productEdition>
+		<S100:applicationProfile>1</S100:applicationProfile>
+		<S100:datasetFileIdentifier>101KR005X01SW.000</S100:datasetFileIdentifier>
+		<S100:datasetTitle>S-101 Test Data Sets in ECDIS</S100:datasetTitle>
+		<S100:datasetReferenceDate>20200626</S100:datasetReferenceDate>
+		<S100:datasetLanguage>EN</S100:datasetLanguage>
+		<S100:datasetAbstract></S100:datasetAbstract>
+		<S100:datasetEdition>1.0</S100:datasetEdition>
+		<S100:datasetTopicCategory>utilitiesCommunication</S100:datasetTopicCategory>
+	</DatasetIdentificationInformation>
+	<DatasetStructureInformation>
+		<S100:datasetCoordOriginX>0.0</S100:datasetCoordOriginX>
+		<S100:datasetCoordOriginY>0.0</S100:datasetCoordOriginY>
+		<S100:datasetCoordOriginZ>0.0</S100:datasetCoordOriginZ>
+		<S100:coordMultFactorX>1</S100:coordMultFactorX>
+		<S100:coordMultFactorY>1</S100:coordMultFactorY>
+		<S100:coordMultFactorZ>1</S100:coordMultFactorZ>
+	</DatasetStructureInformation>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0005">
+			<information>
+				<language>eng</language>
+				<text>silver coloured metal light support</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0006">
+			<information>
+				<language>eng</language>
+				<text>The site of historic wrecks are protected from unauthorised interference. For details see Annual Notice to Mariners NO 16 and Admiralty Sailing Directions.</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0004">
+			<information>
+				<language>eng</language>
+				<text>light support</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0010">
+			<information>
+				<language>eng</language>
+				<text>The dredged depths shown are designated dredged levels and these levels will not always be maintained.</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+	<imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0002">
+			<information>
+				<language>eng</language>
+				<text>Mast</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0011">
+			<information>
+				<language>eng</language>
+				<text>Lights in line</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0003">
+			<information>
+				<language>eng</language>
+				<text>silver coloured light support</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0008">
+			<information>
+				<language>eng</language>
+				<text>Dock under construction (1991)</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0013">
+			<information>
+				<language>eng</language>
+				<text>more than 1 light</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0009">
+			<information>
+				<language>eng</language>
+				<text>Airport Terminal</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0007">
+			<information>
+				<language>eng</language>
+				<text>metal light support</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+	<imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0001">
+			<information>
+				<language>eng</language>
+				<text>Anchorage for vessels under 7.5m draught</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0012">
+			<information>
+				<language>eng</language>
+				<text>Deep Water</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <imember>
+		<S101:NauticalInformation gml:id="INFO_ID_0014">
+			<information>
+				<language>eng</language>
+				<text>Funnel</text>
+			</information>
+		</S101:NauticalInformation>
+	</imember>
+    <member>
+		<S101:BuoyLateral gml:id="FEATURE_ID_0765">
+			<buoyShape>2</buoyShape>
+			<categoryOfLateralMark>1</categoryOfLateralMark>
+			<colour>3</colour>
+			<topmark>
+				<colour>3</colour>
+				<topmarkDaymarkShape>5</topmarkDaymarkShape>
+			</topmark>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="195">
+						<gml:pos>60.9063080 -32.5077425</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:BuoyLateral>
+	</member>
+    <member>
+		<S101:Pile gml:id="FEATURE_ID_0755">
+			<categoryOfPile>3</categoryOfPile>
+			<height>4</height>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="185">
+						<gml:pos>60.8982568 -32.5051344</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:Pile>
+	</member>
+    <member>
+		<S101:UnderwaterAwashRock gml:id="FEATURE_ID_0740">
+			<valueOfSounding>-1.5</valueOfSounding>
+			<waterLevelEffect>4</waterLevelEffect>
+			<defaultClearanceDepth>0</defaultClearanceDepth>
+			<surroundingDepth>0</surroundingDepth>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="173">
+						<gml:pos>60.9595457 -32.5186060</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:UnderwaterAwashRock>
+	</member>
+    <member>
+		<S101:Obstruction gml:id="FEATURE_ID_0738">
+			<qualityOfVerticalMeasurement>6</qualityOfVerticalMeasurement>
+			<valueOfSounding>2.1</valueOfSounding>
+			<waterLevelEffect>3</waterLevelEffect>
+			<defaultClearanceDepth>2</defaultClearanceDepth>
+			<surroundingDepth>2</surroundingDepth>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="171">
+						<gml:pos>60.9006308 -32.5116210</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:Obstruction>
+	</member>
+    <member>
+		<S101:Obstruction gml:id="FEATURE_ID_0732">
+			<categoryOfObstruction>6</categoryOfObstruction>
+			<qualityOfVerticalMeasurement>2</qualityOfVerticalMeasurement>
+			<waterLevelEffect>3</waterLevelEffect>
+			<defaultClearanceDepth>-5</defaultClearanceDepth>
+			<surroundingDepth>2</surroundingDepth>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="225">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9469940 -32.5136932 60.9469940 -32.5136932 60.9470049 -32.5144239 60.9472042 -32.5149922 60.9471841 -32.5152809 60.9469648 -32.5154704 60.9466060 -32.5155516 60.9463868 -32.5157050 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9462071 -32.5164990 60.9460080 -32.5166524 60.9457280 -32.5166344 60.9455682 -32.5164540 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9456383 -32.5156782 60.9455882 -32.5154166 60.9453879 -32.5152362 60.9449897 -32.5152363 60.9447300 -32.5153716 60.9445501 -32.5156243 60.9445514 -32.5161113 60.9444514 -32.5163640 60.9441714 -32.5165895 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9433634 -32.5168513 60.9430546 -32.5170679 60.9428546 -32.5173657 60.9428046 -32.5177717 60.9426949 -32.5178078 60.9426949 -32.5178078 60.9426949 -32.5178078 60.9426949 -32.5178078 60.9425554 -32.5173387 60.9423859 -32.5170680 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423955 -32.5167524 60.9429543 -32.5166350 60.9429746 -32.5164003 60.9427147 -32.5161298 60.9429542 -32.5159133 60.9433738 -32.5162650 60.9440521 -32.5163640 60.9441520 -32.5160303 60.9439517 -32.5156244 60.9439517 -32.5156244 60.9439517 -32.5156244 60.9439517 -32.5156244 60.9443700 -32.5150920 60.9448991 -32.5147762 60.9448991 -32.5147762 60.9448991 -32.5147762 60.9448991 -32.5147762 60.9453483 -32.5144694 60.9468047 -32.5140991 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9469940 -32.5136932 60.9469940 -32.5136932 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:Obstruction>
+	</member>
+    <member>
+		<S101:UnderwaterAwashRock gml:id="FEATURE_ID_0716">
+			<qualityOfVerticalMeasurement>2</qualityOfVerticalMeasurement>
+			<valueOfSounding />
+			<waterLevelEffect>3</waterLevelEffect>
+			<defaultClearanceDepth>0</defaultClearanceDepth>
+			<surroundingDepth>0</surroundingDepth>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="154">
+						<gml:pos>60.9021068 -32.5157618</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:UnderwaterAwashRock>
+	</member>
+    <member>
+		<S101:LandArea gml:id="FEATURE_ID_0696">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>JUSSLAND</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="207">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.8965705 -32.5001723 60.8965705 -32.5001723 60.8957540 -32.5003979 60.8956502 -32.5004092 60.8956502 -32.5004092 60.8956502 -32.5004092 60.8956502 -32.5004092 60.8952548 -32.5004520 60.8952194 -32.5004264 60.8952194 -32.5004264 60.8952194 -32.5004264 60.8952194 -32.5004264 60.8951107 -32.5003449 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8965705 -32.5001723 60.8965705 -32.5001723 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:LandArea>
+	</member>
+    <member>
+		<S101:LandArea gml:id="FEATURE_ID_0691">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>JUSSLAND</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="202">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.8848389 -32.5000000 60.8848389 -32.5000000 60.8848970 -32.5005040 60.8846960 -32.5004671 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8848389 -32.5000000 60.8848389 -32.5000000 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:LandArea>
+	</member>
+    <member>
+		<S101:RestrictedAreaRegulatory gml:id="FEATURE_ID_0650">
+			<categoryOfRestrictedArea>10</categoryOfRestrictedArea>
+			<restriction>9</restriction>
+			<restriction>12</restriction>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="163">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9493886 -32.5383236 60.9493886 -32.5383236 60.9499729 -32.5380294 60.9506168 -32.5378310 60.9512801 -32.5377151 60.9519045 -32.5376983 60.9525874 -32.5377642 60.9532118 -32.5379129 60.9538363 -32.5381772 60.9543828 -32.5384910 60.9548512 -32.5388213 60.9552612 -32.5393172 60.9555931 -32.5398294 60.9558080 -32.5403747 60.9559253 -32.5409367 60.9559254 -32.5414821 60.9558282 -32.5420275 60.9555943 -32.5425896 60.9552823 -32.5431020 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9548532 -32.5435649 60.9543656 -32.5439452 60.9538388 -32.5442594 60.9532731 -32.5445075 60.9525706 -32.5446730 60.9519268 -32.5447392 60.9512633 -32.5447064 60.9506193 -32.5445908 60.9499558 -32.5443927 60.9493898 -32.5441283 60.9488824 -32.5437484 60.9484334 -32.5433353 60.9480430 -32.5428396 60.9478867 -32.5425586 60.9478086 -32.5423108 60.9476524 -32.5417654 60.9475936 -32.5412200 60.9476715 -32.5406579 60.9478079 -32.5401126 60.9480613 -32.5395836 60.9483929 -32.5391207 60.9488610 -32.5386909 60.9493487 -32.5383437 60.9493886 -32.5383236 60.9493886 -32.5383236 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:RestrictedAreaRegulatory>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0625">
+			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="717">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292238 -32.5086715 60.9292238 -32.5086715 60.9290440 -32.5087256 60.9290440 -32.5087256</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="718">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9290440 -32.5087256 60.9290440 -32.5087256 60.9285744 -32.5080762 60.9280473 -32.5076432 60.9270487 -32.5075080 60.9264696 -32.5077064 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="719">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9264696 -32.5077064 60.9264696 -32.5077064 60.9258521 -32.5074359 60.9252729 -32.5075081 60.9248535 -32.5072556 60.9245352 -32.5072195 60.9243956 -32.5069128 60.9245351 -32.5065249 60.9244627 -32.5063986 60.9245232 -32.5061278 60.9243956 -32.5058122 60.9245829 -32.5055867 60.9248118 -32.5054784 60.9250332 -32.5052348 60.9253313 -32.5051715 60.9256314 -32.5047837 60.9258879 -32.5046931 60.9258879 -32.5046931</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0624">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="716">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9328973 -32.5173853 60.9328973 -32.5173853 60.9327375 -32.5169434 60.9320921 -32.5157708 60.9319983 -32.5153378 60.9321398 -32.5148776 60.9321876 -32.5140838 60.9325463 -32.5133892 60.9325558 -32.5131004 60.9324770 -32.5127486 60.9320170 -32.5121893 60.9317209 -32.5117654 60.9312246 -32.5108093 60.9305357 -32.5100877 60.9299192 -32.5096006 60.9296923 -32.5093300 60.9296923 -32.5093300</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0595">
+			<valueOfDepthContour>5</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="669">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9298478 -32.5385762 60.9298478 -32.5385762 60.9299628 -32.5382695 60.9301268 -32.5380619 60.9308061 -32.5374574 60.9313641 -32.5368711 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0576">
+			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="637">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5170889 60.9666667 -32.5170889 60.9659110 -32.5176875 60.9656776 -32.5178909 60.9656776 -32.5178909</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="638">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9656776 -32.5178909 60.9656776 -32.5178909 60.9649566 -32.5185344 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="639">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9649566 -32.5185344 60.9649566 -32.5185344 60.9648959 -32.5184442 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:Vegetation gml:id="FEATURE_ID_0566">
+			<categoryOfVegetation>18</categoryOfVegetation>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="135">
+						<gml:pos>60.9062778 -32.5386215</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:Vegetation>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0561">
+			<surfaceCharacteristics>
+				<natureOfSurface>4</natureOfSurface>
+			</surfaceCharacteristics>
+			<surfaceCharacteristics>
+				<natureOfSurface>9</natureOfSurface>
+			</surfaceCharacteristics>
+			<waterLevelEffect>4</waterLevelEffect>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="131">
+						<gml:pos>60.9478652 -32.5020377</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:LandElevation gml:id="FEATURE_ID_0510">
+			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="527">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9384794 -32.5074524 60.9384794 -32.5074524 60.9385518 -32.5075606 60.9387424 -32.5075876 60.9389404 -32.5075154 60.9398387 -32.5066854 60.9402069 -32.5063966 60.9408956 -32.5060717 60.9412149 -32.5058461 60.9415544 -32.5053499 60.9420227 -32.5047634 60.9423962 -32.5044025 60.9428103 -32.5041408 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:LandElevation>
+	</member>
+    <member>
+		<S101:LandElevation gml:id="FEATURE_ID_0503">
+			<elevation>10</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="511">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9647694 -32.5000000 60.9647694 -32.5000000 60.9646384 -32.5003994 60.9643536 -32.5009319 60.9627436 -32.5024137 60.9623875 -32.5029192 60.9622472 -32.5033703 60.9620473 -32.5042273 60.9618040 -32.5047507 60.9610757 -32.5057348 60.9602918 -32.5070167 60.9594688 -32.5088485 60.9591550 -32.5096786 60.9590140 -32.5102559 60.9587098 -32.5119065 60.9587004 -32.5123754 60.9588703 -32.5126455 60.9593104 -32.5129332 60.9596172 -32.5130047 60.9598990 -32.5129501 60.9602508 -32.5127781 60.9611333 -32.5121271 60.9614064 -32.5120185 60.9617607 -32.5119728 60.9626035 -32.5119981 60.9633870 -32.5121047 60.9646635 -32.5123638 60.9654122 -32.5125878 60.9659010 -32.5127672 60.9665865 -32.5132076 60.9666667 -32.5132778 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:LandElevation>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0466">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="485">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8948780 -32.5007046 60.8948780 -32.5007046 60.8950504 -32.5007768 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="486">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8950504 -32.5007768 60.8950504 -32.5007768 60.8952154 -32.5008400 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:LightAllAround gml:id="FEATURE_ID_0446">
+			<colour>1</colour>
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>Corund Cape</name>
+			</featureName>
+			<rhythmOfLight>
+				<lightCharacteristic>4</lightCharacteristic>
+				<signalGroup>(3)</signalGroup>
+				<signalPeriod>10</signalPeriod>
+			</rhythmOfLight>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="110">
+						<gml:pos>60.9468523 -32.5133414</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:LightAllAround>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0424">
+			<categoryOfShorelineConstruction>6</categoryOfShorelineConstruction>
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>Phoenix Wharf</name>
+			</featureName>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="446">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8920718 -32.5047003 60.8920718 -32.5047003 60.8939475 -32.5050707 60.8954644 -32.5055039 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:FortifiedStructure gml:id="FEATURE_ID_0422">
+			<categoryOfFortifiedStructure>2</categoryOfFortifiedStructure>
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>East Fort</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="130">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9385641 -32.5143625 60.9385641 -32.5143625 60.9385643 -32.5152736 60.9387740 -32.5152736 60.9387741 -32.5153909 60.9370474 -32.5165729 60.9369388 -32.5165549 60.9368185 -32.5166360 60.9351521 -32.5161942 60.9351127 -32.5161132 60.9352916 -32.5160319 60.9348623 -32.5152111 60.9359600 -32.5150033 60.9362994 -32.5142004 60.9370170 -32.5140831 60.9376954 -32.5146152 60.9385641 -32.5143625 60.9385641 -32.5143625 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:FortifiedStructure>
+	</member>
+    <member>
+		<S101:LandRegion gml:id="FEATURE_ID_0403">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>Lookinghaven Ness</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="121">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9420549 -32.5170140 60.9420549 -32.5170140 60.9422988 -32.5173568 60.9423894 -32.5175642 60.9423905 -32.5178889 60.9422862 -32.5182047 60.9421170 -32.5183942 60.9417785 -32.5185748 60.9411195 -32.5188365 60.9408299 -32.5188907 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9404710 -32.5188727 60.9401612 -32.5188096 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9420549 -32.5170140 60.9420549 -32.5170140 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:LandRegion>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0379">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="422">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856083 -32.5032579 60.8856083 -32.5032579 60.8856169 -32.5029939 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="423">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856169 -32.5029939 60.8856169 -32.5029939 60.8856254 -32.5027594 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="424">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856254 -32.5027594 60.8856254 -32.5027594 60.8856349 -32.5024978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="425">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856349 -32.5024978 60.8856349 -32.5024978 60.8856426 -32.5022904 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="426">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856426 -32.5022904 60.8856426 -32.5022904 60.8856516 -32.5020288 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="427">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856516 -32.5020288 60.8856516 -32.5020288 60.8856609 -32.5017581 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="428">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856609 -32.5017581 60.8856609 -32.5017581 60.8856686 -32.5014741 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0371">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="413">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854455 -32.5029939 60.8854455 -32.5029939 60.8856169 -32.5029939 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0360">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="393">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8862322 -32.5028768 60.8862322 -32.5028768 60.8863898 -32.5028769 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="394">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8863898 -32.5028769 60.8863898 -32.5028769 60.8866729 -32.5028860 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0344">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="356">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854854 -32.5014694 60.8854854 -32.5014694 60.8856686 -32.5014741 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="357">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8856686 -32.5014741 60.8856686 -32.5014741 60.8858451 -32.5014785 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0331">
+			<surfaceCharacteristics>
+				<natureOfSurface>9</natureOfSurface>
+			</surfaceCharacteristics>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="76">
+						<gml:pos>60.9499480 -32.5411525</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:Coastline gml:id="FEATURE_ID_0307">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="285">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9406080 -32.5188796 60.9406080 -32.5188796 60.9404710 -32.5188727 60.9401612 -32.5188096 60.9397619 -32.5187014 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="286">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9397619 -32.5187014 60.9397619 -32.5187014 60.9396128 -32.5186924 60.9394361 -32.5187466 60.9390944 -32.5189541 60.9388250 -32.5190173 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="287">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9388250 -32.5190173 60.9388250 -32.5190173 60.9385854 -32.5189813 60.9382064 -32.5188460 60.9378273 -32.5187197 60.9373374 -32.5186838 60.9370085 -32.5187380 60.9365294 -32.5188913 60.9359512 -32.5189727 60.9352326 -32.5189728 60.9348332 -32.5188916 60.9343349 -32.5186391 60.9339963 -32.5183144 60.9336363 -32.5178634 60.9334414 -32.5174485 60.9334360 -32.5170155 60.9335360 -32.5166726 60.9337086 -32.5162503 60.9338020 -32.5160313 60.9339446 -32.5153646 60.9339462 -32.5148308 60.9338893 -32.5146023 60.9338444 -32.5144986 60.9333662 -32.5137318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="288">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9333662 -32.5137318 60.9333662 -32.5137318 60.9332756 -32.5132897 60.9333351 -32.5127666 60.9332861 -32.5125591 60.9331880 -32.5124592 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="289">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9331880 -32.5124592 60.9331880 -32.5124592 60.9329762 -32.5122434 60.9327568 -32.5118826 60.9325970 -32.5114316 60.9324267 -32.5112060 60.9318986 -32.5108543 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="290">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9318986 -32.5108543 60.9318986 -32.5108543 60.9315790 -32.5105566 60.9313395 -32.5101778 60.9311297 -32.5099884 60.9305314 -32.5096186 60.9297232 -32.5091947 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="291">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9297232 -32.5091947 60.9297232 -32.5091947 60.9294336 -32.5089782 60.9292238 -32.5086715 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="292">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9292238 -32.5086715 60.9292238 -32.5086715 60.9289044 -32.5081212 60.9286052 -32.5076791 60.9284359 -32.5075530 60.9281463 -32.5074628 60.9276278 -32.5073996 60.9270689 -32.5072734 60.9266196 -32.5072825 60.9262310 -32.5072284 60.9256816 -32.5070300 60.9254443 -32.5068766 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="293">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9254443 -32.5068766 60.9254443 -32.5068766 60.9253430 -32.5068134 60.9250897 -32.5063444 60.9250503 -32.5060828 60.9251333 -32.5056497 60.9253952 -32.5053070 60.9257720 -32.5050182 60.9258879 -32.5046931 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="294">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9258879 -32.5046931 60.9258879 -32.5046931 60.9259199 -32.5046033 60.9259156 -32.5043056 60.9258230 -32.5041252 60.9254513 -32.5037734 60.9253024 -32.5035658 60.9251810 -32.5029253 60.9250926 -32.5027811 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="295">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9250926 -32.5027811 60.9250926 -32.5027811 60.9249510 -32.5026818 60.9246242 -32.5025195 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="296">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246242 -32.5025195 60.9246242 -32.5025195 60.9245241 -32.5023932 60.9243963 -32.5021136 60.9244463 -32.5019240 60.9245336 -32.5018339 60.9246134 -32.5017707 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
+	</member>
+    <member>
+		<S101:Coastline gml:id="FEATURE_ID_0282">
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="232">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9246326 -32.5016625 60.9246326 -32.5016625 60.9247933 -32.5015001 60.9252223 -32.5013196 60.9255892 -32.5012286 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="233">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9255892 -32.5012286 60.9255892 -32.5012286 60.9257312 -32.5011932 60.9265189 -32.5011481 60.9266636 -32.5011578 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="234">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266636 -32.5011578 60.9266636 -32.5011578 60.9273269 -32.5012022 60.9277059 -32.5013014 60.9282243 -32.5014546 60.9286289 -32.5016712 60.9291133 -32.5020049 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0266">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="203">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8962509 -32.5018505 60.8962509 -32.5018505 60.8964298 -32.5019227 60.8964436 -32.5019318 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:LandElevation gml:id="FEATURE_ID_0245">
+			<elevation>20</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="191">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9417722 -32.5000000 60.9417722 -32.5000000 60.9414438 -32.5009137 60.9411052 -32.5021529 60.9406862 -32.5031390 60.9402115 -32.5040800 60.9392703 -32.5055729 60.9391191 -32.5057902 60.9386474 -32.5065232 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:LandElevation>
+	</member>
+    <member>
+		<S101:LandElevation gml:id="FEATURE_ID_0188">
+			<elevation>50</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="163">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5058722 60.9666667 -32.5058722 60.9664911 -32.5061509 60.9660847 -32.5066665 60.9652822 -32.5075640 60.9650624 -32.5080177 60.9650973 -32.5082051 60.9652677 -32.5084017 60.9657893 -32.5086530 60.9666337 -32.5089372 60.9666667 -32.5089500 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:LandElevation>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0184">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="162">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9540333 -32.5049318 60.9540333 -32.5049318 60.9546872 -32.5038967 60.9552392 -32.5025293 60.9554542 -32.5015761 60.9556495 -32.5012791 60.9562679 -32.5007293 60.9566312 -32.5003060 60.9568084 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0167">
+			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="143">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9012332 -32.5314220 60.9012332 -32.5314220 60.9013418 -32.5314401 60.9015430 -32.5315393 60.9021466 -32.5315845 60.9024863 -32.5314492 60.9027248 -32.5311156 60.9029846 -32.5310434 60.9034435 -32.5312329 60.9039822 -32.5308722 60.9044411 -32.5312961 60.9048201 -32.5312781 60.9050438 -32.5308722 60.9053398 -32.5307280 60.9056187 -32.5307912 60.9060180 -32.5305026 60.9064172 -32.5303042 60.9064172 -32.5303042</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="144">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9064172 -32.5303042 60.9064172 -32.5303042 60.9064530 -32.5303525 60.9065345 -32.5304267 60.9067367 -32.5306380 60.9064395 -32.5310890 60.9065364 -32.5313868 60.9064565 -32.5317386 60.9065896 -32.5319821 60.9066790 -32.5323340 60.9069793 -32.5324692 60.9070559 -32.5327580 60.9070559 -32.5327580</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="145">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9070559 -32.5327580 60.9070559 -32.5327580 60.9066959 -32.5331098 60.9065362 -32.5333624 60.9066767 -32.5338044 60.9066692 -32.5342193 60.9067394 -32.5345982 60.9066766 -32.5351034 60.9066766 -32.5351034</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:Vegetation gml:id="FEATURE_ID_0143">
+			<categoryOfVegetation>5</categoryOfVegetation>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="82">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9376750 -32.5133632 60.9376750 -32.5133632 60.9366116 -32.5130630 60.9354004 -32.5125126 60.9354298 -32.5116868 60.9359319 -32.5114614 60.9365815 -32.5110608 60.9370541 -32.5105352 60.9374972 -32.5108105 60.9375564 -32.5118866 60.9381475 -32.5131129 60.9376750 -32.5133632 60.9376750 -32.5133632 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:Vegetation>
+	</member>
+    <member>
+		<S101:Coastline gml:id="FEATURE_ID_0114">
+			<categoryOfCoastline>1</categoryOfCoastline>
+			<radarConspicuous>1</radarConspicuous>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="46">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446534 -32.5000051 60.9446886 -32.5002637 60.9448994 -32.5007331 60.9449980 -32.5015276 60.9449806 -32.5018437 60.9448161 -32.5022503 60.9446070 -32.5025937 60.9442488 -32.5030999 60.9439713 -32.5033803 60.9435627 -32.5036879 60.9434438 -32.5039409 60.9434339 -32.5042750 60.9433351 -32.5044648 60.9432011 -32.5045824 60.9430904 -32.5046501 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Coastline>
+	</member>
+    <member>
+		<S101:HarbourFacility gml:id="FEATURE_ID_0100">
+			<categoryOfHarbourFacility>5</categoryOfHarbourFacility>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="16">
+						<gml:pos>60.8927206 -32.5027429</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:HarbourFacility>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0093">
+			<surfaceCharacteristics>
+				<natureOfSurface>4</natureOfSurface>
+			</surfaceCharacteristics>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="11">
+						<gml:pos>60.9304572 -32.5192891</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:DepthArea gml:id="FEATURE_ID_0079">
+			<depthRangeMinimumValue>2</depthRangeMinimumValue>
+			<depthRangeMaximumValue>5</depthRangeMaximumValue>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="65">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9354860 -32.5343355 60.9354860 -32.5343355 60.9356574 -32.5344438 60.9357384 -32.5346604 60.9356980 -32.5348859 60.9354510 -32.5350573 60.9351198 -32.5350122 60.9349898 -32.5348770 60.9350494 -32.5345161 60.9353188 -32.5343627 60.9354860 -32.5343355 60.9354860 -32.5343355 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:DepthArea>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0063">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="25">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9529491 -32.5090908 60.9529491 -32.5090908 60.9533318 -32.5077376 60.9535185 -32.5062220 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0044">
+			<surfaceCharacteristics>
+				<natureOfSurface>9</natureOfSurface>
+			</surfaceCharacteristics>
+			<waterLevelEffect>4</waterLevelEffect>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="35">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9331880 -32.5124592 60.9331880 -32.5124592 60.9330561 -32.5125404 60.9326375 -32.5122610 60.9323231 -32.5119185 60.9322835 -32.5116208 60.9321077 -32.5114855 60.9320829 -32.5111519 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9324267 -32.5112060 60.9325970 -32.5114316 60.9327568 -32.5118826 60.9329762 -32.5122434 60.9331880 -32.5124592 60.9331880 -32.5124592 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:DepthArea gml:id="FEATURE_ID_0038">
+			<depthRangeMinimumValue>0</depthRangeMinimumValue>
+			<depthRangeMaximumValue>2</depthRangeMaximumValue>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="30">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9228714 -32.5425460 60.9228714 -32.5425460 60.9225967 -32.5425640 60.9222877 -32.5424918 60.9222877 -32.5424918 60.9222877 -32.5424918 60.9222877 -32.5424918 60.9221034 -32.5422676 60.9221034 -32.5422676 60.9221034 -32.5422676 60.9221034 -32.5422676 60.9220876 -32.5422484 60.9221579 -32.5420048 60.9224071 -32.5418875 60.9224412 -32.5418695 60.9224412 -32.5418695 60.9224412 -32.5418695 60.9224412 -32.5418695 60.9226317 -32.5418063 60.9226317 -32.5418063 60.9226317 -32.5418063 60.9226317 -32.5418063 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9227349 -32.5419680 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227742 -32.5422724 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9231728 -32.5425731 60.9231728 -32.5425731 60.9231728 -32.5425731 60.9231728 -32.5425731 60.9229767 -32.5425523 60.9228714 -32.5425460 60.9228714 -32.5425460 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:DepthArea>
+	</member>
+    <member>
+		<S101:DepthArea gml:id="FEATURE_ID_0036">
+			<depthRangeMinimumValue>5</depthRangeMinimumValue>
+			<depthRangeMaximumValue>10</depthRangeMaximumValue>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="28">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9267008 -32.5360536 60.9267008 -32.5360536 60.9266418 -32.5360929 60.9266418 -32.5360929 60.9266418 -32.5360929 60.9266418 -32.5360929 60.9262402 -32.5361673 60.9260286 -32.5361047 60.9259881 -32.5359243 60.9260498 -32.5357891 60.9262884 -32.5354732 60.9265769 -32.5352658 60.9267558 -32.5352297 60.9271360 -32.5352658 60.9271968 -32.5355274 60.9270562 -32.5358160 60.9267008 -32.5360536 60.9267008 -32.5360536 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:DepthArea>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0028">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="5">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9666667 -32.5196663 60.9666667 -32.5196663 60.9664339 -32.5192867 60.9660381 -32.5182242 60.9657943 -32.5179723 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:LocalDirectionOfBuoyage gml:id="FEATURE_ID_0003">
+			<marksNavigationalSystemOf />
+			<orientationValue>310</orientationValue>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="3">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9383627 -32.5091935 60.9383627 -32.5091935 60.9383626 -32.5089860 60.9384818 -32.5086701 60.9386616 -32.5083454 60.9388883 -32.5080928 60.9394823 -32.5077949 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398995 -32.5074340 60.9402082 -32.5070371 60.9404370 -32.5068296 60.9406563 -32.5067031 60.9408660 -32.5066220 60.9410650 -32.5066130 60.9412545 -32.5065408 60.9414366 -32.5064054 60.9417473 -32.5059814 60.9422443 -32.5053677 60.9425454 -32.5050339 60.9427424 -32.5048625 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9430904 -32.5046501 60.9430904 -32.5046501 60.9430904 -32.5046501 60.9430904 -32.5046501 60.9432011 -32.5045824 60.9433351 -32.5044648 60.9434339 -32.5042750 60.9434438 -32.5039409 60.9435627 -32.5036879 60.9439713 -32.5033803 60.9442488 -32.5030999 60.9446070 -32.5025937 60.9448161 -32.5022503 60.9449806 -32.5018437 60.9449980 -32.5015276 60.9448994 -32.5007331 60.9446886 -32.5002637 60.9446534 -32.5000051 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644563 -32.5000990 60.9641373 -32.5007031 60.9637990 -32.5010099 60.9632192 -32.5012806 60.9630979 -32.5013618 60.9628339 -32.5016052 60.9624489 -32.5018399 60.9619840 -32.5022368 60.9618160 -32.5027508 60.9617621 -32.5039051 60.9616175 -32.5042748 60.9614623 -32.5046536 60.9612686 -32.5048340 60.9608324 -32.5051406 60.9605037 -32.5054564 60.9603005 -32.5055827 60.9600218 -32.5058532 60.9597930 -32.5061419 60.9591358 -32.5076119 60.9590230 -32.5078102 60.9588837 -32.5081079 60.9587892 -32.5086670 60.9586924 -32.5090998 60.9585722 -32.5092983 60.9582245 -32.5102362 60.9580946 -32.5105158 60.9577936 -32.5109306 60.9576543 -32.5112012 60.9576267 -32.5115257 60.9576343 -32.5120848 60.9577227 -32.5122923 60.9579228 -32.5126440 60.9579559 -32.5127341 60.9583434 -32.5132390 60.9584755 -32.5134915 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9585597 -32.5138162 60.9585824 -32.5144476 60.9586442 -32.5147272 60.9587966 -32.5149888 60.9591290 -32.5153585 60.9594378 -32.5155027 60.9598168 -32.5154846 60.9605343 -32.5152950 60.9610922 -32.5151593 60.9610922 -32.5151593 60.9610922 -32.5151593 60.9610922 -32.5151593 60.9626940 -32.5167106 60.9626940 -32.5167106 60.9626940 -32.5167106 60.9626940 -32.5167106 60.9634014 -32.5173981 60.9634014 -32.5173981 60.9634014 -32.5173981 60.9634014 -32.5173981 60.9636379 -32.5176326 60.9637880 -32.5175061 60.9621837 -32.5159460 60.9621837 -32.5159460 60.9621837 -32.5159460 60.9621837 -32.5159460 60.9614414 -32.5152315 60.9614414 -32.5152315 60.9614414 -32.5152315 60.9614414 -32.5152315 60.9613911 -32.5146271 60.9624288 -32.5138599 60.9624288 -32.5138599 60.9624288 -32.5138599 60.9624288 -32.5138599 60.9631073 -32.5145271 60.9645247 -32.5153386 60.9650243 -32.5155188 60.9651040 -32.5153654 60.9646248 -32.5151761 60.9632776 -32.5143919 60.9626790 -32.5138148 60.9626778 -32.5135441 60.9626778 -32.5135441 60.9626778 -32.5135441 60.9626778 -32.5135441 60.9637252 -32.5132910 60.9649827 -32.5133899 60.9649838 -32.5135612 60.9651740 -32.5135911 60.9654353 -32.5136674 60.9656649 -32.5137799 60.9662149 -32.5141610 60.9665161 -32.5144703 60.9665161 -32.5144703 60.9665161 -32.5144703 60.9665161 -32.5144703 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9665559 -32.5168631 60.9665559 -32.5168631 60.9665559 -32.5168631 60.9665559 -32.5168631 60.9647973 -32.5183538 60.9648959 -32.5184442 60.9648959 -32.5184442 60.9648959 -32.5184442 60.9648959 -32.5184442 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5523499 60.9508010 -32.5523437 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9414140 -32.5523448 60.9353118 -32.5523450 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9198227 -32.5523342 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9095095 -32.5517038 60.9095502 -32.5511150 60.9096528 -32.5506983 60.9096699 -32.5502001 60.9097596 -32.5498468 60.9097800 -32.5496747 60.9097200 -32.5494120 60.9097499 -32.5491494 60.9097499 -32.5491494 60.9097499 -32.5491494 60.9097499 -32.5491494 60.9096924 -32.5488246 60.9096924 -32.5488246 60.9096924 -32.5488246 60.9096924 -32.5488246 60.9095625 -32.5486081 60.9093005 -32.5484095 60.9090311 -32.5481119 60.9088713 -32.5480036 60.9086722 -32.5479224 60.9086722 -32.5479224 60.9086722 -32.5479224 60.9086722 -32.5479224 60.9083250 -32.5476968 60.9080864 -32.5476337 60.9076338 -32.5474352 60.9073142 -32.5472187 60.9071652 -32.5470202 60.9070651 -32.5467225 60.9070151 -32.5462895 60.9069587 -32.5458293 60.9069853 -32.5455047 60.9070748 -32.5451618 60.9070839 -32.5450953 60.9070839 -32.5450953 60.9070839 -32.5450953 60.9070839 -32.5450953 60.9071228 -32.5448100 60.9071942 -32.5444673 60.9071942 -32.5444673 60.9071942 -32.5444673 60.9071942 -32.5444673 60.9072346 -32.5438628 60.9073849 -32.5432945 60.9074478 -32.5427623 60.9075340 -32.5424375 60.9076534 -32.5420586 60.9076865 -32.5418873 60.9076738 -32.5412919 60.9077143 -32.5406966 60.9076941 -32.5404800 60.9076941 -32.5404800 60.9076941 -32.5404800 60.9076941 -32.5404800 60.9075940 -32.5402545 60.9075940 -32.5402545 60.9075940 -32.5402545 60.9075940 -32.5402545 60.9075226 -32.5401553 60.9073949 -32.5398305 60.9071724 -32.5394426 60.9070978 -32.5389824 60.9071448 -32.5385134 60.9072247 -32.5382247 60.9073843 -32.5379000 60.9074249 -32.5377015 60.9074249 -32.5377015 60.9074249 -32.5377015 60.9074249 -32.5377015 60.9074250 -32.5373677 60.9073642 -32.5370881 60.9074239 -32.5366461 60.9073771 -32.5363394 60.9073878 -32.5361409 60.9072611 -32.5358070 60.9072611 -32.5358070 60.9072611 -32.5358070 60.9072611 -32.5358070 60.9070641 -32.5355454 60.9070641 -32.5355454 60.9070641 -32.5355454 60.9070641 -32.5355454 60.9066766 -32.5351034 60.9066766 -32.5351034 60.9066766 -32.5351034 60.9066766 -32.5351034 60.9065392 -32.5348238 60.9064966 -32.5347696 60.9064466 -32.5344448 60.9064466 -32.5341021 60.9063668 -32.5338585 60.9063668 -32.5338585 60.9063668 -32.5338585 60.9063668 -32.5338585 60.9063966 -32.5335608 60.9063168 -32.5332902 60.9063264 -32.5331639 60.9063264 -32.5331639 60.9063264 -32.5331639 60.9063264 -32.5331639 60.9064596 -32.5329744 60.9064701 -32.5326767 60.9063499 -32.5325234 60.9062903 -32.5323429 60.9062168 -32.5320904 60.9061178 -32.5318829 60.9059176 -32.5317836 60.9058186 -32.5316663 60.9058186 -32.5316663 60.9058186 -32.5316663 60.9058186 -32.5316663 60.9057186 -32.5315490 60.9055588 -32.5314588 60.9053288 -32.5314137 60.9051989 -32.5314677 60.9050998 -32.5314768 60.9048804 -32.5317204 60.9047207 -32.5318106 60.9047207 -32.5318106 60.9047207 -32.5318106 60.9047207 -32.5318106 60.9045205 -32.5317925 60.9042607 -32.5316662 60.9040318 -32.5316391 60.9037528 -32.5314856 60.9035430 -32.5315218 60.9033130 -32.5314856 60.9030935 -32.5315577 60.9028146 -32.5317382 60.9025749 -32.5319817 60.9024354 -32.5322794 60.9023757 -32.5324869 60.9022852 -32.5325861 60.9020860 -32.5326042 60.9019359 -32.5325410 60.9018166 -32.5322613 60.9016964 -32.5321260 60.9014270 -32.5318824 60.9013258 -32.5316839 60.9012332 -32.5314220 60.9012332 -32.5314220 60.9012332 -32.5314220 60.9012332 -32.5314220 60.9011981 -32.5313230 60.9011300 -32.5312238 60.9009245 -32.5310524 60.9006775 -32.5307726 60.9004518 -32.5305111 60.9002773 -32.5296180 60.9001996 -32.5293923 60.9000112 -32.5290947 60.8997610 -32.5285534 60.8996918 -32.5282285 60.8996920 -32.5278858 60.8997718 -32.5276784 60.8999508 -32.5274708 60.8999913 -32.5273535 60.8999806 -32.5272182 60.8998806 -32.5270920 60.8996516 -32.5269116 60.8996516 -32.5269116 60.8996516 -32.5269116 60.8996516 -32.5269116 60.8995420 -32.5266770 60.8995453 -32.5264695 60.8995453 -32.5264695 60.8995453 -32.5264695 60.8995453 -32.5264695 60.8997210 -32.5262801 60.8997210 -32.5262801 60.8997210 -32.5262801 60.8997210 -32.5262801 60.8999606 -32.5263072 60.9002002 -32.5263704 60.9003695 -32.5263613 60.9005100 -32.5262982 60.9005793 -32.5262170 60.9006090 -32.5260637 60.9007199 -32.5259194 60.9008296 -32.5258652 60.9012086 -32.5258652 60.9014780 -32.5258022 60.9016974 -32.5256940 60.9018370 -32.5255135 60.9018763 -32.5253151 60.9018370 -32.5250715 60.9016774 -32.5247286 60.9016636 -32.5244490 60.9016966 -32.5242506 60.9021972 -32.5232313 60.9023112 -32.5228072 60.9022964 -32.5222570 60.9022177 -32.5219141 60.9020665 -32.5214811 60.9016919 -32.5207144 60.9015290 -32.5202362 60.9014726 -32.5198753 60.9014726 -32.5198753 60.9014726 -32.5198753 60.9014726 -32.5198753 60.9014983 -32.5193161 60.9015250 -32.5191808 60.9015250 -32.5191808 60.9015250 -32.5191808 60.9015250 -32.5191808 60.9015782 -32.5189101 60.9016880 -32.5186756 60.9017284 -32.5184320 60.9016976 -32.5181794 60.9015986 -32.5179087 60.9016381 -32.5176833 60.9016083 -32.5174938 60.9014890 -32.5173585 60.9013294 -32.5173133 60.9011590 -32.5173765 60.9007086 -32.5177643 60.9007086 -32.5177643 60.9007086 -32.5177643 60.9007086 -32.5177643 60.9003955 -32.5179718 60.9002113 -32.5180349 60.8997566 -32.5180257 60.8994064 -32.5178724 60.8991626 -32.5176108 60.8989487 -32.5172048 60.8988657 -32.5167357 60.8988657 -32.5167357 60.8988657 -32.5167357 60.8988657 -32.5167357 60.8989426 -32.5160876 60.8989725 -32.5156915 60.8988305 -32.5151515 60.8983042 -32.5140261 60.8981707 -32.5135130 60.8979808 -32.5130538 60.8977622 -32.5127567 60.8976826 -32.5124866 60.8976826 -32.5124866 60.8976826 -32.5124866 60.8976826 -32.5124866 60.8976582 -32.5119814 60.8976582 -32.5119814 60.8976582 -32.5119814 60.8976582 -32.5119814 60.8976552 -32.5115304 60.8975786 -32.5113048 60.8975563 -32.5109710 60.8975755 -32.5106282 60.8975063 -32.5104749 60.8975063 -32.5104749 60.8975063 -32.5104749 60.8975063 -32.5104749 60.8973594 -32.5103124 60.8973190 -32.5101951 60.8973595 -32.5100870 60.8975160 -32.5100689 60.8977162 -32.5100780 60.8978449 -32.5102314 60.8978449 -32.5102314 60.8978449 -32.5102314 60.8978449 -32.5102314 60.8980014 -32.5102674 60.8981207 -32.5102404 60.8984358 -32.5100871 60.8986488 -32.5099428 60.8986488 -32.5099428 60.8986488 -32.5099428 60.8986488 -32.5099428 60.8987553 -32.5098705 60.8987553 -32.5098705 60.8987553 -32.5098705 60.8987553 -32.5098705 60.8984338 -32.5098436 60.8981644 -32.5099426 60.8980846 -32.5098705 60.8982274 -32.5091669 60.8983668 -32.5091218 60.8985041 -32.5093384 60.8984838 -32.5095638 60.8988629 -32.5095008 60.8989246 -32.5088332 60.8989246 -32.5088332 60.8989246 -32.5088332 60.8989246 -32.5088332 60.8989429 -32.5086348 60.8988501 -32.5086135 60.8988501 -32.5086135 60.8988501 -32.5086135 60.8988501 -32.5086135 60.8987066 -32.5085806 60.8986236 -32.5083641 60.8984745 -32.5083550 60.8982946 -32.5081024 60.8982946 -32.5081024 60.8982946 -32.5081024 60.8982946 -32.5081024 60.8983841 -32.5079761 60.8984342 -32.5078950 60.8984640 -32.5076785 60.8984470 -32.5075883 60.8985960 -32.5075793 60.8986365 -32.5075071 60.8986035 -32.5074350 60.8984842 -32.5072906 60.8984842 -32.5072906 60.8984842 -32.5072906 60.8984842 -32.5072906 60.8986557 -32.5071553 60.8987740 -32.5069749 60.8987740 -32.5069749 60.8987740 -32.5069749 60.8987740 -32.5069749 60.8988336 -32.5068216 60.8988365 -32.5066951 60.8988365 -32.5066951 60.8988365 -32.5066951 60.8988365 -32.5066951 60.8988432 -32.5064066 60.8988432 -32.5064066 60.8988432 -32.5064066 60.8988432 -32.5064066 60.8987241 -32.5060728 60.8983675 -32.5056668 60.8984812 -32.5052335 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8973644 -32.5035976 60.8970106 -32.5031321 60.8970106 -32.5031321 60.8970106 -32.5031321 60.8970106 -32.5031321 60.8978796 -32.5014038 60.8977979 -32.5008675 60.8977979 -32.5008675 60.8977979 -32.5008675 60.8977979 -32.5008675 60.8976460 -32.5001173 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9300142 -32.5002103 60.9300142 -32.5002103 60.9300142 -32.5002103 60.9300142 -32.5002103 60.9299608 -32.5002410 60.9297006 -32.5005243 60.9296422 -32.5006246 60.9294923 -32.5008774 60.9294923 -32.5008774 60.9294923 -32.5008774 60.9294923 -32.5008774 60.9294421 -32.5009584 60.9294017 -32.5013193 60.9294912 -32.5016620 60.9294912 -32.5016620 60.9294912 -32.5016620 60.9294912 -32.5016620 60.9291133 -32.5020049 60.9291133 -32.5020049 60.9291133 -32.5020049 60.9291133 -32.5020049 60.9286289 -32.5016712 60.9282243 -32.5014546 60.9277059 -32.5013014 60.9273269 -32.5012022 60.9266636 -32.5011578 60.9266636 -32.5011578 60.9266636 -32.5011578 60.9266636 -32.5011578 60.9265189 -32.5011481 60.9257312 -32.5011932 60.9255892 -32.5012286 60.9255892 -32.5012286 60.9255892 -32.5012286 60.9255892 -32.5012286 60.9252223 -32.5013196 60.9247933 -32.5015001 60.9246326 -32.5016625 60.9246326 -32.5016625 60.9246326 -32.5016625 60.9246326 -32.5016625 60.9239550 -32.5014359 60.9239550 -32.5014359 60.9239550 -32.5014359 60.9239550 -32.5014359 60.9229868 -32.5011123 60.9229868 -32.5011123 60.9229868 -32.5011123 60.9229868 -32.5011123 60.9217508 -32.5007064 60.9224087 -32.5002824 60.9222990 -32.5001471 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9206022 -32.5012387 60.9207321 -32.5013289 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9216210 -32.5007785 60.9228676 -32.5011935 60.9228676 -32.5011935 60.9228676 -32.5011935 60.9228676 -32.5011935 60.9238374 -32.5015142 60.9238374 -32.5015142 60.9238374 -32.5015142 60.9238374 -32.5015142 60.9246134 -32.5017707 60.9246134 -32.5017707 60.9246134 -32.5017707 60.9246134 -32.5017707 60.9245336 -32.5018339 60.9244463 -32.5019240 60.9243963 -32.5021136 60.9245241 -32.5023932 60.9246242 -32.5025195 60.9246242 -32.5025195 60.9246242 -32.5025195 60.9246242 -32.5025195 60.9249510 -32.5026818 60.9250926 -32.5027811 60.9250926 -32.5027811 60.9250926 -32.5027811 60.9250926 -32.5027811 60.9251810 -32.5029253 60.9253024 -32.5035658 60.9254513 -32.5037734 60.9258230 -32.5041252 60.9259156 -32.5043056 60.9259199 -32.5046033 60.9258879 -32.5046931 60.9258879 -32.5046931 60.9258879 -32.5046931 60.9258879 -32.5046931 60.9257720 -32.5050182 60.9253952 -32.5053070 60.9251333 -32.5056497 60.9250503 -32.5060828 60.9250897 -32.5063444 60.9253430 -32.5068134 60.9254443 -32.5068766 60.9254443 -32.5068766 60.9254443 -32.5068766 60.9254443 -32.5068766 60.9256816 -32.5070300 60.9262310 -32.5072284 60.9266196 -32.5072825 60.9270689 -32.5072734 60.9276278 -32.5073996 60.9281463 -32.5074628 60.9284359 -32.5075530 60.9286052 -32.5076791 60.9289044 -32.5081212 60.9292238 -32.5086715 60.9292238 -32.5086715 60.9292238 -32.5086715 60.9292238 -32.5086715 60.9294336 -32.5089782 60.9297232 -32.5091947 60.9297232 -32.5091947 60.9297232 -32.5091947 60.9297232 -32.5091947 60.9305314 -32.5096186 60.9311297 -32.5099884 60.9313395 -32.5101778 60.9315790 -32.5105566 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9318986 -32.5108543 60.9324267 -32.5112060 60.9325970 -32.5114316 60.9327568 -32.5118826 60.9329762 -32.5122434 60.9331880 -32.5124592 60.9331880 -32.5124592 60.9331880 -32.5124592 60.9331880 -32.5124592 60.9332861 -32.5125591 60.9333351 -32.5127666 60.9332756 -32.5132897 60.9333662 -32.5137318 60.9333662 -32.5137318 60.9333662 -32.5137318 60.9333662 -32.5137318 60.9338444 -32.5144986 60.9338893 -32.5146023 60.9339462 -32.5148308 60.9339446 -32.5153646 60.9338020 -32.5160313 60.9337086 -32.5162503 60.9335360 -32.5166726 60.9334360 -32.5170155 60.9334414 -32.5174485 60.9336363 -32.5178634 60.9339963 -32.5183144 60.9343349 -32.5186391 60.9348332 -32.5188916 60.9352326 -32.5189728 60.9359512 -32.5189727 60.9365294 -32.5188913 60.9370085 -32.5187380 60.9373374 -32.5186838 60.9378273 -32.5187197 60.9382064 -32.5188460 60.9385854 -32.5189813 60.9388250 -32.5190173 60.9388250 -32.5190173 60.9388250 -32.5190173 60.9388250 -32.5190173 60.9390944 -32.5189541 60.9394361 -32.5187466 60.9396128 -32.5186924 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9397619 -32.5187014 60.9401612 -32.5188096 60.9404710 -32.5188727 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9406080 -32.5188796 60.9408299 -32.5188907 60.9411195 -32.5188365 60.9417785 -32.5185748 60.9421170 -32.5183942 60.9422862 -32.5182047 60.9423905 -32.5178889 60.9423894 -32.5175642 60.9422988 -32.5173568 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9416543 -32.5163736 60.9415073 -32.5159497 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414274 -32.5157783 60.9412676 -32.5155889 60.9411484 -32.5153995 60.9409790 -32.5152642 60.9406894 -32.5150657 60.9405392 -32.5148944 60.9403698 -32.5145156 60.9401801 -32.5143260 60.9399800 -32.5141637 60.9397607 -32.5140285 60.9396010 -32.5138391 60.9394815 -32.5135774 60.9394815 -32.5132979 60.9394016 -32.5130542 60.9393516 -32.5127927 60.9393015 -32.5126123 60.9388424 -32.5118184 60.9387124 -32.5113223 60.9386526 -32.5108623 60.9385323 -32.5106367 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9382330 -32.5101588 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382532 -32.5099693 60.9383724 -32.5098339 60.9384022 -32.5097347 60.9383627 -32.5095994 60.9383627 -32.5091935 60.9383627 -32.5091935 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9234007 -32.5420159 60.9234007 -32.5420159 60.9234610 -32.5420880 60.9268665 -32.5399738 60.9296926 -32.5370921 60.9350940 -32.5316538 60.9370713 -32.5282372 60.9370713 -32.5282372 60.9370713 -32.5282372 60.9370713 -32.5282372 60.9369606 -32.5282010 60.9352553 -32.5311872 60.9349486 -32.5310791 60.9349486 -32.5310791 60.9349486 -32.5310791 60.9349486 -32.5310791 60.9348889 -32.5311784 60.9348889 -32.5311784 60.9348889 -32.5311784 60.9348889 -32.5311784 60.9351360 -32.5312956 60.9350062 -32.5315302 60.9313851 -32.5351932 60.9303076 -32.5362668 60.9300882 -32.5360954 60.9302574 -32.5359420 60.9302574 -32.5359420 60.9302574 -32.5359420 60.9302574 -32.5359420 60.9303042 -32.5357345 60.9303042 -32.5357345 60.9303042 -32.5357345 60.9303042 -32.5357345 60.9303468 -32.5355451 60.9301381 -32.5355361 60.9301381 -32.5355361 60.9301381 -32.5355361 60.9301381 -32.5355361 60.9301179 -32.5357346 60.9301179 -32.5357346 60.9301179 -32.5357346 60.9301179 -32.5357346 60.9302074 -32.5358067 60.9297389 -32.5362938 60.9297850 -32.5363264 60.9297850 -32.5363264 60.9297850 -32.5363264 60.9297850 -32.5363264 60.9298283 -32.5363570 60.9298283 -32.5363570 60.9298283 -32.5363570 60.9298283 -32.5363570 60.9300381 -32.5361676 60.9302671 -32.5363390 60.9267361 -32.5399116 60.9255509 -32.5406244 60.9254316 -32.5404709 60.9254316 -32.5404709 60.9254316 -32.5404709 60.9254316 -32.5404709 60.9253123 -32.5405432 60.9253123 -32.5405432 60.9253123 -32.5405432 60.9253123 -32.5405432 60.9254477 -32.5406967 60.9233703 -32.5419796 60.9234007 -32.5420159 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9292393 -32.5357166 60.9292393 -32.5357166 60.9294395 -32.5356264 60.9295588 -32.5354369 60.9294885 -32.5352926 60.9291498 -32.5352024 60.9288707 -32.5352746 60.9287707 -32.5354189 60.9288400 -32.5355994 60.9290306 -32.5356896 60.9292393 -32.5357166 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9569479 -32.5069968 60.9569479 -32.5069968 60.9568479 -32.5070239 60.9567585 -32.5071412 60.9566883 -32.5073306 60.9567287 -32.5073938 60.9568086 -32.5073486 60.9568682 -32.5071862 60.9569575 -32.5070690 60.9569479 -32.5069968 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9559104 -32.5079442 60.9559104 -32.5079442 60.9558114 -32.5079623 60.9557411 -32.5080164 60.9557316 -32.5080797 60.9558114 -32.5080797 60.9558806 -32.5080164 60.9559104 -32.5079442 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9467543 -32.5132152 60.9467543 -32.5132152 60.9466699 -32.5132215 60.9466699 -32.5132215 60.9466699 -32.5132215 60.9466699 -32.5132215 60.9465148 -32.5132331 60.9462561 -32.5133867 60.9456972 -32.5133958 60.9455172 -32.5134499 60.9454577 -32.5135853 60.9455376 -32.5137026 60.9457175 -32.5137747 60.9459666 -32.5137476 60.9461157 -32.5137565 60.9462957 -32.5138557 60.9465150 -32.5138106 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9470344 -32.5134767 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9467543 -32.5132152 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9571074 -32.5065997 60.9571074 -32.5065997 60.9570967 -32.5064825 60.9569977 -32.5063743 60.9567187 -32.5062120 60.9565280 -32.5060497 60.9563801 -32.5060136 60.9563002 -32.5060948 60.9562897 -32.5062302 60.9562396 -32.5062482 60.9561598 -32.5062121 60.9561002 -32.5062302 60.9561300 -32.5063565 60.9562397 -32.5064377 60.9562600 -32.5066091 60.9562899 -32.5067264 60.9563591 -32.5067082 60.9564591 -32.5066000 60.9565283 -32.5065458 60.9566986 -32.5065278 60.9567880 -32.5065548 60.9568583 -32.5066179 60.9568774 -32.5067172 60.9569680 -32.5067171 60.9571074 -32.5065997 60.9571074 -32.5065997 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:LocalDirectionOfBuoyage>
+	</member>
+    <member>
+		<S101:NavigationalSystemOfMarks gml:id="FEATURE_ID_0001">
+			<marksNavigationalSystemOf>1</marksNavigationalSystemOf>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="1">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.8799278 -32.5000000 60.8799278 -32.5000000 60.8811150 -32.5000000 60.8811150 -32.5000000 60.8811150 -32.5000000 60.8811150 -32.5000000 60.8833333 -32.5000000 60.8833333 -32.5000000 60.8833333 -32.5000000 60.8833333 -32.5000000 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8846417 -32.5000000 60.8848389 -32.5000000 60.8848389 -32.5000000 60.8848389 -32.5000000 60.8848389 -32.5000000 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8854715 -32.5000000 60.8854715 -32.5000000 60.8854715 -32.5000000 60.8854715 -32.5000000 60.8861917 -32.5000000 60.8861917 -32.5000000 60.8861917 -32.5000000 60.8861917 -32.5000000 60.8865608 -32.5000000 60.8865608 -32.5000000 60.8865608 -32.5000000 60.8865608 -32.5000000 60.8875665 -32.5000000 60.8875665 -32.5000000 60.8875665 -32.5000000 60.8875665 -32.5000000 60.8884612 -32.5000000 60.8884612 -32.5000000 60.8884612 -32.5000000 60.8884612 -32.5000000 60.8895889 -32.5000000 60.8895889 -32.5000000 60.8895889 -32.5000000 60.8895889 -32.5000000 60.8905111 -32.5000000 60.8905111 -32.5000000 60.8905111 -32.5000000 60.8905111 -32.5000000 60.8914417 -32.5000000 60.8914417 -32.5000000 60.8914417 -32.5000000 60.8914417 -32.5000000 60.8920672 -32.5000000 60.8920672 -32.5000000 60.8920672 -32.5000000 60.8920672 -32.5000000 60.8929472 -32.5000000 60.8929472 -32.5000000 60.8929472 -32.5000000 60.8929472 -32.5000000 60.8942739 -32.5000000 60.8942739 -32.5000000 60.8942739 -32.5000000 60.8942739 -32.5000000 60.8948298 -32.5000000 60.8948298 -32.5000000 60.8948298 -32.5000000 60.8948298 -32.5000000 60.8950245 -32.5000000 60.8950245 -32.5000000 60.8950245 -32.5000000 60.8950245 -32.5000000 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8954389 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8957972 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8963406 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8971970 -32.5000000 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8975250 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8982083 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8985000 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.8994306 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9021833 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9072389 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9128925 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9192417 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9246583 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9255972 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9286696 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9298171 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9303804 -32.5000000 60.9380889 -32.5000000 60.9380889 -32.5000000 60.9380889 -32.5000000 60.9380889 -32.5000000 60.9410750 -32.5000000 60.9410750 -32.5000000 60.9410750 -32.5000000 60.9410750 -32.5000000 60.9414194 -32.5000000 60.9414194 -32.5000000 60.9414194 -32.5000000 60.9414194 -32.5000000 60.9417722 -32.5000000 60.9417722 -32.5000000 60.9417722 -32.5000000 60.9417722 -32.5000000 60.9425117 -32.5000000 60.9425117 -32.5000000 60.9425117 -32.5000000 60.9425117 -32.5000000 60.9431088 -32.5000000 60.9431088 -32.5000000 60.9431088 -32.5000000 60.9431088 -32.5000000 60.9442359 -32.5000000 60.9442359 -32.5000000 60.9442359 -32.5000000 60.9442359 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9647694 -32.5000000 60.9647694 -32.5000000 60.9647694 -32.5000000 60.9647694 -32.5000000 60.9654583 -32.5000000 60.9654583 -32.5000000 60.9654583 -32.5000000 60.9654583 -32.5000000 60.9659334 -32.5000000 60.9659334 -32.5000000 60.9659334 -32.5000000 60.9659334 -32.5000000 60.9660833 -32.5000000 60.9660833 -32.5000000 60.9660833 -32.5000000 60.9660833 -32.5000000 60.9666667 -32.5000000 60.9666667 -32.5003310 60.9666667 -32.5003310 60.9666667 -32.5003310 60.9666667 -32.5003310 60.9666667 -32.5023222 60.9666667 -32.5023222 60.9666667 -32.5023222 60.9666667 -32.5023222 60.9666667 -32.5030194 60.9666667 -32.5030194 60.9666667 -32.5030194 60.9666667 -32.5030194 60.9666667 -32.5058722 60.9666667 -32.5058722 60.9666667 -32.5058722 60.9666667 -32.5058722 60.9666667 -32.5089500 60.9666667 -32.5089500 60.9666667 -32.5089500 60.9666667 -32.5089500 60.9666667 -32.5097499 60.9666667 -32.5097499 60.9666667 -32.5097499 60.9666667 -32.5097499 60.9666667 -32.5105972 60.9666667 -32.5105972 60.9666667 -32.5105972 60.9666667 -32.5105972 60.9666667 -32.5120334 60.9666667 -32.5120334 60.9666667 -32.5120334 60.9666667 -32.5120334 60.9666667 -32.5132778 60.9666667 -32.5132778 60.9666667 -32.5132778 60.9666667 -32.5132778 60.9666667 -32.5142529 60.9666667 -32.5142529 60.9666667 -32.5142529 60.9666667 -32.5142529 60.9666667 -32.5143384 60.9666667 -32.5143384 60.9666667 -32.5143384 60.9666667 -32.5143384 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5146248 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9666667 -32.5167719 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5169305 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5170889 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5196663 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5207222 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5245135 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5320916 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5379390 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5421174 60.9666667 -32.5523499 60.9508010 -32.5523437 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9487429 -32.5523438 60.9414140 -32.5523448 60.9353118 -32.5523450 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9336108 -32.5523441 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9198227 -32.5523342 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9136832 -32.5523365 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9118981 -32.5523371 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9107444 -32.5523375 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9095803 -32.5523379 60.9086441 -32.5523382 60.9086441 -32.5523382 60.9086441 -32.5523382 60.9086441 -32.5523382 60.9077144 -32.5523192 60.9077144 -32.5523192 60.9077144 -32.5523192 60.9077144 -32.5523192 60.9067600 -32.5523194 60.9067600 -32.5523194 60.9067600 -32.5523194 60.9067600 -32.5523194 60.8959189 -32.5523334 60.8959189 -32.5523334 60.8959189 -32.5523334 60.8959189 -32.5523334 60.8944972 -32.5523359 60.8944972 -32.5523359 60.8944972 -32.5523359 60.8944972 -32.5523359 60.8733269 -32.5523523 60.8733258 -32.5009313 60.8733258 -32.5009313 60.8733258 -32.5009313 60.8733258 -32.5009313 60.8733138 -32.5000000 60.8740361 -32.5000000 60.8740361 -32.5000000 60.8740361 -32.5000000 60.8740361 -32.5000000 60.8774889 -32.5000000 60.8774889 -32.5000000 60.8774889 -32.5000000 60.8774889 -32.5000000 60.8792677 -32.5000000 60.8792677 -32.5000000 60.8792677 -32.5000000 60.8792677 -32.5000000 60.8799278 -32.5000000 60.8799278 -32.5000000 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:NavigationalSystemOfMarks>
+	</member>
+    <member>
+		<S101:UnderwaterAwashRock gml:id="FEATURE_ID_0742">
+			<valueOfSounding>-2.9</valueOfSounding>
+			<waterLevelEffect>4</waterLevelEffect>
+			<defaultClearanceDepth>0</defaultClearanceDepth>
+			<surroundingDepth>0</surroundingDepth>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="174">
+						<gml:pos>60.9556632 -32.5174165</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:UnderwaterAwashRock>
+	</member>
+    <member>
+		<S101:Obstruction gml:id="FEATURE_ID_0737">
+			<categoryOfObstruction>6</categoryOfObstruction>
+			<qualityOfVerticalMeasurement>2</qualityOfVerticalMeasurement>
+			<waterLevelEffect>3</waterLevelEffect>
+			<defaultClearanceDepth>-5</defaultClearanceDepth>
+			<surroundingDepth>2</surroundingDepth>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="227">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9549758 -32.5135918 60.9549758 -32.5135918 60.9549462 -32.5139706 60.9549462 -32.5139706 60.9549462 -32.5139706 60.9549462 -32.5139706 60.9548665 -32.5141962 60.9548665 -32.5141962 60.9548665 -32.5141962 60.9548665 -32.5141962 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9549466 -32.5147735 60.9553459 -32.5151433 60.9559242 -32.5152784 60.9566036 -32.5155038 60.9568825 -32.5154134 60.9568825 -32.5154134 60.9568825 -32.5154134 60.9568825 -32.5154134 60.9568432 -32.5156119 60.9566240 -32.5159187 60.9566232 -32.5165322 60.9564637 -32.5170193 60.9564637 -32.5170193 60.9564637 -32.5170193 60.9564637 -32.5170193 60.9560658 -32.5176328 60.9556665 -32.5177322 60.9554067 -32.5176330 60.9552468 -32.5172632 60.9555254 -32.5162980 60.9554655 -32.5158018 60.9551864 -32.5154862 60.9541183 -32.5148729 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9539084 -32.5145213 60.9538391 -32.5143680 60.9538391 -32.5143680 60.9538391 -32.5143680 60.9538391 -32.5143680 60.9541970 -32.5139305 60.9549758 -32.5135918 60.9549758 -32.5135918 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9555660 -32.5166317 60.9555660 -32.5166317 60.9556459 -32.5167309 60.9561452 -32.5167037 60.9564239 -32.5164509 60.9563048 -32.5163517 60.9558852 -32.5164512 60.9555660 -32.5166317 60.9555660 -32.5166317 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:Obstruction>
+	</member>
+    <member>
+		<S101:RestrictedAreaNavigational gml:id="FEATURE_ID_0707">
+			<restriction>1</restriction>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="217">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9128925 -32.5000000 60.9128925 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9166765 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9176500 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9181182 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9186478 -32.5000000 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9210108 -32.5009758 60.9206022 -32.5012387 60.9207321 -32.5013289 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9212210 -32.5010237 60.9242950 -32.5022326 60.9175440 -32.5099225 60.9166921 -32.5108912 60.9167401 -32.5109182 60.9167401 -32.5109182 60.9167401 -32.5109182 60.9167401 -32.5109182 60.9220767 -32.5139056 60.9220767 -32.5139056 60.9220767 -32.5139056 60.9220767 -32.5139056 60.9232986 -32.5145897 60.9260925 -32.5161322 60.9260925 -32.5161322 60.9260925 -32.5161322 60.9260925 -32.5161322 60.9291058 -32.5212535 60.9307015 -32.5240036 60.9376828 -32.5215051 60.9476759 -32.5233428 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5269028 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5271920 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5305945 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9666667 -32.5320834 60.9559313 -32.5441965 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9550224 -32.5433823 60.9493886 -32.5383236 60.9493886 -32.5383236 60.9493886 -32.5383236 60.9493886 -32.5383236 60.9420381 -32.5317070 60.9382013 -32.5283371 60.9375302 -32.5278131 60.9375302 -32.5278131 60.9375302 -32.5278131 60.9375302 -32.5278131 60.9373406 -32.5277048 60.9372714 -32.5276943 60.9371646 -32.5276784 60.9371646 -32.5276784 60.9371646 -32.5276784 60.9371646 -32.5276784 60.9369818 -32.5276508 60.9367123 -32.5277140 60.9364622 -32.5278943 60.9364012 -32.5280389 60.9364012 -32.5280389 60.9364012 -32.5280389 60.9364012 -32.5280389 60.9297491 -32.5328754 60.9289455 -32.5334543 60.9275946 -32.5344281 60.9264676 -32.5361634 60.9264676 -32.5361634 60.9264676 -32.5361634 60.9264676 -32.5361634 60.9264583 -32.5361677 60.9264583 -32.5361677 60.9264583 -32.5361677 60.9264583 -32.5361677 60.9243600 -32.5393984 60.9229686 -32.5416094 60.9229686 -32.5416094 60.9229686 -32.5416094 60.9229686 -32.5416094 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9228533 -32.5416800 60.9227349 -32.5419680 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227550 -32.5421450 60.9227742 -32.5422724 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9229466 -32.5424420 60.9229767 -32.5425523 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9271689 -32.5523198 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9206524 -32.5523349 60.9198227 -32.5523342 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9176338 -32.5523351 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9162800 -32.5523179 60.9133224 -32.5455411 60.9133224 -32.5455411 60.9133224 -32.5455411 60.9133224 -32.5455411 60.9148988 -32.5392354 60.9157370 -32.5357443 60.9172446 -32.5334777 60.9172446 -32.5334777 60.9172446 -32.5334777 60.9172446 -32.5334777 60.9177957 -32.5326492 60.9177957 -32.5326492 60.9177957 -32.5326492 60.9177957 -32.5326492 60.9179002 -32.5324920 60.9179002 -32.5324920 60.9179002 -32.5324920 60.9179002 -32.5324920 60.9187005 -32.5312889 60.9187005 -32.5312889 60.9187005 -32.5312889 60.9187005 -32.5312889 60.9189233 -32.5309539 60.9189233 -32.5309539 60.9189233 -32.5309539 60.9189233 -32.5309539 60.9211251 -32.5276432 60.9209260 -32.5276432 60.9208610 -32.5276342 60.9207950 -32.5276342 60.9205980 -32.5276071 60.9205330 -32.5275890 60.9204691 -32.5275801 60.9203413 -32.5275440 60.9202796 -32.5275260 60.9202168 -32.5275079 60.9201550 -32.5274899 60.9200943 -32.5274717 60.9200335 -32.5274447 60.9199740 -32.5274177 60.9199154 -32.5273905 60.9198579 -32.5273636 60.9197450 -32.5273094 60.9196907 -32.5272734 60.9196364 -32.5272463 60.9195832 -32.5272101 60.9195310 -32.5271742 60.9194309 -32.5271020 60.9193830 -32.5270658 60.9193361 -32.5270208 60.9192903 -32.5269847 60.9192456 -32.5269396 60.9192019 -32.5268945 60.9191604 -32.5268583 60.9191199 -32.5268133 60.9190815 -32.5267682 60.9190443 -32.5267140 60.9190081 -32.5266690 60.9189730 -32.5266239 60.9189400 -32.5265788 60.9189090 -32.5265245 60.9188792 -32.5264705 60.9188505 -32.5264254 60.9188238 -32.5263713 60.9187994 -32.5263172 60.9187759 -32.5262721 60.9187546 -32.5262179 60.9187344 -32.5261638 60.9187162 -32.5261097 60.9187003 -32.5260556 60.9186853 -32.5260013 60.9186726 -32.5259473 60.9186609 -32.5258841 60.9186513 -32.5258300 60.9186439 -32.5257759 60.9186375 -32.5257218 60.9186332 -32.5256675 60.9186310 -32.5256045 60.9186310 -32.5255504 60.9186321 -32.5254962 60.9186353 -32.5254421 60.9186396 -32.5253879 60.9186460 -32.5253248 60.9186545 -32.5252706 60.9186651 -32.5252166 60.9186768 -32.5251624 60.9186895 -32.5251083 60.9187056 -32.5250541 60.9187226 -32.5250001 60.9187418 -32.5249459 60.9187620 -32.5248918 60.9187844 -32.5248377 60.9188078 -32.5247836 60.9188334 -32.5247294 60.9188610 -32.5246843 60.9188898 -32.5246302 60.9189196 -32.5245850 60.9189515 -32.5245310 60.9189856 -32.5244857 60.9190208 -32.5244407 60.9190570 -32.5243866 60.9190953 -32.5243414 60.9191347 -32.5242964 60.9191751 -32.5242512 60.9192177 -32.5242152 60.9192614 -32.5241701 60.9193061 -32.5241250 60.9193530 -32.5240889 60.9193998 -32.5240438 60.9194488 -32.5240077 60.9194988 -32.5239716 60.9195499 -32.5239355 60.9196021 -32.5238994 60.9196554 -32.5238723 60.9197096 -32.5238363 60.9197650 -32.5238092 60.9198214 -32.5237730 60.9199364 -32.5237190 60.9199961 -32.5236919 60.9200557 -32.5236739 60.9201163 -32.5236468 60.9201771 -32.5236287 60.9202388 -32.5236107 60.9203017 -32.5235835 60.9203644 -32.5235746 60.9204922 -32.5235384 60.9206222 -32.5235205 60.9206872 -32.5235024 60.9207521 -32.5234934 60.9208181 -32.5234934 60.9208841 -32.5234844 60.9209502 -32.5234844 60.9210162 -32.5234754 60.9211493 -32.5234754 60.9212153 -32.5234844 60.9212813 -32.5234844 60.9213473 -32.5234934 60.9214134 -32.5234934 60.9216092 -32.5235204 60.9216731 -32.5235384 60.9217381 -32.5235475 60.9218020 -32.5235655 60.9219277 -32.5236016 60.9219894 -32.5236196 60.9220512 -32.5236467 60.9221119 -32.5236647 60.9221715 -32.5236918 60.9222886 -32.5237459 60.9223462 -32.5237730 60.9224590 -32.5238271 60.9225134 -32.5238632 60.9225666 -32.5238901 60.9226188 -32.5239263 60.9226432 -32.5238722 60.9226667 -32.5238271 60.9226880 -32.5237730 60.9227103 -32.5237187 60.9227316 -32.5236647 60.9227721 -32.5235563 60.9228104 -32.5234482 60.9228285 -32.5233939 60.9228455 -32.5233489 60.9228796 -32.5232407 60.9228945 -32.5231774 60.9229243 -32.5230693 60.9229381 -32.5230151 60.9229637 -32.5229069 60.9229729 -32.5228642 60.9229729 -32.5228642 60.9229729 -32.5228642 60.9229729 -32.5228642 60.9229754 -32.5228528 60.9230073 -32.5226904 60.9230158 -32.5226362 60.9230243 -32.5225731 60.9230328 -32.5225189 60.9230392 -32.5224647 60.9230466 -32.5224107 60.9230531 -32.5223566 60.9230584 -32.5223023 60.9230626 -32.5222393 60.9230669 -32.5221851 60.9230733 -32.5220769 60.9230754 -32.5220228 60.9230775 -32.5219055 60.9230775 -32.5217972 60.9230764 -32.5217431 60.9230743 -32.5216800 60.9230722 -32.5216258 60.9230658 -32.5215176 60.9230615 -32.5214635 60.9230562 -32.5214002 60.9230508 -32.5213462 60.9230380 -32.5212379 60.9230295 -32.5211838 60.9230220 -32.5211297 60.9230125 -32.5210665 60.9230040 -32.5210123 60.9229826 -32.5209041 60.9229592 -32.5207959 60.9229335 -32.5206875 60.9229198 -32.5206335 60.9228900 -32.5205252 60.9228580 -32.5204170 60.9228399 -32.5203629 60.9228228 -32.5203088 60.9228048 -32.5202546 60.9227856 -32.5202005 60.9227654 -32.5201463 60.9227462 -32.5200922 60.9227036 -32.5199840 60.9226588 -32.5198758 60.9226353 -32.5198306 60.9226120 -32.5197765 60.9225875 -32.5197224 60.9225619 -32.5196682 60.9225364 -32.5196231 60.9225108 -32.5195690 60.9224830 -32.5195149 60.9224565 -32.5194698 60.9223990 -32.5193616 60.9223702 -32.5193163 60.9223404 -32.5192623 60.9223095 -32.5192171 60.9222786 -32.5191631 60.9222478 -32.5191180 60.9222158 -32.5190729 60.9221828 -32.5190188 60.9221497 -32.5189736 60.9221157 -32.5189195 60.9220816 -32.5188744 60.9220114 -32.5187842 60.9219752 -32.5187301 60.9219390 -32.5186850 60.9218644 -32.5185948 60.9217877 -32.5185046 60.9217089 -32.5184143 60.9216280 -32.5183241 60.9215865 -32.5182790 60.9215450 -32.5182430 60.9215033 -32.5181978 60.9214607 -32.5181528 60.9214172 -32.5181075 60.9213735 -32.5180716 60.9213298 -32.5180265 60.9212851 -32.5179813 60.9212393 -32.5179453 60.9211936 -32.5179002 60.9211478 -32.5178641 60.9211009 -32.5178280 60.9210540 -32.5177829 60.9210072 -32.5177467 60.9209592 -32.5177107 60.9209103 -32.5176656 60.9208623 -32.5176296 60.9208134 -32.5175935 60.9207133 -32.5175213 60.9206622 -32.5174852 60.9101893 -32.5101472 60.9101893 -32.5101472 60.9101893 -32.5101472 60.9101893 -32.5101472 60.9070148 -32.5079226 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8985167 -32.5050985 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8983106 -32.5048300 60.8973644 -32.5035976 60.8970106 -32.5031321 60.8970106 -32.5031321 60.8970106 -32.5031321 60.8970106 -32.5031321 60.9038671 -32.5017178 60.9128925 -32.5000000 60.9128925 -32.5000000 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:RestrictedAreaNavigational>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0680">
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="191">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.8854715 -32.5000000 60.8854715 -32.5000000 60.8854246 -32.5000924 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8851000 -32.5000000 60.8854715 -32.5000000 60.8854715 -32.5000000 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:SeaAreaNamedWaterArea gml:id="FEATURE_ID_0666">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>ROSSETT SOUND</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="177">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9430904 -32.5046501 60.9430904 -32.5046501 60.9432011 -32.5045824 60.9433351 -32.5044648 60.9434339 -32.5042750 60.9434438 -32.5039409 60.9435627 -32.5036879 60.9439713 -32.5033803 60.9442488 -32.5030999 60.9446070 -32.5025937 60.9448161 -32.5022503 60.9449806 -32.5018437 60.9449980 -32.5015276 60.9448994 -32.5007331 60.9446886 -32.5002637 60.9446534 -32.5000051 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9446528 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9480422 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9499944 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9505950 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9519864 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9530528 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9532696 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9544667 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9546947 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9556833 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9568084 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9574361 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9611638 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9630257 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9636334 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644496 -32.5000000 60.9644563 -32.5000990 60.9641373 -32.5007031 60.9637990 -32.5010099 60.9632192 -32.5012806 60.9630979 -32.5013618 60.9628339 -32.5016052 60.9624489 -32.5018399 60.9619840 -32.5022368 60.9618160 -32.5027508 60.9617621 -32.5039051 60.9616175 -32.5042748 60.9614623 -32.5046536 60.9612686 -32.5048340 60.9608324 -32.5051406 60.9605037 -32.5054564 60.9603005 -32.5055827 60.9600218 -32.5058532 60.9597930 -32.5061419 60.9591358 -32.5076119 60.9590230 -32.5078102 60.9588837 -32.5081079 60.9587892 -32.5086670 60.9586924 -32.5090998 60.9585722 -32.5092983 60.9582245 -32.5102362 60.9580946 -32.5105158 60.9577936 -32.5109306 60.9576543 -32.5112012 60.9576267 -32.5115257 60.9576343 -32.5120848 60.9577227 -32.5122923 60.9579228 -32.5126440 60.9579559 -32.5127341 60.9583434 -32.5132390 60.9584755 -32.5134915 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9585148 -32.5136432 60.9573775 -32.5139098 60.9573775 -32.5139098 60.9573775 -32.5139098 60.9573775 -32.5139098 60.9567016 -32.5140681 60.9567016 -32.5140681 60.9567016 -32.5140681 60.9567016 -32.5140681 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548464 -32.5145030 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9539970 -32.5146697 60.9533125 -32.5148041 60.9533125 -32.5148041 60.9533125 -32.5148041 60.9533125 -32.5148041 60.9475258 -32.5159401 60.9475258 -32.5159401 60.9475258 -32.5159401 60.9475258 -32.5159401 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9462782 -32.5161849 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9455802 -32.5163219 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9441013 -32.5166122 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9423895 -32.5169483 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9420549 -32.5170140 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9418776 -32.5167305 60.9416543 -32.5163736 60.9415073 -32.5159497 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414671 -32.5158634 60.9414274 -32.5157783 60.9412676 -32.5155889 60.9411484 -32.5153995 60.9409790 -32.5152642 60.9406894 -32.5150657 60.9405392 -32.5148944 60.9403698 -32.5145156 60.9401801 -32.5143260 60.9399800 -32.5141637 60.9397607 -32.5140285 60.9396010 -32.5138391 60.9394815 -32.5135774 60.9394815 -32.5132979 60.9394016 -32.5130542 60.9393516 -32.5127927 60.9393015 -32.5126123 60.9388424 -32.5118184 60.9387124 -32.5113223 60.9386526 -32.5108623 60.9385323 -32.5106367 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9383033 -32.5103301 60.9382330 -32.5101588 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382386 -32.5101058 60.9382532 -32.5099693 60.9383724 -32.5098339 60.9384022 -32.5097347 60.9383627 -32.5095994 60.9383627 -32.5091935 60.9383627 -32.5091935 60.9383627 -32.5091935 60.9383627 -32.5091935 60.9383626 -32.5089860 60.9384818 -32.5086701 60.9386616 -32.5083454 60.9388883 -32.5080928 60.9394823 -32.5077949 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398289 -32.5074952 60.9398995 -32.5074340 60.9402082 -32.5070371 60.9404370 -32.5068296 60.9406563 -32.5067031 60.9408660 -32.5066220 60.9410650 -32.5066130 60.9412545 -32.5065408 60.9414366 -32.5064054 60.9417473 -32.5059814 60.9422443 -32.5053677 60.9425454 -32.5050339 60.9427424 -32.5048625 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9429809 -32.5047170 60.9430904 -32.5046501 60.9430904 -32.5046501 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9466699 -32.5132215 60.9466699 -32.5132215 60.9465148 -32.5132331 60.9462561 -32.5133867 60.9456972 -32.5133958 60.9455172 -32.5134499 60.9454577 -32.5135853 60.9455376 -32.5137026 60.9457175 -32.5137747 60.9459666 -32.5137476 60.9461157 -32.5137565 60.9462957 -32.5138557 60.9465150 -32.5138106 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9468248 -32.5138285 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9469940 -32.5136932 60.9470344 -32.5134767 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9469439 -32.5133143 60.9467543 -32.5132152 60.9467543 -32.5132152 60.9467543 -32.5132152 60.9467543 -32.5132152 60.9466699 -32.5132215 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9571074 -32.5065997 60.9571074 -32.5065997 60.9570967 -32.5064825 60.9569977 -32.5063743 60.9567187 -32.5062120 60.9565280 -32.5060497 60.9563801 -32.5060136 60.9563002 -32.5060948 60.9562897 -32.5062302 60.9562396 -32.5062482 60.9561598 -32.5062121 60.9561002 -32.5062302 60.9561300 -32.5063565 60.9562397 -32.5064377 60.9562600 -32.5066091 60.9562899 -32.5067264 60.9563591 -32.5067082 60.9564591 -32.5066000 60.9565283 -32.5065458 60.9566986 -32.5065278 60.9567880 -32.5065548 60.9568583 -32.5066179 60.9568774 -32.5067172 60.9569680 -32.5067171 60.9571074 -32.5065997 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9569479 -32.5069968 60.9569479 -32.5069968 60.9568479 -32.5070239 60.9567585 -32.5071412 60.9566883 -32.5073306 60.9567287 -32.5073938 60.9568086 -32.5073486 60.9568682 -32.5071862 60.9569575 -32.5070690 60.9569479 -32.5069968 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:posList>60.9559104 -32.5079442 60.9559104 -32.5079442 60.9558114 -32.5079623 60.9557411 -32.5080164 60.9557316 -32.5080797 60.9558114 -32.5080797 60.9558806 -32.5080164 60.9559104 -32.5079442 60.9559104 -32.5079442 </gml:posList>
+									</gml:LinearRing>
+								</gml:interior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:SeaAreaNamedWaterArea>
+	</member>
+    <member>
+		<S101:LightSectored gml:id="FEATURE_ID_0658">
+			<height>12</height>
+			<sectorCharacteristics>
+				<lightCharacteristic>7</lightCharacteristic>
+				<lightSector>
+					<colour>1</colour>
+					<sectorLimit>
+						<sectorLimitOne>
+							<sectorBearing>345</sectorBearing>
+						</sectorLimitOne>
+						<sectorLimitTwo>
+							<sectorBearing>352</sectorBearing>
+						</sectorLimitTwo>
+					</sectorLimit>
+					<valueOfNominalRange>10</valueOfNominalRange>
+				</lightSector>
+				<signalGroup>(1)</signalGroup>
+				<signalPeriod>4</signalPeriod>
+			</sectorCharacteristics>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="150">
+						<gml:pos>60.9233826 -32.5420588</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:LightSectored>
+	</member>
+    <member>
+		<S101:SeaAreaNamedWaterArea gml:id="FEATURE_ID_0645">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>Panther Shoal</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="158">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9336108 -32.5523441 60.9336108 -32.5523441 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9333349 -32.5523439 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9280678 -32.5523403 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9276522 -32.5523359 60.9270746 -32.5517977 60.9270252 -32.5511832 60.9273270 -32.5503070 60.9272276 -32.5495840 60.9268267 -32.5484722 60.9268778 -32.5476681 60.9271547 -32.5471353 60.9268287 -32.5467103 60.9267794 -32.5460507 60.9268559 -32.5453640 60.9267809 -32.5447043 60.9263294 -32.5440262 60.9262799 -32.5434750 60.9266066 -32.5432584 60.9279890 -32.5433861 60.9285166 -32.5437299 60.9288425 -32.5442362 60.9297980 -32.5445803 60.9302240 -32.5451951 60.9305007 -32.5457916 60.9311282 -32.5465872 60.9315292 -32.5476087 60.9321061 -32.5488019 60.9319543 -32.5491361 60.9319536 -32.5497324 60.9320787 -32.5504193 60.9325557 -32.5513323 60.9336108 -32.5523441 60.9336108 -32.5523441 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:SeaAreaNamedWaterArea>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0631">
+			<valueOfDepthContour>0</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="735">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9626940 -32.5167106 60.9626940 -32.5167106 60.9625801 -32.5167738 60.9620510 -32.5167470 60.9615718 -32.5165126 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="736">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9615718 -32.5165126 60.9615718 -32.5165126 60.9610927 -32.5165488 60.9602954 -32.5168738 60.9597960 -32.5168830 60.9594169 -32.5166666 60.9592099 -32.5162073 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="737">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9592099 -32.5162073 60.9592099 -32.5162073 60.9591973 -32.5161796 60.9587181 -32.5157557 60.9584784 -32.5152777 60.9583183 -32.5144027 60.9578795 -32.5139969 60.9573775 -32.5139098 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="738">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9573775 -32.5139098 60.9573775 -32.5139098 60.9571012 -32.5138617 60.9567016 -32.5140681 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="739">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9567016 -32.5140681 60.9567016 -32.5140681 60.9566818 -32.5140783 60.9564626 -32.5145386 60.9565235 -32.5149083 60.9569015 -32.5151608 60.9568825 -32.5154134 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="740">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9568825 -32.5154134 60.9568825 -32.5154134 60.9566036 -32.5155038 60.9559242 -32.5152784 60.9553459 -32.5151433 60.9549466 -32.5147735 60.9548464 -32.5145030 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="741">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9548464 -32.5145030 60.9548464 -32.5145030 60.9548665 -32.5141962 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0622">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="713">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9393864 -32.5201990 60.9393864 -32.5201990 60.9389372 -32.5204426 60.9386380 -32.5207133 60.9383946 -32.5212527 60.9383946 -32.5212527</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="714">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9383946 -32.5212527 60.9383946 -32.5212527 60.9382390 -32.5215975 60.9378706 -32.5217780 60.9374904 -32.5216155 60.9373806 -32.5213180 60.9374678 -32.5206773 60.9373176 -32.5201994 60.9373176 -32.5201994</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0610">
+			<valueOfDepthContour>2</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="686">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9323315 -32.5335421 60.9323315 -32.5335421 60.9324114 -32.5333167 60.9324422 -32.5330009 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="687">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9324422 -32.5330009 60.9324422 -32.5330009 60.9324506 -32.5329016 60.9326839 -32.5327121 60.9326839 -32.5327121</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="688">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9326839 -32.5327121 60.9326839 -32.5327121 60.9331897 -32.5326490 60.9331897 -32.5326490</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:BeaconSpecialPurposeGeneral gml:id="FEATURE_ID_0596">
+			<beaconShape />
+			<categoryOfSpecialPurposeMark>18</categoryOfSpecialPurposeMark>
+			<colour />
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="147">
+						<gml:pos>60.9256696 -32.5037012</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:BeaconSpecialPurposeGeneral>
+	</member>
+    <member>
+		<S101:DepthContour gml:id="FEATURE_ID_0592">
+			<valueOfDepthContour>10</valueOfDepthContour>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="665">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9267008 -32.5360536 60.9267008 -32.5360536 60.9266418 -32.5360929 60.9266418 -32.5360929</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="666">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9266418 -32.5360929 60.9266418 -32.5360929 60.9262402 -32.5361673 60.9260286 -32.5361047 60.9259881 -32.5359243 60.9260498 -32.5357891 60.9262884 -32.5354732 60.9265769 -32.5352658 60.9267558 -32.5352297 60.9271360 -32.5352658 60.9271968 -32.5355274 60.9270562 -32.5358160 60.9267008 -32.5360536 60.9267008 -32.5360536</gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:DepthContour>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0567">
+			<surfaceCharacteristics>
+				<natureOfSurface>9</natureOfSurface>
+			</surfaceCharacteristics>
+			<surfaceCharacteristics>
+				<natureOfSurface>17</natureOfSurface>
+				<natureOfSurfaceQualifyingTerms>4</natureOfSurfaceQualifyingTerms>
+			</surfaceCharacteristics>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="136">
+						<gml:pos>60.9530324 -32.5229562</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:LandElevation gml:id="FEATURE_ID_0551">
+			<elevation>30</elevation>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="606">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9425117 -32.5000000 60.9425117 -32.5000000 60.9423238 -32.5003114 60.9421582 -32.5009816 60.9420537 -32.5015880 60.9419123 -32.5022194 60.9417474 -32.5027156 60.9414314 -32.5032751 60.9401470 -32.5050434 60.9399874 -32.5053411 60.9399981 -32.5056028 60.9402610 -32.5055666 60.9412019 -32.5047636 60.9422524 -32.5039605 60.9429548 -32.5032296 60.9433251 -32.5026432 60.9435687 -32.5020117 60.9436652 -32.5012268 60.9435438 -32.5006224 60.9433883 -32.5002886 60.9431088 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:LandElevation>
+	</member>
+    <member>
+		<S101:Road gml:id="FEATURE_ID_0549">
+			<categoryOfRoad>3</categoryOfRoad>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="601">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9409985 -32.5165362 60.9409985 -32.5165362 60.9410987 -32.5167166 60.9411786 -32.5170052 60.9411191 -32.5175013 60.9409201 -32.5178531 60.9405209 -32.5180067 60.9396818 -32.5180880 60.9386055 -32.5182055 60.9377664 -32.5180884 60.9373874 -32.5181245 60.9364697 -32.5184314 60.9356317 -32.5184675 60.9350525 -32.5183324 60.9345339 -32.5180618 60.9343538 -32.5177369 60.9342941 -32.5170424 60.9343940 -32.5162125 60.9342340 -32.5143361 60.9341539 -32.5130009 60.9343325 -32.5122882 60.9348712 -32.5114311 60.9355300 -32.5108358 60.9365072 -32.5102132 60.9370661 -32.5098071 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="602">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9370661 -32.5098071 60.9370661 -32.5098071 60.9375440 -32.5091485 60.9379239 -32.5085349 60.9380048 -32.5084183 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="603">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.9380048 -32.5084183 60.9380048 -32.5084183 60.9386806 -32.5074414 60.9387202 -32.5074158 60.9393318 -32.5065464 60.9409720 -32.5043163 60.9425454 -32.5023208 60.9429223 -32.5017340 60.9430809 -32.5011202 60.9430995 -32.5000558 60.9431088 -32.5000000 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:Road>
+	</member>
+    <member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0487">
+			<surfaceCharacteristics>
+				<natureOfSurface>9</natureOfSurface>
+			</surfaceCharacteristics>
+			<waterLevelEffect>4</waterLevelEffect>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="145">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9597776 -32.5180016 60.9597776 -32.5180016 60.9594380 -32.5180738 60.9593985 -32.5179655 60.9597573 -32.5178843 60.9597776 -32.5180016 60.9597776 -32.5180016 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
+    <member>
+		<S101:MooringWarpingFacility gml:id="FEATURE_ID_0485">
+			<categoryOfMooringWarpingFacility>1</categoryOfMooringWarpingFacility>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="116">
+						<gml:pos>60.9258195 -32.5007513</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:MooringWarpingFacility>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0463">
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="478">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8965993 -32.5055942 60.8965993 -32.5055942 60.8966419 -32.5051794 60.8965121 -32.5050892 60.8965217 -32.5049988 60.8985167 -32.5050985 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="479">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8985167 -32.5050985 60.8985167 -32.5050985 60.8984812 -32.5052335 60.8983675 -32.5056668 60.8987241 -32.5060728 60.8988432 -32.5064066 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="480">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988432 -32.5064066 60.8988432 -32.5064066 60.8988365 -32.5066951 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="481">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8988365 -32.5066951 60.8988365 -32.5066951 60.8988336 -32.5068216 60.8987740 -32.5069749 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="482">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8987740 -32.5069749 60.8987740 -32.5069749 60.8986557 -32.5071553 60.8984842 -32.5072906 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0452">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="462">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8954422 -32.5005874 60.8954422 -32.5005874 60.8956646 -32.5005604 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="463">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8956646 -32.5005604 60.8956646 -32.5005604 60.8958510 -32.5005334 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+    <member>
+		<S101:Building gml:id="FEATURE_ID_0429">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>2</name>
+			</featureName>
+			<function>15</function>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="135">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9382589 -32.5026171 60.9382589 -32.5026171 60.9386283 -32.5025989 60.9386721 -32.5034199 60.9383027 -32.5034379 60.9382589 -32.5026171 60.9382589 -32.5026171 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:Building>
+	</member>
+    <member>
+		<S101:Building gml:id="FEATURE_ID_0423">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>4</name>
+			</featureName>
+			<function>15</function>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="131">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9364541 -32.5062980 60.9364541 -32.5062980 60.9364201 -32.5059011 60.9376262 -32.5058287 60.9376604 -32.5062257 60.9364541 -32.5062980 60.9364541 -32.5062980 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:Building>
+	</member>
+    <member>
+		<S101:SeaAreaNamedWaterArea gml:id="FEATURE_ID_0409">
+			<featureName>
+				<displayName>0</displayName>
+				<language>eng</language>
+				<name>Worm Spit</name>
+			</featureName>
+			<geometry>
+				<S100:surfaceProperty>
+					<S100:Surface gml:id="126">
+						<gml:patches>
+							<gml:PolygonPatch>
+								<gml:exterior>
+									<gml:LinearRing>
+										<gml:posList>60.9077162 -32.5213478 60.9077162 -32.5213478 60.9060708 -32.5212520 60.9060708 -32.5212520 60.9060708 -32.5212520 60.9060708 -32.5212520 60.9059849 -32.5212470 60.9060255 -32.5203900 60.9064238 -32.5194068 60.9067177 -32.5191541 60.9071649 -32.5191182 60.9075354 -32.5195602 60.9075523 -32.5201556 60.9078217 -32.5205706 60.9078472 -32.5213553 60.9077162 -32.5213478 60.9077162 -32.5213478 </gml:posList>
+									</gml:LinearRing>
+								</gml:exterior>
+							</gml:PolygonPatch>
+						</gml:patches>
+					</S100:Surface>
+				</S100:surfaceProperty>
+			</geometry>
+		</S101:SeaAreaNamedWaterArea>
+	</member>
+    <member>
+		<S101:ShorelineConstruction gml:id="FEATURE_ID_0372">
+			<categoryOfShorelineConstruction>4</categoryOfShorelineConstruction>
+			<waterLevelEffect>2</waterLevelEffect>
+			<geometry>
+				<S100:curveProperty>
+					<gml:Curve srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" gml:id="414">
+						<gml:segments>
+							<gml:LineString>
+								<gml:posList>60.8854456 -32.5024978 60.8854456 -32.5024978 60.8856349 -32.5024978 </gml:posList>
+							</gml:LineString>
+						</gml:segments>
+					</gml:Curve>
+				</S100:curveProperty>
+			</geometry>
+		</S101:ShorelineConstruction>
+	</member>
+	<member>
+		<S101:SeabedArea gml:id="FEATURE_ID_0101">
+			<surfaceCharacteristics>
+				<natureOfSurface>6</natureOfSurface>
+			</surfaceCharacteristics>
+			<geometry>
+				<S100:pointProperty>
+					<S100:Point gml:id="17">
+						<gml:pos>60.9481298 -32.5374363</gml:pos>
+					</S100:Point>
+				</S100:pointProperty>
+			</geometry>
+		</S101:SeabedArea>
+	</member>
