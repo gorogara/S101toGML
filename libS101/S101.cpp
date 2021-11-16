@@ -50,6 +50,12 @@
 #undef _WINDOWS_
 #include <afxext.h>
 
+#include <crtdbg.h>
+
+#if _DEBUG
+#define new new(_NORMAL_BLOCK, __FILE__, __LINE__)
+#define malloc(s) _malloc_dbg(s,__NORMAL_BLOCK,__FILE__,__LINE__)
+#endif
 
 namespace libS101
 {
@@ -100,6 +106,12 @@ namespace libS101
 		wss << value / 10000000.;
 		return wss.str();
 	}
+	
+	S101::S101() {
+
+		//_CrtDumpMemoryLeaks();
+		//AfxSetAllocStop();
+	}
 
 	S101::~S101()
 	{
@@ -108,44 +120,65 @@ namespace libS101
 		{
 			R_InformationRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
+		vecInformation.clear();
 
 		for (auto itor = vecPoint.begin(); itor != vecPoint.end(); itor++)
 		{
 			R_PointRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
+		vecPoint.clear();
 
 		for (auto itor = vecMultiPoint.begin(); itor != vecMultiPoint.end(); itor++)
 		{
 			R_MultiPointRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
+		vecMultiPoint.clear();
 
 		for (auto itor = vecCurve.begin(); itor != vecCurve.end(); itor++)
 		{
 			R_CurveRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
+		vecCurve.clear();
 
 		for (auto itor = vecComposite.begin(); itor != vecComposite.end(); itor++)
 		{
 			R_CompositeRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;  
 		}
+		vecComposite.clear();
 
 		for (auto itor = vecSurface.begin(); itor != vecSurface.end(); itor++)
 		{
 			R_SurfaceRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
+		vecSurface.clear();
 
 		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
 			R_FeatureRecord* ir = *(itor);
 			delete ir;
+			ir = nullptr;
 		}
-
+		vecFeature.clear();
+		
+		for (auto iter = m_curveMap.begin(); iter != m_curveMap.end(); iter++)
+		{
+			SCurve* c = iter->second;
+			delete c;
+			c = nullptr;
+		}
+		m_curveMap.clear();
 	
 	}
 
@@ -449,6 +482,8 @@ namespace libS101
 		{
 			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"GML File Create Success", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
 		}
+
+		delete doc;
 	}
 
 	void S101::SetInformationsType(pugi::xml_document* doc, pugi::xml_node parentNode, std::string productNamespace)
@@ -1644,7 +1679,7 @@ namespace libS101
 					}
 					else if (spas->m_name.RCNM == 120 || spas->m_name.RCNM == 125)
 					{
-						MakeLineData(fr);
+						MakeLineData(fr); 
 					}
 					else if (spas->m_name.RCNM == 130)
 					{

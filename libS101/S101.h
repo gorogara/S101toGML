@@ -38,7 +38,7 @@ namespace libS101
 	class LIBS101_API S101 : public S100SpatialObject
 	{
 	public:
-		S101() {}
+		S101();
 		virtual ~S101();
 
 		bool Open(CString _filepath);
