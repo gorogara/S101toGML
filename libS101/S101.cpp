@@ -106,9 +106,10 @@ namespace libS101
 		wss << value / 10000000.;
 		return wss.str();
 	}
-	
+
 	S101::S101() {
 
+		_CrtSetBreakAlloc(266);
 		//_CrtDumpMemoryLeaks();
 		//AfxSetAllocStop();
 	}
@@ -152,7 +153,7 @@ namespace libS101
 		{
 			R_CompositeRecord* ir = *(itor);
 			delete ir;
-			ir = nullptr;  
+			ir = nullptr;
 		}
 		vecComposite.clear();
 
@@ -171,7 +172,7 @@ namespace libS101
 			ir = nullptr;
 		}
 		vecFeature.clear();
-		
+
 		for (auto iter = m_curveMap.begin(); iter != m_curveMap.end(); iter++)
 		{
 			SCurve* c = iter->second;
@@ -179,7 +180,7 @@ namespace libS101
 			c = nullptr;
 		}
 		m_curveMap.clear();
-	
+
 	}
 
 	void S101::Test()
@@ -199,6 +200,7 @@ namespace libS101
 		//RemoveAll();
 
 		CFile file;
+
 		if (file.Open(_filepath, CFile::modeRead))
 		{
 			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, KRS_MSG_PROCESS::AddLayerMessage(_filepath), KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
@@ -329,8 +331,10 @@ namespace libS101
 
 			return true;
 		}
-
-		return false;
+		else {
+			return false;
+		}
+		return true;
 	}
 
 	void S101::Save(CString _filepath, CString extend)
@@ -340,9 +344,9 @@ namespace libS101
 
 		//POSITION pos = NULL;
 		//__int64 iKey;
-		CString saveFileName = _filepath; //파일의 최종경로를 불러옵니다.
+		//CString saveFileName = _filepath; //파일의 최종경로를 불러옵니다.
 
-		return GmlifileMakeByPugi(saveFileName);
+		return GmlifileMakeByPugi(_filepath);
 
 
 	}
@@ -473,15 +477,23 @@ namespace libS101
 		SetInformationsTypeRelation_v2(root);
 #pragma endregion 
 
-		auto xmlSaveError = doc->save_file(_filePath);
-		if (!xmlSaveError)
-		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"GML File Save Fail", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
+		try {
+			auto xmlSaveError = doc->save_file(_filePath);
 		}
-		else
+		catch (int e)
 		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"GML File Create Success", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
+			std::cout << "저장하기에 실패했습니다" << std::endl;
 		}
+
+		//if (!xmlSaveError)
+		//{
+		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"G
+		// ML File Save Fail", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
+		//}
+		//else
+		//{
+		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"GML File Create Success", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
+		//}
 
 		delete doc;
 	}
@@ -651,7 +663,7 @@ namespace libS101
 
 			pugi::xml_node pFeatureNode = member.append_child(featureElementName.c_str());
 
-			
+
 			std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
 			pFeatureNode.append_attribute("gml:id") = iid.c_str();
 			objectPugiXmlElementMap.insert({ iid, &pFeatureNode });
@@ -1679,7 +1691,7 @@ namespace libS101
 					}
 					else if (spas->m_name.RCNM == 120 || spas->m_name.RCNM == 125)
 					{
-						MakeLineData(fr); 
+						MakeLineData(fr);
 					}
 					else if (spas->m_name.RCNM == 130)
 					{
@@ -1800,6 +1812,7 @@ namespace libS101
 		fe->m_geometry = new SMultiPoint();
 		SMultiPoint* geo = (SMultiPoint*)fe->m_geometry;
 
+		//여기서 메모리 누수
 		geo->m_numPoints = cnt;
 		if (!geo->m_pPoints) geo->m_pPoints = new std::vector<GeoPointZ>(geo->m_numPoints);//new GeoPointZ[geo->m_numPoints];
 		else
@@ -1944,8 +1957,8 @@ namespace libS101
 				/*ptas->m_topi == 2 && ORNT == 2*/		// End node, reverse
 				)
 			{
-				spr= findPointRecord(iKey);
-			//	m_ptMap.Lookup(iKey, spr);
+				spr = findPointRecord(iKey);
+				//	m_ptMap.Lookup(iKey, spr);
 			}
 			else if (/*ptas->m_topi == 1 && ORNT == 2 ||*/	// Beginning node , reverse
 				ptas->m_topi == 2 /*&& ORNT == 1*/		// End node, forward

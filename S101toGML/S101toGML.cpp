@@ -21,50 +21,71 @@ CWinApp theApp;
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-    int nRetCode = 0;
+	int nRetCode = 0;
+	HMODULE hModule = ::GetModuleHandle(nullptr);
 
-    HMODULE hModule = ::GetModuleHandle(nullptr);
+	CString filepath;
+	CString savepath;
 
 
-    if (hModule != nullptr)
-    {
-        // initialize MFC and print and error on failure
-        if (!AfxWinInit(hModule, nullptr, ::GetCommandLine(), 0))
-        {
-            // TODO: code your application's behavior here.
-            wprintf(L"Fatal Error: MFC initialization failed\n");
-            nRetCode = 1;
-        }
-        else
-        {
+	if (argc < 3)
+	{
+		std::cout << " 경로를 모두 입력해주세요 " << std::endl;
 
-            libS101::S101 a;
+		string file;
+		std::cin>> file;
 
-            CString filepath;
-            CString savepath;
+		string save;
+		std::cin >> save;
 
-            char path[128];
-          
-            if (GetCurrentDirectoryA(128, path) > 0)
-            {
-                filepath.Format(_T("%S\\File\\101KR005X01SW.000"),path);
-                savepath.Format(_T("%S\\File\\test.gml"), path);
-            }
+		filepath = file.c_str();
+		savepath = save.c_str();
 
-            a.Open(filepath);
-            a.Save(savepath,_T("dfs"));
+		//return -1;
+	}
+	else {
 
-            std::cout << "완료했습니다 ";
-        }
-    }
-    else
-    {
-        // TODO: change error code to suit your needs
-        wprintf(L"Fatal Error: GetModuleHandle failed\n");
-        nRetCode = 1;
-    }
+		for (int i = 0; i < argc; i++)
+		{
+			std::cout << "Value : " << argv[i] << std::endl;
+		}
 
-    return nRetCode;
+		std::string file = argv[1];
+		filepath = file.c_str();
+		std::cout << "Value : " << filepath << std::endl;
+
+		string save = argv[2];
+		savepath = save.c_str();
+		std::cout << "Value : " << savepath << std::endl;
+	}
+
+
+
+	if (!AfxWinInit(hModule, nullptr, ::GetCommandLine(), 0))
+	{
+		std::cout << "MFC initialization failed" << std::endl;
+		nRetCode = 1;
+	}
+	else
+	{
+		libS101::S101 a;
+
+		if (a.Open(filepath))
+		{
+			std::cout << "읽기완료 " << std::endl;
+		}
+		else 
+		{
+			std::cout << "읽기 실패,파일경로를 확인해주세요  " << std::endl;
+			return -1;
+		}
+
+	
+		a.Save(savepath, _T("dfs"));
+		std::cout << "gml화 완료 ";
+
+	}
+	return 0;
 }

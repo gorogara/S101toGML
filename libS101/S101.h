@@ -75,8 +75,6 @@ namespace libS101
 	private:
 		std::unordered_map<__int64, SCurve*> m_curveMap;
 
-
-
 	public:
 		void Test();
 		void InsertInformationRecord(__int64 key, R_InformationRecord* record);
@@ -148,7 +146,6 @@ namespace libS101
 		bool GetFullCurveData(R_FeatureRecord* fe, R_CompositeRecord* r, int ornt = 1);
 		bool GetFullCurveData(R_FeatureRecord* fe, R_SurfaceRecord* r, int ornt = 1);
 
-
 		bool GetFullSpatialData(R_PointRecord* r, GeoPoint& geo);
 		bool GetFullSpatialData(R_PointRecord* r, GeoPointZ& geo);
 		bool GetFullSpatialData(R_MultiPointRecord* r, CArray<GeoPointZ>& geoArr);
@@ -165,8 +162,6 @@ namespace libS101
 		R_SurfaceRecord* findSurfaceRecord(long long value);
 
 		void CalcMBR();
-
-		
 
 	private :
 		std::string CStringToString(CString str);
