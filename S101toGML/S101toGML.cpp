@@ -14,9 +14,6 @@
 #define new DEBUG_NEW
 #endif
 
-
-// The one and only application object
-
 CWinApp theApp;
 
 using namespace std;
