@@ -29,11 +29,13 @@ int main(int argc, char* argv[])
 
 	if (argc < 3)
 	{
-		std::cout << " 경로를 모두 입력해주세요 " << std::endl;
+		std::cout << " Please enter all the routes. " << std::endl;
 
+		std::cout << "openFilePath : ";
 		string file;
 		std::cin>> file;
 
+		std::cout << "saveFilePath : ";
 		string save;
 		std::cin >> save;
 
@@ -71,17 +73,17 @@ int main(int argc, char* argv[])
 
 		if (a.Open(filepath))
 		{
-			std::cout << "읽기완료 " << std::endl;
+			std::cout << "Open Success" << std::endl;
 		}
 		else 
 		{
-			std::cout << "읽기 실패,파일경로를 확인해주세요  " << std::endl;
+			std::cout << "Open Fail,Please check the file path." << std::endl;
 			return -1;
 		}
 
 	
-		a.Save(savepath, _T("dfs"));
-		std::cout << "gml화 완료 ";
+		a.Save(savepath, _T(""));
+		std::cout << "gml Success"<<std::endl;
 
 	}
 	return 0;

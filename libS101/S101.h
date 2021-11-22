@@ -41,12 +41,6 @@ namespace libS101
 		S101();
 		virtual ~S101();
 
-		bool Open(CString _filepath);
-		void Save(CString _filepath, CString extend);
-		//void Save(CString _filepath);
-
-		//bool Open(std::string _filepath);
-
 	public:
 		MBR mbr;
 		DDR m_S101DDR;
@@ -66,17 +60,20 @@ namespace libS101
 		std::vector<R_CompositeRecord*> vecComposite;
 		std::vector<R_SurfaceRecord*> vecSurface;
 		std::vector<R_FeatureRecord*> vecFeature;
-		
+	/*	
 		double xmin = 0;
 		double ymin = 0;
 		double xmax = 0;
-		double ymax = 0;
+		double ymax = 0;*/
 
 	private:
 		std::unordered_map<__int64, SCurve*> m_curveMap;
 
 	public:
-		void Test();
+		bool Open(CString _filepath);
+		void Save(CString _filepath, CString extend);
+
+	private:
 		void InsertInformationRecord(__int64 key, R_InformationRecord* record);
 		void InsertPointRecord(__int64 key, R_PointRecord* record);
 		void InsertMultiPointRecord(__int64 key, R_MultiPointRecord* record);
@@ -162,8 +159,8 @@ namespace libS101
 		R_SurfaceRecord* findSurfaceRecord(long long value);
 
 		void CalcMBR();
+		void ClearCurveMap();
 
-	private :
 		std::string CStringToString(CString str);
 		std::string WStringToString(std::wstring str);
 	};

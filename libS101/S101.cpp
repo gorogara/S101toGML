@@ -110,7 +110,7 @@ namespace libS101
 	S101::S101() {
 
 		_CrtSetBreakAlloc(266);
-		//_CrtDumpMemoryLeaks();
+		_CrtDumpMemoryLeaks();
 		//AfxSetAllocStop();
 	}
 
@@ -183,21 +183,13 @@ namespace libS101
 
 	}
 
-	void S101::Test()
-	{
-		std::cout << "이거 안나오는거 아니냐" << std::endl;
-	}
+
 
 #pragma warning(disable:4018)
 	bool S101::Open(CString _filepath) // Dataset 시작, .000 파일읽음
 	{
-		//CString _filePath = CA2CT(path.c_str());
+
 		SetFilePath(_filepath);
-
-		//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"DataSET start", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
-		//USES_CONVERSION;
-
-		//RemoveAll();
 
 		CFile file;
 
@@ -241,7 +233,6 @@ namespace libS101
 
 				if (subFieldCount < 1)
 				{
-					//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"SubFieldCount Error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
 					continue;
 				}
 
@@ -251,7 +242,7 @@ namespace libS101
 
 				if (*(pBuf++) != 0x1E)
 				{
-					//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator Error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
+
 				}
 
 				if (drDir.GetDirectory(0)->tag == *((unsigned int*)"DSID"))
@@ -277,7 +268,6 @@ namespace libS101
 					auto names = r->m_prid.m_name.GetName();
 
 					InsertPointRecord(r->m_prid.m_name.GetName(), r);
-					//m_vecMap.insert({ r->m_prid.m_name.GetName(), r });
 				}
 				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"MRID"))
 				{
@@ -285,15 +275,13 @@ namespace libS101
 					r->ReadRecord(&drDir, pBuf);
 
 					InsertMultiPointRecord(r->m_mrid.m_name.GetName(), r);
-					//m_vecMap.insert({ r->m_mrid.m_name.GetName(), r });
 				}
-				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"CRID"))  //경고와 에러 메세지 위주의 출력
+				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"CRID"))
 				{
 					R_CurveRecord* r = new R_CurveRecord();
 					r->ReadRecord(&drDir, pBuf);
 
 					InsertCurveRecord(r->m_crid.m_name.GetName(), r);
-					//m_vecMap.insert({ r->m_crid.m_name.GetName(), r });
 				}
 				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"CCID"))
 				{
@@ -301,7 +289,6 @@ namespace libS101
 					r->ReadRecord(&drDir, pBuf);
 
 					InsertCompositeCurveRecord(r->m_ccid.m_name.GetName(), r);
-					//m_vecMap.insert({ r->m_ccid.m_name.GetName(), r });
 				}
 				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"SRID"))
 				{
@@ -309,9 +296,8 @@ namespace libS101
 					r->ReadRecord(&drDir, pBuf);
 
 					InsertSurfaceRecord(r->m_srid.m_name.GetName(), r);
-					//m_vecMap.insert({ r->m_srid.m_name.GetName(), r });
 				}
-				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"FRID")) //피쳐 단위처리
+				else if (drDir.GetDirectory(0)->tag == *((unsigned int*)"FRID"))
 				{
 					R_FeatureRecord* r = new R_FeatureRecord();
 					r->ReadRecord(&drDir, pBuf);
@@ -327,7 +313,7 @@ namespace libS101
 			MakeFullSpatialData();
 
 			CalcMBR();
-			//Check();
+
 
 			return true;
 		}
@@ -339,16 +325,7 @@ namespace libS101
 
 	void S101::Save(CString _filepath, CString extend)
 	{
-		//GML 저장시 이곳으로 넘어오게 됩니다.
-		//objectXmlElementMap.clear();
-
-		//POSITION pos = NULL;
-		//__int64 iKey;
-		//CString saveFileName = _filepath; //파일의 최종경로를 불러옵니다.
-
 		return GmlifileMakeByPugi(_filepath);
-
-
 	}
 
 	void S101::GmlifileMakeByPugi(CString _filePath) //PugiXml을 사용하여 파일을 저장합니다.
@@ -377,8 +354,6 @@ namespace libS101
 		auto Envelope = boundedBy.append_child("gml:Envelope");
 		Envelope.append_attribute("srsName") = "EPSG:4326";
 		Envelope.append_attribute("srsDimension") = "2";
-
-		//auto mbr = GetMBR();
 
 		inverseProjection(mbr.xmin, mbr.ymin);
 		inverseProjection(mbr.xmax, mbr.ymax);
@@ -469,8 +444,8 @@ namespace libS101
 		coordMultFatcorZ.append_child(pugi::node_pcdata).set_value("1");
 #pragma endregion
 
-		SetInformationsType(doc, root, productNamespace); //임의로 부모의 값을 집어넣었습니다.
-		SetFeaturesType(doc, root, productNamespace); //임의로 부모의 값을 집어넣었습니다.
+		SetInformationsType(doc, root, productNamespace);
+		SetFeaturesType(doc, root, productNamespace);
 
 #pragma region RELATION
 		SetFeaturesTypeRelation_v2(root);
@@ -482,39 +457,14 @@ namespace libS101
 		}
 		catch (int e)
 		{
-			std::cout << "저장하기에 실패했습니다" << std::endl;
+			std::cout << "Save Fail" << std::endl;
 		}
-
-		//if (!xmlSaveError)
-		//{
-		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"G
-		// ML File Save Fail", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
-		//}
-		//else
-		//{
-		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"GML File Create Success", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
-		//}
 
 		delete doc;
 	}
 
 	void S101::SetInformationsType(pugi::xml_document* doc, pugi::xml_node parentNode, std::string productNamespace)
 	{
-		//__int64 key = 0;
-		//R_InformationRecord* ir = NULL;
-
-
-		//POSITION pos = vecInformation.GetStartPosition();
-		//POSITION pos = m_infMap.GetStartPosition();
-
-		/*auto s100Layer = (S100Layer*)m_pLayer;
-		auto catalog = s100Layer->GetFC();
-		if (nullptr == catalog)
-		{
-			return;
-		}*/
-
-		//auto fc = catalog->GetFC();
 		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
 		{
 			R_InformationRecord* ir = *(itor);
@@ -531,128 +481,13 @@ namespace libS101
 			objectPugiXmlElementMap.insert(std::unordered_map<std::string, pugi::xml_node*>::value_type(iid, &informationNode));
 			SetAttributeType(doc, informationNode, &ir->m_attr);
 		}
-
-
-		//if (pos != nullptr)
-		//{
-		//	while (pos != nullptr)
-		//	{
-		//		m_infMap.GetNextAssoc(pos, key, ir);
-		//		CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
-		//		pugi::xml_node imember = parentNode.append_child("imember");
-
-		//		auto featureElementName = productNamespace + ":" + LibMFCUtil::CStringToString(informationAcronym);
-		//		pugi::xml_node informationNode = imember.append_child(featureElementName.c_str());
-
-		//		std::string iid = get_information_id_string(ir->m_irid.m_name.RCID);
-
-		//		informationNode.append_attribute("gml:id") = iid.c_str();
-
-		//		objectPugiXmlElementMap.insert(std::unordered_map<std::string, pugi::xml_node*>::value_type(iid, &informationNode));
-		//		SetAttributeType(doc, informationNode, &ir->m_attr);
-		//	}
-		//}
-		//else
-		//{
-		//	//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"map start position is null = imember is not making", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
-		//}
-
-
-#pragma region 이전코드
-		//while (pos != nullptr)
-		//{
-		//	m_infMap.GetNextAssoc(pos, key, ir);
-		//	CString informationAcronym = m_dsgir.m_itcs->m_arr.find(ir->m_irid.m_nitc)->second->m_code;
-
-		//	pugi::xml_node pInformationNode = parentNode.append_child("");
-
-		//	wstring informationid = get_information_id(ir->m_irid.m_name.RCID);
-		//	pInformationNode.append_attribute("") = "";
-
-		//	objectXmlElementMapbyPugi.insert(std::unordered_map<wstring, pugi::xml_node>::value_type(informationid, pInformationNode));
-
-		//	for (auto itorParent = ir->m_attr.begin(); itorParent != ir->m_attr.end(); itorParent++)
-		//	{
-		//		F_ATTR* attr = *itorParent;
-		//		int index = 1;
-		//		attrXmlElementMap.clear();
-
-		//		for (auto aitor = attr->m_arr.begin(); aitor != attr->m_arr.end(); aitor++)
-		//		{
-		//			index++;
-		//			ATTR* attr = *aitor;
-
-		//			auto itor = m_dsgir.m_atcs->m_arr.find(attr->m_natc);
-		//			if (itor != m_dsgir.m_atcs->m_arr.end())
-		//			{
-		//				continue;
-		//			}
-
-		//			wstring attributeName = itor->second->m_code;
-		//			//pugi::xml_node attributeNode= parentNode.append_child(attributeName); //형변환 문제때문에 잠시 보류
-		//			 //형변환 문제때문에 잠시 보류
-
-		//			if (attr->m_paix == 0) //가장 기본 index에 들어갑니다.?
-		//			{
-		//				pugi::xml_node attributeNode = parentNode.append_child("");
-		//				//attributeNode.set_value(attr->m_atvl);
-		//				attributeNode.append_child(pugi::node_pcdata).set_value("");
-		//			}
-		//			else
-		//			{
-		//				auto itor = attrXmlElementMap.find(attr->m_paix);
-		//				pugi::xml_node parent = itor->second;
-		//				pugi::xml_node attributeNode = parent.append_child("");
-		//				//attributeNode.set_value();
-		//			}
-
-		//		}
-		//	}
-
-
-		//	for (auto itorParent = ir->m_inas.begin(); itorParent != ir->m_inas.end(); itorParent++)
-		//	{
-		//		F_INAS* f_fasc = *itorParent;
-
-		//		_int64 key = ((_int64)100) << 32 | f_fasc->m_name.RCID;
-		//		wstring informationid = get_information_id(ir->m_irid.m_name.RCID);
-
-		//		auto itor = objectXmlElementMapbyPugi.find(informationid);
-
-		//		pugi::xml_node attributeNode = itor->second;
-		//		wstring eid = L"#";
-		//		//eid.append(attributeNode.attribute("id")); //형변환 문제때문에 잠시 보류
-
-		//		auto asitor = m_dsgir.m_iacs->m_arr.find(f_fasc->m_niac);
-		//		auto ritor = m_dsgir.m_iacs->m_arr.find(f_fasc->m_narc);
-
-		//		wstring asName = asitor->second->m_code;
-		//		wstring roleName = ritor->second->m_code;
-
-		//		attributeNode = parentNode.append_child("S100:informationAssociation");
-		//		attributeNode.append_attribute("xlink:role") = roleName.c_str();
-		//		attributeNode.append_attribute("xlink:href") = eid.c_str();
-		//	}
-		//}
-#pragma endregion
-
 	}
 
 	void S101::SetFeaturesType(pugi::xml_document* document, pugi::xml_node parentNode, std::string productNamespace)
 	{
-		//_int64 key = 0;
-		//R_FeatureRecord* fr = nullptr;
-
 		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
 			R_FeatureRecord* fr = *(itor);
-			//map의 가장 첫번째 값을 가지고옵니다.
-		//	m_feaMap.GetNextAssoc(pos, key, fr);
-
-			//if (!fr->m_geometry) //NogeoMetry??아님미까
-			//{
-			//	continue;
-			//}
 			auto what = m_dsgir.m_ftcs->m_arr.find(fr->m_frid.m_nftc);
 
 			pugi::xml_node member = parentNode.append_child("member");
@@ -685,20 +520,16 @@ namespace libS101
 			auto srcFeatureElement = rootNode.select_node(srcFeatureXpath.c_str());
 
 
-			// Source Feature를 찾은 경우
 			if (srcFeatureElement.node())
 			{
-				//pugi::xml_node* feaNode = ;
 				auto featureNode = srcFeatureElement.node();
 				pFeatureNode = &featureNode;
 			}
-			// 못 찾은 경우
 			else
 			{
 				continue;
 			}
 
-			// Source Feature와 관계있는 모든 피처 연결
 			for (auto i = fr->m_fasc.begin(); i != fr->m_fasc.end(); i++)
 			{
 				F_FASC* f_fasc = *i;
@@ -706,16 +537,8 @@ namespace libS101
 				std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
 
 				auto dstFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + iid + "']";
-				//BaekIS ( select_single_node 는 deprecated 오류가 나서 select_node 사용 )
+
 				auto dstFeatureElement = rootNode.select_node(dstFeatureXpath.c_str());
-
-				//auto itor = objectPugiXmlElementMap.find(iid);
-
-				//if (itor == objectPugiXmlElementMap.end())
-				//{
-				//	continue;
-				//}
-				// Destination Feature를 못 찾은 경우
 				if (dstFeatureElement.node() == nullptr)
 				{
 					continue;
@@ -726,23 +549,15 @@ namespace libS101
 				pugi::xml_node* dstFeatureNode = &node;
 				std::string dstFeatureID = "#" + iid;
 
-				//pugi::xml_attribute attr = pElement->attribute("gml:id");
-				//if (attr)
-				//{
-				//	eid.append(attr.value());
-				//}
 
-				//auto asitor = m_dsgir.m_facs->m_arr.find(f_fasc->m_nfac);
 				auto ritor = m_dsgir.m_arcs->m_arr.find(f_fasc->m_nfac);
 
 				auto roleName = ritor->second->m_code;
 
-				//dstFeatureNode = &pFeatureNode->append_child("S100:featureAssociation");
 				auto roleNode = pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str());
 				dstFeatureNode = &roleNode;
-				//dstFeatureNode->append_attribute("xlink:role") = roleName;
 				dstFeatureNode->append_attribute("xlink:href") = dstFeatureID.c_str();
-				//오류 발생 가능성있음
+
 
 				for (auto itorParent = fr->m_inas.begin(); itorParent != fr->m_inas.end(); itorParent++)
 				{
@@ -784,107 +599,13 @@ namespace libS101
 			}
 
 		}
-
-		//_int64 key = 0;
-		//R_FeatureRecord* fr = nullptr;
-		//POSITION pos = m_feaMap.GetStartPosition();
-		//while (pos != nullptr)
-		//{
-		//	m_feaMap.GetNextAssoc(pos, key, fr);
-		//	//if (!fr->m_geometry)
-		//	//{
-		//	//	continue;
-		//	//}
-		//	//CString featureAcronym = GetFeatureCode(fr->GetNumericCode());
-		//	std::string srcFeatureID = get_feature_id_string(fr->m_frid.m_name.RCID);
-		//	pugi::xml_node* pFeatureNode = nullptr;
-		//	auto srcFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + srcFeatureID + "']";
-		//	auto srcFeatureElement = rootNode.select_node(srcFeatureXpath.c_str());
-		//	// Source Feature를 찾은 경우
-		//	if (srcFeatureElement.node())
-		//	{
-		//		pFeatureNode = &srcFeatureElement.node();
-		//	}
-		//	// 못 찾은 경우
-		//	else
-		//	{
-		//		continue;
-		//	}
-		//	// Source Feature와 관계있는 모든 피처 연결
-		//	for (auto i = fr->m_fasc.begin(); i != fr->m_fasc.end(); i++)
-		//	{
-		//		F_FASC* f_fasc = *i;
-		//		_int64 key = ((_int64)100) << 32 | f_fasc->m_name.RCID;
-		//		std::string iid = get_feature_id_string(fr->m_frid.m_name.RCID);
-		//		auto dstFeatureXpath = "/S201:DataSet/member/S201:*[@gml:id='" + iid + "']";
-		//		//BaekIS ( select_single_node 는 deprecated 오류가 나서 select_node 사용 )
-		//		auto dstFeatureElement = rootNode.select_node(dstFeatureXpath.c_str());
-		//		//auto itor = objectPugiXmlElementMap.find(iid);
-		//		//if (itor == objectPugiXmlElementMap.end())
-		//		//{
-		//		//	continue;
-		//		//}
-		//		// Destination Feature를 못 찾은 경우
-		//		if (dstFeatureElement.node() == nullptr)
-		//		{
-		//			continue;
-		//		}
-		//		pugi::xml_node* dstFeatureNode = &dstFeatureElement.node();
-		//		std::string dstFeatureID = "#" + iid;
-		//		//pugi::xml_attribute attr = pElement->attribute("gml:id");
-		//		//if (attr)
-		//		//{
-		//		//	eid.append(attr.value());
-		//		//}
-		//		//auto asitor = m_dsgir.m_facs->m_arr.find(f_fasc->m_nfac);
-		//		auto ritor = m_dsgir.m_arcs->m_arr.find(f_fasc->m_nfac);
-		//		auto roleName = ritor->second->m_code;
-		//		//dstFeatureNode = &pFeatureNode->append_child("S100:featureAssociation");
-		//		dstFeatureNode = &pFeatureNode->append_child(pugi::as_utf8(std::wstring(roleName)).c_str());
-		//		//dstFeatureNode->append_attribute("xlink:role") = roleName;
-		//		dstFeatureNode->append_attribute("xlink:href") = dstFeatureID.c_str();
-		//		//오류 발생 가능성있음
-		//		for (auto itorParent = fr->m_inas.begin(); itorParent != fr->m_inas.end(); itorParent++)
-		//		{
-		//			F_INAS* f_inas = *itorParent;
-		//			std::string iid = get_information_id_string(f_inas->m_name.RCID);
-		//			auto itor = objectPugiXmlElementMap.find(iid);
-		//			pugi::xml_node* pElement = itor->second;
-		//			std::string eid = "#";
-		//			pugi::xml_attribute pAttrib;
-		//			pAttrib = pElement->first_attribute();
-		//			if (pAttrib == nullptr)
-		//			{
-		//				return;
-		//			}
-		//			while (pAttrib)
-		//			{
-		//				std::string attrName = pAttrib.name();
-		//				if (attrName.compare("gml:id"))
-		//				{
-		//					eid.append(pAttrib.value());
-		//					break;
-		//				}
-		//				pAttrib = pAttrib.next_attribute();
-		//			}
-		//			auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
-		//			auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_niac);
-		//			auto roleName = ritor->second->m_code;
-		//			pElement = &pFeatureNode->append_child("S100:informationAssociation");
-		//			pElement->append_attribute("xlink:role") = roleName;
-		//			pElement->append_attribute("xlink:href") = eid.c_str();
-		//		}
-		//	}
-		//}
 	}
 
 	void S101::SetInformationsTypeRelation_v2(pugi::xml_node parentNode)
 	{
-		//std::unordered_map<int, pugi::xml_node*> attriNodeMap;
 		for (auto itor = vecInformation.begin(); itor != vecInformation.end(); itor++)
 		{
 			R_InformationRecord* ir = *(itor);
-			//m_infMap.GetNextAssoc(pos, key, ir);
 
 			std::string iid;
 			auto it = objectPugiXmlElementMap.find(iid);
@@ -934,69 +655,6 @@ namespace libS101
 				pElement->append_attribute("xlink:href") = eid.c_str();
 			}
 		}
-
-
-
-
-		//_int64 key;
-		//R_InformationRecord* ir = nullptr;
-		//POSITION pos = m_infMap.GetStartPosition();
-		//if (pos != nullptr)
-		//{
-		//	while (pos != nullptr)
-		//	{
-		//		m_infMap.GetNextAssoc(pos, key, ir);
-
-		//		std::string iid;
-		//		auto itor = objectPugiXmlElementMap.find(iid);
-		//		if (itor == objectPugiXmlElementMap.end())
-		//		{
-		//			continue;
-		//		}
-
-		//		pugi::xml_node* pInformationNode = itor->second;
-
-		//		for (auto itorParent = ir->m_inas.begin(); itorParent != ir->m_inas.end(); itorParent++)
-		//		{
-		//			F_INAS* f_inas = *itorParent;
-
-		//			std::string iid = get_information_id_string(f_inas->m_name.RCID);
-
-		//			auto itor = objectPugiXmlElementMap.find(iid);
-
-		//			pugi::xml_node* pElement = itor->second;
-		//			std::string eid = "#";
-
-		//			pugi::xml_attribute* pAttrib;
-		//			pAttrib = &pElement->first_attribute();
-
-		//			while (pAttrib)
-		//			{
-		//				std::string attrName = pAttrib->name();
-
-		//				if (attrName.compare("gml:id") == 0)
-		//				{
-		//					eid.append(pAttrib->value());
-		//					break;
-		//				}
-
-		//				pAttrib = &pAttrib->next_attribute();
-		//			}
-
-		//			auto asitor = m_dsgir.m_iacs->m_arr.find(f_inas->m_niac);
-		//			auto ritor = m_dsgir.m_arcs->m_arr.find(f_inas->m_narc);
-		//			auto roleName = ritor->second->m_code;
-
-		//			pElement = &pInformationNode->append_child("S100:informationAssocination");
-		//			pElement->append_attribute("xlink:role") = roleName;
-		//			pElement->append_attribute("xlink:href") = eid.c_str();
-		//		}
-		//	}
-		//}
-		//else
-		//{
-		////	KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_WARNING, L"SetInformation map start position is null", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::None);
-		//}
 	}
 
 	std::string S101::GetEncodingSpecificationToString()
@@ -1042,11 +700,11 @@ namespace libS101
 
 				if (attr->m_atvl.IsEmpty()) //true 일 경우 complex
 				{
-					if (attr->m_paix == 0) //부모의 경우
+					if (attr->m_paix == 0)
 					{
 						parentNode.append_move(pElement);
 					}
-					else //자식의 값인경우
+					else
 					{
 						auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
 						pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
@@ -1279,9 +937,6 @@ namespace libS101
 	void S101::SetVectorCompositeCurvesType(pugi::xml_node parentNode, SCompositeCurve* p)
 	{
 		auto curvelist = &p->m_listCurveLink;
-		//auto curveListCount = curvelist.size();
-
-		//for (size_t i = 0; i < curveListCount; i++)
 		for (auto iter = curvelist->begin(); iter != curvelist->end(); iter++)
 		{
 			SCurveHasOrient* curveOrient = &(*iter);
@@ -1293,8 +948,7 @@ namespace libS101
 			static int curveID = 1;
 			std::wstring coordinateString;
 
-			//int numPoint = curve->GetNumPoints();
-			//여기서 무한루프가 돕니다.
+
 			auto curve = curveOrient->GetCurve();
 			if (curveOrient->GetMasking() == true)
 			{
@@ -1510,7 +1164,6 @@ namespace libS101
 
 	void  S101::InsertPointRecord(__int64 key, R_PointRecord* record)
 	{
-		;
 		vecPoint.push_back(record);
 	}
 
@@ -1612,11 +1265,6 @@ namespace libS101
 		return m_dsgir.m_dsid.m_dsrd;
 	}
 
-	//std::string S101::GetDatasetEditionToString()
-	//{
-	//	return  pugi::as_utf8(GetDatasetEdition());
-	//}
-
 	CString S101::GetDatasetEdition()
 	{
 		return m_dsgir.m_dsid.m_dsed;
@@ -1660,7 +1308,7 @@ namespace libS101
 
 	bool S101::MakeFullSpatialData()
 	{
-		//	ClearCurveMap();
+		ClearCurveMap();
 
 		POSITION spasPos = NULL;
 		R_FeatureRecord* fr;
@@ -1849,8 +1497,6 @@ namespace libS101
 
 		__int64 iKey = 0;
 
-		//CArray<GeoPoint> geoArr;
-
 		if (fe->m_geometry)
 		{
 			delete fe->m_geometry;
@@ -1877,15 +1523,6 @@ namespace libS101
 				{
 					GetFullCurveData(fe, cr, spas->m_ornt);
 				}
-
-				/*if (m_comMap.Lookup(iKey, ccr))
-				{
-					GetFullCurveData(fe, ccr, spas->m_ornt);
-				}
-				else if (m_curMap.Lookup(iKey, cr))
-				{
-					GetFullCurveData(fe, cr, spas->m_ornt);
-				}*/
 			}
 		}
 
@@ -1895,16 +1532,6 @@ namespace libS101
 		SetSCurveList(&fe->m_curveList, &scc->m_listCurveLink);
 
 		scc->SetMBR();
-
-		/*if (gisLib == nullptr)
-		{
-			return false;
-		}*/
-
-
-		//scc->CreateD2Geometry(gisLib->D2.pD2Factory);
-
-	//	geoArr.RemoveAll();
 
 		return TRUE;
 	}
@@ -1958,26 +1585,23 @@ namespace libS101
 				)
 			{
 				spr = findPointRecord(iKey);
-				//	m_ptMap.Lookup(iKey, spr);
 			}
 			else if (/*ptas->m_topi == 1 && ORNT == 2 ||*/	// Beginning node , reverse
 				ptas->m_topi == 2 /*&& ORNT == 1*/		// End node, forward
 				)
 			{
 				epr = findPointRecord(iKey);
-				//m_ptMap.Lookup(iKey, epr);
 			}
 			else if (ptas->m_topi == 3)
 			{
 				spr = findPointRecord(iKey);
-				//m_ptMap.Lookup(iKey, spr);
 				epr = spr;
 			}
 		}
 
 		SCurve* retCurve = new SCurve();
 
-		int totalCoordinateCount = 2; // start / end 기본 삽입
+		int totalCoordinateCount = 2;
 		for (auto itorParent = r->m_c2il.begin(); itorParent != r->m_c2il.end(); itorParent++)
 		{
 			totalCoordinateCount += (int)(*itorParent)->m_arr.size();
@@ -2044,7 +1668,6 @@ namespace libS101
 
 		R_SurfaceRecord* sr;
 		__int64 iKey;
-		CArray<GeoPoint> geoArr;
 		std::vector<POINT> vecPoint;
 		std::vector<int> boundaryList;
 
@@ -2077,19 +1700,8 @@ namespace libS101
 								if (cr != nullptr)
 								{
 									GetFullCurveData(fe, cr);
-									//GetFullSpatialData(cr, geoArr, rias->m_ornt);
-
 									GetFullSpatialData(cr, vecPoint, rias->m_ornt);
 								}
-
-								//
-								//if (m_curMap.Lookup(iKey, cr))
-								//{
-								//	GetFullCurveData(fe, cr);
-								//	//GetFullSpatialData(cr, geoArr, rias->m_ornt);
-
-								//	GetFullSpatialData(cr, vecPoint, rias->m_ornt);
-								//}
 							}
 							else if (rias->m_name.RCNM == 125)
 							{
@@ -2098,34 +1710,11 @@ namespace libS101
 								if (ccr != nullptr)
 								{
 									GetFullCurveData(fe, ccr);
-									//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
-
 									GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
 								}
-								//if (m_comMap.Lookup(iKey, ccr))
-								//{
-								//	GetFullCurveData(fe, ccr);
-								//	//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
-
-								//	GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
-								//}
 							}
 
-							//int sizet = geoArr.GetCount();
 							int sizet = (int)vecPoint.size();
-							//geoArr.GetAt(sizet - 1);
-							//GeoPoint t1 = geoArr[0];
-							//GeoPoint t2 = geoArr[sizet - 1];
-
-							//if (t1 == t2)
-							//{
-							//}
-							//else
-							//{
-							//	geoArr.Add(geoArr[0]);
-							//	sizet++;
-							//}
-
 							if (sizet == 0)
 							{
 								continue;
@@ -2142,91 +1731,7 @@ namespace libS101
 						}
 					}
 				}
-				//if (m_surMap.Lookup(iKey, sr))
-				//{
-				//	for (auto k = sr->m_rias.begin(); k != sr->m_rias.end(); k++)
-				//	{
-				//		F_RIAS* riasParent = *k;
-
-				//		for (auto l = riasParent->m_arr.begin(); l != riasParent->m_arr.end(); l++)
-				//		{
-				//			RIAS* rias = *l;
-
-				//			auto iKey = rias->m_name.GetName();
-				//			if (rias->m_name.RCNM == 120)
-				//			{
-				//				R_CurveRecord* cr = nullptr;
-				//				cr = findCurveRecord(iKey);
-				//				if (cr != nullptr)
-				//				{
-				//					GetFullCurveData(fe, cr);
-				//					//GetFullSpatialData(cr, geoArr, rias->m_ornt);
-
-				//					GetFullSpatialData(cr, vecPoint, rias->m_ornt);
-				//				}
-
-				//				//
-				//				//if (m_curMap.Lookup(iKey, cr))
-				//				//{
-				//				//	GetFullCurveData(fe, cr);
-				//				//	//GetFullSpatialData(cr, geoArr, rias->m_ornt);
-
-				//				//	GetFullSpatialData(cr, vecPoint, rias->m_ornt);
-				//				//}
-				//			}
-				//			else if (rias->m_name.RCNM == 125)
-				//			{
-				//				R_CompositeRecord* ccr = nullptr;
-				//				ccr = findCompositeRecord(iKey);
-				//				if (ccr != nullptr)
-				//				{
-				//					GetFullCurveData(fe, ccr);
-				//					//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
-
-				//					GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
-				//				}
-				//				//if (m_comMap.Lookup(iKey, ccr))
-				//				//{
-				//				//	GetFullCurveData(fe, ccr);
-				//				//	//GetFullSpatialData(ccr, geoArr, rias->m_ornt);
-
-				//				//	GetFullSpatialData(ccr, vecPoint, rias->m_ornt);
-				//				//}
-				//			}
-
-				//			//int sizet = geoArr.GetCount();
-				//			int sizet = (int)vecPoint.size();
-				//			//geoArr.GetAt(sizet - 1);
-				//			//GeoPoint t1 = geoArr[0];
-				//			//GeoPoint t2 = geoArr[sizet - 1];
-
-				//			//if (t1 == t2)
-				//			//{
-				//			//}
-				//			//else
-				//			//{
-				//			//	geoArr.Add(geoArr[0]);
-				//			//	sizet++;
-				//			//}
-
-				//			if (sizet == 0)
-				//			{
-				//				continue;
-				//			}
-
-				//			if (rias->m_usag == 1)
-				//			{
-				//				boundaryList.push_back(sizet);
-				//			}
-				//			else
-				//			{
-				//				boundaryList.push_back(sizet);
-				//			}
-				//		}
-				//	}
-				//}
 			}
-
 		}
 
 		int i = 0;
@@ -2237,48 +1742,8 @@ namespace libS101
 		}
 
 		fe->m_geometry = new SSurface(vecPoint, boundaryList);
-		//auto surface = (SSurface*)fe->m_geometry;
 
 		SSurface* geo = ((SSurface*)fe->m_geometry);
-		//geo->m_numParts = boundaryList.GetCount();
-		//geo->m_numPoints = geoArr.GetCount();
-
-		//int cnt = boundaryList.GetCount();
-
-		//if (boundaryList.GetCount() < 2)
-		//{
-		//	geo->m_pParts = new int[1];
-		//	geo->m_pParts[0] = 0;
-		//}
-		//else
-		//{
-		//	geo->m_pParts = new int[boundaryList.GetCount()];
-		//	geo->m_pParts[0] = 0;
-
-		//	POSITION partPos = boundaryList.GetHeadPosition();
-		//	for (i = 1; i < cnt; i++)
-		//	{
-		//		geo->m_pParts[i] = boundaryList.GetNext(partPos);
-		//	}
-		//}
-
-
-		//cnt = (int)geoArr.GetCount();
-		//geo->m_pPoints = new GeoPoint[geo->m_numPoints];
-
-		//if (geo->m_numPoints > SGeometry::sizeOfPoint)
-		//{
-		//	SGeometry::sizeOfPoint = geo->m_numPoints;
-		//	delete SGeometry::viewPoints; 
-		//	SGeometry::viewPoints = new CPoint[int(SGeometry::sizeOfPoint * 1.5)];
-		//}
-
-		//for (i = 0; i < cnt; i++)
-		//{
-		//	geo->m_pPoints[i].SetPoint(geoArr[i].x, geoArr[i].y);
-		//	geo->m_mbr.CalcMBR(geoArr[i].x, geoArr[i].y);
-		//}
-
 		fe->m_curveList.clear();
 
 		R_CurveRecord* cr;
@@ -2298,43 +1763,17 @@ namespace libS101
 				{
 					GetFullCurveData(fe, sr);
 				}
-				/*if (m_surMap.Lookup(iKey, sr))
-				{
-					GetFullCurveData(fe, sr);
-				}*/
-
 				ccr = findCompositeRecord(iKey);
 				if (ccr != nullptr) {
 					GetFullCurveData(fe, ccr);
 				}
-				/*else if (m_comMap.Lookup(iKey, ccr))
-				{
-					GetFullCurveData(fe, ccr);
-				}*/
-
 				cr = findCurveRecord(iKey);
 				if (cr != nullptr)
 				{
 					GetFullCurveData(fe, cr);
 				}
-				/*else if (m_curMap.Lookup(iKey, cr))
-				{
-					GetFullCurveData(fe, cr);
-				}*/
 			}
 		}
-
-		//	SetSCurveList(&fe->m_curveList, &geo->m_listCurveLink);
-
-		geoArr.RemoveAll();
-
-		/*	if (gisLib == nullptr)
-			{
-				return false;
-			}
-			geo->CreateD2Geometry(gisLib->D2.pD2Factory);
-
-			geo->CalculateCenterPoint();*/
 		return TRUE;
 	}
 
@@ -2348,21 +1787,27 @@ namespace libS101
 				if (fe->m_geometry->type == 3) {
 					SSurface* pSr = (SSurface*)fe->m_geometry;
 					mbr.ReMBR(pSr->m_mbr);
-					//pMBR->ReMBR(pSr->m_mbr);
 				}
 				else if (fe->m_geometry->type == 2) {
 					auto geo = (SCompositeCurve*)fe->m_geometry;
 					mbr.ReMBR(geo->m_mbr);
-					//pMBR->ReMBR(geo->m_mbr);
 				}
 				else if (fe->m_geometry->type == 1) {
 					SPoint* geo = (SPoint*)fe->m_geometry;
 					mbr.ReMBR(geo->m_mbr);
-					//pMBR->ReMBR(geo->m_mbr);
 				}
 			}
 		}
-		int i = 0;
+	}
+
+	void S101::ClearCurveMap()
+	{
+		for (auto iter = m_curveMap.begin(); iter != m_curveMap.end(); iter++)
+		{
+			SCurve* c = iter->second;
+			delete c;
+		}
+		m_curveMap.clear();
 	}
 
 	bool S101::GetFullCurveData(R_FeatureRecord* fe, R_PointRecord* r, int ornt)
@@ -2413,9 +1858,6 @@ namespace libS101
 						{
 							GetFullCurveData(fe, cr, cuco->m_ornt);
 						}
-						/*m_curMap.Lookup(iKey, cr);
-
-						GetFullCurveData(fe, cr, cuco->m_ornt);*/
 					}
 					else if (cuco->m_name.RCNM == 125)
 					{
@@ -2424,8 +1866,6 @@ namespace libS101
 						if (ccr != nullptr) {
 							GetFullCurveData(fe, ccr, cuco->m_ornt);
 						}
-						/*m_comMap.Lookup(iKey, ccr);
-						GetFullCurveData(fe, ccr, cuco->m_ornt);*/
 					}
 				}
 			}
@@ -2451,10 +1891,6 @@ namespace libS101
 						{
 							GetFullCurveData(fe, cr, cuco->m_ornt);
 						}
-
-						/*m_curMap.Lookup(iKey, cr);
-
-						GetFullCurveData(fe, cr, cuco->m_ornt);*/
 					}
 					else if (cuco->m_name.RCNM == 125)
 					{
@@ -2463,8 +1899,6 @@ namespace libS101
 						if (ccr != nullptr) {
 							GetFullCurveData(fe, ccr, cuco->m_ornt);
 						}
-						/*m_comMap.Lookup(iKey, ccr);
-						GetFullCurveData(fe, ccr, cuco->m_ornt);*/
 					}
 				}
 			}
@@ -2498,9 +1932,6 @@ namespace libS101
 					{
 						GetFullCurveData(fe, cr, ornt);
 					}
-
-					/*	m_curMap.Lookup(iKey, cr);
-						GetFullCurveData(fe, cr, ornt);*/
 				}
 				else if (rias->m_name.RCNM == 125)
 				{
@@ -2508,8 +1939,6 @@ namespace libS101
 					if (ccr != nullptr) {
 						GetFullCurveData(fe, ccr, ornt);
 					}
-					/*	m_comMap.Lookup(iKey, ccr);
-						GetFullCurveData(fe, ccr, ornt);*/
 				}
 			}
 		}
@@ -2607,48 +2036,19 @@ namespace libS101
 				)
 			{
 				spr = findPointRecord(iKey);
-				//m_ptMap.Lookup(iKey, spr);
 			}
 			else if (ptas->m_topi == 1 && ORNT == 2 ||	// Beginning node , reverse
 				ptas->m_topi == 2 && ORNT == 1		// End node, forward
 				)
 			{
 				epr = findPointRecord(iKey);
-				//m_ptMap.Lookup(iKey, epr);
 			}
 			else if (ptas->m_topi == 3)
 			{
 				spr = findPointRecord(iKey);
-				//m_ptMap.Lookup(iKey, spr);
 				epr = spr;
 			}
 		}
-
-		//ptasPos = r->m_ptas->m_arr.GetHeadPosition();
-
-		//while (ptasPos)
-		//{
-		//	ptas = r->m_ptas->m_arr.GetNext(ptasPos);
-
-		//	iKey = ((__int64)ptas->m_name.RCNM) << 32 | ptas->m_name.RCID;
-		//	if (ptas->m_topi == 1 && ORNT == 1 ||	// Beginning node , forward
-		//		ptas->m_topi == 2 && ORNT == 2		// End node, reverse
-		//		)
-		//	{
-		//		m_ptMap.Lookup(iKey, spr);
-		//	}
-		//	else if (ptas->m_topi == 1 && ORNT == 2 ||	// Beginning node , reverse
-		//		ptas->m_topi == 2 && ORNT == 1		// End node, forward
-		//		)
-		//	{
-		//		m_ptMap.Lookup(iKey, epr);
-		//	}
-		//	else if (ptas->m_topi == 3)
-		//	{
-		//		m_ptMap.Lookup(iKey, spr);
-		//		epr = spr;
-		//	}
-		//}
 
 		double x = spr->m_c2it->m_xcoo;
 		double y = spr->m_c2it->m_ycoo;
@@ -2721,14 +2121,13 @@ namespace libS101
 			auto beginPointKey = r->m_ptas->m_arr.front()->m_name.GetName();
 			auto endPointKey = r->m_ptas->m_arr.back()->m_name.GetName();
 
-			//auto beginPointRecord = GetPointRecord(beginPointKey);
 			auto beginPointRecord = findPointRecord(beginPointKey);
 			if (nullptr == beginPointRecord || nullptr == beginPointRecord->m_c2it)
 			{
 				return FALSE;
 			}
 
-			//auto endPointRecord = GetPointRecord(endPointKey);
+
 			auto endPointRecord = findPointRecord(endPointKey);
 			if (nullptr == endPointRecord || nullptr == endPointRecord->m_c2it)
 			{
@@ -2823,8 +2222,6 @@ namespace libS101
 						{
 							GetFullSpatialData(cr, geoArr, cuco->m_ornt);
 						}
-						/*	m_curMap.Lookup(iKey, cr);
-							GetFullSpatialData(cr, geoArr, cuco->m_ornt);*/
 					}
 					else if (cuco->m_name.RCNM == 125)
 					{
@@ -2833,9 +2230,6 @@ namespace libS101
 						if (ccr != nullptr) {
 							GetFullSpatialData(ccr, geoArr, cuco->m_ornt);
 						}
-
-						/*	m_comMap.Lookup(iKey, ccr);
-							GetFullSpatialData(ccr, geoArr, cuco->m_ornt);*/
 					}
 				}
 			}
@@ -2864,8 +2258,6 @@ namespace libS101
 						{
 							GetFullSpatialData(cr, geoArr, ornt);
 						}
-						/*	m_curMap.Lookup(iKey, cr);
-							GetFullSpatialData(cr, geoArr, ornt);*/
 					}
 					else if (cuco->m_name.RCNM == 125)
 					{
@@ -2873,8 +2265,6 @@ namespace libS101
 						if (ccr != nullptr) {
 							GetFullSpatialData(ccr, geoArr, ornt);
 						}
-						/*m_comMap.Lookup(iKey, ccr);
-						GetFullSpatialData(ccr, geoArr, ornt);*/
 					}
 				}
 			}
@@ -2894,7 +2284,7 @@ namespace libS101
 
 				if (segCUCO->m_name.RCNM == 120)
 				{
-					//auto curveRecord = GetCurveRecord(segCUCO->m_name.GetName());
+
 					auto curveRecord = findCurveRecord(segCUCO->m_name.GetName());
 					if (nullptr != curveRecord)
 					{
@@ -2903,7 +2293,7 @@ namespace libS101
 				}
 				else if (segCUCO->m_name.RCNM == 125)
 				{
-					//auto compositeCurveRecord = GetCompositeCurveRecord(segCUCO->m_name.GetName());
+
 					auto compositeCurveRecord = findCompositeRecord(segCUCO->m_name.GetName());
 					if (nullptr != compositeCurveRecord)
 					{
@@ -2942,13 +2332,10 @@ namespace libS101
 			for (auto itor = riasParent->m_arr.begin(); itor != riasParent->m_arr.end(); itor++)
 			{
 				RIAS* rias = *itor;
-				///////////////////////////////
-				// for blank interior area
 				if (sp == -1)
 				{
 					sp = (int)geoArr.GetCount();
 				}
-				//////////////////////////////
 
 				iKey = ((__int64)rias->m_name.RCNM) << 32 | rias->m_name.RCID;
 				if (rias->m_name.RCNM == 120)
@@ -2958,9 +2345,6 @@ namespace libS101
 					{
 						GetFullSpatialData(cr, geoArr, rias->m_ornt);
 					}
-
-					/*		m_curMap.Lookup(iKey, cr);
-							GetFullSpatialData(cr, geoArr, rias->m_ornt);*/
 				}
 				else if (rias->m_name.RCNM == 125)
 				{
@@ -2968,10 +2352,7 @@ namespace libS101
 					if (ccr != nullptr) {
 						GetFullSpatialData(ccr, geoArr, rias->m_ornt);
 					}
-					/*	m_comMap.Lookup(iKey, ccr);
-						GetFullSpatialData(ccr, geoArr, rias->m_ornt);*/
 				}
-				///////////////////////////////
 				// for blank interior area
 				int sizet = (int)geoArr.GetCount() - 1;
 				if (geoArr[sp].x == geoArr[sizet].x &&
@@ -2988,11 +2369,8 @@ namespace libS101
 						boundaryList.AddTail(sizet + 1);
 					}
 				}
-				//////////////////////////////
-				//////////////////////////////////////////////////////////
 			}
 		}
-		///////////////////////////////
 		// for blank interior area
 		int arrIndex = 0;
 		int i = 0;
@@ -3075,39 +2453,6 @@ namespace libS101
 		}
 		return nullptr;
 	}
-
-	//bool S101::SetSCurveList(std::list<OrientedCurveRecord>* inCurveRecordList, std::list<SCurveHasOrient>* outSCurveList)
-	//{
-	//	for (auto c = inCurveRecordList->begin(); c != inCurveRecordList->end(); c++)
-	//	{
-	//		//geoArr.RemoveAll();
-	//		OrientedCurveRecord* ocr = &(*c);
-
-	//		__int64 iKey = ((__int64)ocr->m_pCurveRecord->m_crid.m_name.RCNM) << 32 | ocr->m_pCurveRecord->m_crid.m_name.RCID;
-	//		//findCurveRecord(iKey);
-
-	//		auto curveIter = m_curveMap.find(iKey);
-	//		//auto curveIter = vecCurve.find(iKey);
-
-	//		bool bOrnt = ocr->m_orient == 1 ? true : false;
-
-	//		if (curveIter != m_curveMap.end())
-	//		{
-	//			SCurveHasOrient curveHasOrient(bOrnt, curveIter->second);
-	//			outSCurveList->push_back(curveHasOrient);
-	//		}
-	//		else
-	//		{
-	//			SCurve* pCurve = GetCurveGeometry(ocr->m_pCurveRecord/*, geoArr, ocr->m_orient*/);
-	//			pCurve->m_id = iKey;
-	//			SCurveHasOrient curveHasOrient(bOrnt, pCurve);
-	//			outSCurveList->push_back(curveHasOrient);
-
-	//			m_curveMap.insert({ iKey, pCurve });
-	//		}
-	//	}
-	//	return TRUE;
-	//}
 
 	std::string S101::CStringToString(CString str)
 	{
