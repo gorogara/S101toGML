@@ -108,10 +108,8 @@ namespace libS101
 	}
 
 	S101::S101() {
-
 		_CrtSetBreakAlloc(266);
 		_CrtDumpMemoryLeaks();
-		//AfxSetAllocStop();
 	}
 
 	S101::~S101()
@@ -195,7 +193,6 @@ namespace libS101
 
 		if (file.Open(_filepath, CFile::modeRead))
 		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, KRS_MSG_PROCESS::AddLayerMessage(_filepath), KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
 			BYTE* pBuf = nullptr;
 			BYTE* sBuf = nullptr;
 			BYTE* endOfBuf = nullptr;
@@ -328,7 +325,7 @@ namespace libS101
 		return GmlifileMakeByPugi(_filepath);
 	}
 
-	void S101::GmlifileMakeByPugi(CString _filePath) //PugiXml을 사용하여 파일을 저장합니다.
+	void S101::GmlifileMakeByPugi(CString _filePath)
 	{
 		pugi::xml_document* doc = new pugi::xml_document();
 		auto declarationNode = doc->append_child(pugi::node_declaration);
@@ -346,7 +343,6 @@ namespace libS101
 		root.append_attribute("xmlns:xlink") = "http://www.w3.org/1999/xlink";
 		root.append_attribute("xmlns:gml") = "http://www.opengis.net/gml/3.2";
 		root.append_attribute("xmlns:S100") = "http://www.iho.int/s100gml/1.0";
-		//root.append_attribute("xmlns:s100") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
 		root.append_attribute("xmlns:s100_profile") = "http://www.iho.int/S-100/profile/s100_gmlProfile";
 		root.append_attribute("gml:id") = "KRNPI101_TEST002_001";
 
@@ -409,7 +405,6 @@ namespace libS101
 		pugi::xml_node datasetLanguage = DatasetIdentificationInformation.append_child("S100:datasetLanguage");
 		datasetLanguage.append_child(pugi::node_pcdata).set_value(GetDatasetLanguageToString().c_str());
 
-		//문서보고 추가함
 		pugi::xml_node datasetAbstract = DatasetIdentificationInformation.append_child("S100:datasetAbstract");
 		datasetAbstract.append_child(pugi::node_pcdata).set_value(GetDatasetAbstractToString().c_str());
 
@@ -689,16 +684,11 @@ namespace libS101
 				}
 
 				std::wstring attributeName = std::wstring(itor->second->m_code);
-
-
-
 				pugi::xml_node pElement = doc->append_child(CStringToString(attributeName.c_str()).c_str());
-				//pugi::xml_node pElement= .append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
 
 				attrXmlNodeMap.insert(std::unordered_map<int, pugi::xml_node>::value_type(index, pElement));
-				//attributeVector.insert(std::unordered_map<std::wstring,int>::value_type(attributeName, index)); //테스트
 
-				if (attr->m_atvl.IsEmpty()) //true 일 경우 complex
+				if (attr->m_atvl.IsEmpty()) // complex
 				{
 					if (attr->m_paix == 0)
 					{
@@ -706,12 +696,12 @@ namespace libS101
 					}
 					else
 					{
-						auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
-						pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
+						auto itor = attrXmlNodeMap.find(attr->m_paix);
+						pugi::xml_node parent = itor->second;
 						parent.append_move(pElement);
 					}
 				}
-				else //false 일 경우 simple
+				else //simple
 				{
 					std::string inputText = "";
 					inputText = pugi::as_utf8(attr->m_atvl);
@@ -737,102 +727,6 @@ namespace libS101
 
 					}
 				}
-				//if (attr->m_paix == 0) //부모의 경우
-				//{
-				//	parentNode.append_move(pElement);
-				//	auto inputText = pugi::as_utf8(attr->m_atvl);
-
-				//	int i = 0;
-				//	//pElement.set_value()
-				//}
-				//else //자식의 값인경우
-				//{
-				//	auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
-				//	pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
-				//	parent.append_move(pElement);
-				//}
-				//auto cit = fc->GetComplexAttributesPointer().GetComplexAttributePointer().find(attributeName);
-				//auto sit = fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().find(attributeName);
-
-				//if (cit != fc->GetComplexAttributesPointer().GetComplexAttributePointer().end()) //컴플랙스 값일경우
-				//{
-				//	if (attr->m_paix == 0) //부모의 경우
-				//	{
-				//		parentNode.append_move(pElement);
-				//	}
-				//	else //자식의 값인경우
-				//	{
-				//		auto itor = attrXmlNodeMap.find(attr->m_paix); //지정된 부모를 찾습니다.
-				//		pugi::xml_node parent = itor->second; //그것의 자식값으로 넣습니다.
-				//		parent.append_move(pElement);
-				//	}
-				//}
-				//else if (sit != fc->GetSimpleAttributesPointer().GetSimpleAttributePointer().end()) //심플값일경우
-				//{
-				//	std::string inputText = "";
-				//	SimpleAttribute* sa = sit->second;
-
-				//	//enum 타입인경우
-				//	if (sa->GetValueType() == FCD::S100_CD_AttributeValueType::enumeration)  //text를 고르는 심플값일경우
-				//	{
-				//		for (auto itor = sa->GetListedValuesPointer().begin(); itor != sa->GetListedValuesPointer().end(); itor++)
-				//		{
-				//			ListedValues* lvs = &(*itor);
-				//			for (auto lvitor = lvs->GetListedValuePointer().begin(); lvitor != lvs->GetListedValuePointer().end(); lvitor++)
-				//			{
-				//				ListedValue* lv = &(lvitor->second);
-				//				int value = _wtoi(std::wstring(attr->m_atvl).c_str());
-
-				//				if (value == lv->GetCode().GetvalueInteger())
-				//				{
-				//					inputText = CT2CA(lv->GetLabel().c_str());
-				//					break;
-				//				}
-				//			}
-				//		}
-				//	}
-				//	else //아닌경우
-				//	{
-				//		inputText = pugi::as_utf8(attr->m_atvl);
-				//	}
-
-
-				//	if (attr->m_paix == 0) //심플 그냥 추가할경우
-				//	{
-				//		parentNode.append_move(pElement);
-				//		pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
-				//	}
-				//	else
-				//	{
-				//		auto itor = attrXmlNodeMap.find(attr->m_paix);
-				//		if (itor != attrXmlNodeMap.end())
-				//		{
-				//			pElement.append_child(pugi::node_pcdata).set_value(inputText.c_str());
-				//			pugi::xml_node parent = itor->second;
-				//			auto ischild = parent.append_move(pElement);
-				//			if (!ischild)
-				//			{
-				//				OutputDebugString(L"자식화에 실패했습니다.");
-				//			}
-				//		}
-
-				//	}
-				//}
-				//else //심플도 컴플랙스 값도 아닐경우...???
-				//{
-				//	if (attr->m_paix == 0)
-				//	{
-				//		parentNode.append_move(pElement);
-				//		pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());
-				//	}
-				//	else
-				//	{
-				//		/*pElement.append_child(pugi::node_pcdata).set_value(LibMFCUtil::CStringToString(attr->m_atvl).c_str());
-				//		auto itor = attrXmlNodeMap.find(attr->m_paix);
-				//		pugi::xml_node *parent = itor->second;
-				//		pElement = parent->append_child(LibMFCUtil::CStringToString(attributeName.c_str()).c_str());*/
-				//	}
-				//}
 			}
 		}
 	}
@@ -851,7 +745,6 @@ namespace libS101
 		}
 		else if (type == 2)
 		{
-			//SetVectorCurvesType(parentNode, (SCurve*)fr->m_geometry);
 			SetVectorCompositeCurvesType(parentNode, (SCompositeCurve*)fr->m_geometry);
 		}
 		else if (type == 3)
@@ -1040,30 +933,6 @@ namespace libS101
 	{
 		std::wstring outboundCoordinateString;
 		std::vector<std::wstring> inboundCoorinateStringList;
-
-#pragma region 이전코드
-		//for (int i = 0; i < p->m_numPoints; i++)
-		//{
-		//	double x, y;
-		//	x = p->m_pPoints[i].x;
-		//	y = p->m_pPoints[i].y;
-
-		//	inverseProjection(x, y);
-
-		//	std::wstring strX = get_wstring_from_coordinate_1((int)(x*m_dsgir.m_dssi.m_cmfx));
-		//	std::wstring strY = get_wstring_from_coordinate_1((int)(y*m_dsgir.m_dssi.m_cmfy));
-
-		//	coordinateString.append(strX);
-		//	coordinateString.append(L" ");
-		//	coordinateString.append(strY);
-
-		//	if (i != p->m_numPoints)
-		//	{
-		//		coordinateString.append(L" ");
-		//	}
-		//}
-#pragma endregion
-
 		for (int pi = 0; pi < p->m_numParts; pi++)
 		{
 			int curMaxIndex = 0;

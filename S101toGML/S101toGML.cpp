@@ -41,8 +41,6 @@ int main(int argc, char* argv[])
 
 		filepath = file.c_str();
 		savepath = save.c_str();
-
-		//return -1;
 	}
 	else {
 
