@@ -11,8 +11,6 @@
 #include "DRReaderWriter.h"
 #include "DRDirectoryInfoWriter.h"
 
-//#include"..\\DLL_MessageProcess\\DLL_MessageProcess.h"
-
 R_MultiPointRecord::R_MultiPointRecord(void)
 {
 }
@@ -88,7 +86,7 @@ BOOL R_MultiPointRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 		
 		if (*(buf++) != 0x1E)
 		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
+		
 		}
 	}
 	return TRUE;
@@ -160,26 +158,6 @@ BOOL R_MultiPointRecord::Save(CFile *file)
 		dir->length = c3il->GetFieldLength();
 		rLen += dir->length;
 	}
-	//else if(m_c2fl)
-	////for (auto itor = m_c2flArr.begin(); itor != m_c2flArr.end(); itor++)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C2FL");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c2di.GetFieldLength();
-	//	dir->length = m_c2fl->GetFieldLength();
-	//	rLen += dir->length;
-	//}
-	//else if(m_c3fl)
-	////for (auto itor = m_c3flArr.begin(); itor != m_c3flArr.end(); itor++)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C3FL");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c3di.GetFieldLength();
-	//	dir->length = m_c3fl->GetFieldLength();
-	//	rLen += dir->length;
-	//}
 
 	dirInfo.CheckLength(&dr);
 	dr.m_fieldAreaLoc = DRReader::size + (4 + dr.m_fieldLength + dr.m_fieldPosition) * dirInfo.m_count + 1;

@@ -29,7 +29,6 @@ R_SurfaceRecord::~R_SurfaceRecord(void)
 BOOL R_SurfaceRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 {
 	USES_CONVERSION;
-	//int i = 0, j = 0, cnt;
 	for(int i = 0; i < dir->m_count; i++)
 	{
 		if(dir->GetDirectory(i)->tag == *((unsigned int*)"SRID"))

@@ -3,7 +3,6 @@
 
 
 int SGeometry::sizeOfPoint = 10;
-// 메로리 할당과 회수를 최소화 하기 위해 CPoint배열도 가지고 있는다.
 POINT   *SGeometry::viewPoints = new POINT[10];
 
 SGeometry::SGeometry() 

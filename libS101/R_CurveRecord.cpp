@@ -124,7 +124,7 @@ BOOL R_CurveRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 
 		if (*(buf++) != 0x1E)
 		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_ERROR, L"terminator error",KRS_MSG_PROCESS::User_Developer_Mode,KRS_MSG_PROCESS::DataSet);
+		
 		}
 	}
 
@@ -199,33 +199,7 @@ BOOL R_CurveRecord::Save(CFile *file)
 		dir->length = (*itor)->GetFieldLength();
 		rLen += dir->length;
 	}
-	//else if (m_c3il)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C3IL");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c3di.GetFieldLength();
-	//	dir->length = m_c3il->GetFieldLength();
-	//	rLen += dir->length;
-	//}
-	//else if (m_c2fl)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C2FL");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c3di.GetFieldLength();
-	//	dir->length = m_c2fl->GetFieldLength();
-	//	rLen += dir->length;
-	//}
-	//else if (m_c3fl)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C3FL");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c3di.GetFieldLength();
-	//	dir->length = m_c3fl->GetFieldLength();
-	//	rLen += dir->length;
-	//}
+	
 
 
 	dirInfo.CheckLength(&dr);
@@ -253,21 +227,7 @@ BOOL R_CurveRecord::Save(CFile *file)
 	{
 		(*itor)->Save(file);
 	}
-	//else if(m_c3di.m_arr.GetCount() > 0)
-	//else if (m_c3il)
-	//{
-	//	m_c3il->Save(file);
-	//}
-	////if(m_c2di.m_arr.GetCount() > 0)
-	//else if (m_c2fl)
-	//{
-	//	m_c2fl->Save(file);
-	//}
-	////else if(m_c3di.m_arr.GetCount() > 0)
-	//else if (m_c3fl)
-	//{
-	//	m_c3fl->Save(file);
-	//}
+	
 
 	return TRUE;
 }

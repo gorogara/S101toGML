@@ -1,9 +1,6 @@
 #include "pch.h"
 #include "Geometry.h"
 
-//#include "..\\PLLibrary\\Symbol.h"
-//#include "..\\PLLibrary\\Vector.h"
-
 Geometry::Geometry() 
 {
 }

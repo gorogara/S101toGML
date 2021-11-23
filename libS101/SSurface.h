@@ -23,17 +23,4 @@ public:
 	
 	// Curve ÁÂÇ¥
 	std::list<SCurveHasOrient> m_listCurveLink;
-
-public:
-	// AreaD2Geometry
-	//ID2D1PathGeometry* pGeometry = nullptr;
-
-public:
-	//int GetNumPointPerPart(int partIndex);
-	//void CalculateCenterPoint();
-	
-public:
-	/*void CreateD2Geometry(ID2D1Factory1* factory);
-	ID2D1PathGeometry* GetD2Geometry();
-	ID2D1PathGeometry* GetNewD2Geometry(ID2D1Factory1* factory, Scaler* scaler);*/
 };

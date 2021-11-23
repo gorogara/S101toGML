@@ -8,7 +8,6 @@
 
 #undef _WINDOWS_
 #include <afxext.h>
-//#include "..\\DLL_MessageProcess\\DLL_MessageProcess.h"
 
 R_DSGIR::R_DSGIR()
 {

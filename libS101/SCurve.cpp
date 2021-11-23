@@ -1,10 +1,6 @@
 #include "pch.h"
 #include "SCurve.h"
-//#include "Scaler.h"
 #include "GeoPoint.h"
-
-//#include "..\\GeoMetryLibrary\\Scaler.h"
-//#include "..\\GeoMetryLibrary\\GeoPoint.h"
 
 #undef _WINDOWS_
 #include <afxext.h>

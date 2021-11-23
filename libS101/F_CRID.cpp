@@ -3,8 +3,6 @@
 #include "ISO8211Fuc.h"
 #include "NonPrintableCharacter.h"
 
-//#include "..\\DLL_MessageProcess\\DLL_MessageProcess.h"
-
 F_CRID::F_CRID(void)
 {	
 	m_name.RCNM = 0;

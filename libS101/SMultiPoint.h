@@ -2,7 +2,6 @@
 
 #include "SGeometry.h"
 #include "GeoPointZ.h"
-//#include "..\\GeoMetryLibrary\\GeoPointZ.h"
 
 class SMultiPoint : public SGeometry
 {

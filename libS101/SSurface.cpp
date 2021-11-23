@@ -1,16 +1,10 @@
 #include "pch.h"
 
 #include "SSurface.h"
-//#include "SCommonFuction.h"
 #include "SCurve.h"
 #include "GeoPoint.h"
 #include "GeoCommonFuc.h"
 #include "MBR.h"
-//#include "Scaler.h"
-
-//#include "..\\GeoMetryLibrary\\MBR.h"
-//#include "..\\GeoMetryLibrary\\Scaler.h"
-//#include "..\\GeoMetryLibrary\\GeoCommonFuc.h"
 
 #undef _WINDOWS_
 #include <afxext.h>

@@ -8,17 +8,14 @@
 class XML_Item
 {
 public:
-	// 생성자 & 소멸자
 	XML_Item();
 	virtual ~XML_Item();
 	
 private:
-	// 멤버 변수
 	std::list<XML_Attribute> attributes;
 	std::wstring value = L"";
 
 public:
-	// 멤버 함수
 	virtual void GetContents() {};
 	void SetAttributes(std::list<XML_Attribute>& value);
 	void SetAttributes(XML_Attribute& value);

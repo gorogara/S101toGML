@@ -60,11 +60,6 @@ namespace libS101
 		std::vector<R_CompositeRecord*> vecComposite;
 		std::vector<R_SurfaceRecord*> vecSurface;
 		std::vector<R_FeatureRecord*> vecFeature;
-	/*	
-		double xmin = 0;
-		double ymin = 0;
-		double xmax = 0;
-		double ymax = 0;*/
 
 	private:
 		std::unordered_map<__int64, SCurve*> m_curveMap;

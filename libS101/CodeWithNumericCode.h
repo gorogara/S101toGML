@@ -2,6 +2,7 @@
 #undef _WINDOWS_
 #include <afxext.h>
 #include <string>
+
 class CodeWithNumericCode
 {
 public:

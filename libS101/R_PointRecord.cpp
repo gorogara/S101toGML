@@ -17,10 +17,6 @@ R_PointRecord::~R_PointRecord(void)
 {
 	delete m_c2it;
 	delete m_c3it;
-	//if (m_c2ft) delete m_c2ft;
-	//if (m_c3ft) delete m_c3ft;
-	//if (m_inas) delete m_inas;
-
 	for (auto itor = m_inas.begin(); itor != m_inas.end(); itor++)
 	{
 		delete *itor;
@@ -116,47 +112,23 @@ BOOL R_PointRecord::Save(CFile *file)
 		rLen += dir->length;
 	}
 
-	//if(m_c2di.m_arr.GetCount() > 0)
 	if (m_c2it)
 	{
 		dir = dirInfo.GetDirectory(fieldCnt++);
 		dir->tag = *((unsigned int*)"C2IT");
 		dir->pos = rLen;
-		//dir->length = m_c2di.GetFieldLength();
 		dir->length = m_c2it->GetFieldLength();
 		rLen += dir->length;
 	}
-	//else if(m_c3di.m_arr.GetCount() > 0)
+
 	else if (m_c3it)
 	{
 		dir = dirInfo.GetDirectory(fieldCnt++);
 		dir->tag = *((unsigned int*)"C3IT");
 		dir->pos = rLen;
-		//dir->length = m_c3di.GetFieldLength();
 		dir->length = m_c3it->GetFieldLength();
 		rLen += dir->length;
 	}
-
-	//if(m_c2di.m_arr.GetCount() > 0)
-	//else if (m_c2ft)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C2FT");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c2di.GetFieldLength();
-	//	dir->length = m_c2ft->GetFieldLength();
-	//	rLen += dir->length;
-	//}
-	////else if(m_c3di.m_arr.GetCount() > 0)
-	//else if (m_c3ft)
-	//{
-	//	dir = dirInfo.GetDirectory(index++);
-	//	dir->tag = *((unsigned int*)"C3FT");
-	//	dir->pos = rLen;
-	//	//dir->length = m_c3di.GetFieldLength();
-	//	dir->length = m_c3ft->GetFieldLength();
-	//	rLen += dir->length;
-	//}
 
 	dirInfo.CheckLength(&dr);
 	dr.m_fieldAreaLoc = DRReader::size + (4 + dr.m_fieldLength + dr.m_fieldPosition) * dirInfo.m_count + 1;
@@ -175,26 +147,14 @@ BOOL R_PointRecord::Save(CFile *file)
 		F_INAS* inas = *itor;
 		inas->Save(file);
 	}
-	//if(m_c2di.m_arr.GetCount() > 0)
 	if (m_c2it)
 	{
 		m_c2it->Save(file);
 	}
-	//else if(m_c3di.m_arr.GetCount() > 0)
 	else if (m_c3it)
 	{
 		m_c3it->Save(file);
 	}
-	////if(m_c2di.m_arr.GetCount() > 0)
-	//else if (m_c2ft)
-	//{
-	//	m_c2ft->Save(file);
-	//}
-	////else if(m_c3di.m_arr.GetCount() > 0)
-	//else if (m_c3ft)
-	//{
-	//	m_c3ft->Save(file);
-	//}
 	return TRUE;
 }
 

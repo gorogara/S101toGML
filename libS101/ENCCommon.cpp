@@ -1,14 +1,5 @@
 #include "pch.h"
 #include "ENCCommon.h"
-//#include "ENCGeometry.h"
-
-//#include "..\\LibMFCUtil\\LibMFCUtil.h"
-//#include "..\\LibMFCUtil\\StringTokenizer.h"
-////
-//#include "..\\PLLibrary\\GeoObject.h" 
-//#include "..\\PLLibrary\\GeoObjectMap.h"
-
-//#include <fstream>
 
 unsigned ENCCommon::DrawingType = 0;		    // 1 :¡®main_PaperChart.xsl¡¯- includes all the COMMON entries plus PAPER_CHART symbols and SYMBOLIZED_BOUNDARIES.
 									// 2 :¡®main_SimpleSymbols¡¯ - includes all the COMMON entries plus SIMPLIFIED symbols and SYMBOLIZED _BOUNDARIES.	

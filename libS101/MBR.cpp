@@ -1,8 +1,6 @@
 #include "pch.h"
 #include "MBR.h"
 
-//#include <float.h>
-
 MBR::MBR(void)
 {
 	InitMBR();

@@ -29,7 +29,7 @@ namespace GeoMetryLibrary
 
 	enum ReportingData
 	{
-		None, //아무 데이터가 아닌경우
+		None, 
 		PC,
 		FC,
 		DataSet

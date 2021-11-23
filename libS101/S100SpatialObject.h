@@ -3,7 +3,6 @@
 #include "SpatialObject.h"
 #include "S100_Members.h"
 #include "MBR.h"
-//#include "..\\GeoMetryLibrary\\MBR.h"
 
 class PCOutputSchemaManager;
 class S100Layer;

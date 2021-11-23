@@ -3,15 +3,6 @@
 
 namespace S100
 {
-
-	//enum S100_ENCODING_TYPE
-	//{
-	//	VECTOR_ISO_IEC_8211 = 1,
-	//	VECTOR_GML = 2,
-	//	GRID_BAG = 3,
-	//	GRID_HDF5 = 4
-	//};
-
 	enum S100_DataProduct
 	{
 		S_101TDS = 1001,

@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "GeoPointZ.h"
-//#include "Scaler.h"
 
 #include <sstream>
 

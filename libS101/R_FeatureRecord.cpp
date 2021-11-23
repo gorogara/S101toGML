@@ -15,14 +15,6 @@
 
 #undef _WINDOWS_
 #include <afxext.h>
-//#include "..\\S100Geometry\\SGeometry.h"
-//#include "..\\S100Geometry\\SPoint.h"
-//#include "..\\S100Geometry\\SCompositeCurve.h"
-//#include "..\\S100Geometry\\SSurface.h"
-//#include "..\\S100Geometry\\SCurveHasOrient.h"
-//#include "..\\S100Geometry\\SCurve.h"
-
-//#include "..\\DLL_MessageProcess\\DLL_MessageProcess.h"
 
 R_FeatureRecord::R_FeatureRecord(void)
 {
@@ -160,8 +152,7 @@ BOOL R_FeatureRecord::ReadRecord(DRDirectoryInfo *dir, BYTE*& buf)
 
 		if (*(buf++) != 0x1E)//{}
 		{
-			//KRS_MSG_PROCESS::SendMessageToTargetWindow(KRS_MSG_INFO, L"terminator error", KRS_MSG_PROCESS::User_Developer_Mode, KRS_MSG_PROCESS::DataSet);
-			//TRACE(W2A(TEXT("terminator error")));
+		
 		}
 
 	}
@@ -281,56 +272,6 @@ BOOL R_FeatureRecord::Save(CFile *file)
 
 	return TRUE;
 }
-
-//void R_FeatureRecord::Draw(CDC *pDC, Scaler *scaler, double offset)
-//{
-//	if (m_geometry != NULL) {
-//		//m_geometry->Draw(pDC, scaler, offset);
-//	}
-//}
-//
-//
-//void R_FeatureRecord::Draw(HDC &hdc, Scaler *scaler, double offset)
-//{
-//	//if (m_frid->m_objc == 168)
-//	if (m_geometry != NULL)
-//	{
-//		m_geometry->DrawGeometry(hdc, scaler, offset);
-//		m_geometry->DrawTextInfo(hdc, scaler, offset);
-//	}
-//}
-//
-//void R_FeatureRecord::Draw(HDC &hDC, Scaler *scaler, int type, int priority, double offset)
-//{
-//
-//	//if (m_geometry != NULL && (m_scaleMin == 0 || m_scaleMin > (int)scaler->GetCurrentScale()))
-//	//{
-//	//	if (m_geometry->tp)
-//	//	{
-//	//		if (m_geometry->tp->camelCase.compare(L"TwoWayRoutePart") == 0)
-//	//		{
-//	//			int i = 0;
-//	//		}
-//	//	}
-//	//	switch (type)
-//	//	{
-//	//	case 1:
-//	//		m_geometry->DrawSPoint(hDC, scaler, priority, offset);
-//	//		break;                                                                                                                                                                                                                                                                                                                          
-//	//	case 2:
-//	//		m_geometry->DrawSCurve(hDC, scaler, priority, offset);
-//	//		break;
-//	//	case 3:
-//	//		m_geometry->DrawSSurface(hDC, scaler, priority, offset);
-//	//		break;
-//	//	case 4:
-//	//		m_geometry->DrawSText(hDC, scaler, priority, offset);
-//	//		break;
-//	//	}
-//	//}
-//}
-//
-
 
 void R_FeatureRecord::CreateCS(S101Cell *cell, CString csName, bool bSENC)
 {
@@ -476,74 +417,10 @@ void R_FeatureRecord::CreateCS(S101Cell *cell, CString csName, bool bSENC)
 	return;
 }
 
-//MBR R_FeatureRecord::GetMBR()
-//{
-//	if (!m_geometry)
-//		return MBR(0, 0, 0, 0);
-//
-//	return m_geometry->m_mbr;
-//}
-
 int R_FeatureRecord::GetRCID()
 {
 	return m_frid.m_name.RCID;
 }
-
-//void R_FeatureRecord::GetXYPointOfTheVisiblePoints(double &x, double &y)
-//{
-//	std::list<SCurveHasOrient> *pListCurveLink = NULL;
-//	if (m_geometry->type == 1)
-//	{
-//		SPoint* p = (SPoint*)m_geometry;
-//		x = p->m_point.GetX();
-//		y = p->m_point.GetY();
-//
-//		return;
-//	}
-//	else if (m_geometry->type == 2)
-//	{
-//		SCompositeCurve* cc = (SCompositeCurve*)m_geometry;
-//
-//		pListCurveLink = &cc->m_listCurveLink;
-//	}
-//	else if (m_geometry->type == 3)
-//	{
-//		SSurface* s = (SSurface*)m_geometry;
-//
-//		pListCurveLink = &s->m_listCurveLink;
-//	}
-//
-//	if (pListCurveLink)
-//	{
-//		for (auto i = pListCurveLink->begin(); i != pListCurveLink->end(); i++)
-//		{
-//			SCurve* curve = (*i).GetCurve();
-//			if (!(*i).GetMasking())
-//			{
-//				if (curve->m_numPoints > 2)
-//				{
-//					x = curve->m_pPoints[1].GetX();
-//					y = curve->m_pPoints[1].GetY();
-//
-//					return;
-//				}
-//			}
-//		}
-//
-//		if (m_geometry->type == 3)
-//		{
-//			SSurface* s = (SSurface*)m_geometry;
-//
-//			if (s->m_centerPoint)
-//			{
-//				x = s->m_centerPoint->GetX();
-//				y = s->m_centerPoint->GetY();
-//				return;
-//			}
-//		}
-//	}
-//	return;
-//}
 
 int R_FeatureRecord::GetAttributeIndex(ATTR* value)
 {

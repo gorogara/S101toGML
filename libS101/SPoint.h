@@ -3,8 +3,6 @@
 #include "SGeometry.h"
 #include "GeoPoint.h"
 
-//#include "..\\GeoMetryLibrary\\GeoPoint.h"
-
 class SPoint : public SGeometry
 {
 public:

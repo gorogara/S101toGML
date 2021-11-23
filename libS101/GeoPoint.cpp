@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "GeoPoint.h"
-//#include "Scaler.h"
 
 GeoPoint::GeoPoint()
 {
