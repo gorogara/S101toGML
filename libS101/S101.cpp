@@ -108,8 +108,8 @@ namespace libS101
 	}
 
 	S101::S101() {
-		_CrtSetBreakAlloc(266);
-		_CrtDumpMemoryLeaks();
+		//_CrtSetBreakAlloc(266);
+		//_CrtDumpMemoryLeaks();
 	}
 
 	S101::~S101()
@@ -166,6 +166,10 @@ namespace libS101
 		for (auto itor = vecFeature.begin(); itor != vecFeature.end(); itor++)
 		{
 			R_FeatureRecord* ir = *(itor);
+
+			delete ir->m_geometry;
+			ir->m_geometry = nullptr;
+
 			delete ir;
 			ir = nullptr;
 		}

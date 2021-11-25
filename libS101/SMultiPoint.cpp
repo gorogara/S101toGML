@@ -12,6 +12,7 @@ SMultiPoint::~SMultiPoint()
 {
 	delete pColor; pColor = nullptr;
 	//delete pFont; pFont = nullptr;
+	m_pPoints->clear();
 	delete m_pPoints; m_pPoints = nullptr;
 }
 

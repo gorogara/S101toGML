@@ -24,14 +24,51 @@ int main(int argc, char* argv[])
 	CString filepath;
 	CString savepath;
 
+#if _DEBUG
 
+	char path[128];
+	if (GetCurrentDirectoryA(128, path) > 0)
+	{
+		filepath.Format(_T("%S\\File\\101KR005X01SW.000"), path);
+		savepath.Format(_T("%S\\File\\test.gml"), path);
+	}
+
+	if (!AfxWinInit(hModule, nullptr, ::GetCommandLine(), 0))
+	{
+		std::cout << "MFC initialization failed" << std::endl;
+		nRetCode = 1;
+	}
+	else
+	{
+		libS101::S101 a;
+
+		if (a.Open(filepath))
+		{
+			std::cout << "Open Success" << std::endl;
+		}
+
+		else
+		{
+			std::cout << "Open Fail,Please check the file path." << std::endl;
+			return -1;
+		}
+
+		a.Save(savepath, _T(""));
+		std::cout << "gml Success" << std::endl;
+
+	}
+	return 0;
+
+
+
+#else
 	if (argc < 3)
 	{
 		std::cout << " Please enter all the routes. " << std::endl;
 
 		std::cout << "openFilePath : ";
 		string file;
-		std::cin>> file;
+		std::cin >> file;
 
 		std::cout << "saveFilePath : ";
 		string save;
@@ -56,8 +93,6 @@ int main(int argc, char* argv[])
 		std::cout << "Value : " << savepath << std::endl;
 	}
 
-
-
 	if (!AfxWinInit(hModule, nullptr, ::GetCommandLine(), 0))
 	{
 		std::cout << "MFC initialization failed" << std::endl;
@@ -71,16 +106,19 @@ int main(int argc, char* argv[])
 		{
 			std::cout << "Open Success" << std::endl;
 		}
-		else 
+
+		else
 		{
 			std::cout << "Open Fail,Please check the file path." << std::endl;
 			return -1;
 		}
 
-	
 		a.Save(savepath, _T(""));
-		std::cout << "gml Success"<<std::endl;
+		std::cout << "gml Success" << std::endl;
 
 	}
 	return 0;
+#endif // _DEBUG
+
+
 }
